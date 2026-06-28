@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark & Moody palette — "the cookbook after dark" */
+  --color-espresso: #15110d;
+  --color-bean: #201913;
+  --color-ember: #2a2118;
+  --color-parchment: #f1e7d8;
+  --color-taupe: #a89886;
+  --color-line: #34291f;
+  --color-brandy: #c99a4b;
+  --color-paprika: #c04a22;
+  --color-oxblood: #6e2420;
+
+  /* Fonts — variables injected by next/font in layout.tsx */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+
+  /* Radii */
+  --radius-card: 14px;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background:
+      radial-gradient(120% 70% at 50% -10%, #2a1f15 0%, var(--color-espresso) 55%) fixed,
+      var(--color-espresso);
+    color: var(--color-parchment);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-paprika);
+    color: var(--color-parchment);
+  }
+}
+
+@layer components {
+  /* Minimal prose styling for markdown-rendered recipe steps */
+  .prose-recipe ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 0;
+  }
+  .prose-recipe li {
+    padding-left: 0.25rem;
+  }
+  .prose-recipe li::marker {
+    color: var(--color-brandy);
+    font-weight: 600;
+  }
+  .prose-recipe p {
+    margin: 0;
+  }
+}

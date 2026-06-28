@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Ultimate Bachelor Cookbook — Docs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#15110D; --bean:#201913; --ember:#2A2118;
+    --parchment:#F1E7D8; --taupe:#A89886; --line:#34291F;
+    --brandy:#C99A4B; --paprika:#C04A22; --oxblood:#6E2420; --r:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--parchment);font-family:Inter,system-ui,sans-serif;
+    line-height:1.65;
+    background:
+      radial-gradient(120% 70% at 50% -10%, #2A1F15 0%, var(--espresso) 55%) fixed,
+      var(--espresso);}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 88px;}
+  .eyebrow{color:var(--brandy);font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;font-size:.78rem;margin:0 0 10px;}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:700;
+    font-size:clamp(2.25rem,6vw,3.5rem);line-height:1.08;margin:0 0 12px;
+    letter-spacing:-.015em;color:var(--parchment);}
+  .tagline{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:400;
+    color:var(--brandy);font-size:1.45rem;margin:0 0 16px;}
+  .lede{font-size:1.125rem;color:var(--taupe);margin:0;max-width:54ch;}
+  .status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;
+    background:var(--bean);border:1px solid var(--line);border-radius:9999px;
+    padding:6px 14px;font-size:.8rem;color:var(--taupe);}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--paprika);
+    box-shadow:0 0 8px var(--paprika);}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:1.5rem;
+    margin:44px 0 16px;color:var(--parchment);}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:560px){.grid{grid-template-columns:1fr 1fr;}}
+  a.card{display:block;background:var(--bean);border:1px solid var(--line);
+    border-radius:var(--r);padding:20px;text-decoration:none;color:var(--parchment);
+    transition:transform .15s ease,border-color .15s ease,box-shadow .2s ease,background .15s;}
+  a.card:hover{transform:translateY(-2px);border-color:var(--brandy);background:var(--ember);
+    box-shadow:0 10px 30px rgba(0,0,0,.45);}
+  .card .t{font-weight:600;margin:0 0 4px;}
+  .card .d{color:var(--taupe);font-size:.92rem;margin:0;}
+  .tree{background:var(--bean);border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;font-family:ui-monospace,Menlo,monospace;font-size:.84rem;
+    white-space:pre;overflow:auto;color:var(--taupe);}
+  .tree b{color:var(--parchment);font-weight:600;}
+  footer{margin-top:48px;color:var(--taupe);font-size:.85rem;
+    border-top:1px solid var(--line);padding-top:20px;}
+  footer a{color:var(--brandy);text-decoration:none;font-weight:500;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">The Eligible Man's Cookbook</p>
+    <h1>The Ultimate Bachelor Cookbook</h1>
+    <p class="tagline">"Dinner is on you."</p>
+    <p class="lede">Feed yourself well. Impress everyone else. An intimate kitchen companion for the eligible man — date-night showstoppers, effortless hosting, and a dozen dishes worth mastering.</p>
+    <span class="status"><span class="dot"></span> Locked · Warm Premium · Dark &amp; Moody · Date-led</span>
+  </header>
+
+  <h2>Start here</h2>
+  <div class="grid">
+    <a class="card" href="../knowledge/PROJECT_BRIEF.md">
+      <p class="t">Project Brief</p>
+      <p class="d">Positioning, voice, look &amp; goals.</p>
+    </a>
+    <a class="card" href="../knowledge/CONTENT_MODEL.md">
+      <p class="t">Content Model</p>
+      <p class="d">Recipe schema: occasion, signature, scalable servings.</p>
+    </a>
+    <a class="card" href="../DESIGN.md">
+      <p class="t">Design Language</p>
+      <p class="d">Palette, type, photography, components.</p>
+    </a>
+    <a class="card" href="../CLAUDE.md">
+      <p class="t">Project Rules</p>
+      <p class="d">How AI agents work in this repo.</p>
+    </a>
+  </div>
+
+  <h2>Project structure</h2>
+  <div class="tree"><b>BachelorCookBook/</b>
+├── CLAUDE.md          project rules (read first)
+├── DESIGN.md          design language
+├── AI_AGENT_OS.md -&gt;  the OS (symlink)
+├── <b>docs/</b>
+│   └── index.html     this portal
+├── <b>knowledge/</b>      canonical source of truth
+│   ├── PROJECT_BRIEF.md
+│   └── CONTENT_MODEL.md
+├── <b>design/</b>         Open Design exports
+└── <b>prompts/</b>        reusable agent prompts</div>
+
+  <footer>
+    Runs under the <a href="../AI_AGENT_OS.md">AI Agent OS</a>. Knowledge is canonical; this HTML is a generated portal.
+  </footer>
+</div>
+</body>
+</html>
