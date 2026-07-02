@@ -1,0 +1,90 @@
+amadumbe  |  Amadumbe (Yam)  →  none
+bibimbap  |  Bibimbap  →  none
+biltong  |  Biltong  →  none
+boeber  |  Boeber  →  none
+boerewors  |  Boerewors  →  none
+bouillabaisse  |  Bouillabaisse  →  none
+braaibroodjie  |  Braaibroodjie  →  none
+breyani  |  Breyani  →  none
+bruschetta  |  Bruschetta  →  none
+bun-cha  |  Bun Cha  →  "Jamaican Spice Bun Recipe" 0.40
+buttermilk-rusks  |  Buttermilk Rusks (Karringmelk Beskuit)  →  none
+cape-malay-apricot-chicken  |  Cape Malay Apricot Chicken  →  "Chicken Basquaise" 0.33
+causa-limena  |  Causa Limeña  →  "Key Lime Pie" 0.40
+ceviche-classico  |  Ceviche Classico  →  none
+chakalaka  |  Chakalaka  →  none
+char-siu-pork  |  Char Siu Pork  →  "Pork Cassoulet" 0.40
+chicken-tikka-masala  |  Chicken Tikka Masala  →  "Chicken Basquaise" 0.40
+creme-brulee  |  Crème Brûlée  →  "Lakra me Mish Cabbage and Meat Stew" 0.22
+crepes  |  Crêpes  →  none
+croissants  |  Croissants  →  none
+dan-dan-noodles  |  Dan Dan Noodles  →  "Ramen Noodles with Boiled Egg" 0.33
+denningvleis  |  Denningvleis  →  none
+dom-pedro  |  Dom Pedro  →  none
+dombolo  |  Dombolo (Steamed Bread Dumplings)  →  "Bread omelette" 0.33
+doro-wat  |  Doro Wat (Ethiopian Chicken)  →  "Chicken Basquaise" 0.33
+droewors  |  Droëwors  →  none
+durban-mutton-curry  |  Durban Mutton Curry  →  "Jamaican Curry Chicken Recipe" 0.33
+elote-mexican-street-corn  |  Elote (Mexican Street Corn)  →  "Grilled corn with garlic mayo & grated cheese" 0.22
+fattoush  |  Fattoush  →  none
+focaccia  |  Focaccia  →  none
+frikkadels  |  Frikkadels  →  none
+frittata  |  Frittata  →  none
+gatsby  |  Gatsby  →  none
+geelrys  |  Geelrys (Yellow Rice)  →  "Chicken Fried Rice" 0.40
+gemista-stuffed-peppers-aubergine  |  Gemista (Stuffed Peppers & Aubergine)  →  "Cottage Cheese And Feta Stuffed Peppers" 0.44
+guacamole  |  Guacamole  →  none
+hertzoggies  |  Hertzoggies  →  none
+isidudu  |  Isidudu (Pumpkin Porridge)  →  "Pumpkin Pie" 0.40
+jianbing  |  Jianbing  →  none
+kaiings  |  Kaiings  →  none
+kibbeh  |  Kibbeh  →  none
+koeksisters  |  Koeksisters  →  none
+laarb-mince  |  Laarb (Minced Meat Salad)  →  "Liegeoise Salad" 0.33
+laksa-curry  |  Laksa (Curry)  →  "Jamaican Curry Chicken Recipe" 0.40
+lamb-shank-red-wine  |  Red-Wine Braised Lamb Shank  →  "Rosemary braised red cabbage with kabanos" 0.40
+linguine-vongole-clams  |  Linguine alle Vongole (Clams)  →  "Squash linguine" 0.33
+magwinya  |  Magwinya (Amagwinya)  →  "Magwinya: Doughnut Bites from Botswana" 0.29
+melktert  |  Melktert  →  none
+morogo  |  Morogo (Stewed Spinach)  →  "Spinach & Ricotta Cannelloni" 0.33
+moroho-sotho  |  Moroho (Basotho Greens)  →  "Crispy Sausages and Greens" 0.33
+mosbolletjies  |  Mosbolletjies  →  none
+mozambican-peri-peri-chicken  |  Mozambican Peri-Peri Chicken  →  "Chicken Basquaise" 0.33
+mozambican-prawns  |  Mozambican LM Prawns with Peri-Peri Garlic Butter  →  "Frog Legs Recipe in Garlic Butter" 0.36
+mussakhan  |  Musakhan  →  none
+nachos  |  Nachos  →  none
+okonomiyaki  |  Okonomiyaki  →  none
+oxtail-potjie  |  Oxtail Potjie  →  "Oxtail with broad beans" 0.40
+oysters-mignonette  |  Oysters, Mignonette  →  none
+pampoenkoekies  |  Pampoenkoekies (Pumpkin Fritters)  →  "Conch Fritters" 0.40
+pap  |  Pap (Mealie Meal)  →  none
+pappardelle-venison-wild-mushroom-ragu  |  Pappardelle, Venison & Wild Mushroom Ragù  →  "Chicken & mushroom Hotpot" 0.25
+peppermint-crisp-tart  |  Peppermint Crisp Tart  →  "Bakewell tart" 0.40
+potbrood  |  Potbrood  →  none
+potjiekos  |  Potjiekos  →  none
+pozole  |  Pozole  →  none
+putu-pap  |  Putu Pap (Krummelpap)  →  none
+quesadillas  |  Quesadillas  →  none
+quiche-lorraine  |  Quiche Lorraine  →  none
+red-wine-braised-short-rib  |  Red-Wine Braised Short Rib  →  "Rosemary braised red cabbage with kabanos" 0.40
+roosterkoek  |  Roosterkoek  →  none
+sausage-rolls  |  Sausage Rolls  →  "Bean & Sausage Hotpot" 0.40
+shisa-nyama  |  Shisa Nyama  →  none
+skilpadjies  |  Skilpadjies  →  none
+snoek-braai-apricot-jam  |  Snoek Braai with Apricot Jam  →  "Jam jam cookies" 0.29
+sosaties  |  Sosaties  →  none
+spanakopita  |  Spanakopita  →  none
+steak-frites-cafe-de-paris  |  Steak Frites, Café de Paris Butter  →  "Steak Diane" 0.29
+takoyaki  |  Takoyaki  →  none
+tamales  |  Tamales  →  none
+tamatiebredie  |  Tamatiebredie  →  none
+tiramisu  |  Tiramisu  →  none
+tteokbokki  |  Tteokbokki  →  none
+umngqusho  |  Umngqusho (Samp & Beans)  →  "Molasses Baked Beans" 0.40
+umphokoqo  |  Umphokoqo (Crumbly Pap)  →  none
+umqombothi  |  Umqombothi (Traditional African Beer)  →  "Spicy North African Potato Salad" 0.25
+vetkoek  |  Vetkoek with Curried Mince  →  "Mince Pies" 0.40
+vetkoek-curry-mince  |  Vetkoek with Curried Mince  →  "Mince Pies" 0.40
+waterblommetjie-bredie  |  Waterblommetjie Bredie  →  none
+whole-roast-sea-bass  |  Whole Roast Sea Bass  →  "Sea bass with sizzled ginger, chilli & spring onions" 0.36
+yakitori  |  Yakitori  →  none

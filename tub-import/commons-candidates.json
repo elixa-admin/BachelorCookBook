@@ -1,0 +1,116 @@
+{
+  "mussakhan": {
+    "q": "Musakhan",
+    "file": "Musakhan.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Musakhan.jpg/1280px-Musakhan.jpg"
+  },
+  "kibbeh": {
+    "q": "Kibbeh",
+    "file": "Kibbeh Nayyeh.jpg",
+    "score": 0.97,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kibbeh_Nayyeh.jpg"
+  },
+  "fattoush": {
+    "q": "Fattoush",
+    "file": "Fattoush.JPG",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fattoush.JPG/1280px-Fattoush.JPG"
+  },
+  "palak-paneer": {
+    "q": "Palak Paneer",
+    "file": "Palak Paneer curry on plate.jpg",
+    "score": 0.97,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Palak_Paneer_curry_on_plate.jpg/1280px-Palak_Paneer_curry_on_plate.jpg"
+  },
+  "malai-kofta": {
+    "q": "Malai Kofta",
+    "file": "Malai Kofta.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Malai_Kofta.jpg/1280px-Malai_Kofta.jpg"
+  },
+  "potjiekos": {
+    "q": "Potjiekos",
+    "file": "Potjiekos-Namibie.jpg",
+    "score": 0.97,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Potjiekos-Namibie.jpg/1280px-Potjiekos-Namibie.jpg"
+  },
+  "melktert": {
+    "q": "Melktert",
+    "file": "Melktert.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Melktert.jpg/1280px-Melktert.jpg"
+  },
+  "koeksisters": {
+    "q": "Koeksisters",
+    "file": "Koeksisters.JPG",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Koeksisters.JPG/1280px-Koeksisters.JPG"
+  },
+  "vetkoek": {
+    "q": "Vetkoek with Curried Mince",
+    "file": "Vetkoek.jpg",
+    "score": 0.5,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Vetkoek.jpg/1280px-Vetkoek.jpg"
+  },
+  "potbrood": {
+    "q": "Potbrood",
+    "file": "Potbrood.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Potbrood.jpg/1280px-Potbrood.jpg"
+  },
+  "garlic-bread": {
+    "q": "Garlic Bread",
+    "file": "Garlic bread baguettes 2.jpg",
+    "score": 1.1,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Garlic_bread_baguettes_2.jpg/1280px-Garlic_bread_baguettes_2.jpg"
+  },
+  "bruschetta": {
+    "q": "Bruschetta",
+    "file": "Bruschetta.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bruschetta.jpg/1280px-Bruschetta.jpg"
+  },
+  "caprese-salad": {
+    "q": "Caprese Salad",
+    "file": "Caprese salad (3124173496).jpg",
+    "score": 1.1,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Caprese_salad_%283124173496%29.jpg/1280px-Caprese_salad_%283124173496%29.jpg"
+  },
+  "caesar-salad": {
+    "q": "Caesar Salad",
+    "file": "Caesar salad (2).jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Caesar_salad_%282%29.jpg/1280px-Caesar_salad_%282%29.jpg"
+  },
+  "nachos": {
+    "q": "Nachos",
+    "file": "The Beanery Nachos.jpg",
+    "score": 0.97,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Beanery_Nachos.jpg/1280px-The_Beanery_Nachos.jpg"
+  },
+  "pulled-pork": {
+    "q": "Pulled Pork",
+    "file": "Pulled pork 007.jpg",
+    "score": 1.1,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pulled_pork_007.jpg/1280px-Pulled_pork_007.jpg"
+  },
+  "sausage-rolls": {
+    "q": "Sausage Rolls",
+    "file": "Sausage-rolls.jpg",
+    "score": 1.3,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Sausage-rolls.jpg/1280px-Sausage-rolls.jpg"
+  },
+  "frittata": {
+    "q": "Frittata",
+    "file": "Frittata ingredients.png",
+    "score": 0.97,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Frittata_ingredients.png/1280px-Frittata_ingredients.png"
+  },
+  "french-toast": {
+    "q": "French Toast",
+    "file": "French toast 001.jpg",
+    "score": 1.1,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/French_toast_001.jpg/1280px-French_toast_001.jpg"
+  }
+}

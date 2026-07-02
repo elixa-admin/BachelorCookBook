@@ -1,0 +1,1882 @@
+{
+  "mussakhan": {
+    "t": "Musakhan",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr 15 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "kibbeh": {
+    "t": "Kibbeh",
+    "tier": "exotic",
+    "method": "Stovetop · shallow-fry or oven · bake",
+    "diff": "Hard",
+    "time": "1 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "fattoush": {
+    "t": "Fattoush",
+    "tier": "global",
+    "method": "No cook",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "palak-paneer": {
+    "t": "Palak Paneer",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 4,
+    "steps": 7
+  },
+  "malai-kofta": {
+    "t": "Malai Kofta",
+    "tier": "global",
+    "method": "Stovetop · simmer / deep-fry",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 2,
+    "steps": 7
+  },
+  "potjiekos": {
+    "t": "Potjiekos",
+    "tier": "exotic",
+    "method": "Fire · slow-simmer in a potjie",
+    "diff": "Medium",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host"
+    ],
+    "ing": 2,
+    "steps": 6
+  },
+  "melktert": {
+    "t": "Melktert",
+    "tier": "global",
+    "method": "Oven · bake / stovetop · custard",
+    "diff": "Medium",
+    "time": "1 hr 15 min (plus chilling)",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "koeksisters": {
+    "t": "Koeksisters",
+    "tier": "exotic",
+    "method": "Stovetop · deep-fry",
+    "diff": "Medium",
+    "time": "1 hr (plus dough chilling)",
+    "occ": [
+      "host"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "vetkoek": {
+    "t": "Vetkoek with Curried Mince",
+    "tier": "exotic",
+    "method": "Stovetop · deep-fry",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 2,
+    "steps": 7
+  },
+  "potbrood": {
+    "t": "Potbrood",
+    "tier": "exotic",
+    "method": "Fire or oven · bake in a potjie",
+    "diff": "Medium",
+    "time": "2 hr (plus proving)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 1,
+    "steps": 7
+  },
+  "chakalaka": {
+    "t": "Chakalaka",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "35 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "focaccia": {
+    "t": "Focaccia",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "2 hr 30 min (plus proving)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 1,
+    "steps": 7
+  },
+  "sticky-toffee-pudding": {
+    "t": "Sticky Toffee Pudding",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "1 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 2,
+    "steps": 6
+  },
+  "borscht": {
+    "t": "Borscht",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 2,
+    "steps": 6
+  },
+  "crepes": {
+    "t": "Crêpes",
+    "tier": "global",
+    "method": "Stovetop · pan-fry",
+    "diff": "Easy",
+    "time": "30 min (plus batter resting)",
+    "occ": [
+      "date",
+      "solo"
+    ],
+    "ing": 1,
+    "steps": 5
+  },
+  "coq-au-vin": {
+    "t": "Coq au Vin",
+    "tier": "premium",
+    "method": "Stovetop & oven · braise",
+    "diff": "Medium",
+    "time": "2 hr 15 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 4,
+    "steps": 8
+  },
+  "rogan-josh": {
+    "t": "Rogan Josh",
+    "tier": "premium",
+    "method": "Stovetop · slow braise",
+    "diff": "Medium",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 4,
+    "steps": 7
+  },
+  "lamb-shank-red-wine": {
+    "t": "Red-Wine Braised Lamb Shank",
+    "tier": "premium",
+    "method": "Oven · slow braise",
+    "diff": "Medium",
+    "time": "3 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 4,
+    "steps": 7
+  },
+  "french-onion-soup": {
+    "t": "French Onion Soup, Gruyère Crouton",
+    "tier": "premium",
+    "method": "Stovetop & oven · caramelise & grill",
+    "diff": "Easy",
+    "time": "1 hr 30 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "steak-frites-cafe-de-paris": {
+    "t": "Steak Frites, Café de Paris Butter",
+    "tier": "premium",
+    "method": "Stovetop · sear & compound butter",
+    "diff": "Medium",
+    "time": "30 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "bouillabaisse": {
+    "t": "Bouillabaisse",
+    "tier": "premium",
+    "method": "Stovetop · fish stew",
+    "diff": "Hard",
+    "time": "1 hr 45 min",
+    "occ": [
+      "host"
+    ],
+    "ing": 4,
+    "steps": 7
+  },
+  "duck-a-l-orange": {
+    "t": "Duck à l'Orange",
+    "tier": "premium",
+    "method": "Oven · roast",
+    "diff": "Hard",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "beef-wellington": {
+    "t": "Beef Wellington",
+    "tier": "premium",
+    "method": "Oven · wrapped in puff pastry",
+    "diff": "Hard",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "chicken-tikka-masala": {
+    "t": "Chicken Tikka Masala",
+    "tier": "global",
+    "method": "Stovetop · braise",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "bibimbap": {
+    "t": "Bibimbap",
+    "tier": "global",
+    "method": "Stovetop · assemble",
+    "diff": "Medium",
+    "time": "40 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 4,
+    "steps": 11
+  },
+  "macaroni-cheese": {
+    "t": "Macaroni Cheese",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "35 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 8
+  },
+  "chicken-satay": {
+    "t": "Chicken Satay",
+    "tier": "global",
+    "method": "Grill · skewer",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "date",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "dan-dan-noodles": {
+    "t": "Dan Dan Noodles",
+    "tier": "exotic",
+    "method": "Stovetop · stir-fry",
+    "diff": "Medium",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "tom-yum-goong": {
+    "t": "Tom Yum Goong",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 5
+  },
+  "banh-mi": {
+    "t": "Bánh Mì",
+    "tier": "exotic",
+    "method": "Assemble · no-cook",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "tteokbokki": {
+    "t": "Tteokbokki",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "char-siu-pork": {
+    "t": "Char Siu Pork",
+    "tier": "global",
+    "method": "Oven · roast",
+    "diff": "Medium",
+    "time": "1 hr 30 min",
+    "occ": [
+      "solo",
+      "date",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "bunny-chow": {
+    "t": "Bunny Chow",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 5
+  },
+  "durban-mutton-curry": {
+    "t": "Durban Mutton Curry",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "1 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 4,
+    "steps": 5
+  },
+  "boerewors": {
+    "t": "Boerewors",
+    "tier": "signature",
+    "method": "Fire · braai or stovetop · pan-fry",
+    "diff": "Easy",
+    "time": "45 min (plus marinating)",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 4,
+    "steps": 5
+  },
+  "shisa-nyama": {
+    "t": "Shisa Nyama",
+    "tier": "signature",
+    "method": "Fire · braai",
+    "diff": "Easy",
+    "time": "2 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 5,
+    "steps": 5
+  },
+  "mozambican-peri-peri-chicken": {
+    "t": "Mozambican Peri-Peri Chicken",
+    "tier": "premium",
+    "method": "Fire · grill or oven · roast",
+    "diff": "Medium",
+    "time": "1 hr 30 min (plus marinating)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 5
+  },
+  "waterblommetjie-bredie": {
+    "t": "Waterblommetjie Bredie",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "denningvleis": {
+    "t": "Denningvleis",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "1 hr 30 min",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "sosaties": {
+    "t": "Sosaties",
+    "tier": "premium",
+    "method": "Fire · braai or oven · grill",
+    "diff": "Medium",
+    "time": "2 hr (plus marinating)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 2,
+    "steps": 7
+  },
+  "snoek-braai-apricot-jam": {
+    "t": "Snoek Braai with Apricot Jam",
+    "tier": "premium",
+    "method": "Fire · braai",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "umngqusho": {
+    "t": "Umngqusho (Samp & Beans)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "3 hr (plus overnight soaking)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 3,
+    "steps": 6
+  },
+  "breyani": {
+    "t": "Breyani",
+    "tier": "premium",
+    "method": "Stovetop · steam layered",
+    "diff": "Medium",
+    "time": "2 hr (plus marinating)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 2,
+    "steps": 7
+  },
+  "pickled-fish": {
+    "t": "Pickled Fish",
+    "tier": "signature",
+    "method": "Stovetop · fry and pickle",
+    "diff": "Easy",
+    "time": "45 min (plus 24 hours pickling)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 3,
+    "steps": 7
+  },
+  "pap": {
+    "t": "Pap (Mealie Meal)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "roosterkoek": {
+    "t": "Roosterkoek",
+    "tier": "signature",
+    "method": "Fire · braai",
+    "diff": "Easy",
+    "time": "45 min (plus proving)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "mealie-bread": {
+    "t": "Mealie Bread",
+    "tier": "premium",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "1 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "biltong": {
+    "t": "Biltong",
+    "tier": "others",
+    "method": "Air-dry · cure",
+    "diff": "Easy",
+    "time": "10 days (curing)",
+    "occ": [
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "droewors": {
+    "t": "Droëwors",
+    "tier": "signature",
+    "method": "Air-dry · cure",
+    "diff": "Easy",
+    "time": "20 min prep + 3–5 days drying",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "peppermint-crisp-tart": {
+    "t": "Peppermint Crisp Tart",
+    "tier": "signature",
+    "method": "No-bake · assemble",
+    "diff": "Easy",
+    "time": "20 min + 6 hours chilling",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "hertzoggies": {
+    "t": "Hertzoggies",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "linguine-vongole-clams": {
+    "t": "Linguine alle Vongole (Clams)",
+    "tier": "premium",
+    "method": "Stovetop · steam",
+    "diff": "Medium",
+    "time": "30 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "braai-lamb-chops-chimichurri": {
+    "t": "Braai Lamb Chops, Chimichurri",
+    "tier": "premium",
+    "method": "Braai · grill",
+    "diff": "Medium",
+    "time": "40 min (plus marinating)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "roast-leg-lamb-rosemary-garlic": {
+    "t": "Roast Leg of Lamb, Rosemary & Garlic",
+    "tier": "premium",
+    "method": "Oven · roast",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "pappardelle-venison-wild-mushroom-ragu": {
+    "t": "Pappardelle, Venison & Wild Mushroom Ragù",
+    "tier": "premium",
+    "method": "Stovetop · slow braise",
+    "diff": "Hard",
+    "time": "3 hr",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "arroz-negro-black-paella": {
+    "t": "Arroz Negro (Black Paella)",
+    "tier": "premium",
+    "method": "Stovetop · paella pan",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "red-wine-braised-short-rib": {
+    "t": "Red-Wine Braised Short Rib",
+    "tier": "premium",
+    "method": "Oven · slow braise",
+    "diff": "Medium",
+    "time": "4 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "oysters-mignonette": {
+    "t": "Oysters, Mignonette",
+    "tier": "premium",
+    "method": "No-cook · shuck",
+    "diff": "Easy",
+    "time": "15 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "steak-tartare": {
+    "t": "Steak Tartare",
+    "tier": "premium",
+    "method": "No-cook · assemble",
+    "diff": "Medium",
+    "time": "20 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "whole-roast-sea-bass": {
+    "t": "Whole Roast Sea Bass",
+    "tier": "premium",
+    "method": "Oven · roast",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "naan-bread": {
+    "t": "Naan Bread",
+    "tier": "others",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr (plus proving)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "guacamole": {
+    "t": "Guacamole",
+    "tier": "others",
+    "method": "No-cook · mash",
+    "diff": "Easy",
+    "time": "15 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "elote-mexican-street-corn": {
+    "t": "Elote (Mexican Street Corn)",
+    "tier": "others",
+    "method": "Grill · roast",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "croissants": {
+    "t": "Croissants",
+    "tier": "others",
+    "method": "Oven · laminate",
+    "diff": "Hard",
+    "time": "2 hr (plus lamination and proving)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "flapjacks-pancakes": {
+    "t": "Flapjacks (American Pancakes)",
+    "tier": "others",
+    "method": "Stovetop · griddle",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "eggs-benedict-hollandaise": {
+    "t": "Eggs Benedict, Hollandaise",
+    "tier": "others",
+    "method": "Stovetop · poach",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "quesadillas": {
+    "t": "Quesadillas",
+    "tier": "global",
+    "method": "Stovetop · griddle",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "gemista-stuffed-peppers-aubergine": {
+    "t": "Gemista (Stuffed Peppers & Aubergine)",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "pozole": {
+    "t": "Pozole",
+    "tier": "exotic",
+    "method": "Stovetop · slow cook",
+    "diff": "Medium",
+    "time": "3 hr",
+    "occ": [
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "tamales": {
+    "t": "Tamales",
+    "tier": "exotic",
+    "method": "Steam · wrap",
+    "diff": "Hard",
+    "time": "4 hr (including soaking)",
+    "occ": [
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "harira-lamb-chickpea-soup": {
+    "t": "Harira (Lamb & Chickpea Soup)",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "causa-limena": {
+    "t": "Causa Limeña",
+    "tier": "exotic",
+    "method": "No-cook · assemble",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "beef-teriyaki": {
+    "t": "Beef Teriyaki",
+    "tier": "global",
+    "method": "Grill · grill",
+    "diff": "Easy",
+    "time": "30 min (plus marinating)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "chicken-biryani": {
+    "t": "Chicken Biryani",
+    "tier": "global",
+    "method": "Stovetop · layered cook",
+    "diff": "Hard",
+    "time": "2 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "southern-fried-chicken": {
+    "t": "Southern Fried Chicken",
+    "tier": "global",
+    "method": "Stovetop · deep-fry",
+    "diff": "Medium",
+    "time": "1 hr 30 min (plus marinating)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "lasagne-bolognese": {
+    "t": "Lasagne Bolognese",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "quiche-lorraine": {
+    "t": "Quiche Lorraine",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "falafel-plate": {
+    "t": "Falafel Plate",
+    "tier": "global",
+    "method": "Stovetop · deep-fry",
+    "diff": "Medium",
+    "time": "1 hr (plus soaking)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "bun-cha": {
+    "t": "Bun Cha",
+    "tier": "exotic",
+    "method": "Stovetop · grill + assemble",
+    "diff": "Medium",
+    "time": "40 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "korean-fried-chicken": {
+    "t": "Korean Fried Chicken",
+    "tier": "exotic",
+    "method": "Stovetop · double-fry",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "doro-wat": {
+    "t": "Doro Wat (Ethiopian Chicken)",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "tiramisu": {
+    "t": "Tiramisu",
+    "tier": "others",
+    "method": "No-bake · assemble",
+    "diff": "Medium",
+    "time": "30 min (plus chilling)",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "creme-brulee": {
+    "t": "Crème Brûlée",
+    "tier": "others",
+    "method": "Oven · bake + torch",
+    "diff": "Medium",
+    "time": "1 hr (plus chilling)",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "malva-pudding": {
+    "t": "Malva Pudding",
+    "tier": "others",
+    "method": "Oven · bake + sauce",
+    "diff": "Easy",
+    "time": "50 min",
+    "occ": [
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "mango-sticky-rice": {
+    "t": "Mango Sticky Rice",
+    "tier": "others",
+    "method": "Stovetop · steam",
+    "diff": "Easy",
+    "time": "1 hr (plus rice soaking)",
+    "occ": [
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "chicken-liver-parfait": {
+    "t": "Chicken Liver Parfait",
+    "tier": "premium",
+    "method": "Oven · bake + chill",
+    "diff": "Hard",
+    "time": "1 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "spanakopita": {
+    "t": "Spanakopita",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "lamb-tagine-apricot-almond": {
+    "t": "Lamb Tagine, Apricot & Almond",
+    "tier": "exotic",
+    "method": "Stovetop · slow-cook",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "gatsby": {
+    "t": "Gatsby",
+    "tier": "signature",
+    "method": "Stovetop · fry",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "braaibroodjie": {
+    "t": "Braaibroodjie",
+    "tier": "signature",
+    "method": "Fire · braai",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "frikkadels": {
+    "t": "Frikkadels",
+    "tier": "global",
+    "method": "Oven · bake or stovetop · shallow-fry",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "tamatiebredie": {
+    "t": "Tamatiebredie",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "geelrys": {
+    "t": "Geelrys (Yellow Rice)",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "dombolo": {
+    "t": "Dombolo (Steamed Bread Dumplings)",
+    "tier": "signature",
+    "method": "Stovetop · steam",
+    "diff": "Medium",
+    "time": "1 hr 30 min (plus proving)",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "magwinya": {
+    "t": "Magwinya (Amagwinya)",
+    "tier": "signature",
+    "method": "Stovetop · deep-fry",
+    "diff": "Easy",
+    "time": "1 hr 30 min (plus proving)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "morogo": {
+    "t": "Morogo (Stewed Spinach)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "skilpadjies": {
+    "t": "Skilpadjies",
+    "tier": "exotic",
+    "method": "Fire · braai or stovetop · fry",
+    "diff": "Medium",
+    "time": "30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "mosbolletjies": {
+    "t": "Mosbolletjies",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "2 hr (plus proving)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "pampoenkoekies": {
+    "t": "Pampoenkoekies (Pumpkin Fritters)",
+    "tier": "premium",
+    "method": "Stovetop · shallow-fry",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "boeber": {
+    "t": "Boeber",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "buttermilk-rusks": {
+    "t": "Buttermilk Rusks (Karringmelk Beskuit)",
+    "tier": "signature",
+    "method": "Oven · twice-bake",
+    "diff": "Medium",
+    "time": "1 hr (plus overnight soaking)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "atchar": {
+    "t": "Mango Atchar",
+    "tier": "global",
+    "method": "No-cook · pickle",
+    "diff": "Easy",
+    "time": "30 min (plus pickling)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "umqombothi": {
+    "t": "Umqombothi (Traditional African Beer)",
+    "tier": "exotic",
+    "method": "Ferment · brew",
+    "diff": "Hard",
+    "time": "5 days (fermenting)",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "dom-pedro": {
+    "t": "Dom Pedro",
+    "tier": "premium",
+    "method": "No-cook · blend",
+    "diff": "Easy",
+    "time": "5 min",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "kaiings": {
+    "t": "Kaiings",
+    "tier": "exotic",
+    "method": "Stovetop · render",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "umphokoqo": {
+    "t": "Umphokoqo (Crumbly Pap)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "isidudu": {
+    "t": "Isidudu (Pumpkin Porridge)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "40 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "amadumbe": {
+    "t": "Amadumbe (Yam)",
+    "tier": "exotic",
+    "method": "Stovetop · boil",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "oxtail-potjie": {
+    "t": "Oxtail Potjie",
+    "tier": "premium",
+    "method": "Fire · potjie",
+    "diff": "Medium",
+    "time": "4 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "vetkoek-curry-mince": {
+    "t": "Vetkoek with Curried Mince",
+    "tier": "signature",
+    "method": "Stovetop · fry + deep-fry",
+    "diff": "Medium",
+    "time": "1 hr (plus proving)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "putu-pap": {
+    "t": "Putu Pap (Krummelpap)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "moroho-sotho": {
+    "t": "Moroho (Basotho Greens)",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "potato-bredie": {
+    "t": "Potato Bredie",
+    "tier": "signature",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "1 hr 30 min",
+    "occ": [
+      "host",
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "cape-malay-apricot-chicken": {
+    "t": "Cape Malay Apricot Chicken",
+    "tier": "premium",
+    "method": "Stovetop · simmer or oven · bake",
+    "diff": "Medium",
+    "time": "1 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "mozambican-prawns": {
+    "t": "Mozambican LM Prawns with Peri-Peri Garlic Butter",
+    "tier": "premium",
+    "method": "Stovetop · pan-fry or fire · grill",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "date",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "fish-and-chips": {
+    "t": "Fish and Chips",
+    "tier": "global",
+    "method": "Stovetop · deep-fry",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "shepherds-pie": {
+    "t": "Shepherd's Pie",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "1 hr 15 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "cottage-pie": {
+    "t": "Cottage Pie",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "chicken-pot-pie": {
+    "t": "Chicken Pot Pie",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr 30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "chicken-noodle-soup": {
+    "t": "Chicken Noodle Soup",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "1 hr 30 min",
+    "occ": [
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "cream-of-tomato-soup": {
+    "t": "Cream of Tomato Soup",
+    "tier": "global",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "solo"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "garlic-bread": {
+    "t": "Garlic Bread",
+    "tier": "global",
+    "method": "Oven · grill",
+    "diff": "Easy",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "bruschetta": {
+    "t": "Bruschetta",
+    "tier": "global",
+    "method": "Stovetop · grill",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "caprese-salad": {
+    "t": "Caprese Salad",
+    "tier": "global",
+    "method": "No-cook · assemble",
+    "diff": "Easy",
+    "time": "15 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "caesar-salad": {
+    "t": "Caesar Salad",
+    "tier": "global",
+    "method": "Stovetop · pan-fry and assemble",
+    "diff": "Medium",
+    "time": "25 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "nachos": {
+    "t": "Nachos",
+    "tier": "global",
+    "method": "Oven · melt",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "chicken-wings": {
+    "t": "Chicken Wings",
+    "tier": "global",
+    "method": "Oven · roast or stovetop · deep-fry",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "pulled-pork": {
+    "t": "Pulled Pork",
+    "tier": "global",
+    "method": "Oven · slow-roast",
+    "diff": "Medium",
+    "time": "4 hr",
+    "occ": [
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "meatloaf": {
+    "t": "Meatloaf",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "1 hr 30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "roast-beef": {
+    "t": "Roast Beef",
+    "tier": "global",
+    "method": "Oven · roast",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "sausage-rolls": {
+    "t": "Sausage Rolls",
+    "tier": "global",
+    "method": "Oven · bake",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "frittata": {
+    "t": "Frittata",
+    "tier": "global",
+    "method": "Stovetop & oven · bake",
+    "diff": "Easy",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "brunch"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "french-toast": {
+    "t": "French Toast",
+    "tier": "global",
+    "method": "Stovetop · pan-fry",
+    "diff": "Easy",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "brunch"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "waffles": {
+    "t": "Waffles",
+    "tier": "global",
+    "method": "Stovetop · waffle iron",
+    "diff": "Easy",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "brunch"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "ceviche-classico": {
+    "t": "Ceviche Classico",
+    "tier": "exotic",
+    "method": "Raw · citrus-cure",
+    "diff": "Medium",
+    "time": "30 min (plus chilling)",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "xiaolongbao": {
+    "t": "Xiaolongbao (Soup Dumplings)",
+    "tier": "exotic",
+    "method": "Steam · aspic-rich filling",
+    "diff": "Hard",
+    "time": "2 hr 30 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "okonomiyaki": {
+    "t": "Okonomiyaki",
+    "tier": "exotic",
+    "method": "Stovetop · pan-fry",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "yakitori": {
+    "t": "Yakitori",
+    "tier": "exotic",
+    "method": "Grill · charcoal",
+    "diff": "Medium",
+    "time": "45 min (plus marinating)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "takoyaki": {
+    "t": "Takoyaki",
+    "tier": "exotic",
+    "method": "Stovetop · special pan",
+    "diff": "Hard",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "banh-xeo": {
+    "t": "Bánh Xèo",
+    "tier": "exotic",
+    "method": "Stovetop · pan-fry",
+    "diff": "Medium",
+    "time": "45 min",
+    "occ": [
+      "host",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "laarb-mince": {
+    "t": "Laarb (Minced Meat Salad)",
+    "tier": "exotic",
+    "method": "Stovetop · stir-fry",
+    "diff": "Medium",
+    "time": "30 min",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "nasi-lemak": {
+    "t": "Nasi Lemak",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "1 hr 15 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "laksa-curry": {
+    "t": "Laksa (Curry)",
+    "tier": "exotic",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "time": "1 hr",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "taiwanese-beef-noodle-soup": {
+    "t": "Taiwanese Beef Noodle Soup",
+    "tier": "exotic",
+    "method": "Stovetop · braise",
+    "diff": "Medium",
+    "time": "2 hr",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "jianbing": {
+    "t": "Jianbing",
+    "tier": "exotic",
+    "method": "Stovetop · griddle",
+    "diff": "Medium",
+    "time": "20 min",
+    "occ": [
+      "solo",
+      "date"
+    ],
+    "ing": 0,
+    "steps": 0
+  },
+  "khachapuri": {
+    "t": "Khachapuri (Georgian Cheese Bread)",
+    "tier": "exotic",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "time": "1 hr 30 min (including dough proofing)",
+    "occ": [
+      "solo",
+      "host"
+    ],
+    "ing": 0,
+    "steps": 0
+  }
+}

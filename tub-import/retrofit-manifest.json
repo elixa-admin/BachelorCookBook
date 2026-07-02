@@ -1,0 +1,1114 @@
+[
+  {
+    "slug": "bunny-chow",
+    "title": "Bunny Chow",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "home-chicken-curry",
+    "title": "Home Chicken Curry",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "umngqusho",
+    "title": "Umngqusho (Samp & Beans)",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "vetkoek",
+    "title": "Vetkoek with Curried Mince",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "beef-teriyaki",
+    "title": "Beef Teriyaki",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "cacio-e-pepe",
+    "title": "Cacio e Pepe",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "chicken-satay",
+    "title": "Chicken Satay",
+    "miss": [
+      "prep",
+      "cook",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "chicken-stir-fry",
+    "title": "Chicken Stir-Fry",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "chicken-tikka-masala",
+    "title": "Chicken Tikka Masala",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "crepes",
+    "title": "Crêpes",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "croissants",
+    "title": "Croissants",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "egg-fried-rice",
+    "title": "Egg Fried Rice",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "falafel-plate",
+    "title": "Falafel Plate",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "flapjacks-pancakes",
+    "title": "Flapjacks (American Pancakes)",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "gemista-stuffed-peppers-aubergine",
+    "title": "Gemista (Stuffed Peppers & Aubergine)",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "macaroni-cheese",
+    "title": "Macaroni Cheese",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "penne-arrabbiata",
+    "title": "Penne Arrabbiata",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "prego-roll",
+    "title": "Prego Roll",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "quesadillas",
+    "title": "Quesadillas",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "quiche-lorraine",
+    "title": "Quiche Lorraine",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "shakshuka-crusty-bread",
+    "title": "Shakshuka with Crusty Bread",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "smash-burgers-special-sauce",
+    "title": "Smash Burgers with Special Sauce",
+    "miss": [
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "spaghetti-bolognese",
+    "title": "Spaghetti Bolognese",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "carbonara",
+    "title": "Spaghetti Carbonara",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "spanakopita",
+    "title": "Spanakopita",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "thai-green-curry",
+    "title": "Thai Green Curry",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "french-onion-soup",
+    "title": "French Onion Soup, Gruyère Crouton",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "churros-chocolate",
+    "title": "Churros & Chocolate",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "bobotie",
+    "title": "Bobotie",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "breyani",
+    "title": "Breyani",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "cape-malay-chicken-curry",
+    "title": "Cape Malay Chicken Curry",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "denningvleis",
+    "title": "Denningvleis",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "doro-wat",
+    "title": "Doro Wat (Ethiopian Chicken)",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "durban-mutton-curry",
+    "title": "Durban Mutton Curry",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "hertzoggies",
+    "title": "Hertzoggies",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "melktert",
+    "title": "Melktert",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "peppermint-crisp-tart",
+    "title": "Peppermint Crisp Tart",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "pickled-fish",
+    "title": "Pickled Fish",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "shisa-nyama",
+    "title": "Shisa Nyama",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "butter-chicken",
+    "title": "Butter Chicken (Murgh Makhani)",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "carnitas-tacos",
+    "title": "Carnitas Tacos Michoacán",
+    "miss": [
+      "prep",
+      "cook",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "chicken-biryani",
+    "title": "Chicken Biryani",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "creme-brulee",
+    "title": "Crème Brûlée",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "salmon",
+    "title": "Crispy-Skin Salmon, Brown Butter & Capers",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "eggs-benedict-hollandaise",
+    "title": "Eggs Benedict, Hollandaise",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "fettuccine-alfredo",
+    "title": "Fettuccine Alfredo",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "grilled-calamari",
+    "title": "Grilled Calamari",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "lamb-tagine-apricot-almond",
+    "title": "Lamb Tagine, Apricot & Almond",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "lasagne-bolognese",
+    "title": "Lasagne",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "molten-chocolate-fondant",
+    "title": "Molten Chocolate Fondant",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "mussels-white-wine-garlic",
+    "title": "Moules Marinières",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "moussaka",
+    "title": "Moussaka (Greek Aubergine and Beef Casserole)",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "peri-peri-chicken-livers",
+    "title": "Peri-Peri Chicken Livers",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "pizza-margherita",
+    "title": "Pizza Margherita",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "potato-gnocchi",
+    "title": "Potato Gnocchi",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "risotto-milanese-saffron",
+    "title": "Risotto Milanese with Saffron",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "roast-chicken",
+    "title": "Roast Chicken, Lemon, Garlic & Herbs",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "rogan-josh",
+    "title": "Rogan Josh",
+    "miss": [
+      "prep",
+      "cook",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "sticky-toffee-pudding",
+    "title": "Sticky Toffee Pudding",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "tiramisu",
+    "title": "Tiramisu",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "braai-lamb-chops-chimichurri",
+    "title": "Braai Lamb Chops, Chimichurri",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "coq-au-vin",
+    "title": "Coq au Vin",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "duck-a-l-orange",
+    "title": "Duck à l'Orange",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "mozambican-peri-peri-chicken",
+    "title": "Mozambican Peri-Peri Chicken",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "steak",
+    "title": "Pan-Seared Steak, Butter & Thyme",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "lamb-shank-red-wine",
+    "title": "Red-Wine Braised Lamb Shank",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "red-wine-braised-short-rib",
+    "title": "Red-Wine Braised Short Rib",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "sosaties",
+    "title": "Sosaties",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "steak-frites-cafe-de-paris",
+    "title": "Steak Frites, Café de Paris Butter",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "koeksisters",
+    "title": "Koeksisters",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "malva-pudding",
+    "title": "Malva Pudding",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "potjiekos",
+    "title": "Potjiekos",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "beef-ribs-sticky-braise",
+    "title": "Beef Ribs with Sticky Glaze",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "espetada",
+    "title": "Espetada",
+    "miss": [
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "roast-leg-lamb-rosemary-garlic",
+    "title": "Roast Leg of Lamb, Rosemary & Garlic",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "boerewors",
+    "title": "Boerewors",
+    "miss": [
+      "prep",
+      "cook",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "chakalaka",
+    "title": "Chakalaka",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "focaccia",
+    "title": "Focaccia",
+    "miss": [
+      "prep",
+      "cook",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "mealie-bread",
+    "title": "Mealie Bread",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "naan-bread",
+    "title": "Naan Bread",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "pap",
+    "title": "Pap (Mealie Meal)",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "potbrood",
+    "title": "Potbrood",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  },
+  {
+    "slug": "roosterkoek",
+    "title": "Roosterkoek",
+    "miss": [
+      "prep",
+      "cook",
+      "mistakes",
+      "sides",
+      "storage",
+      "chef_upgrade",
+      "health_forward",
+      "diets",
+      "diet_notes"
+    ]
+  }
+]

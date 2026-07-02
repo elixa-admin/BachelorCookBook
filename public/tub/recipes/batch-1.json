@@ -1,0 +1,481 @@
+[
+  {
+    "slug": "risotto-milanese-saffron",
+    "t": "Risotto Milanese with Saffron",
+    "tier": "signature",
+    "cui": "Italian · Lombardy",
+    "occ": ["date"],
+    "time": "25 min",
+    "method": "Stovetop · rice starch emulsion",
+    "diff": "Medium",
+    "blurb": "The golden rice of Milan, transformed by saffron into one of Italy's most luxurious dishes.",
+    "prov": {
+      "popular_in": "Milan and Lombardy region, Italy",
+      "famous_for": "The signature saffron-infused rice dish of Milanese cuisine",
+      "consists_of": "Rice slowly cooked in broth with saffron, finished with butter and Parmigiano-Reggiano",
+      "name_origin": "Risotto alla Milanese dates to the 14th century; legend says it was created for a stained-glass window installation at Milan Cathedral in 1574, when a painter added saffron to the rice",
+      "why_loved": "The allure of saffron — earthy, honeyed, metallic — turns simple rice into something opulent, each grain suspended in a creamy, daffodil-yellow sauce that gently collapses under its own weight",
+      "method_detail": "Stovetop — rice toasted in oil, then cooked with broth infused with saffron threads, stirred to release starch for creaminess"
+    },
+    "brief": {
+      "lead": "This is risotto as the Milanese intend: not stand-and-stir for twenty minutes, but a smarter method that rinses rice with stock to capture its starch, then toasts it for nuttiness before a gentle simmer. Saffron threads — just two generous pinches — bloom in the hot broth, tinting the rice daffodil-yellow and infusing it with that singular earthy, honeyed aroma. Finished with butter and Parmigiano-Reggiano off the heat, the grains should be tender but al dente at the core, swimming in a creamy sauce that flows like lava.",
+      "expect": [
+        ["Intense saffron aroma.", "The kitchen fills with saffron's earthy, honeyed scent as it blooms."],
+        ["Creamy emulsion.", "Rice starch creates a velvety sauce that clings to each grain."],
+        ["Al dente texture.", "Grains are tender with a faint bite at the center."],
+        ["Rich finish.", "Butter and Parmigiano-Reggiano enrich the risotto into something luxurious."]
+      ],
+      "stats": [
+        ["25", "min", "Active"],
+        ["20", "min", "Simmer"],
+        ["2", "", "Serves 2"],
+        ["Tender", "", "Doneness"]
+      ],
+      "kit": ["Heavy-based sauté pan", "Fine-mesh strainer", "Wooden spoon", "Chef's knife"]
+    },
+    "ing": [
+      ["The rice", [["linear", 400, "g", "Carnaroli or Vialone Nano rice"], ["linear", 950, "ml", "Chicken or vegetable stock"], ["linear", 45, "ml", "Extra-virgin olive oil"]]],
+      ["Aromatics & saffron", [["countN", 1, "", "Small yellow onion, minced"], ["linear", 225, "ml", "Dry white wine"], ["taper", 2, "pinches", "Saffron threads"], ["taper", 1, "tsp", "Flaky sea salt"]]],
+      ["The finish", [["linear", 30, "g", "Unsalted butter"], ["linear", 40, "g", "Parmigiano-Reggiano, finely grated"], ["static", "", "Extra Parmigiano-Reggiano, for serving"]]]
+    ],
+    "tl": [
+      ["T−05:00", "Rinse rice", "Combine rice and stock in a bowl, agitate to release starch, then drain well, reserving the starchy stock", 300],
+      ["T+00:00", "Toast rice", "Heat oil in a heavy 30cm sauté pan over medium-high heat. Add drained rice and cook, stirring, until sizzling and aromatic, about 5 minutes", null],
+      ["T+05:00", "Add aromatics", "Add onion and cook 1 minute until softened. Add wine and cook until evaporated, about 3 minutes", null],
+      ["T+08:00", "Add saffron stock", "Stir reserved stock (reserving 240ml) and saffron into rice. Bring to simmer, cover, reduce heat to lowest setting", 30],
+      ["T+18:00", "Simmer", "Cook undisturbed 10 minutes. Stir once, redistribute rice, cover and cook 5 more minutes until liquid absorbed and rice tender", 600],
+      ["T+23:00", "Finish risotto", "Stir in reserved 240ml stock. Increase heat to high, add butter, stir until melted and creamy. Off heat, add cheese, stir rapidly to emulsify. Season with salt. Serve immediately", 120]
+    ],
+    "steps": [
+      ["Rinse the rice", "Combine the rice and stock in a large bowl. Agitate vigorously with your fingers to release surface starch into the liquid. Strain through a fine-mesh strainer set over a 2-quart liquid measure, shaking the rice to drain well. Save that starchy stock — it's the foundation of your creamy sauce.", "WHY surface starch thickens risotto. Rinsing rice with stock captures starch that would be lost during toasting; this starch is what creates the velvety emulsion that suspends each grain.", 300],
+      ["Toast the rice", "Heat the olive oil in a heavy 30cm sauté pan over medium-high heat until shimmering. Add the drained rice and cook, stirring and tossing frequently, until all liquid has evaporated and the rice sizzles and takes on a nutty aroma, about 5 minutes. The grains will look like ice cubes — cloudy in the centre, translucent at the edges.", "WHY toasting matters. This develops flavour and firms the exterior of each grain, preventing it from disintegrating during cooking.", null],
+      ["Sauté the aromatics", "Add the minced onion to the rice and continue cooking, stirring frequently, until aromatic and softened, about 1 minute. Add the white wine and cook, stirring occasionally, until the pan is nearly dry, about 3 minutes. The wine drops the pan's temperature and adds acidity.", "WHY wine first. Alcohol carries flavour better than water, and its acidity balances the richness of the final dish.", null],
+      ["Add the saffron stock", "Give the reserved starchy stock a vigorous stir to redistribute any settled starch. Pour all but 240ml of the stock over the rice. Add the saffron threads and a large pinch of salt. Increase heat to high and bring to a simmer. Stir once to ensure no grains cling above the liquid. Cover the pan and reduce heat to the lowest possible setting.", "WHY saffron blooms in hot liquid. The heat extracts saffron's colour and flavour compounds, infusing the entire dish with its signature aroma.", 30],
+      ["Simmer gently", "Cook the rice covered and undisturbed for 10 minutes. Uncover, stir once, and shake the pan gently to redistribute the rice evenly. Cover again and continue cooking until the liquid is mostly absorbed and the rice is tender with just a faint bite at the centre, about 5 minutes longer.", "WHY minimal stirring. Unlike traditional risotto, this method requires almost no stirring because we've already extracted the starch into the cooking liquid.", 600],
+      ["Finish to creaminess", "Stir the remaining 240ml of stock thoroughly to redistribute any settled starch, then stir it into the rice. Increase heat to high and add the butter. Cook, stirring and shaking the pan constantly, until the butter has melted and the risotto is thick and creamy. Add more stock or water if the risotto becomes too dry. Remove from heat, add the grated Parmigiano-Reggiano, and stir rapidly to thoroughly incorporate and emulsify. Season with salt. Serve immediately on hot plates, passing extra cheese at the table.", "WHY finish off the heat. Adding cheese to hot rice can cause proteins to clump; removing from heat prevents this and ensures a smooth, creamy sauce.", 120]
+    ],
+    "pair": [
+      ["With the risotto", "Barolo", "Piedmont, Italy · Nebbiolo", "The wine's firm tannins and notes of rose and tar cut through the risotto's richness, while its acidity balances the buttery finish"],
+      ["Starter", "Buricca", "Lombardy, Italy · cured pork belly", "Thinly sliced, its salinity and fat echo the Parmigiano and butter, setting up the richness to come"]
+    ]
+  },
+  {
+    "slug": "thai-green-curry",
+    "t": "Thai Green Curry",
+    "tier": "signature",
+    "cui": "Thai",
+    "occ": ["solo", "date"],
+    "time": "35 min",
+    "method": "Stovetop · coconut curry emulsion",
+    "diff": "Medium",
+    "blurb": "The most popular curry in Thailand: coconut milk spiked with green chillies, aromatic with basil and lime leaves.",
+    "prov": {
+      "popular_in": "Throughout Thailand, from home cooking to street food to fine dining",
+      "famous_for": "Being the most popular curry in Thailand, served with jasmine rice, rice noodles, and even roti",
+      "consists_of": "Chicken or other protein braised in coconut milk with green curry paste, seasoned with fish sauce and palm sugar, finished with Thai basil and kaffir lime leaves",
+      "name_origin": "Gaeng kiew waan (แกงเขียวหวาน) literally means 'sweet green curry' in Thai, though the dish isn't particularly sweet — the 'sweet' refers to the soft pastel green colour from fresh green chillies",
+      "why_loved": "Green curry hits every note: creamy richness from coconut, fresh heat from green chillies, salinity from fish sauce, sweetness from palm sugar, and the bright perfume of kaffir lime and Thai basil",
+      "method_detail": "Stovetop — curry paste fried in coconut milk until oil separates, then protein added with remaining coconut milk and stock, simmered until tender, finished with Thai basil"
+    },
+    "brief": {
+      "lead": "Green curry is Thailand's most loved curry for good reason: it hits every note — creamy, spicy, salty, sweet, aromatic. The key is cooking the curry paste in a portion of coconut milk until the oil separates, a traditional technique that concentrates flavour. Chicken thighs stay tender during the simmer, while Thai eggplant absorbs the sauce. Finished with torn kaffir lime leaves and fresh Thai basil, the curry should be vibrant green, fragrant, and perfectly balanced. Serve over jasmine rice for the authentic experience.",
+      "expect": [
+        ["Vibrant green colour.", "The curry paste tints the coconut milk a soft pastel green."],
+        ["Coconut oil separation.", "Cooking the paste until oil beads to the surface concentrates flavour."],
+        ["Tender chicken.", "Thighs braise gently without becoming tough or dry."],
+        ["Aromatic finish.", "Thai basil and kaffir lime leaves perfume the dish at the end."]
+      ],
+      "stats": [
+        ["35", "min", "Active"],
+        ["15", "min", "Simmer"],
+        ["2", "", "Serves 2"],
+        ["Tender", "", "Doneness"]
+      ],
+      "kit": ["Heavy-bottomed pot or wok", "Mortar and pestle (optional)", "Tongs", "Chef's knife"]
+    },
+    "ing": [
+      ["The curry base", [["linear", 420, "ml", "Full-fat coconut milk, divided"], ["linear", 240, "ml", "Unsaled chicken stock"], ["linear", 50, "g", "Green curry paste (about 3½ tbsp)"]]],
+      ["The protein & veg", [["countX", 450, "g", "Boneless skinless chicken thighs, 2.5cm pieces"], ["linear", 225, "g", "Thai eggplant, quartered (or 1 × 540g can bamboo shoots)"], ["countN", 1, "¼", "Red bell pepper, julienned"]]],
+      ["Seasoning & finish", [["linear", 30, "g", "Palm sugar, finely chopped"], ["linear", 30, "ml", "Fish sauce"], ["countN", 5, "", "Fresh kaffir lime leaves, torn"], ["linear", 15, "g", "Fresh Thai basil leaves"], ["static", "", "Jasmine rice, for serving"]]]
+    ],
+    "tl": [
+      ["T−00:00", "Prep ingredients", "Cut chicken into 2.5cm pieces. If using Thai eggplant, quarter and keep submerged in water. Julienne red bell pepper. Tear kaffir lime leaves", 300],
+      ["T+00:00", "Fry curry paste", "Bring 180ml coconut milk to a full boil in a heavy pot over medium heat. Add curry paste and fry, stirring frequently, until coconut oil starts to separate, 3-5 minutes", null],
+      ["T+05:00", "Add chicken", "Add chicken pieces and stir to coat with paste. Add remaining coconut milk, chicken stock, half the palm sugar, and half the fish sauce. Stir to combine", 60],
+      ["T+06:00", "Simmer", "Add torn kaffir lime leaves. Bring to a gentle simmer and cook for 10-15 minutes until chicken is fork-tender", 900],
+      ["T+21:00", "Add vegetables", "Add Thai eggplant (or bamboo shoots) and red bell pepper. Simmer 1 minute until eggplant can be pierced with slight resistance. Do not overcook eggplant", 60],
+      ["T+22:00", "Finish & serve", "Turn off heat. Stir in Thai basil until just wilted. Taste and adjust with more fish sauce and palm sugar. Serve over jasmine rice", 60]
+    ],
+    "steps": [
+      ["Prepare the ingredients", "Cut the chicken thighs into 2.5cm pieces. If using fresh Thai eggplant, quarter them and keep submerged in water to prevent browning until ready to use. If using canned bamboo shoots, drain and rinse well. Julienne the red bell pepper into thin strips. Tear the kaffir lime leaves into pieces, discarding the tough centre stems if desired.", "WHY prep matters. Having everything ready before you start is crucial — curry paste can burn quickly, and once you add the coconut milk, the process moves fast.", 300],
+      ["Fry the curry paste", "Bring 180ml of the coconut milk to a full boil in a heavy-bottomed pot over medium heat. Add the green curry paste and sauté, stirring frequently, until the coconut oil starts to separate from the paste and you see small beads of oil forming on the surface, 3-5 minutes. If the paste is very thick and no oil separation occurs, you can move on to the next step.", "WHY fry the paste. This traditional technique, called cha krathiam, concentrates the flavours and cooks out raw notes — the separated oil is a sign you've properly bloomed the aromatics.", null],
+      ["Add the chicken", "Add the chicken pieces to the pot and stir to coat thoroughly with the curry paste. Pour in the remaining coconut milk and chicken stock. Add half the palm sugar and half the fish sauce. Stir well to combine everything. The chicken should be submerged in the liquid.", "WHY add chicken early. Thai green curry typically cooks the meat in the sauce from the beginning, allowing it to absorb flavours as it braises gently.", 60],
+      ["Simmer gently", "Add the torn kaffir lime leaves to the pot. Bring everything to a gentle simmer, then reduce heat to maintain a slow bubble. Cook for 10-15 minutes, stirring occasionally, until the chicken is fork-tender and cooked through. The sauce should thicken slightly as it simmers.", "WHY gentle simmering. A gentle bubble prevents the coconut milk from separating too much while allowing flavours to meld and the chicken to cook evenly.", 900],
+      ["Add the vegetables", "Add the Thai eggplant quarters (or drained bamboo shoots) and julienned red bell pepper. Simmer for 1 minute, stirring continuously to push the eggplant into the sauce — if left floating on top, they'll oxidise and turn brown. Cook until the eggplant can be pierced with a fork with slight resistance. Do not overcook, or they'll disintegrate. If using bamboo shoots, they just need 1 minute to heat through.", "WHY add veg last. Thai eggplant and bell peppers cook quickly and overcooking ruins their texture. Adding them at the end preserves their structure and colour.", 60],
+      ["Finish and serve", "Turn off the heat. Add the fresh Thai basil leaves and stir just until wilted — this should take only seconds. Taste the sauce and adjust the seasoning with more fish sauce and palm sugar as needed. Serve immediately over jasmine rice, with extra fish sauce on the table for guests to adjust to their taste.", "WHY finish off the heat. Thai basil wilts instantly and loses its perfume if overcooked. Adding it off the heat preserves its vibrant green colour and fresh aroma.", 60]
+    ],
+    "pair": [
+      ["With the curry", "Jasmine rice", "Thailand · fragrant long-grain", "The floral aroma and sticky texture perfectly complement the creamy sauce, while its mild flavour lets the curry shine"],
+      ["Drink", "Thai iced tea", "Thailand · Ceylon tea with condensed milk", "Sweet, creamy, and strongly spiced with star anise — it cools the palate and complements the curry's richness"]
+    ]
+  },
+  {
+    "slug": "carnitas-tacos",
+    "t": "Carnitas Tacos Michoacán",
+    "tier": "signature",
+    "cui": "Mexican · Michoacán",
+    "occ": ["host", "date"],
+    "time": "4.5 hrs",
+    "method": "Confit · lard slow-braise",
+    "diff": "Hard",
+    "blurb": "The authentic Michoacán way: pork slow-cooked in lard until fork-tender, then crisped and tucked into warm corn tortillas.",
+    "prov": {
+      "popular_in": "Michoacán, Mexico — recognized as the true home of carnitas",
+      "famous_for": "Being the definitive Mexican pork slow-cooked in lard, closer to French confit than braise",
+      "consists_of": "Various cuts of pork slowly cooked in lard with aromatics until falling-apart tender, then crisped before serving in corn tortillas with salsa and garnishes",
+      "name_origin": "Carnitas Michoacanas — literally 'little meats' from Michoacán, the Mexican state universally recognized as the true home of this dish",
+      "why_loved": "Confit in lard creates incomparable texture — meltingly tender interior with crispy, browned edges. The variety of pork cuts yields different colours, flavours, and textures in every bite",
+      "method_detail": "Confit — pork submerged in lard and cooked at 195°F until tender, then briefly fried at high heat to crisp the exterior before serving"
+    },
+    "brief": {
+      "lead": "Real carnitas — the kind from Michoacán, birthplace of the technique — aren't braised. They're confit: pork slowly submerged in lard and cooked at 195°F until fork-tender. The lard, flavoured with orange peel, bay leaves, garlic, and onion, becomes a cooking medium rather than an ingredient. When the meat is tender, it's removed, pulled, and briefly seared in hot lard until crispy edges form. Tucked into warm corn tortillas with salsa, white onion, and coriander, this is the carnitas Mexicans know.",
+      "expect": [
+        ["Variety of textures.", "Different cuts yield crispy skin, melting fat, and tender meat in every bite."],
+        ["Lard confit.", "Slow-cooking in lard at 195°F yields meat that's falling-apart tender, never dry."],
+        ["Crispy edges.", "A quick high-heat sear before serving creates browned, crunchy exterior bits."],
+        ["Traditional garnishes.", "Corn tortillas, salsa verde, white onion, and coriander are the classic accompaniments."]
+      ],
+      "stats": [
+        ["30", "min", "Active"],
+        ["4", "hrs", "Confit"],
+        ["4", "", "Serves 4"],
+        ["Fork-tender", "", "Doneness"]
+      ],
+      "kit": ["Heavy pot or Dutch oven", "Tongs", "Slotted spoon", "Cutting board", "Chef's knife"]
+    },
+    "ing": [
+      ["The pork", [["countX", 2.3, "kg", "Mixed pork cuts (see brief): shoulder, skin, belly, ribs, hocks"], ["taper", 3, "tbsp", "Flaky sea salt"]]],
+      ["The confit medium", [["linear", 2.8, "L", "Fresh rendered pork lard"], ["countN", 3, "", "Oranges, zest only, pith removed"], ["countN", 5, "", "Bay leaves"], ["countN", 1, "", "White onion, quartered"], ["countN", 1, "", "Head of garlic, halved horizontally"]]],
+      ["For serving", [["countX", 12, "", "Small corn tortillas"], ["linear", 120, "ml", "Salsa verde or salsa de arbol"], ["countN", 1, "", "White onion, finely diced"], ["linear", 30, "g", "Fresh coriander leaves"]]]
+    ],
+    "tl": [
+      ["T−04:30", "Prep pork", "Cut pork into large chunks, leaving bone-in pieces intact. Salt generously with flaky salt. Let sit at room temperature while lard heats", 600],
+      ["T+00:00", "Heat lard", "Fill pot with lard and heat to 200°F. Add orange zest, bay leaves, onion, and garlic to infuse the fat", null],
+      ["T+00:15", "Add pork gradually", "When lard reaches 200°F, add longest-cooking cuts first (hocks, feet, if using). Wait 30 minutes before adding next tier (shoulder, ribs). Continue adding cuts in order of cooking time", null],
+      ["T+00:45", "Maintain temperature", "Keep lard at 195°F and cook gently until all pork is fork-tender, about 3-4 hours total", 14400],
+      ["T+04:45", "Remove & pull pork", "Remove pork from lard and let cool slightly. Pull meat into large chunks, slicing across the grain. Discard bones", 900],
+      ["T+05:00", "Crisp & serve", "Heat 240ml reserved lard in a large pan over high heat until smoking. Sear pork pieces in batches until crispy edges form, about 2-3 minutes per batch. Serve immediately in warm tortillas with garnishes", 720]
+    ],
+    "steps": [
+      ["Cut and salt the pork", "Cut the pork into large chunks, leaving bone-in pieces intact. Different cuts cook at different rates, so keeping them large makes timing easier. Salt all the meat generously with flaky sea salt, coating every surface. Let the pork sit at room temperature while you heat the lard — this helps it cook evenly.", "WHY salt before confit. Salting early flavours the meat throughout and helps retain moisture during the long cook.", 600],
+      ["Heat the lard with aromatics", "Fill your heavy pot with the lard and heat it to 200°F. Add the orange zest (with bitter white pith removed), bay leaves, quartered white onion, and halved garlic head to the fat. These aromatics will infuse the lard with subtle flavour as the pork cooks.", "WHY aromatics in the fat. Infusing the cooking medium distributes flavour more evenly than adding aromatics directly to the meat.", null],
+      ["Add pork gradually", "When the lard reaches 200°F, start adding the pork. Different cuts cook at different rates, so add the longest-cooking pieces first — hocks, feet, tongue (if using) — then wait 30 minutes before adding the next tier (shoulder, ribs). Continue adding cuts in order of cooking time. Even relatively quick-cooking cuts like loin will need about 1 hour total.", "WHY stagger the addition. Adding cuts at different times ensures everything finishes tender at the same moment, preventing some from drying out while others cook.", null],
+      ["Maintain gentle heat", "Maintain the lard temperature at 195°F and cook gently until all the various pork pieces are soft and tender. Normally this takes about 4 hours, but could be more with very large pieces. The pork should be falling-apart tender, offering no resistance when prodded.", "WHY low temperature. Cooking at 195°F — barely above simmering — slowly breaks down connective tissue without rendering all the fat, creating meltingly tender meat.", 14400],
+      ["Remove and pull the pork", "When the meat is starting to fall off the bone, remove it from the lard and let it cool slightly. Carefully pull the meat apart with your hands or a knife, working across the grain into large chunks. Don't shred it into strings — you want identifiable pieces. Discard bones, but keep any crispy skin bits.", "WHY pull, don't shred. Large chunks have better texture and let guests distinguish between cuts. Shredding turns everything into a uniform mash.", 900],
+      ["Crisp before serving", "For serving, heat about 240ml of the reserved lard in a large pan over high heat until smoking. Working in batches, add the pulled pork and sear until crispy edges form, about 2-3 minutes per batch. Remove with a slotted spoon and drain briefly. Serve immediately in warm corn tortillas with salsa verde, diced white onion, and fresh coriander.", "WHY crisp at the end. The quick high-heat sear creates browned, crunchy exterior bits that contrast with the meltingly tender interior.", 720]
+    ],
+    "pair": [
+      ["With the tacos", "Salsa verde", "Mexico · tomatillo and green chilli salsa", "Tomatillos' acidity and green chillies' heat cut through the rich pork, while the salsa's freshness balances the confit's heaviness"],
+      ["Drink", "Negro Modelo", "Mexico · dark lager beer", "The malt sweetness complements the pork's caramelised edges, while the beer's carbonation and slight bitterness refresh the palate between rich bites"]
+    ]
+  },
+  {
+    "slug": "mussels-white-wine-garlic",
+    "t": "Moules Marinières",
+    "tier": "signature",
+    "cui": "Belgian · French",
+    "occ": ["date"],
+    "time": "18 min",
+    "method": "Steam · shellfish rapid-cook",
+    "diff": "Easy",
+    "blurb": "The classic sailor-style mussels: steamed open in white wine with garlic, shallots, and butter — the taste of Brittany and Belgium.",
+    "prov": {
+      "popular_in": "Belgium and northern France, especially Brittany and Normandy",
+      "famous_for": "Being the quintessential Belgian mussel dish, typically served with frites",
+      "consists_of": "Fresh mussels steamed open in white wine with shallots, garlic, and butter, finished with parsley and served with crusty bread",
+      "name_origin": "Moules marinières means 'sailor-style mussels' in French, referring to the simple preparation traditionally made by sailors with their catch",
+      "why_loved": "Moules marinières capture the essence of the sea: sweet, briny mussels steamed in aromatic white wine, enriched with butter, and meant to be eaten with your hands and plenty of bread for dipping",
+      "method_detail": "Steam — mussels cooked in a tightly covered pan with white wine, shallots, garlic, and butter until they open, then finished with herbs"
+    },
+    "brief": {
+      "lead": "Moules marinières are the simplest, purest way to eat mussels: steamed open in white wine with shallots, garlic, and butter. The key is starting with live mussels — discard any that won't close when tapped. Sweat shallots and garlic in butter, add white wine, then the mussels, and cover tightly. In 5 minutes they'll steam open. Finish with more butter and chopped parsley. Serve in the cooking pot with crusty bread to mop up the aromatic juices — it's finger food at its finest.",
+      "expect": [
+        ["Aromatic steam.", "The kitchen fills with the scent of white wine, garlic, and cooking shellfish."],
+        ["Rapid cooking.", "Mussels steam open in just 5 minutes under high heat."],
+        ["Briny-sweet sauce.", "The cooking liquid is intensely flavoured — wine, garlic, butter, and mussel juices."],
+        ["Communal eating.", "Serve the mussels in the cooking pot and let guests help themselves, discarding shells as they go."]
+      ],
+      "stats": [
+        ["18", "min", "Active"],
+        ["5", "min", "Steam"],
+        ["2", "", "Serves 2"],
+        ["Open", "", "Doneness"]
+      ],
+      "kit": ["Large pot with tight-fitting lid", "Colander", "Tongs", "Crusty bread"]
+    },
+    "ing": [
+      ["The mussels", [["countX", 2, "kg", "Live mussels in the shell"]]],
+      ["The cooking liquid", [["linear", 60, "ml", "Dry white wine"], ["linear", 30, "g", "Unsalted butter, divided"], ["countN", 2, "", "Large shallots, finely minced"], ["countN", 2, "", "Garlic cloves, finely minced"]]],
+      ["The finish", [["countN", 20, "g", "Fresh parsley leaves, finely chopped"], ["static", "", "Crusty baguette or sourdough, for serving"]]]
+    ],
+    "tl": [
+      ["T−15:00", "Clean mussels", "Scrub mussels under cold running water. Pull off any beards. Discard any with cracked shells or that won't close when tapped firmly", 600],
+      ["T+00:00", "Sweat aromatics", "Melt 15g butter in a large pot over medium heat. Add shallots and cook, stirring, until softened and translucent but not browned, about 3 minutes. Add garlic and cook until fragrant, 1 minute", null],
+      ["T+04:00", "Add wine & mussels", "Add white wine and bring to a simmer. Add mussels all at once and immediately cover with tight-fitting lid. Increase heat to high", 30],
+      ["T+04:30", "Steam", "Cook mussels, covered, shaking the pot occasionally, until they have opened, 4-5 minutes. Do not overcook", 300],
+      ["T+09:30", "Finish & serve", "Remove from heat. Add remaining 15g butter and chopped parsley. Stir until butter melts. Discard any unopened mussels. Serve immediately in the cooking pot with crusty bread", 60]
+    ],
+    "steps": [
+      ["Clean and sort the mussels", "Scrub the mussels thoroughly under cold running water, using a stiff brush to remove any grit or barnacles from the shells. Pull off the fibrous 'beards' that protrude from the shells — give them a firm tug toward the hinge end. Discard any mussels with cracked shells. Tap any open mussels firmly on the counter — if they don't close within a minute, discard them. Keep only live mussels that close tightly.", "WHY check for life. Dead mussels spoil quickly and can make you sick. Live mussels close when tapped — it's their natural defence mechanism.", 600],
+      ["Sweat the aromatics", "Melt 15g of the butter in a large pot (one with a tight-fitting lid) over medium heat. Add the minced shallots and cook, stirring occasionally, until softened and translucent but not browned, about 3 minutes. Add the minced garlic and cook until fragrant, about 1 minute.", "WHY soften, don't brown. Browned shallots would dominate the delicate flavour of the mussels. We want sweetness, not caramelisation.", null],
+      ["Add wine and bring to simmer", "Pour in the white wine and bring to a simmer. Let it cook for 30 seconds to reduce slightly and cook off some of the alcohol.", "WHY reduce the wine. Brief simmering concentrates flavour and milder alcohol heat while preserving the wine's acidity, which balances the richness of the butter and mussels.", 30],
+      ["Add mussels and cover", "Add all the cleaned mussels to the pot at once and immediately cover with the tight-fitting lid. Increase the heat to high. The trapped steam will quickly build pressure and cook the mussels evenly.", "WHY add all at once. Adding mussels in batches means some will overcook while others steam open. They should all go in together to finish at the same time.", null],
+      ["Steam until opened", "Cook the mussels, covered, for 4-5 minutes. Shake the pot occasionally to redistribute the mussels. Check after 4 minutes — they should have opened. Do not overcook or they'll become tough and rubbery.", "WHY shake, don't stir. Shaking redistributes the mussels without losing the steam that builds up in the pot. Stirring would release too much heat and moisture.", 300],
+      ["Finish and serve", "Remove the pot from the heat. Add the remaining 15g butter and the chopped parsley. Stir gently until the butter has melted and coated the mussels. Discard any mussels that haven't opened — they were dead to begin with and shouldn't be eaten. Serve immediately in the cooking pot with crusty bread for dipping in the aromatic juices.", "WHY finish with butter. The final butter enriches and slightly thickens the cooking liquid, creating a luxurious sauce that clings to the mussels and bread.", 60]
+    ],
+    "pair": [
+      ["With the mussels", "Muscadet", "Loire Valley, France · Melon de Bourgogne", "High acidity and salinity complement the briny mussels, while its lean structure won't overpower the delicate shellfish"],
+      ["Starter", "Celery rémoulade", "France · celery root in mustard mayonnaise", "Crunchy, sharply dressed celery root cuts through the richness of the mussels and butter, preparing the palate for the shellfish to come"]
+    ]
+  },
+  {
+    "slug": "cacio-e-pepe",
+    "t": "Cacio e Pepe",
+    "tier": "signature",
+    "cui": "Italian · Roman",
+    "occ": ["solo", "date"],
+    "time": "15 min",
+    "method": "Stovetop · cheese emulsion",
+    "diff": "Medium",
+    "blurb": "Rome's minimalist masterpiece: spaghetti tossed with Pecorino Romano and black pepper into a creamy emulsion.",
+    "prov": {
+      "popular_in": "Rome and Lazio region, Italy",
+      "famous_for": "Being one of Rome's four classic pasta dishes, alongside carbonara, amatriciana, and gricia",
+      "consists_of": "Spaghetti tossed with Pecorino Romano cheese and black pepper in a creamy emulsion made with pasta water",
+      "name_origin": "Cacio e pepe literally means 'cheese and pepper' in Roman dialect, referring to the dish's two primary ingredients beyond pasta",
+      "why_loved": "The brilliance of cacio e pepe is how two ingredients — Pecorino Romano and black pepper — transform into something luxurious: a creamy, aromatic sauce that coats each strand of spaghetti",
+      "method_detail": "Stovetop — pepper toasted in oil, pasta cooked in minimal water, then cheese emulsified with hot pasta water to create a smooth sauce"
+    },
+    "brief": {
+      "lead": "Cacio e pepe is Rome's answer to the question: how much can you do with how little? The answer: plenty. Finely grated Pecorino Romano, toasted black pepper, and pasta water emulsify into a creamy sauce that coats each strand of spaghetti. The trick is a two-pan method: toast pepper in oil in one pan while cooking pasta in a small amount of water in another, then combine. The starch-heavy pasta water helps the cheese melt smoothly instead of clumping. The result: a silky, peppery, salty masterpiece that's greater than the sum of its parts.",
+      "expect": [
+        ["Toasted pepper aroma.", "Black pepper toasted in oil becomes sweeter and more mellow, not harsh."],
+        ["Cheese emulsion.", "Pecorino Romano and pasta water create a smooth, creamy sauce that clings to the pasta."],
+        ["Al dente spaghetti.", "Pasta retains a firm bite while being coated in sauce."],
+        ["Minimalist perfection.", "Only four ingredients — pasta, cheese, pepper, oil — but deeply flavoured."]
+      ],
+      "stats": [
+        ["15", "min", "Active"],
+        ["10", "min", "Cook pasta"],
+        ["2", "", "Serves 2"],
+        ["Al dente", "", "Doneness"]
+      ],
+      "kit": ["Two skillets (one 30cm)", "Tongs", "Microplane or fine grater", "Fork"]
+    },
+    "ing": [
+      ["The pasta", [["countX", 225, "g", "Spaghetti"], ["static", "", "Salt, for pasta water"]]],
+      ["The sauce", [["linear", 45, "ml", "Extra-virgin olive oil, divided"], ["taper", 1, "tsp", "Coarsely ground black pepper, plus more for serving"], ["linear", 30, "g", "Unsalted butter"]]],
+      ["The cheese", [["linear", 55, "g", "Pecorino Romano, very finely grated (about 1 cup), plus more for serving"]]]
+    ],
+    "tl": [
+      ["T−12:00", "Toast pepper", "Heat 45ml olive oil and pepper in a medium skillet over medium-low heat until fragrant and barely starting to sizzle, about 1 minute. Set aside to cool", 60],
+      ["T+00:00", "Cook pasta", "Place spaghetti in a large 30cm skillet and cover with water. Add a small pinch of salt. Bring to boil over high heat, prodding occasionally to prevent clumping", null],
+      ["T+08:00", "Prepare emulsion", "When pasta is al dente (1 minute less than package), transfer 45-60ml pasta water to the cooled oil/pepper skillet. Stir in butter", 60],
+      ["T+10:00", "Combine", "Using tongs, lift spaghetti directly from water to the oil/butter mixture. Add half the cheese and toss vigorously, adding more pasta water as needed", null],
+      ["T+12:00", "Finish", "Add remaining cheese and remaining 15ml oil. Stir with fork until cheese completely melts and sauce is creamy. Season with salt and more pepper. Serve immediately", 180]
+    ],
+    "steps": [
+      ["Toast the black pepper", "Heat 45ml of the olive oil and about a teaspoon of coarsely ground black pepper in a medium skillet over medium-low heat. Cook until the ingredients are fragrant and the pepper is barely starting to sizzle, about 1 minute. Remove from the heat and set aside to cool — the pan needs to be cool enough that it won't overheat the cheese when we add it later.", "WHY toast pepper in oil. Heat changes black pepper's flavour from harsh and sharp to sweet and mellow, while the oil carries its flavour more evenly through the dish.", 60],
+      ["Cook the pasta", "Place the spaghetti in a large 30cm skillet and add enough water to just cover the pasta. Season with a small pinch of salt — go light here, as both the cheese and pasta cooking water will contribute salinity. Bring to a boil over high heat, prodding the spaghetti occasionally with a fork to prevent it from clumping together.", "WHY cook in minimal water. Using less water than traditional pasta cooking concentrates the starch in the cooking liquid, which is crucial for creating a smooth cheese emulsion.", null],
+      ["Prepare the emulsion base", "When the spaghetti is al dente (typically about 1 minute less than the package instructions), transfer 2-3 tablespoons of the pasta cooking water to the skillet with the olive oil and pepper mixture. Stir in the butter. The mixture should be glossy and fragrant.", "WHY reserve pasta water. The starchy pasta water is what allows the hard Pecorino to melt into a smooth sauce rather than clumping into sticky masses.", 60],
+      ["Combine pasta and sauce", "Using tongs, lift the spaghetti directly from the water and transfer it to the oil/butter mixture. Don't drain — the water clinging to the noodles is all the liquid we need. Add half the finely grated Pecorino Romano cheese and toss vigorously. Hold your fork almost horizontally and swirl the spaghetti around to distribute the cheese evenly. Add a few more tablespoons of pasta water if the mixture seems dry.", "WHY add cheese in stages. Adding cheese in two additions prevents the proteins from clumping and ensures smooth emulsification.", null],
+      ["Finish the dish", "Add the remaining cheese and the remaining 15ml of olive oil. Stir with a fork until the cheese is completely melted and the sauce is creamy and coats each strand of spaghetti. The sauce should be loose and flowing, not clumpy. Season to taste with salt (remembering the cheese is salty) and more freshly ground black pepper. Serve immediately, passing extra grated cheese and black pepper at the table.", "WHY finish off the heat. Residual heat from the pasta melts the final cheese without risking overheating, which can cause cheese proteins to seize and clump.", 180]
+    ],
+    "pair": [
+      ["With the pasta", "Frascati", "Lazio, Italy · Malvasia di Frascati", "The wine's gentle bitterness and citrus notes complement the pepper's heat, while its crisp acidity cuts through the richness of the cheese and oil"],
+      ["Starter", "Cicoria ripassata", "Lazio, Italy · rebraised chicory", "Bitter greens sautéed with garlic and chilli provide the perfect counterpoint to the rich, salty pasta, cleansing the palate between bites"]
+    ]
+  },
+  {
+    "slug": "shakshuka-crusty-bread",
+    "t": "Shakshuka with Crusty Bread",
+    "tier": "signature",
+    "cui": "Middle Eastern · North African",
+    "occ": ["solo", "date"],
+    "time": "35 min",
+    "method": "Braise · egg poach in tomato sauce",
+    "diff": "Easy",
+    "blurb": "Eggs gently poached in a spiced tomato sauce — a North African breakfast now loved across the Middle East.",
+    "prov": {
+      "popular_in": "North Africa and the Middle East, especially Tunisia, Israel, and Egypt",
+      "famous_for": "Being a popular breakfast dish across the Middle East and North Africa, often served with pita bread",
+      "consists_of": "Eggs poached in a chunky tomato and bell pepper sauce seasoned with cumin, paprika, and coriander",
+      "name_origin": "The word shakshuka comes from Arabic for 'all mixed up' or 'shaken', referring to the dish's jumbled appearance of eggs nestled in tomato sauce",
+      "why_loved": "Shakshuka hits every note: sweet tomatoes, fragrant spices, rich runny yolks, and the satisfaction of dipping crusty bread into the sauce",
+      "method_detail": "Braise — tomatoes, peppers, onions, and spices simmered into a thick sauce, then eggs cracked into wells and poached until whites are set but yolks remain runny"
+    },
+    "brief": {
+      "lead": "Shakshuka is comfort food across North Africa and the Middle East: eggs poached in a thick, fragrant tomato sauce. The sauce starts with onions, green peppers, and garlic softened in olive oil, then seasoned with cumin, paprika, coriander, and a pinch of red pepper flakes. Fresh tomatoes (or canned in winter) simmer into a chunky sauce. You make wells in the sauce, crack in the eggs, cover, and cook until the whites are set but yolks remain gloriously runny. Serve with plenty of crusty bread for dipping — runny yolks and spicy tomato-soked bread are the whole point.",
+      "expect": [
+        ["Chunky tomato sauce.", "Fresh tomatoes break down into a thick, flavourful base punctuated with soft peppers."],
+        ["Aromatic spices.", "Cumin, paprika, and coriander bloom in the oil, perfuming the entire dish."],
+        ["Runny yolks.", "Eggs are poached to perfection — whites set, yolks liquid and rich."],
+        ["Dipping bread.", "Crusty bread or pita is essential for soaking up the spiced tomato sauce and runny yolks."]
+      ],
+      "stats": [
+        ["25", "min", "Active"],
+        ["20", "min", "Simmer"],
+        ["2", "", "Serves 2"],
+        ["Runny yolks", "", "Doneness"]
+      ],
+      "kit": ["Large cast iron skillet or heavy pan with lid", "Wooden spoon", "Ladle"]
+    },
+    "ing": [
+      ["The base", [["linear", 45, "ml", "Extra-virgin olive oil"], ["countN", 1, "", "Large yellow onion, chopped"], ["countN", 2, "", "Green bell peppers, chopped"], ["countN", 2, "", "Garlic cloves, minced"]]],
+      ["The spices", [["taper", 1, "tsp", "Ground coriander"], ["taper", 1, "tsp", "Sweet paprika"], ["taper", 0.5, "tsp", "Ground cumin"], ["taper", 0.25, "tsp", "Red pepper flakes"]]],
+      ["The tomatoes & eggs", [["countN", 6, "", "Medium tomatoes, chopped (about 900g)"], ["linear", 120, "ml", "Tomato sauce"], ["countX", 6, "", "Large eggs"], ["taper", 1, "tsp", "Flaky sea salt", "plus more"]]],
+      ["The finish", [["linear", 15, "g", "Fresh parsley leaves, chopped"], ["linear", 15, "g", "Fresh mint leaves, chopped"], ["static", "", "Crusty bread or pita, for serving"]]]
+    ],
+    "tl": [
+      ["T−25:00", "Prep ingredients", "Chop onions, peppers, garlic, and tomatoes. Have spices measured. Crack eggs into individual bowls if you're nervous about them", 300],
+      ["T+00:00", "Cook sofrito", "Heat olive oil in a large cast iron skillet. Add onions, peppers, garlic, spices, and salt. Cook, stirring, until vegetables have softened, about 5 minutes", 300],
+      ["T+05:00", "Add tomatoes", "Add chopped tomatoes and tomato sauce. Cover and simmer for about 15 minutes, then uncover and cook until sauce has thickened. Taste and adjust seasoning", 900],
+      ["T+20:00", "Make wells & add eggs", "Using the back of a spoon, make 6 indentations in the tomato mixture. Gently crack an egg into each well", 60],
+      ["T+21:00", "Poach eggs", "Reduce heat to low, cover skillet, and cook until egg whites are set but yolks are still runny, about 5-8 minutes", 480],
+      ["T+29:00", "Garnish & serve", "Uncover and add fresh parsley and mint. Add more salt or red pepper flakes if desired. Serve immediately directly from the skillet with crusty bread", 60]
+    ],
+    "steps": [
+      ["Prepare the ingredients", "Chop the onions, green peppers, garlic, and tomatoes. If you're using fresh tomatoes, they should be soft and almost overripe for best results. Measure out your spices and set them near the stove. If you're nervous about cracking eggs directly into the hot sauce, crack each one into a small bowl first — this makes it easier to add them to the wells without breaking yolks.", "WHY prep matters. Once you start cooking the sauce, everything happens quickly. Having everything ready prevents scrambling around while your sofrito burns.", 300],
+      ["Cook the sofrito", "Heat the olive oil in a large cast iron skillet (or any heavy pan with a lid) over medium heat. Add the chopped onions, green peppers, minced garlic, ground coriander, sweet paprika, ground cumin, red pepper flakes, and a teaspoon of flaky sea salt. Cook, stirring occasionally, until the vegetables have softened and are fragrant, about 5 minutes.", "WHY build flavour base. This sofrito of vegetables and spices forms the aromatic foundation of the dish. Cooking them together allows their flavours to meld and develop.", 300],
+      ["Add the tomatoes and simmer", "Add the chopped fresh tomatoes and tomato sauce to the skillet. Stir well to combine everything. Cover the skillet and let it simmer for about 15 minutes, then uncover and continue cooking for a few more minutes until the mixture has reduced and thickened into a chunky sauce. Taste and adjust the seasoning to your liking — you may want more salt or a pinch more red pepper flakes.", "WHY simmer covered first. Covering initially allows the vegetables to steam and break down evenly. Uncovering later reduces the liquid and concentrates flavours.", 900],
+      ["Create wells for the eggs", "Using the back of a wooden spoon, make 6 indentations, or 'wells,' in the tomato mixture. Space them out evenly so each egg has room. Gently crack an egg into each indentation, being careful not to break the yolks. If you pre-cracked the eggs into bowls, gently slide them from the bowls into the wells.", "WHY make wells first. Creating wells before adding the eggs helps contain them and prevents them from spreading too thinly across the sauce.", 60],
+      ["Poach the eggs", "Reduce the heat to low, cover the skillet, and cook until the egg whites are completely set but the yolks are still runny, about 5-8 minutes. The steam trapped in the covered skillet gently cooks the eggs from above while the sauce heats them from below.", "WHY cover to poach. Covering traps steam and ensures even cooking. The whites should be opaque and set, but when you jiggle the pan, the yolks should still wobble liquidly.", 480],
+      ["Garnish and serve", "Uncover the skillet and add the fresh chopped parsley and mint. The residual heat will slightly wilt the herbs, releasing their aroma. You can add more flaky sea salt or red pepper flakes if you like. Serve immediately in the skillet with warm pita, challah, or crusty bread for dipping into the sauce and runny yolks.", "WHY add herbs at the end. Fresh herbs lose their vibrant flavour and colour if cooked. Adding them raw preserves their freshness and adds a bright note to the rich sauce.", 60]
+    ],
+    "pair": [
+      ["With shakshuka", "Israeli salad", "Israel · chopped cucumber and tomato salad", "The salad's crisp vegetables and bright lemon-dressing cut through the rich eggs and spicy sauce, refreshing the palate"],
+      ["Drink", "Mint tea", "Morocco · green tea with fresh mint", "Sweet, minty tea cools the palate and complements the dish's Middle Eastern and North African origins, while sugar balances the spice heat"]
+    ]
+  },
+  {
+    "slug": "molten-chocolate-fondant",
+    "t": "Molten Chocolate Fondant",
+    "tier": "signature",
+    "cui": "French",
+    "occ": ["date"],
+    "time": "30 min",
+    "method": "Bake · individual chocolate cakes",
+    "diff": "Medium",
+    "blurb": "The ultimate dinner party dessert: individual chocolate cakes with molten centres, ready in 12 minutes from the oven.",
+    "prov": {
+      "popular_in": "France and fine dining restaurants worldwide",
+      "famous_for": "Being a showstopping dinner party dessert with a surprise molten centre",
+      "consists_of": "Individual chocolate cakes baked until just set, with a molten, gooey centre that flows when cut",
+      "name_origin": "Known as fondant au chocolat in French, this dessert became popular in French restaurants in the 1990s and has since become a dinner party classic",
+      "why_loved": "The contrast between the slightly set exterior and the molten, flowing centre creates drama and delight — it's chocolate in two textures at once",
+      "method_detail": "Bake — chocolate and butter melted, then mixed with eggs, sugar, and flour, baked at 200°C for 10-12 minutes until edges are set but centre remains molten"
+    },
+    "brief": {
+      "lead": "Molten chocolate fondant is the dessert that makes dinner guests gasp: individual chocolate cakes with a secret. The batter — melted chocolate and butter whisked with eggs, sugar, and flour — bakes at 200°C for just 10-12 minutes. The edges set into a tender cake, but the centre stays molten. When you cut into it, warm chocolate flows onto the plate. The key is precise timing — underbake and they're too liquid, overbake and they're brownies. Get it right and you've got the ultimate chocolate dessert.",
+      "expect": [
+        ["Glossy dark batter.", "Melted chocolate and butter create a smooth, glossy base."],
+        ["Rapid bake.", "200°C heat sets the edges quickly while preserving the molten centre."],
+        ["Dramatic presentation.", "Cutting into the cake releases warm molten chocolate onto the plate."],
+        ["Temperature contrast.", "Serve warm from the oven with vanilla ice cream for hot-cold contrast."]
+      ],
+      "stats": [
+        ["20", "min", "Active"],
+        ["12", "min", "Bake"],
+        ["4", "", "Serves 4"],
+        ["Molten centre", "", "Doneness"]
+      ],
+      "kit": ["6 × 150ml ramekins or dariole moulds", "Mixing bowls", "Whisk", "Saucepan"]
+    },
+    "ing": [
+      ["For the moulds", [["linear", 50, "g", "Butter, melted, for brushing"], ["static", "", "Cocoa powder, for dusting"]]],
+      ["The cake", [["linear", 200, "g", "Good-quality dark chocolate (70%), chopped"], ["linear", 200, "g", "Butter, chopped"], ["linear", 200, "g", "Golden caster sugar"], ["countN", 4, "", "Large eggs"], ["countN", 4, "", "Large egg yolks"], ["linear", 200, "g", "Plain flour"]]],
+      ["To serve", [["static", "", "Caramel sauce (optional)"], ["static", "", "Vanilla ice cream or orange sorbet"]]]
+    ],
+    "tl": [
+      ["T−30:00", "Prepare moulds", "Brush 4 ramekins with melted butter using upward strokes. Chill in fridge 10 minutes. Brush again with butter, then dust with cocoa powder, tapping out excess", 600],
+      ["T−20:00", "Melt chocolate & butter", "Place chocolate and butter in a bowl over a pan of barely simmering water. Stir until melted and smooth. Leave to cool about 10 minutes", null],
+      ["T−10:00", "Whisk eggs & sugar", "In a separate bowl, whisk eggs and yolks with sugar until thick, pale, and whisk leaves a trail (use electric whisk if desired)", 300],
+      ["T−05:00", "Combine batter", "Sift flour into egg mixture, beat together. Pour melted chocolate into egg mixture in thirds, beating well between each addition until completely combined", 300],
+      ["T+00:00", "Fill & chill", "Pour batter into prepared ramekins. Chill at least 20 minutes or up to overnight (can be frozen at this point for up to 1 month)", 1200],
+      ["T+12:00", "Bake", "Heat oven to 200°C fan. Place ramekins on baking tray. Bake 10-12 minutes until tops have formed a crust and starting to come away from sides. Let sit 1 minute before turning out", 720]
+    ],
+    "steps": [
+      ["Prepare the moulds", "First get your moulds ready. Using upward strokes, heavily brush melted butter all over the inside of the pudding moulds. Place the moulds in the fridge or freezer to chill the butter. Brush more melted butter over the chilled butter, then add a good spoonful of cocoa powder into each mould. Tip the mould so the powder completely coats the butter. Tap any excess cocoa back into the jar, then repeat with the next mould.", "WHY double-coat the moulds. The double layer of butter and cocoa ensures the fondants release easily while maintaining a clean shape. The cocoa powder adds a subtle chocolate crust.", 600],
+      ["Melt chocolate and butter", "Place a bowl over a pan of barely simmering water, then slowly melt 200g good-quality dark chocolate and 200g butter, both chopped into small pieces, together. Remove the bowl from the heat and stir until smooth. Leave to cool for about 10 minutes.", "WHY melt gently. Using a double boiler prevents the chocolate from seizing or scorching, which can happen if melted over direct heat. Cooling slightly prevents the eggs from cooking when we combine them.", null],
+      ["Whisk eggs and sugar", "In a separate bowl whisk 4 eggs and 4 egg yolks together with 200g golden caster sugar until thick and pale and the whisk leaves a trail; use an electric whisk if you want. The mixture should nearly double in volume and become ribbon-like.", "WHY whisk until thick. This aerates the eggs and sugar, creating structure that will support the cake while allowing the centre to stay molten.", 300],
+      ["Combine flour and chocolate", "Sift 200g plain flour into the eggs, then beat together. Pour the melted chocolate into the egg mixture in thirds, beating well between each addition, until all the chocolate is added and the mixture is completely combined to a loose cake batter.", "WHY add chocolate in stages. Adding the warm chocolate gradually prevents it from cooking the eggs, which would cause the batter to seize and lose its aeration.", 300],
+      ["Fill and chill the moulds", "Tip the fondant batter into a jug, then evenly divide between the moulds. The fondants can now be frozen for up to a month and cooked from frozen. Chill for at least 20 minutes or up to the night before. To bake from frozen, simply carry on as stated, adding 5 minutes more to the cooking time.", "WHY chill before baking. Chilling the batter allows it to set slightly, which helps the fondants hold their shape during baking and creates a more defined molten centre.", 1200],
+      ["Bake to perfection", "Heat oven to 200°C fan. Place the fondants on a baking tray, then cook for 10-12 minutes until the tops have formed a crust and they are starting to come away from the sides of their moulds. Remove from the oven, then leave to sit for 1 minute before turning out.", "WHY look for the signs. The crust forming and edges pulling away indicate the outside is set while the centre remains molten. That 1-minute rest allows the centre to set slightly so it doesn't flow out immediately when unmoulded.", 720]
+    ],
+    "pair": [
+      ["With the fondant", "Sauternes", "Bordeaux, France · Semillon", "The wine's honeyed sweetness and apricot notes complement the dark chocolate, while its acidity cuts through the richness"],
+      ["Accompaniment", "Crème fraîche", "France · cultured cream", "Tangy, cool crème fraîche balances the molten chocolate's sweetness and richness, while its creamy texture echoes the fondant's interior"]
+    ]
+  },
+  {
+    "slug": "smash-burgers-special-sauce",
+    "t": "Smash Burgers with Special Sauce",
+    "tier": "signature",
+    "cui": "American",
+    "occ": ["solo", "date"],
+    "time": "20 min",
+    "method": "Griddle · Maillard crust maximisation",
+    "diff": "Medium",
+    "blurb": "The burger technique that changed everything: thin patties smashed onto a screaming-hot griddle for maximum crispy crust.",
+    "prov": {
+      "popular_in": "Across the United States, popularised by Shake Shack and copied nationwide",
+      "famous_for": "Creating burgers with double the crispy crust through the smashing technique",
+      "consists_of": "Thin beef patties smashed onto a hot griddle to maximise crust, stacked with cheese and served on toasted buns with special sauce",
+      "name_origin": "Smash burgers get their name from the technique of smashing balls of beef onto a hot griddle, popularised by Shake Shack in the early 2000s",
+      "why_loved": "The Maillard reaction — browning — creates incomparably flavoured crispy edges. Double thin patties mean double the crust, while a centre layer of cheese keeps things moist",
+      "method_detail": "Griddle — beef balls smashed onto hot unoiled surface, seasoned, scraped and flipped, cheese added and stacked, all in under 1 minute"
+    },
+    "brief": {
+      "lead": "Smash burgers changed the burger game by maximising the Maillard reaction — the browning that creates flavour. Form 110g beef into two balls. Heat a stainless steel pan until smoking. Add the balls and smash them hard with a spatula, creating ultra-thin patties with maximum surface contact. Season generously. After 45 seconds, scrape up the patties, flip, add cheese to one, stack the other on top. Build on a toasted bun: special sauce, shredded lettuce, sliced onions, pickles. The result: maximum crispy crust, juicy interior, gooey cheese centre. It's burger perfection.",
+      "expect": [
+        ["Screaming-hot pan.", "Preheating for 2 minutes creates the intense heat needed for rapid crust formation."],
+        ["Violent smash.", "Pressing beef balls flat creates maximum surface contact for browning."],
+        ["Scraped crust.", "A stiff spatula lifts every bit of browned flavour from the pan."],
+        ["Fast cooking.", "From hitting the pan to the bun: under 60 seconds."]
+      ],
+      "stats": [
+        ["15", "min", "Active"],
+        ["1", "min", "Cook per burger"],
+        ["2", "", "Serves 2"],
+        ["Medium", "", "Doneness"]
+      ],
+      "kit": ["Stainless steel or cast iron skillet", "Stiff metal spatula", "Bench scraper", "Tongs"]
+    },
+    "ing": [
+      ["The burgers", [["countX", 220, "g", "Freshly ground beef chuck (80/20 fat ratio), divided into 2 × 55g balls"], ["taper", 1, "tsp", "Flaky sea salt, plus more"], ["taper", 1, "tsp", "Freshly ground black pepper"]]],
+      ["The cheese", [["countX", 2, "", "Slices good melting cheese (American or cheddar)"]]],
+      ["The buns & sauce", [["countX", 2, "", "Soft hamburger rolls, buttered and toasted"], ["linear", 45, "ml", "Special sauce (mayo-ketchup-mustard mix)"]]],
+      ["Toppings", [["countN", 4, "", "Pickle slices"], ["countN", 4, "", "Thin onion slices"], ["linear", 30, "g", "Shredded lettuce"]]]
+    ],
+    "tl": [
+      ["T−05:00", "Prep", "Form beef into 55g balls. Toast buns in butter. Prepare toppings. Have sauce ready. Everything must be prepped before cooking begins", 300],
+      ["T+00:00", "Preheat pan", "Heat a large stainless steel skillet over high heat for 2 minutes until smoking hot. No oil — you want the meat to stick", null],
+      ["T+02:00", "Smash & season", "Place beef balls in pan. Smash down hard with stiff spatula, using a second spatula to apply pressure. Season generously with salt and pepper", 30],
+      ["T+02:30", "Develop crust", "Cook until patties are well browned and tops are turning pale pink/gray, about 45 seconds", 45],
+      ["T+03:15", "Scrape, flip, cheese, stack", "Using bench scraper or spatula, carefully scrape patties from pan. Flip immediately. Place cheese slice on one patty, stack second on top. Remove from pan", 15],
+      ["T+03:30", "Assemble & serve", "Place stacked patties on toasted bun with sauce, lettuce, onion, pickles. Serve immediately", 30]
+    ],
+    "steps": [
+      ["Prepare everything in advance", "Form the ground beef into 55g balls — working the meat gently to help it bind. Toast the hamburger buns in butter until golden. Prepare your toppings: shred the lettuce, slice the onions, arrange the pickles. Make the special sauce by mixing mayonnaise, ketchup, and mustard. Have everything ready at your station before you heat the pan.", "WHY mise en place matters. Smash burgers cook in under a minute. You won't have time to prep toppings while the patties cook. Everything must be ready to assemble the moment the patties come off the heat.", 300],
+      ["Preheat the pan", "Preheat a large stainless steel sauté pan or skillet over high heat for 2 minutes. Do not add oil — you want the surface to be dry and unoiled. The pan should be smoking hot, reaching 600-700°F (315-370°C).", "WHY cook on dry, unoiled surface. You want the meat to stick to the pan so maximum contact points develop browned crust. Oil would prevent this crucial contact.", null],
+      ["Smash the patties", "Place the balls of beef in the hot pan and immediately smash them down hard with a stiff metal spatula, using a second spatula to apply downward pressure. Smash the balls until they're thin discs, slightly wider than your burger buns.", "WHY smash for maximum crust. Pressing the meat flat increases surface contact with the hot pan, which maximises the Maillard reaction — the chemical reaction that creates browned flavour.", 30],
+      ["Season and develop crust", "Season the patties generously with salt and freshly ground black pepper. Allow them to cook undisturbed until they're well browned and the tops are beginning to turn pale pink or gray in spots, about 45 seconds. Do not try to move them or flip them early — they need that full 45 seconds to develop a proper crust.", "WHY don't move the patties. The meat needs continuous contact with the hot surface to develop maximum browning. Moving them interrupts the Maillard reaction.", 45],
+      ["Scrape, flip, cheese, stack", "Using a bench scraper or the back of a stiff metal spatula, carefully scrape the patties from the pan, making sure to get all the browned bits — they're pure flavour. Flip the patties immediately and place a slice of cheese on one patty. Stack the second patty directly on top of the cheese. Remove from the pan.", "WHY scrape, don't flip. Scraping lifts every bit of browned crust from the pan. Flipping would leave those flavourful bits behind. The centre layer of cheese melts from both sides, keeping the patties moist.", 15],
+      ["Assemble and serve", "Place the stacked patties on the toasted bun bottom. Add special sauce, shredded lettuce, sliced onions, and pickles. Crown with the bun top. Serve immediately. Smash burgers are best eaten hot, while the cheese is still molten and the crust is still crisp.", "WHY assemble and eat immediately. These burgers cook so quickly that they're meant to be eaten immediately. The contrast between hot crispy crust, warm melted cheese, and cool fresh toppings is fleeting — enjoy it now.", 30]
+    ],
+    "pair": [
+      ["With the burgers", "Craft IPA", "California · American IPA", "The beer's bitterness and citrus notes complement the beef's richness, while its carbonation cuts through the cheese and sauce"],
+      ["Side", "Onion rings", "American · beer-battered fried onion rings", "Crispy, salty onion rings add crunch and sweetness that balance the burger's savoury flavours, while the fried preparation echoes the crispy burger edges"]
+    ]
+  }
+]

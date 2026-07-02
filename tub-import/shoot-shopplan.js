@@ -1,0 +1,22 @@
+const puppeteer=require('puppeteer-core');
+const CHROME='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const shot=(p,n)=>p.screenshot({path:'shot-'+n+'.png'});
+const scrollEl=(p,id,y)=>p.evaluate(({id,y})=>{const e=document.getElementById(id);if(e)e.scrollTo(0,y);},{id,y});
+(async()=>{
+  const b=await puppeteer.launch({executablePath:CHROME,headless:'new',args:['--no-sandbox','--disable-gpu','--hide-scrollbars']});
+  const p=await b.newPage();
+  await p.setViewport({width:390,height:844,deviceScaleFactor:1,isMobile:true,hasTouch:true});
+  await p.goto('http://localhost:8000/tub-app.html',{waitUntil:'networkidle2'});
+  await p.waitForSelector('#grid .card',{timeout:10000});await wait(400);
+  await p.evaluate(()=>{if(window.addToList){window.addToList('steak',2);window.addToList('shakshuka-crusty-bread',2);window.addToList('denningvleis',4);window.addToList('thai-green-curry',2);}});
+  await p.evaluate(()=>{if(window.openShop)window.openShop();});
+  await wait(700); await shot(p,'shop-iso-a');
+  await scrollEl(p,'shop',500);await wait(350); await shot(p,'shop-iso-b');
+  await p.evaluate(()=>{['detail','cook','shop','plan','methods'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('open');});});
+  await wait(250);
+  await p.evaluate(()=>{if(window.openPlan)window.openPlan();});
+  await wait(700); await shot(p,'plan-iso-a');
+  await scrollEl(p,'plan',500);await wait(350); await shot(p,'plan-iso-b');
+  await b.close();console.log('iso shop/plan captured');
+})().catch(e=>console.error('FAIL',e.message));

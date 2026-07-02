@@ -1,0 +1,70 @@
+[
+ {
+  "slug": "pap",
+  "title": "Pap (Mealie Meal)",
+  "blurb": "South Africa's daily bread — maize meal porridge, from crumbly phutu to smooth slap pap, the base of every meal.",
+  "cui": "South African",
+  "time": "30 min",
+  "method": "Stovetop · simmer",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "potbrood",
+  "title": "Potbrood",
+  "blurb": "South Africa's fireside bread — a soft, golden loaf baked in a lidded cast-iron pot for a crackling crust and pillowy crumb.",
+  "cui": "South African",
+  "time": "2 hr (plus proving)",
+  "method": "Fire or oven · bake in a potjie",
+  "ings": [
+   "500 ×bread flour",
+   "10 ginstant yeast",
+   "2 tbspcaster sugar",
+   "1½ tspsalt",
+   "30 gbutter, melted, plus extra for greasing",
+   "250 mllukewarm milk",
+   "2 tbspsunflower oil, for greasing"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "roosterkoek",
+  "title": "Roosterkoek",
+  "blurb": "Braai bread at its best — yeasted dough balls cooked over hot coals, crisp outside and pillowy soft within.",
+  "cui": "South African · Afrikaans",
+  "time": "45 min (plus proving)",
+  "method": "Fire · braai",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ }
+]

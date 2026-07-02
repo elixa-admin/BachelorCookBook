@@ -1,0 +1,14 @@
+const fs=require('fs');const DIR='/Users/brandondienar/.claude/jobs/d2505485/tmp/recipes/';
+global.window={};
+['recipes-data.js','premium-batch.js','global-exotic-batch.js','compendium-batch.js'].forEach(f=>eval(fs.readFileSync(DIR+f,'utf8')));
+const W=global.window;
+const full=new Set(['steak','carbonara','salmon','roast-chicken']);
+[W.RECIPES,W.PREMIUM_BATCH,W.GLOBAL_EXOTIC_BATCH].forEach(s=>(s||[]).forEach(r=>{if(r&&r.slug&&r.ing&&r.steps)full.add(r.slug);}));
+const all=W.COMPENDIUM||[];
+const SEMDUP=['spaghetti-carbonara','pan-seared-steak-butter-thyme','roast-chicken-lemon-garlic-herbs','crispy-skin-salmon-brown-butter-capers','churros-chocolate','red-wine-lamb-shank'];
+const kept=all.filter(r=>!full.has(r.slug)&&!SEMDUP.includes(r.slug));
+const removed=all.filter(r=>full.has(r.slug)||SEMDUP.includes(r.slug)).map(r=>r.slug);
+fs.writeFileSync(DIR+'compendium-batch.js','window.COMPENDIUM='+JSON.stringify(kept,null,2)+';\n');
+console.log('compendium: before='+all.length+' kept='+kept.length+' removed='+removed.length);
+console.log('removed: ['+removed.join(', ')+']');
+console.log('kept slugs: '+kept.map(r=>r.slug).join(', '));

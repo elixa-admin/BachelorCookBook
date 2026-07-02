@@ -1,0 +1,361 @@
+[
+  {
+    "slug": "bunny-chow",
+    "t": "Bunny Chow",
+    "tier": "signature",
+    "cui": "South African · Durban Indian",
+    "occ": ["solo","host"],
+    "time": "1 hr",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "blurb": "Durban's iconic street food — a hollowed-out loaf of white bread filled to the brim with aromatic Durban curry.",
+    "prov": {
+      "popular_in": "Durban and across South Africa, now found worldwide",
+      "famous_for": "The soft bread soaking up spicy curry juices, eaten with the scooped-out bread",
+      "consists_of": "A quarter or half loaf of white bread hollowed out and filled with lamb, chicken or bean curry made with Durban-style spices",
+      "name_origin": "Named after the Bania merchants who sold the food, with 'Bania' corrupted to 'bunny'; emerged in 1940s Durban",
+      "why_loved": "Portable, mess-free and deeply satisfying — the ultimate South African Indian comfort food",
+      "method_detail": "Stovetop — curry made with onions, tomatoes, ginger-garlic, curry powder and garam masala, simmered 40–45 min, stuffed into hollowed bread and served immediately"
+    },
+    "brief": {
+      "lead": "Durban's most famous export and South Africa's ultimate street food — hollowed-out bread loaves filled with aromatic curry that softens the bread as it soaks up every drop of spiced gravy. The scooped-out bread becomes your edible spoon.",
+      "expect": ["Serves 2.", "Ready in 1 hour", "A complete meal in edible packaging"],
+      "stats": ["~650 kcal/serv","Medium"],
+      "kit": ["large heavy-based pot","sharp knife for hollowing bread"]
+    },
+    "ing": [
+      ["Curry base",[
+        ["linear",30,"ml","sunflower oil"],
+        ["countN",1,"","onion, finely diced"],
+        ["countN",2,"","cloves garlic, crushed"],
+        ["linear",2,"cm","fresh ginger, grated"],
+        ["taper",1,"tsp","cumin seeds"],
+        ["taper",1,"tsp","mustard seeds"],
+        ["countX",400,"g","lamb knuckles or chicken thighs, bone-in, cut into pieces"]
+      ]],
+      ["Spices & liquid",[
+        ["taper",2,"tbsp","mild curry powder"],
+        ["taper",1,"tsp","turmeric"],
+        ["taper",0.5,"tsp","chilli powder (optional for heat)"],
+        ["taper",1,"tsp","garam masala"],
+        ["countN",2,"","large potatoes, cut into 3cm chunks"],
+        ["countN",2,"","large tomatoes, diced"],
+        ["linear",200,"ml","water"],
+        ["linear",15,"ml","lemon juice"]
+      ]],
+      ["Finishing & serving",[
+        ["taper",1.5,"tsp","salt"],
+        ["taper",0.5,"tsp","black pepper"],
+        ["countX",30,"g","fresh coriander, chopped"],
+        ["countN",1,"","large white bread loaf (quartered or halved)"]
+      ]]
+    ],
+    "tl": [
+      ["T−60:00","Hollow the bread","Cut bread loaf in half or quarters, scoop out centre leaving thick walls and base",1800],
+      ["T−45:00","Start the curry base","Heat oil, fry cumin and mustard seeds until they pop, then fry onions until golden",300],
+      ["T−40:00","Add aromatics and meat","Add ginger-garlic, fry 1 minute, add meat and brown on all sides",480],
+      ["T−32:00","Bloom spices and simmer","Add curry powder, turmeric, chilli powder, coat meat, add tomatoes, potatoes, water, salt, pepper, bring to boil then simmer 35 minutes covered",2100],
+      ["T−00:00","Finish and serve","Stir in garam masala, lemon juice, coriander, spoon curry into hollowed bread and serve immediately",240]
+    ],
+    "steps": [
+      ["Prepare the bread vessels","Using a sharp knife, cut the white bread loaf in half for two substantial servings or into quarters for lighter ones. Carefully hollow out the centre of each, leaving thick walls and a sturdy base — this bread will become your edible bowl. Keep the scooped-out bread to dip in the curry later.","Creating a sturdy vessel prevents sogginess and ensures structural integrity when filled with hot curry.",120],
+      ["Bloom the spices","Heat the sunflower oil in a large heavy-based pot over medium heat. Add the cumin and mustard seeds and fry for 30–60 seconds until they pop and become fragrant. Add the diced onion and fry for 8–10 minutes until golden brown and softened. Add the crushed garlic and grated ginger, frying for 1 minute until fragrant but not browned.","Blooming whole spices in hot oil releases their essential oils, creating the aromatic foundation that defines Durban curry.",540],
+      ["Brown the meat","Increase the heat to medium-high, add the meat pieces to the pot and brown on all sides for 4–5 minutes. This develops colour and flavour through the Maillard reaction. Once browned, reduce heat to medium.","Browning meat creates depth of flavour and seals in juices before the slow simmer.",300],
+      ["Build the curry","Sprinkle the curry powder, turmeric and chilli powder (if using) over the meat and stir for 1 minute to coat and toast the spices, releasing their aromatics. Add the diced tomatoes and potato chunks, stirring to combine. Pour in 200ml water and add 1 tsp salt and ¼ tsp black pepper. Bring to a boil, then reduce heat to low, cover with a lid and simmer for 30–35 minutes until meat is tender and potatoes are cooked through, stirring occasionally.","Simmering allows flavours to meld and develop, while the gentle heat ensures meat becomes tender without drying out.",2100],
+      ["Finish and assemble","Remove the lid, stir in the garam masala and simmer for 2 minutes until the sauce thickens slightly. Stir in the lemon juice and most of the fresh coriander, reserving some for garnish. Taste and adjust salt and pepper if needed. Spoon the hot curry generously into the hollowed bread loaves, filling them to the brim. Garnish with reserved coriander and serve immediately with the scooped-out bread pieces on the side for dipping.","The acidity of lemon juice brightens the rich flavours, while garam masala adds a final aromatic layer just before serving.",180]
+    ],
+    "pair": [
+      ["Beer","Castle Lager","South Africa · Lager","The crisp, clean finish cuts through the rich curry and refreshes the palate between bites"],
+      ["Wine","Off-dry Chenin Blanc","South Africa · Stellenbosch","The slight sweetness balances the heat while the acidity complements the aromatic spices"],
+      ["Non-alcoholic","Mazawa Ginger Beer","South Africa · Fermented non-alcoholic","The fiery kick of ginger harmonises with the curry's heat and provides a refreshing contrast"]
+    ]
+  },
+  {
+    "slug": "durban-mutton-curry",
+    "t": "Durban Mutton Curry",
+    "tier": "signature",
+    "cui": "South African · Durban Indian",
+    "occ": ["host","date"],
+    "time": "1 hr 30 min",
+    "method": "Stovetop · simmer",
+    "diff": "Medium",
+    "blurb": "Durban's soul curry — tender mutton on the bone in a rich, fiery gravy redolent with curry leaves and aromatic spices.",
+    "prov": {
+      "popular_in": "Durban Indian homes and South African curry houses",
+      "famous_for": "The bold, fiery heat and generous use of curry leaves that set Durban curry apart",
+      "consists_of": "Mutton on the bone slow-cooked with onions, tomatoes, curry leaves and a spice blend of cinnamon, star anise, cloves and curry powder",
+      "name_origin": "Adapted from Indian Gujarati cuisine by indentured labourers in Durban, evolving into a distinct South African Indian style",
+      "why_loved": "The depth of flavour from bone-in meat and the addictive heat that makes you reach for more",
+      "method_detail": "Stovetop — mutton browned, spices bloomed with curry leaves, tomatoes added and simmered 1–1.5 hours until meat falls off the bone"
+    },
+    "brief": {
+      "lead": "The crown jewel of Durban's culinary heritage — mutton on the bone slow-cooked in a fiery, aromatic gravy that defines what makes Durban curry distinct. Generous curry leaves, whole spices and bone-in meat create depth of flavour that puts this in a league of its own.",
+      "expect": ["Serves 2.","Ready in 1 hour 30 minutes","Tender meat that falls off the bone with rich, fiery gravy"],
+      "stats": ["~720 kcal/serv","Medium"],
+      "kit": ["heavy-based pot with lid","mortar and pestle for spices"]
+    },
+    "ing": [
+      ["Mutton & marinade",[
+        ["countX",800,"g","mutton on the bone (neck, rib or shoulder), cut into pieces"],
+        ["linear",45,"ml","sunflower oil"],
+        ["taper",1.5,"tsp","salt"],
+        ["taper",0.5,"tsp","black pepper"]
+      ]],
+      ["Aromatics base",[
+        ["countN",2,"","large onions, finely diced"],
+        ["countN",4,"","cloves garlic, crushed"],
+        ["countN",3,"","cm fresh ginger, grated"],
+        ["countX",20,"g","fresh curry leaves"]
+      ]],
+      ["Whole spices",[
+        ["countN",2,"","cinnamon sticks (5cm each)"],
+        ["countN",2,"","star anise"],
+        ["countN",6,"","cloves"],
+        ["countN",1,"","tsp cardamom pods, lightly crushed"]
+      ]],
+      ["Powdered spices & liquid",[
+        ["taper",2,"tbsp","mild Durban curry powder"],
+        ["taper",1,"tsp","chilli powder (adjust for heat preference)"],
+        ["taper",0.5,"tsp","turmeric"],
+        ["countN",3,"","large tomatoes, diced"],
+        ["linear",250,"ml","hot water"],
+        ["linear",15,"ml","lemon juice"],
+        ["countX",25,"g","fresh coriander, chopped"]
+      ]]
+    ],
+    "tl": [
+      ["T−90:00","Marinate the mutton","Rub mutton with 15ml oil, 1 tsp salt and ¼ tsp pepper, set aside for 30 minutes to penetrate",1800],
+      ["T−60:00","Brown the mutton","Heat remaining oil, brown mutton in batches for 3–4 minutes per batch until golden on all sides, set aside",720],
+      ["T−48:00","Build the base","In the same pot, fry onions until golden, add ginger-garlic and fry 1 minute, add whole spices and curry leaves, fry until fragrant",360],
+      ["T−42:00","Add spices and simmer","Add curry powder, turmeric, chilli powder, stir to coat, return mutton with accumulated juices, add tomatoes, stir, add hot water and remaining salt, bring to boil, cover and simmer on low 1 hour until tender",3600],
+      ["T−00:00","Finish and serve","Stir in lemon juice, garnish with coriander, check seasoning, serve hot with rice or roti",180]
+    ],
+    "steps": [
+      ["Marinate the mutton","In a bowl, rub the mutton pieces with 15ml sunflower oil, 1 tsp salt and ¼ tsp black pepper. Set aside for 30 minutes at room temperature. This simple seasoning penetrates the meat, enhancing flavour and creating a better sear.","Marinating meat before cooking enhances flavour penetration and creates a more seasoned finished dish.",1800],
+      ["Brown the mutton","Heat the remaining 30ml sunflower oil in a heavy-based pot over medium-high heat. Brown the mutton in batches for 3–4 minutes per batch until golden on all sides. Don't overcrowd the pot — this causes steaming instead of searing. Set browned meat aside on a plate.","The Maillard reaction during browning creates deep, savoury flavour compounds that form the foundation of the curry.",720],
+      ["Build the aromatic base","Reduce heat to medium. In the same pot, fry the onions for 8–10 minutes until golden brown and softened. Add the crushed garlic and grated ginger, frying for 1 minute until fragrant. Add the cinnamon sticks, star anise, cloves, cardamom pods and curry leaves, frying for 1–2 minutes until the spices release their aroma and the curry leaves become fragrant.","Blooming spices in hot oil releases their essential oils, while curry leaves need heat to unfurl their distinctive citrusy aroma.",600],
+      ["Coat and simmer","Add the curry powder, turmeric and chilli powder to the pot, stirring for 30–60 seconds to toast the spices. Return the mutton and any accumulated juices to the pot, stirring to coat the meat in the spice mixture. Add the diced tomatoes and stir. Pour in 250ml hot water along with the remaining ½ tsp salt and ¼ tsp black pepper. Bring to a boil, then reduce heat to low, cover with a lid and simmer for 1 hour until the meat is tender and falling off the bone. Check occasionally and add a splash more water if needed.","Slow simmering allows collagen to break down into gelatin, creating tender meat and a rich, body-building sauce.",3600],
+      ["Finish and serve","Remove the lid and simmer for 2–3 minutes to reduce slightly if needed. Stir in the lemon juice and half the fresh coriander. Taste and adjust seasoning with more salt or pepper if needed. Serve hot, garnished with remaining coriander, accompanied by rice, roti or sopped up with fresh bread.","Lemon juice provides essential acidity that brightens and balances the rich, fatty mutton.",180]
+    ],
+    "pair": [
+      ["Wine","Buttery Chardonnay","South Africa · Stellenbosch","The buttery texture and oak ageing stand up to the rich mutton while the acidity cuts through the fat"],
+      ["Beer","Black Label Lager","South Africa · Lager","The robust malt backbone and crisp finish complement the fiery spices and rich meat"],
+      ["Wine","Pinotage","South Africa · Stellenbosch","The earthy, smoky notes harmonise with the bold spices and the slight sweetness balances the heat"]
+    ]
+  },
+  {
+    "slug": "boerewors",
+    "t": "Boerewors",
+    "tier": "signature",
+    "cui": "South African · Afrikaans",
+    "occ": ["host","solo"],
+    "time": "45 min (plus marinating)",
+    "method": "Fire · braai or stovetop · pan-fry",
+    "diff": "Easy",
+    "blurb": "South Africa's national sausage — coarse beef sausage spiced with toasted coriander, grilled to smoky perfection over the coals.",
+    "prov": {
+      "popular_in": "Every South African braai, supermarket and butchery",
+      "famous_for": "The coarse texture and signature toasted coriander flavour that define authentic boerewors",
+      "consists_of": "coarsely minced beef and pork fat (or beef only) spiced with roasted coriander seeds, black pepper, nutmeg, cloves and allspice",
+      "name_origin": "Afrikaans for 'farmer's sausage' ('boer' = farmer, 'wors' = sausage), developed by Voortrekker farmers",
+      "why_loved": "The satisfaction of a wors roll at a braai — smoky, juicy and spiced just right",
+      "method_detail": "Fire/stovetop — formed into continuous ropes, grilled over coals or pan-fried 10–12 min, turning frequently until browned and cooked through"
+    },
+    "brief": {
+      "lead": "The farmer's sausage that built a nation — coarsely minced beef spiced with toasted coriander, nutmeg and a hint of cloves. The coarse texture and distinctive spice blend make this unlike any other sausage in the world. Best grilled over hot coals until smoky and juicy, then served in a roll with mustard and tomato relish.",
+      "expect": ["Serves 2.","Ready in 45 minutes (plus marinating)","Classic braai central"],
+      "stats": ["~480 kcal/serv","Easy"],
+      "kit": ["braai grid or heavy-based frying pan","meat thermometer"]
+    },
+    "ing": [
+      ["Meat mixture",[
+        ["countX",600,"g","beef mince, coarse minced"],
+        ["countX",200,"g","pork fat or beef fat, cubed and frozen"],
+        ["linear",30,"ml","vinegar (brown vinegar or white vinegar)"],
+        ["linear",30,"ml","ice-cold water"]
+      ]],
+      ["Whole spices",[
+        ["countX",15,"g","coriander seeds, toasted"],
+        ["taper",1,"tsp","black peppercorns, crushed"],
+        ["taper",0.25,"tsp","cloves"],
+        ["taper",0.25,"tsp","allspice berries"]
+      ]],
+      ["Ground spices & seasoning",[
+        ["taper",1,"tsp","salt"],
+        ["taper",0.5,"tsp","ground coriander"],
+        ["taper",0.25,"tsp","nutmeg"],
+        ["taper",0.25,"tsp","ground cinnamon"],
+        ["taper",0.25,"tsp","ginger powder"]
+      ]],
+      ["Serving",[
+        ["countN",2,"","bread rolls, halved"],
+        ["linear",30,"ml","mustard (English or mustard sauce)"],
+        ["linear",45,"ml","tomato relish or chakalaka"]
+      ]]
+    ],
+    "tl": [
+      ["T−45:00","Toast and crush spices","Toast coriander seeds in dry pan until fragrant, cool, crush with peppercorns, cloves and allspice",300],
+      ["T−40:00","Mix the meat","Combine beef mince and fat cubes, mix with spices, vinegar, water, all ground spices and salt, knead until sticky and well-combined, refrigerate 30 minutes",1800],
+      ["T−10:00","Shape the wors","Form into continuous ropes, winding onto your thumb and index finger to create the classic coil shape, or coil into large circles",300],
+      ["T−00:00","Grill and serve","Braai over hot coals or pan-fry 10–12 minutes, turning frequently, until browned and cooked through (72°C internal), serve in rolls with mustard and relish",720]
+    ],
+    "steps": [
+      ["Prepare the spices","Toast the coriander seeds in a dry pan over medium heat for 2–3 minutes, shaking frequently, until fragrant and slightly darkened. Cool completely. Crush the toasted coriander seeds with the black peppercorns, cloves and allspice berries using a mortar and pestle or spice grinder until coarsely ground. Some texture is desirable.","Toasting spices releases their essential oils, intensifying flavour. The coarse texture adds character to the finished wors.",300],
+      ["Mix the meat","In a large bowl, combine the beef mince and fat cubes. Add the toasted crushed spices, ground coriander, nutmeg, cinnamon, ginger, salt, vinegar and ice-cold water. Mix thoroughly with your hands, kneading the mixture for 4–5 minutes until it becomes sticky and well-combined. The gluten development helps bind the sausage. Cover and refrigerate for 30 minutes to allow flavours to meld and the mixture to firm up.","Proper mixing and kneading develops protein structure for better texture, while chilling firms the fat for easier stuffing.",1800],
+      ["Shape the boerewors","Remove the mixture from the fridge. Wet your hands lightly. Take portions of the meat mixture and form into continuous ropes, approximately 2–3cm thick. You can either shape them into large coils (the classic presentation) or form them into straight lengths. If using casings, stuff the mixture into sausage casings and link at intervals. For skinless wors, simply shape the ropes by hand. The key is achieving an even thickness throughout.","Even thickness ensures uniform cooking. The classic coil shape allows for easy turning on the braai.",300],
+      ["Grill to perfection","Prepare a braai with medium-hot coals or heat a heavy-based frying pan over medium heat. Brush the boerewors lightly with oil if desired. Grill for 10–12 minutes, turning frequently to brown evenly on all sides. The wors is done when it's browned all over and reaches an internal temperature of 72°C when tested with a meat thermometer. Avoid piercing the wors with a fork — this causes juices to escape.","Frequent turning ensures even cooking and prevents drying. The high internal temperature ensures food safety.",720],
+      ["Serve and enjoy","Remove the boerewors from the heat and let rest for 2–3 minutes. Meanwhile, lightly toast the halved bread rolls on the braai grid or in a pan. Place a length or coil of wors in each roll. Serve with mustard on one side of the roll and tomato relish or chakalaka on the other. The contrast of the smoky, spiced wors with sharp mustard and sweet relish is the authentic South African experience.","Resting allows juices to redistribute, while the condiment pairing creates the classic wors roll flavour profile.",180]
+    ],
+    "pair": [
+      ["Beer","Castle Lager","South Africa · Lager","The crisp, clean finish and light body refresh between bites without overpowering the delicate spice blend"],
+      ["Wine","Pinotage","South Africa · Stellenbosch","The earthy, smoky notes complement the coriander spice while the fruitiness balances the richness"],
+      ["Cider","Hunts Cider","South Africa · Dry cider","The crisp acidity and subtle sweetness complement the sausage while cutting through the fat"]
+    ]
+  },
+  {
+    "slug": "shisa-nyama",
+    "t": "Shisa Nyama",
+    "tier": "signature",
+    "cui": "South African · Township",
+    "occ": ["host","date"],
+    "time": "2 hr",
+    "method": "Fire · braai",
+    "diff": "Easy",
+    "blurb": "South Africa's township barbecue tradition — buy raw meat from the butchery, grill it over hot coals, and eat with music and community.",
+    "prov": {
+      "popular_in": "Township shisa nyama spots across South Africa, especially Soweto and Alexandra",
+      "famous_for": "The unique 'buy-and-braai' experience where diners choose their meat and watch it grilled",
+      "consists_of": "Mixed meats — beef, chicken, lamb, pork and boerewors — marinated and grilled over open coals, served with pap and chakalaka",
+      "name_origin": "Zulu for 'burn meat' (shisa = burn, nyama = meat), a commercial evolution of the traditional braai",
+      "why_loved": "More than a meal — a celebration of community, music, and South African culture around the fire",
+      "method_detail": "Fire — meat selected from butchery, marinated in spice blends, grilled over hot coals 15–25 min, served immediately with sides"
+    },
+    "brief": {
+      "lead": "The township braai experience that brings South Africa together — selecting raw meat from the butchery, watching it grilled over open coals, and eating with pap, chakalaka and good music. More than a meal, shisa nyama is a cultural celebration of community, fire and perfectly grilled meat.",
+      "expect": ["Serves 2.","Ready in 2 hours (mostly marinating)","Mixed meat feast"],
+      "stats": ["~680 kcal/serv","Easy"],
+      "kit": ["braai grid or tongs","mixing bowls for marinades"]
+    },
+    "ing": [
+      ["Beef",[
+        ["countX",400,"g","rump or sirloin steak, cut into 3cm cubes"],
+        ["linear",15,"ml","olive oil"],
+        ["taper",1,"tsp","garlic powder"],
+        ["taper",0.5,"tsp","black pepper"],
+        ["linear",15,"ml","lemon juice"]
+      ]],
+      ["Chicken",[
+        ["countX",400,"g","chicken thighs and drumsticks, bone-in"],
+        ["linear",20,"ml","peri-peri sauce or mild chilli sauce"],
+        ["linear",15,"ml","olive oil"],
+        ["taper",1,"tsp","paprika"],
+        ["taper",0.5,"tsp","salt"]
+      ]],
+      ["Lamb",[
+        ["countX",300,"g","lamb chops or riblets"],
+        ["linear",15,"ml","olive oil"],
+        ["taper",1,"tsp","dried rosemary or mixed herbs"],
+        ["taper",0.5,"tsp","garlic powder"],
+        ["linear",10,"ml","lemon juice"]
+      ]],
+      ["Boerewors & sides",[
+        ["countX",300,"g","boerewors"],
+        ["countN",2,"","onions, thickly sliced"],
+        ["linear",30,"ml","olive oil for brushing"]
+      ]],
+      ["Pap & chakalaka (sides)",[
+        ["countX",200,"g","mealie meal (white maize meal)"],
+        ["linear",500,"ml","water"],
+        ["taper",0.5,"tsp","salt"],
+        ["countN",1,"","can baked beans in tomato sauce"],
+        ["countX",100,"g","grated carrots and onions"],
+        ["taper",1,"tsp","mild curry powder"]
+      ]]
+    ],
+    "tl": [
+      ["T−120:00","Marinate the meats","Combine each meat with its marinade ingredients in separate bowls, coat thoroughly, refrigerate 1–2 hours",7200],
+      ["T−15:00","Prepare the fire","Build a medium-hot braai fire, let coals settle until covered in white ash, arrange grid at medium height",900],
+      ["T−00:00","Grill the meats","Start with boerewors (10–12 min), then chicken (15–20 min), lamb (8–12 min per side), beef (4–6 min per side), basting frequently with remaining marinade",1500],
+      ["T−00:00","Make pap and chakalaka","Boil water with salt, add mealie meal, stir into stiff pap, simmer 20 min; fry onions and carrots, add curry powder, baked beans, simmer 5 min",1500]
+    ],
+    "steps": [
+      ["Marinate the meats","In separate bowls, combine each type of meat with its respective marinade ingredients. For the beef cubes, coat with olive oil, garlic powder, black pepper and lemon juice. For the chicken pieces, coat with peri-peri sauce, olive oil, paprika and salt. For the lamb chops, coat with olive oil, rosemary, garlic powder and lemon juice. Massage the marinades into the meat thoroughly. Cover and refrigerate for 1–2 hours, turning occasionally. Marinating tenderises and infuses flavour, with acid (lemon juice) breaking down muscle fibres.","Marinating proteins with acid and spices enhances tenderness and flavour penetration before cooking.",7200],
+      ["Prepare the fire","Build a medium-hot braai fire with hardwood or charcoal. Let the coals burn down until covered in white ash — this indicates even heat distribution. Arrange the braai grid at medium height above the coals. You should be able to hold your hand at grid level for 4–5 seconds before it becomes uncomfortable. This medium-hot temperature ensures proper grilling without burning the exterior before the interior is done.","Proper fire management is essential — medium heat allows for thorough cooking without charring the exterior before the interior is done.",900],
+      ["Start with boerewors","Place the boerewors on the grid first, as it takes the longest to cook through. Grill for 10–12 minutes, turning frequently to brown evenly on all sides. The boerewors is done when browned all over and juices run clear. Remove and keep warm in foil.","Starting with longer-cooking items ensures everything finishes at the same time. Frequent turning prevents drying.",720],
+      ["Grill the chicken","Add the chicken pieces to the grid, skin-side down. Grill for 15–20 minutes, turning every 4–5 minutes and basting with any remaining marinade. The chicken is done when the skin is charred and crispy, and the meat reaches 74°C internally when tested with a thermometer. Remove and keep warm.","Chicken requires longer cooking to reach safe internal temperature. Basting maintains moisture and adds flavour.",1200],
+      ["Grill lamb and beef","Add the lamb chops to the grid. Grill for 8–12 minutes per side for medium doneness, or to your preference. Meanwhile, add the beef cubes. Grill for 4–6 minutes per side for medium-rare to medium. Turn frequently and baste with remaining marinade. Remove all meats when done and let rest for 5 minutes before serving. Meanwhile, grill the thickly sliced onions alongside the meat until charred and softened.","Different meats require different cooking times. Resting allows juices to redistribute for maximum tenderness.",1500]
+    ],
+    "pair": [
+      ["Beer","Castle Lager","South Africa · The shisa nyama standard","Crisp, cold and refreshing — the perfect partner for hot meat and good music at any township spot"],
+      ["Beer","Black Label","South Africa · The working man's choice","Robust and satisfying, with a slightly darker malt profile that stands up to charred meats"],
+      ["Cider","Savanna Dry","South Africa · Premium cider","The crisp apple sweetness provides refreshing contrast to spicy chakalaka and smoky meat"]
+    ]
+  },
+  {
+    "slug": "mozambican-peri-peri-chicken",
+    "t": "Mozambican Peri-Peri Chicken",
+    "tier": "premium",
+    "cui": "Mozambican · Southern African",
+    "occ": ["host","date"],
+    "time": "1 hr 30 min (plus marinating)",
+    "method": "Fire · grill or oven · roast",
+    "diff": "Medium",
+    "blurb": "Mozambique's fiery gift — chicken marinated in lemon, garlic and African bird's eye chilli, grilled to charred, spicy perfection.",
+    "prov": {
+      "popular_in": "Mozambique and across Southern Africa, exported globally via Nando's",
+      "famous_for": "The intense heat of African bird's eye chillis balanced with bright citrus and garlic",
+      "consists_of": "Whole chicken pieces marinated in a blend of African bird's eye chillis, lemon juice, garlic, olive oil and spices, grilled over hot coals",
+      "name_origin": "Peri-peri is the Swahili word for the African bird's eye chilli (piri-piri), brought to Mozambique by Portuguese traders",
+      "why_loved": "The addictive combination of flame-charred skin and spicy, tangy marinade that keeps you coming back",
+      "method_detail": "Fire/oven — chicken marinated 2–24 hours in peri-peri sauce, grilled over coals or roasted at 200°C 35–40 min, basted frequently until charred and cooked"
+    },
+    "brief": {
+      "lead": "Mozambique's fiery contribution to Southern African cuisine — chicken bathed in a marinade of African bird's eye chilli, garlic and lemon, then grilled until the skin chars and crisps. The combination of intense heat, bright citrus and smoky char creates an addictive flavour profile that has captivated the world.",
+      "expect": ["Serves 2.","Ready in 1 hour 30 minutes (plus marinating)","Fiery, flavourful and char-grilled"],
+      "stats": ["~580 kcal/serv","Medium"],
+      "kit": ["braai grid or roasting pan","blender or mortar and pestle"]
+    },
+    "ing": [
+      ["Chicken",[
+        ["countX",1.2,"kg","chicken pieces (thighs, drumsticks, breasts — bone-in, skin-on)"],
+        ["linear",15,"ml","olive oil"]
+      ]],
+      ["Peri-peri sauce",[
+        ["countX",30,"g","African bird's eye chillis (fresh or dried), stemmed"],
+        ["countN",4,"","cloves garlic, crushed"],
+        ["linear",45,"ml","lemon juice"],
+        ["linear",60,"ml","olive oil"],
+        ["taper",1,"tsp","sweet paprika"],
+        ["taper",0.5,"tsp","cumin"],
+        ["taper",0.5,"tsp","oregano"],
+        ["taper",1,"tsp","salt"],
+        ["taper",0.5,"tsp","black pepper"],
+        ["linear",10,"ml","white vinegar or lemon juice"]
+      ]],
+      ["Basting & serving",[
+        ["linear",30,"ml","butter, melted"],
+        ["countN",2,"","lemons, cut into wedges"],
+        ["countX",10,"g","fresh coriander or parsley, chopped"]
+      ]]
+    ],
+    "tl": [
+      ["T−1440:00","Make peri-peri sauce","Blend all sauce ingredients into smooth paste, adjust heat and seasoning",300],
+      ["T−120:00","Marinate the chicken","Place chicken in large bowl, pour over 2/3 sauce, coat thoroughly, refrigerate 2–24 hours (longer = more heat penetration)",7200],
+      ["T−15:00","Prepare the fire","Build medium-hot braai fire or preheat oven to 200°C, let coals settle until covered in white ash",900],
+      ["T−00:00","Grill and baste","Grill chicken 35–40 minutes over medium coals, turning and basting frequently with remaining sauce and butter, until charred and cooked through (74°C internal)",2400],
+      ["T−00:00","Rest and serve","Rest chicken 5 minutes, squeeze lemon wedges over, sprinkle with herbs, serve with potato wedges or bread",300]
+    ],
+    "steps": [
+      ["Make the peri-peri sauce","In a blender or using a mortar and pestle, combine the African bird's eye chillis, crushed garlic, lemon juice, olive oil, paprika, cumin, oregano, salt, black pepper and vinegar. Blend into a smooth, vibrant red paste. Taste and adjust heat by adding more chillis if needed, or balance with more lemon juice. This sauce will be used both for marinating and basting, so make it slightly more intense than your final preference.","Fresh chillis provide authentic peri-peri heat. The sauce serves double duty as both marinade and basting liquid.",300],
+      ["Marinate the chicken","Place the chicken pieces in a large non-reactive bowl or dish. Pour approximately two-thirds of the peri-peri sauce over the chicken, reserving the remaining sauce for basting. Rub the sauce thoroughly into the chicken, ensuring it coats all pieces evenly, including under the skin if possible. Cover and refrigerate for 2–24 hours. The longer the marinade time, the deeper the flavour and heat penetration.","Marinating allows acid and flavours to penetrate the meat, with longer time creating more intense flavour development.",7200],
+      ["Prepare the cooking method","For grilling: Build a medium-hot braai fire and let the coals burn down until covered in white ash, indicating even heat distribution. For oven roasting: Preheat oven to 200°C and prepare a roasting pan. Both methods work, but the charcoal grill imparts authentic smoky char that defines peri-peri chicken.","Charcoal grilling provides authentic flavour, but oven roasting is a reliable alternative with consistent results.",900],
+      ["Grill the chicken","Remove the chicken from the marinade, allowing excess to drip off. Place the chicken pieces on the braai grid or in the roasting pan. Grill for 35–40 minutes over medium-hot coals, or roast at 200°C for the same time. Turn the pieces every 8–10 minutes and baste generously with the reserved peri-peri sauce mixed with melted butter. Continue until the chicken is charred in spots and the skin is crispy, with an internal temperature of 74°C when tested with a thermometer.","Frequent turning ensures even cooking and prevents burning. Basting builds layers of flavour and glossy, charred glaze.",2400],
+      ["Rest and serve","Remove the chicken from the heat and let rest for 5 minutes, loosely covered with foil. This allows juices to redistribute throughout the meat for maximum tenderness. Squeeze fresh lemon wedges over the chicken and sprinkle with chopped coriander or parsley. Serve hot with roasted potato wedges, crusty bread, or rice to soak up the spicy juices.","Resting prevents juices from escaping when cutting, while fresh lemon adds brightness that balances the heat.",300]
+    ],
+    "pair": [
+      ["Wine","Crisp Sauvignon Blanc","South Africa · Coastal","The high acidity and citrus notes provide refreshing contrast to the spicy chicken while complementing the lemon in the marinade"],
+      ["Beer","Ice-cold lager","Mozambique · Laurentina or Manica","The crisp, cold refreshment tempers the heat while the malt sweetness balances the spicy acidity"],
+      ["Non-alcoholic","Lemon and ginger cordial","Southern Africa · Homemade or commercial","The ginger's heat mirrors the peri-peri while lemon provides complementary citrus brightness"]
+    ]
+  }
+]

@@ -1,0 +1,274 @@
+[
+ {
+  "slug": "mussels-white-wine-garlic",
+  "title": "Moules Marinières",
+  "blurb": "The classic sailor-style mussels: steamed open in white wine with garlic, shallots, and butter — the taste of Brittany and Belgium.",
+  "cui": "Belgian · French",
+  "time": "18 min",
+  "method": "Steam · shellfish rapid-cook",
+  "ings": [
+   "2 ×Live mussels in the shell",
+   "60 mlDry white wine",
+   "30 gUnsalted butter, divided",
+   "2Large shallots, finely minced",
+   "2Garlic cloves, finely minced",
+   "20Fresh parsley leaves, finely chopped"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "moussaka",
+  "title": "Moussaka (Greek Aubergine and Beef Casserole)",
+  "blurb": "Iconic Greek casserole with layers of aubergine, rich beef mince, and creamy béchamel topping.",
+  "cui": "Greek · Mediterranean",
+  "time": "120 min",
+  "method": "Oven · layered casserole",
+  "ings": [
+   "2 ×large aubergines (about 1 kg total)",
+   "200 mlsunflower or canola oil (for frying)",
+   "600 gbeef mince",
+   "2 ×large onions, finely chopped",
+   "4garlic, minced",
+   "400 gtinned tomatoes, chopped",
+   "2 tbsptomato purée",
+   "100 mlred wine (optional)",
+   "1ground cinnamon",
+   "1ground allspice",
+   "2 tbspdried oregano",
+   "60 mlolive oil",
+   "80 gbutter",
+   "80 gcake flour",
+   "1 litrewarm milk",
+   "2eggs, beaten",
+   "150graviera or kefalotyri cheese, grated",
+   "50 gparmesan cheese, grated"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "peri-peri-chicken-livers",
+  "title": "Peri-Peri Chicken Livers",
+  "blurb": "Flash-fried chicken livers in a garlic-peri-peri cream sauce — rich, spicy, on the table in minutes.",
+  "cui": "Portuguese · South African",
+  "time": "25 min",
+  "method": "Stovetop · fast fry",
+  "ings": [
+   "400 gchicken livers, cleaned and trimmed",
+   "½ tspsalt",
+   "½ tspblack pepper",
+   "2 tbspolive oil",
+   "4garlic, crushed",
+   "2 tbspperi-peri sauce (or chilli flakes to taste)",
+   "125 mlcream",
+   "1 tbspbutter",
+   "1 tsplemon juice",
+   "1spring onion, chopped (optional)",
+   "4crusty bread, toasted"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "pizza-margherita",
+  "title": "Pizza Margherita",
+  "blurb": "Neapolitan-style pizza at home — vibrant tomato, melting mozzarella, fresh basil, on a blistered crust.",
+  "cui": "Italian",
+  "time": "45 min",
+  "method": "Oven · high-heat bake",
+  "ings": [
+   "300 gpizza dough (store-bought is fine), at room temperature",
+   "150 gSan Marzano or good tinned plum tomatoes, crushed by hand",
+   "½ tspsalt",
+   "150 gmozzarella, torn or grated",
+   "1 tbspolive oil",
+   "1garlic clove, thinly sliced"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "potato-gnocchi",
+  "title": "Potato Gnocchi",
+  "blurb": "Store-bought gnocchi pan-seared crisp, then glossed in nutty brown butter and crispy sage.",
+  "cui": "Italian",
+  "time": "20 min",
+  "method": "Stovetop · pan-sear",
+  "ings": [
+   "500 gstore-bought potato gnocchi",
+   "80 gbutter",
+   "10fresh sage leaves",
+   "½ tspblack pepper",
+   "150 gtinned tomatoes, chopped",
+   "1garlic, crushed",
+   "½ tspdried oregano"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "risotto-milanese-saffron",
+  "title": "Risotto Milanese with Saffron",
+  "blurb": "The golden rice of Milan, transformed by saffron into one of Italy's most luxurious dishes.",
+  "cui": "Italian · Lombardy",
+  "time": "25 min",
+  "method": "Stovetop · rice starch emulsion",
+  "ings": [
+   "400 gCarnaroli or Vialone Nano rice",
+   "950 mlChicken or vegetable stock",
+   "45 mlExtra-virgin olive oil",
+   "1Small yellow onion, minced",
+   "225 mlDry white wine",
+   "2 pinchesSaffron threads",
+   "1 tspFlaky sea salt",
+   "30 gUnsalted butter",
+   "40 gParmigiano-Reggiano, finely grated"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "roast-chicken",
+  "title": "Roast Chicken, Lemon, Garlic & Herbs",
+  "blurb": "The Sunday centrepiece — golden, juicy, perfumed with herbs. The dish that says you can host.",
+  "cui": "Classic · French",
+  "time": "15 min + roast",
+  "method": "Oven · roast",
+  "ings": [
+   "1 ×whole free-range chicken, ~1.6 kg",
+   "80 gbutter, softened",
+   "1 tspflaky sea salt + black pepper",
+   "5sprigs thyme + 1 rosemary, chopped",
+   "1 ×lemon, halved",
+   "1 ×head garlic, halved",
+   "1 tbspolive oil"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "rogan-josh",
+  "title": "Rogan Josh",
+  "blurb": "Aromatic Kashmiri lamb curry with warming spices — the royal dish of the Wazwan feast.",
+  "cui": "Kashmiri · Indian",
+  "time": "2 hr 30 min",
+  "method": "Stovetop · slow braise",
+  "ings": [
+   "1 kglamb shoulder, bone-in, cut into 4cm pieces",
+   "250 gplain yoghurt",
+   "60 gginger paste",
+   "2 tbspflaky sea salt",
+   "2 tbspghee or oil",
+   "1½ tbspfennel seeds",
+   "1 tbspcumin seeds",
+   "1 tspcardamom pods, crushed",
+   "½ tspcinnamon sticks, broken",
+   "¼ tspcloves",
+   "1 tspkashmiri chilli powder (or paprika)",
+   "1saffron threads, bloomed in 2 tbsp warm water",
+   "2dried bay leaves"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "sticky-toffee-pudding",
+  "title": "Sticky Toffee Pudding",
+  "blurb": "Britain's favourite pudding — a date-sweetened sponge drenched in warm toffee sauce, served with cream or ice cream.",
+  "cui": "British",
+  "time": "1 hr",
+  "method": "Oven · bake",
+  "ings": [
+   "150 ×pitted dates, chopped",
+   "150 mlboiling water",
+   "1 tspbicarbonate of soda",
+   "100 ×soft brown sugar",
+   "60 gbutter, softened",
+   "2large eggs",
+   "150 gself-raising flour",
+   "1 tspvanilla extract",
+   "100 ×soft brown sugar",
+   "50 gbutter",
+   "150 mlfresh cream",
+   "1 tbspgolden syrup"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "tiramisu",
+  "title": "Tiramisu",
+  "blurb": "Italy's coffee classic — espresso-dipped ladyfingers with mascarpone cream, dusted with cocoa.",
+  "cui": "Italian",
+  "time": "30 min (plus chilling)",
+  "method": "No-bake · assemble",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ }
+]

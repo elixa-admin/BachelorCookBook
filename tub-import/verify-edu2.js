@@ -1,0 +1,11 @@
+const fs=require('fs'),{JSDOM,VirtualConsole}=require('jsdom');
+const errs=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errs.push(""+(e.detail&&e.detail.message||e.message)).slice(0,150));
+const dom=new JSDOM(fs.readFileSync('/Users/brandondienar/.claude/jobs/d2505485/tmp/tub-app.html','utf8'),{runScripts:'dangerously',resources:'usable',url:'file:///Users/brandondienar/.claude/jobs/d2505485/tmp/tub-app.html',virtualConsole:vc,beforeParse(w){Object.defineProperty(w,'localStorage',{value:{_d:{},getItem(k){return this._d[k]||null;},setItem(k,v){this._d[k]=''+v;},removeItem(k){},clear(){}},configurable:true});w.IntersectionObserver=class{observe(){}unobserve(){}disconnect(){}};w.ResizeObserver=class{observe(){}disconnect(){}};w.matchMedia=q=>({matches:false,media:q,addEventListener(){},removeEventListener(){}});w.scrollTo=()=>{};w.requestAnimationFrame=cb=>0;w.HTMLElement.prototype.scrollIntoView=()=>{};}});
+setTimeout(()=>{const w=dom.window;const M=w.MASTERCLASS||[];
+console.log('JS ERRORS:',errs.length+(errs.length?' | '+errs.slice(0,3).join(' | '):''));
+console.log('MASTERCLASS:',M.length,'(want 47)');
+console.log('fats masterclass present:',!!M.find(m=>m.id==='fats-and-oils'),'| herbs present:',!!M.find(m=>m.id==='herbs-spices-pairing'));
+console.log('fats domain:',w.mcDomainOf(M.find(m=>m.id==='fats-and-oils')),'(want fat) | herbs domain:',w.mcDomainOf(M.find(m=>m.id==='herbs-spices-pairing')),'(want foundations)');
+console.log('Fat & Frying lessons:',w.domainLessons('fat').length,'| Foundations lessons:',w.domainLessons('foundations').length);
+console.log('APPLIANCE_ATLAS:',(w.APPLIANCE_ATLAS||[]).length,'| HERBS families:',(w.HERBS&&HERBS.families||[]).length,'pairings:',(w.HERBS&&HERBS.pairings||[]).length);
+process.exit(0);},2500);

@@ -1,0 +1,226 @@
+[
+  {
+    "slug": "chicken-biryani",
+    "t": "Chicken Biryani",
+    "tier": "global",
+    "cui": "Indian · Mughlai",
+    "occ": ["host", "date"],
+    "time": "2 hr",
+    "method": "Stovetop · layered cook",
+    "diff": "Hard",
+    "blurb": "Indian celebration rice - layered chicken and rice with saffron, spices, and fried onions.",
+    "prov": {
+      "popular_in": "India; Muslim celebrations; wedding feast centrepiece",
+      "famous_for": "The ultimate Indian rice dish - layered aromatic rice and spiced meat",
+      "consists_of": "Layered basmati rice and spiced chicken, topped with fried onions and saffron",
+      "name_origin": "Persian biryan (fried); Mughal-era introduction to India",
+      "why_loved": "Complex aromatic depth, tender meat, fragrant rice, festive presentation",
+      "method_detail": "Stovetop - rice and chicken cooked separately, layered, dum-steamed together"
+    },
+    "brief": {
+      "lead": "A grand Indian celebration dish where fragrant basmati rice and spiced chicken are cooked separately, then layered with caramelised onions, saffron milk, and fresh herbs, and steamed together (dum) until the aromas meld into perfection.",
+      "expect": [
+        ["Marinate", "Chicken in yoghurt and spices for maximum flavour penetration"],
+        ["Par-cook", "Basmati rice to 70% - it finishes steaming with the chicken"],
+        ["Layer", "Rice, chicken, fried onions, saffron milk in heavy pot"],
+        ["Dum steam", "Tightly sealed on low heat until flavours meld"]
+      ],
+      "stats": [
+        ["120", "min", "Active"],
+        ["2", "", "Serves 2-4"],
+        ["Med-High", "", "Effort"],
+        ["6", "", "Layers"]
+      ],
+      "kit": ["Heavy pot with tight lid", "Large saucepan", "Frying pan", "Bowls for prep"]
+    },
+    "ing": [
+      ["Chicken & marinade", [
+        ["linear", 800, "g", "<b>chicken pieces</b>, bone-in, mixed cuts"],
+        ["linear", 250, "g", "yoghurt, full-fat"],
+        ["taper", 2, "tbsp", "ginger-garlic paste"],
+        ["taper", 2, "tsp", "<b>chilli powder</b>"],
+        ["taper", 1, "tsp", "<b>turmeric</b>"],
+        ["taper", 1, "tsp", "<b>garam masala</b>"],
+        ["taper", 1, "tsp", "salt"],
+        ["static", "", "lemon juice"]
+      ]],
+      ["Whole spices", [
+        ["countN", 3, "", "<b>green cardamom pods</b>"],
+        ["countN", 2, "", "<b>cloves</b>"],
+        ["countN", 1, "", "<b>cinnamon stick</b>, 5cm"],
+        ["countN", 4, "", "<b>black peppercorns"],
+        ["countN", 2, "", "<b>bay leaves"],
+        ["static", "", "star anise, optional"]
+      ]],
+      ["Rice & layering", [
+        ["linear", 400, "g", "<b>basmati rice</b>"],
+        ["linear", 150, "g", "<b>onions</b>, thinly sliced"],
+        ["linear", 80, "ml", "<b>ghee</b> or oil"],
+        ["linear", 60, "ml", "milk, warm"],
+        ["taper", 0.5, "tsp", "<b>saffron strands</b>"],
+        ["countN", 4, "", "<b>mint sprigs</b>, fresh"],
+        ["countN", 4, "", "<b>coriander sprigs</b>, fresh"],
+        ["static", "", "rose water, few drops"]
+      ]]
+    ],
+    "tl": [
+      ["T-00:00", "Prep & marinate", "Chicken in spices, onions frying, rice soaking", 0],
+      ["T-00:30", "Cook chicken", "Simmer spiced chicken until tender", 0],
+      ["T-01:00", "Par-cook rice", "Boil rice to 70% with whole spices", 0],
+      ["T-01:20", "Layer & dum", "Assemble layers, seal pot, steam on lowest heat", 0],
+      ["T-02:00", "Rest & serve", "Let flavours meld, gently mix layers", 1]
+    ],
+    "steps": [
+      ["Marinate the chicken", "Mix chicken with yoghurt, ginger-garlic paste, chilli powder, turmeric, garam masala, salt, and lemon juice. Let marinate at room temperature for 30-60 minutes.", "Yoghurt tenderises and spices penetrate deep.", null],
+      ["Fry the onions", "Heat ghee in a frying pan. Fry sliced onions slowly over medium heat until deeply golden and caramelised, about 20 minutes. Remove and drain on paper towels.", "Caramelised onions (birista) are the flavour backbone.", 1200],
+      ["Cook the chicken", "In a heavy pot, heat 2 tablespoons ghee. Add whole spices (cardamom, cloves, cinnamon, peppercorns, bay leaves) for 30 seconds until fragrant. Add marinated chicken and cook over medium-high heat for 5-7 minutes until sealed on all sides. Reduce heat, cover, and simmer for 20-25 minutes until chicken is 80% cooked.", "Building the base flavour and par-cooking the meat.", 1500],
+      ["Par-cook the rice", "While chicken simmers, soak basmati rice in cold water for 20 minutes. Drain. Boil 2 litres water with salt. Add rice and boil for 4-5 minutes until grains are 70% cooked (still slightly firm in centre). Drain thoroughly.", "Rice finishes cooking in the dum with chicken juices.", 600],
+      ["Prepare saffron milk", "Warm the milk and crush saffron strands into it. Let steep for 10 minutes until golden. Add rose water if using.", "Saffron perfume and colour the top rice layer.", 600],
+      ["Layer the biryani", "In the heavy chicken pot, spread half the chicken at the bottom. Top with half the rice. Sprinkle with some fried onions, mint, and coriander. Repeat layers: remaining chicken, remaining rice, remaining fried onions, herbs. Pour saffron milk evenly over the top.", "Layering builds flavour gradients as steam rises through.", null],
+      ["Dum steam", "Cover pot tightly with foil, then the lid (seal edges with dough if extremely particular). Place on lowest heat for 20-25 minutes. Alternatively, place in preheated 160C oven for 20 minutes.", "Dum steaming melds flavours and completes cooking.", 1500],
+      ["Rest and serve", "Remove from heat and let rest, covered, for 10 minutes. Gently mix layers with a flat spatula, serving from the bottom to preserve the saffron top. Serve with raita.", "Resting redistributes moisture; gentle mixing keeps layers intact.", 600]
+    ]
+  },
+  {
+    "slug": "red-wine-braised-short-rib",
+    "t": "Red-Wine Braised Short Rib",
+    "tier": "premium",
+    "cui": "Modern · American",
+    "occ": ["host", "date"],
+    "time": "4 hr",
+    "method": "Oven · slow braise",
+    "diff": "Medium",
+    "blurb": "Modern classic - beef short ribs slowly braised in red wine until falling apart.",
+    "prov": {
+      "popular_in": "Modern American restaurants; dinner party menus",
+      "famous_for": "The ultimate make-ahead showpiece - fork-tender with rich wine sauce",
+      "consists_of": "Beef short ribs slowly braised in red wine with aromatics until fork-tender",
+      "name_origin": "Modern American adaptation of French boeuf bourguignon technique",
+      "why_loved": "Fork-tender rich beef, deep wine sauce, impressive presentation, make-ahead friendly",
+      "method_detail": "Oven - short ribs browned, braised in red wine at 160C for 3-4 hours until tender"
+    },
+    "brief": {
+      "lead": "A luxurious make-ahead main where beef short ribs are deeply browned, then slowly braised in red wine with aromatics until the meat yields to a fork and the wine reduces to a glossy, intensely flavoured sauce.",
+      "expect": [
+        ["Sear hard", "Short ribs until deeply caramelised - this builds the flavour base"],
+        ["Braise slow", "In oven at 160C for 3+ hours until meltingly tender"],
+        ["Reduce sauce", "Until rich and glossy, coating the back of a spoon"],
+        ["Make-ahead", "Flavours improve overnight; reheat gently"]
+      ],
+      "stats": [
+        ["60", "min", "Active"],
+        ["180", "min", "Passive"],
+        ["2", "", "Serves 4-6"],
+        ["Low", "", "Effort"]
+      ],
+      "kit": ["Dutch oven or heavy braising pot", "Large frying pan", "Tongs", "Fine mesh sieve"]
+    },
+    "ing": [
+      ["Beef & sear", [
+        ["linear", 1200, "g", "<b>beef short ribs</b>, bone-in, cut into 5cm pieces"],
+        ["taper", 2, "tsp", "salt"],
+        ["taper", 1, "tsp", "<b>black pepper</b>"],
+        ["linear", 30, "ml", "oil, neutral"]
+      ]],
+      ["Aromatics", [
+        ["linear", 200, "g", "<b>onions</b>, diced"],
+        ["linear", 100, "g", "<b>carrots</b>, diced"],
+        ["linear", 100, "g", "<b>celery</b>, diced"],
+        ["countN", 4, "", "<b>garlic cloves</b>, crushed"],
+        ["linear", 60, "ml", "<b>tomato paste</b>"],
+        ["linear", 750, "ml", "<b>red wine</b>, full-bodied (Cabernet/Shiraz)"],
+        ["linear", 500, "ml", "<b>beef stock</b>"],
+        ["countN", 2, "", "<b>bay leaves"],
+        ["countN", 4, "", "<b>thyme sprigs</b>"],
+        ["countN", 2, "", "<b>rosemary sprigs</b>"]
+      ]],
+      ["Finish", [
+        ["static", "", "cornflour slurry (optional)"],
+        ["static", "", "salt and black pepper to taste"]
+      ]]
+    ],
+    "tl": [
+      ["T-00:00", "Sear beef", "Brown short ribs deeply on all sides", 0],
+      ["T-00:20", "Build base", "Sauté vegetables, add tomato paste, deglaze with wine", 0],
+      ["T-00:40", "Braise", "Cover and transfer to 160C oven for 3+ hours", 0],
+      ["T-04:00", "Finish sauce", "Strain, reduce, adjust seasoning", 0],
+      ["T-04:20", "Rest & serve", "Fat floats to top, skim and serve", 1]
+    ],
+    "steps": [
+      ["Season and prep", "Pat short ribs dry with paper towels. Season generously with salt and pepper. Let sit at room temperature for 20 minutes while you dice vegetables.", "Taking the chill off ensures even searing.", 1200],
+      ["Sear the beef", "Heat oil in a large heavy pan over high heat until smoking. Sear short ribs in batches, 2 minutes per side, until deeply browned on all sides. Don't crowd the pan. Transfer to a plate.", "Deep caramelisation = depth of flavour in the final sauce.", 1800],
+      ["Build the braising base", "Pour off excess fat, leaving 2 tablespoons in the pan. Reduce heat to medium. Add onions, carrots, celery, and garlic. Cook 8-10 minutes until softened and lightly browned. Add tomato paste and cook 2 minutes, stirring constantly, until darkened and rust-coloured.", "Tomato paste caramelisation adds sweet-savoury base notes.", 600],
+      ["Deglaze and assemble", "Pour in red wine and bring to a boil, scraping up browned bits from the pan bottom. Simmer 5 minutes until reduced by half. Add beef stock, bay leaves, thyme, and rosemary. Return short ribs to the pot along with any resting juices.", "Wine reduction concentrates flavour; herbs infuse the sauce.", 300],
+      ["Braise", "Cover with a tight-fitting lid and transfer to a 160C oven. Braise for 3-3.5 hours until meat yields easily when pierced with a fork and pulls away from the bone.", "Low, slow heat breaks down collagen into gelatinous richness.", 10800],
+      ["Finish the sauce", "Remove pot from oven. Transfer short ribs to a bowl and cover loosely. Strain the cooking liquid through a fine mesh sieve into a clean pan, pressing on solids to extract all liquid. Discard vegetables. Bring sauce to a simmer and reduce for 5-10 minutes until glossy and coating the back of a spoon. If too thin, whisk in a little cornflour slurry and simmer 1 minute. Season with salt and pepper.", "Reduction concentrates the hours of braise into a velvety sauce.", 600],
+      ["Rest and serve", "Return short ribs to the sauce. Let rest off heat for 15 minutes (or overnight in the fridge - reheat gently). The fat will rise to the surface - skim it off. Serve short ribs in glossy sauce with mashed potatoes or creamy polenta.", "Resting redistributes juices; skimming removes excess fat.", 900]
+    ]
+  },
+  {
+    "slug": "roast-leg-lamb-rosemary-garlic",
+    "t": "Roast Leg of Lamb, Rosemary & Garlic",
+    "tier": "premium",
+    "cui": "Mediterranean · Greek",
+    "occ": ["host"],
+    "time": "2 hr",
+    "method": "Oven · roast",
+    "diff": "Medium",
+    "blurb": "Easter Sunday classic - leg of lamb roasted with rosemary, garlic, and lemon.",
+    "prov": {
+      "popular_in": "Greek Easter; Mediterranean Sunday roasts",
+      "famous_for": "The festive centrepiece - crusty herb exterior, pink juicy interior",
+      "consists_of": "Whole leg of lamb studded with garlic and rosemary, roasted with lemon",
+      "name_origin": "Greek Pascha tradition; Mediterranean Easter staple",
+      "why_loved": "Crispy herb crust, pink aromatic meat, natural jus for dipping",
+      "method_detail": "Oven - lamb studded with garlic-rosemary, roasted at 200C until medium-rare"
+    },
+    "brief": {
+      "lead": "An impressive Easter classic where a whole leg of lamb is studded with garlic and rosemary, rubbed with olive oil and lemon, then roasted at high heat for a crisp, herb-flecked crust and blushing pink interior.",
+      "expect": [
+        ["Stud", "Lamb with garlic and rosemary slivers all over"],
+        ["Season", "Generously with olive oil, lemon, salt, pepper"],
+        ["Roast hot", "At 200C for 20 minutes, then reduce to 180C"],
+        ["Rest well", "Crucial for juicy medium-rare meat"]
+      ],
+      "stats": [
+        ["20", "min", "Prep"],
+        ["90", "min", "Roast"],
+        ["20", "min", "Rest"],
+        ["2-6", "", "Serves"]
+      ],
+      "kit": ["Roasting tin with rack", "Sharp knife", "Small board", "Meat thermometer (optional)"]
+    },
+    "ing": [
+      ["Lamb & crust", [
+        ["linear", 2000, "g", "<b>leg of lamb</b>, bone-in, about 2kg"],
+        ["countN", 4, "", "<b>garlic cloves</b>, cut into slivers"],
+        ["countN", 6, "", "<b>rosemary sprigs</b>, fresh"],
+        ["linear", 60, "ml", "<b>olive oil</b>"],
+        ["countN", 2, "", "<b>lemons</b>"],
+        ["taper", 2, "tbsp", "salt"],
+        ["taper", 1, "tbsp", "<b>black pepper</b>"]
+      ]],
+      ["Jus (optional)", [
+        ["linear", 200, "ml", "<b>white wine</b> or chicken stock"],
+        ["countN", 2, "", "garlic cloves, crushed"],
+        ["static", "", "fresh rosemary sprigs"]
+      ]]
+    ],
+    "tl": [
+      ["T-00:00", "Prep lamb", "Score fat, stud with garlic-rosemary, rub with oil-lemon", 0],
+      ["T-00:20", "Roast hot", "At 200C for 20 minutes to sear exterior", 0],
+      ["T-00:40", "Roast medium", "Reduce to 180C for 50-70 minutes until medium-rare", 0],
+      ["T-01:30", "Rest", "Tented loosely for 20 minutes before carving", 1],
+      ["T-01:50", "Carve & serve", "Slice against the grain, serve with jus", 0]
+    ],
+    "steps": [
+      ["Prep the lamb", "Remove lamb from fridge 1 hour before cooking. Pat dry with paper towels. Using a sharp knife, make small slits all over the lamb about 2cm deep. Insert a garlic sliver and a small sprig of rosemary into each slit. Drizzle with juice of 1 lemon and rub all over with olive oil. Season generously with salt and pepper, massaging into the meat.", "Taking the chill off ensures even cooking; slitting distributes flavour through the meat.", 3600],
+      ["Preheat oven", "Place roasting tin on the middle rack and preheat to 200C. This gets the tin hot for a good sear.", "Hot tin = crusty bottom from the start.", null],
+      ["Initial sear", "Place lamb on the rack in the hot roasting tin (fat-side up). Roast at 200C for 20 minutes until the fat is rendered and golden.", "High heat creates the crust; medium heat finishes the interior.", 1200],
+      ["Roast to medium-rare", "Reduce oven to 180C. Roast for 50-70 minutes (15-18 minutes per 500g) until internal temperature reaches 54-56C for medium-rare, or 60C for medium. Baste halfway through with pan juices. If the fat browns too quickly, cover loosely with foil.", "The carryover cooking during resting will finish it to perfection.", 3600],
+      ["Rest the lamb", "Transfer lamb to a carving board. Tent loosely with foil and rest for 20 minutes. The temperature will rise 3-4 degrees and juices will redistribute.", "Resting is non-negotiable - it's what makes the meat juicy.", 1200],
+      ["Make the jus (optional)", "While lamb rests, pour off excess fat from the roasting tin. Place tin on the stovetop over medium heat. Add white wine or stock, scraping up browned bits. Add crushed garlic and rosemary. Simmer for 5 minutes until slightly reduced. Strain if desired.", "The jus captures all the roasted flavour for serving.", 300],
+      ["Carve and serve", "Carve lamb against the grain into thin slices. Arrange on a warmed platter and drizzle with the jus. Serve with roasted potatoes, minted peas, and a crisp green salad.", "Carving against the grain ensures tenderness in every bite.", null]
+    ]
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "slug": "peppermint-crisp-tart",
+    "t": "Peppermint Crisp Tart",
+    "tier": "signature",
+    "cui": "South African",
+    "occ": ["host", "date"],
+    "time": "20 min + 6 hours chilling",
+    "method": "No-bake · assemble",
+    "diff": "Easy",
+    "blurb": "The ultimate South African fridge tart — layers of coconut biscuits, caramel condensed milk, whipped cream and crushed Peppermint Crisp.",
+    "prov": {
+      "popular_in": "Every South African celebration and household fridge",
+      "famous_for": "The nostalgic combination of Peppermint Crisp chocolate and caramel that defines South African childhoods",
+      "consists_of": "Coconut biscuits layered with whipped cream mixed with caramel condensed milk, topped with crushed Peppermint Crisp bars",
+      "name_origin": "Named after the Nestlé Peppermint Crisp chocolate bar that defines it; a mid-20th-century South African invention",
+      "why_loved": "Cool, creamy, minty and crunchy — no baking required and always a crowd-pleaser",
+      "method_detail": "No-bake — biscuits layered in a dish, whipped cream mixed with caramel condensed milk, spread over biscuits, topped with crushed Peppermint Crisp, chilled 6 hours, served cold"
+    },
+    "brief": {
+      "lead": "A beloved South African no-bake dessert that layers coconut biscuits with a creamy caramel filling and finishes with crunchy peppermint chocolate. Perfect for celebrations and easy enough for any home cook.",
+      "expect": [
+        ["Quick prep", "Assembly takes 20 minutes — no baking required"],
+        ["Make ahead", "Needs 6 hours to chill — perfect for planning ahead"],
+        ["Crowd-pleaser", "Serves 8-12 — ideal for parties and gatherings"],
+        ["Nostalgic", "The taste of South African childhood celebrations"]
+      ],
+      "stats": [
+        ["20", "min", "Active"],
+        ["8-12", "", "Serves"],
+        ["6", "hrs", "Chill"],
+        ["Easy", "", "Difficulty"]
+      ],
+      "kit": ["Square dish (20×20cm)", "Mixing bowls", "Whisk or electric beaters", "Spatula"]
+    },
+    "ing": [
+      ["Base", [["linear", 400, "g", "<b>Tennis biscuits</b> (coconut biscuits)"], ["static", "", "100 g butter, melted"]]],
+      ["Filling", [["linear", 400, "g", "<b>caramel condensed milk</b>"], ["linear", 400, "ml", "<b>whipping cream</b>"], ["taper", 1, "tsp", "<b>vanilla essence</b>"]]],
+      ["Topping", [["linear", 3, "", "<b>Peppermint Crisp chocolate bars</b>"], ["static", "", "extra Peppermint Crisp for decoration"]]]
+    ],
+    "tl": [
+      ["T-00:00", "Prepare base", "Line dish with biscuits", 0],
+      ["T-00:05", "Make filling", "Whip cream and caramel", 0],
+      ["T-00:10", "Assemble", "Layer filling over base", 0],
+      ["T-00:15", "Add topping", "Sprinkle with chocolate", 0],
+      ["T-06:00", "Chill complete", "Ready to serve", 1]
+    ],
+    "steps": [
+      ["Prepare the base", "Arrange Tennis biscuits in a single layer in the bottom of a 20×20cm dish, breaking some to fit if needed. Drizzle melted butter over biscuits.", "Butter helps the base set and adds richness.", null],
+      ["Make the filling", "Whip the cream until stiff peaks form. Fold in caramel condensed milk and vanilla essence until smooth and combined.", "The folding keeps the mixture light and fluffy.", null],
+      ["Assemble the tart", "Spread the cream-caramel mixture evenly over the biscuit base. Smooth the top with a spatula.", "Even layers ensure consistent texture throughout.", null],
+      ["Add the topping", "Crush 2 Peppermint Crisp bars and sprinkle evenly over the filling. Crush the third bar more finely for decoration.", "The crushed chocolate adds the signature minty crunch.", null],
+      ["Chill thoroughly", "Refrigerate for at least 6 hours, preferably overnight, until set.", "Chilling allows the flavours to meld and the tart to set properly.", 21600],
+      ["Serve", "Cut into squares and serve cold. Store leftovers in the fridge.", "Best served chilled for the ultimate creamy texture.", null]
+    ]
+  },
+  {
+    "slug": "hertzoggies",
+    "t": "Hertzoggies",
+    "tier": "exotic",
+    "cui": "South African · Afrikaans",
+    "occ": ["host", "date"],
+    "time": "1 hr",
+    "method": "Oven · bake",
+    "diff": "Medium",
+    "blurb": "Afrikaans tartlets — buttery pastry filled with apricot jam and topped with fluffy coconut meringue.",
+    "prov": {
+      "popular_in": "Afrikaans homes and church fêtes",
+      "famous_for": "The winning trio of buttery pastry, sweet apricot jam and coconut-sprinkled meringue",
+      "consists_of": "Shortcrust pastry shells filled with apricot jam, topped with coconut meringue and baked until golden",
+      "name_origin": "Named after J.B.M. Hertzog, a South African Prime Minister; created in the 1920s to honour him",
+      "why_loved": "Sweet, buttery and texturally perfect — the pride of Afrikaans tea-time",
+      "method_detail": "Oven — shortcrust pastry baked blind 10–12 min at 180°C, filled with apricot jam, topped with coconut meringue, baked 12–15 min until golden"
+    },
+    "brief": {
+      "lead": "A classic Afrikaans tea-time treat featuring buttery shortcrust pastry shells filled with sweet apricot jam and topped with fluffy coconut meringue. Named after a former South African Prime Minister, these tartlets are a beloved celebration of Afrikaans heritage.",
+      "expect": [
+        [" pastry work", "Making and chilling shortcrust pastry"],
+        ["Two-stage baking", "Blind bake first, then add filling"],
+        ["Traditional flavours", "Apricot jam and coconut meringue"],
+        ["Tea-time classic", "Best served with rooibos or Ceylon tea"]
+      ],
+      "stats": [
+        ["45", "min", "Active"],
+        ["12", "", "Tartlets"],
+        ["180", "°C", "Oven"],
+        ["Medium", "", "Difficulty"]
+      ],
+      "kit": ["Muffin tin", "Pastry blender or food processor", "Rolling pin", "Electric mixer"]
+    },
+    "ing": [
+      ["Pastry", [["linear", 250, "g", "<b>cake flour</b>"], ["linear", 125, "g", "<b>butter</b>, cold and cubed"], ["static", "", "pinch salt"], ["linear", 45, "ml", "<b>ice water</b>"]]],
+      ["Filling", [["linear", 200, "g", "<b>apricot jam</b>"]]],
+      ["Meringue", [["countN", 2, "", "<b>egg whites</b>"], ["linear", 200, "g", "<b>caster sugar</b>"], ["taper", 1, "tsp", "<b>vanilla essence</b>"], ["linear", 100, "g", "<b>desiccated coconut</b>"]]]
+    ],
+    "tl": [
+      ["T-00:00", "Make pastry", "Mix and chill dough", 0],
+      ["T-00:15", "Line tins", "Fill muffin tins with pastry", 0],
+      ["T-00:25", "Blind bake", "Bake pastry shells empty", 0],
+      ["T-00:35", "Fill shells", "Add apricot jam", 0],
+      ["T-00:40", "Make meringue", "Whip egg whites and sugar", 0],
+      ["T-00:45", "Top and bake", "Add meringue and finish baking", 0],
+      ["T-01:00", "Cool", "Ready to serve", 0]
+    ],
+    "steps": [
+      ["Make the pastry", "Rub cold butter into flour and salt until mixture resembles breadcrumbs. Add ice water and mix until dough just comes together. Shape into a disc, wrap and chill for 15 minutes.", "Cold butter and chilling prevent shrinkage during baking.", 900],
+      ["Prepare the tart shells", "Roll out pastry to 3mm thickness. Cut circles to fit a 12-hole muffin tin. Press pastry into tins, trimming edges. Prick bases with a fork and chill 10 minutes.", "Chilling again helps pastry hold its shape.", 600],
+      ["Blind bake", "Line pastry shells with baking paper and fill with baking beans. Bake at 180°C for 10–12 minutes until lightly golden. Remove paper and beans.", "Blind baking ensures the pastry is fully cooked.", null],
+      ["Fill with jam", "Spoon a generous teaspoon of apricot jam into each hot pastry shell. Spread slightly to cover the bottom.", "The hot pastry helps the jam settle evenly.", null],
+      ["Make the meringue", "Whisk egg whites until soft peaks form. Gradually add sugar, whisking until glossy and stiff. Fold in vanilla essence and coconut.", "Stiff peaks ensure the meringue holds its shape.", null],
+      ["Top the tartlets", "Spoon meringue over each jam-filled shell, spreading to seal edges. Sprinkle with extra coconut if desired.", "Sealing edges prevents jam from bubbling over.", null],
+      ["Bake until golden", "Return to oven at 180°C for 12–15 minutes until meringue is lightly golden and set.", "Watch carefully — coconut can brown quickly.", 900],
+      ["Cool and serve", "Cool in tin for 5 minutes, then carefully transfer to wire rack. Serve warm or at room temperature with tea.", "Cooling in the tin helps set the meringue.", 300]
+    ]
+  },
+  {
+    "slug": "lamb-tagine-apricot-almond",
+    "t": "Lamb Tagine, Apricot & Almond",
+    "tier": "exotic",
+    "cui": "Moroccan",
+    "occ": ["date", "host"],
+    "time": "2 hr",
+    "method": "Stovetop · slow-cook",
+    "diff": "Medium",
+    "blurb": "Morocco's fragrant stew — tender lamb with dried apricots, almonds, and aromatic spices.",
+    "prov": {
+      "popular_in": "Moroccan households and North African restaurants",
+      "famous_for": "The classic Moroccan tagine with lamb, dried fruit, and nuts in spiced sauce",
+      "consists_of": "Lamb shoulder slowly cooked with onions, spices (cumin, coriander, cinnamon), dried apricots, almonds",
+      "name_origin": "Tagine = both the conical cooking vessel and the stew; Moroccan Berber tradition",
+      "why_loved": "The sweet-savoury combination of tender lamb, sweet apricots, and crunchy almonds with warm spices",
+      "method_detail": "Stovetop — lamb browned, onions slowly caramelised, spices, apricots, almonds added, stock, simmered 90-120 min until tender, garnished with almonds"
+    },
+    "brief": {
+      "lead": "A classic Moroccan slow-cooked stew featuring tender lamb shoulder, sweet dried apricots, and crunchy almonds in a richly spiced sauce. The perfect balance of sweet and savoury, this tagine brings the flavours of North Africa to your table.",
+      "expect": [
+        ["Slow cooking", "2 hours of gentle simmering for meltingly tender lamb"],
+        ["Aromatic spices", "Cumin, coriander, cinnamon and saffron create depth"],
+        ["Sweet-savoury", "Apricots balance the rich lamb"],
+        ["One-pot wonder", "Everything cooks together for layered flavours"]
+      ],
+      "stats": [
+        ["30", "min", "Prep"],
+        ["90-120", "min", "Simmer"],
+        ["2-4", "", "Serves"],
+        ["Medium", "", "Difficulty"]
+      ],
+      "kit": ["Heavy-based pot or tagine", "Sharp knife", "Cutting board", "Wooden spoon"]
+    },
+    "ing": [
+      ["Meat and aromatics", [["linear", 800, "g", "<b>lamb shoulder</b>, cut into 4cm cubes"], ["countN", 2, "", "<b>onions</b>, finely chopped"], ["countN", 4, "", "<b>garlic cloves</b>, crushed"], ["static", "", "30 ml olive oil"]]],
+      ["Spices", [["taper", 2, "tsp", "<b>ground cumin</b>"], ["taper", 1, "tsp", "<b>ground coriander</b>"], ["taper", 1, "", "<b>cinnamon stick</b>"], ["taper", 0.5, "tsp", "<b>ground ginger</b>"], ["static", "", "pinch saffron threads"], ["static", "", "salt and black pepper"]]],
+      ["Fruit and nuts", [["linear", 200, "g", "<b>dried apricots</b>"], ["linear", 100, "g", "<b>blanched almonds</b>"], ["static", "", "50 g toasted almonds for garnish"]]],
+      ["Liquids", [["linear", 500, "ml", "<b>lamb or chicken stock</b>"], ["static", "", "2 tbsp honey"], ["static", "", "preserved lemon (optional)"]]]
+    ],
+    "tl": [
+      ["T-00:00", "Prep ingredients", "Cut meat and chop aromatics", 0],
+      ["T-00:10", "Brown lamb", "Sear meat in batches", 0],
+      ["T-00:20", "Caramelize onions", "Cook onions slowly until golden", 0],
+      ["T-00:35", "Add spices", "Toast spices with aromatics", 0],
+      ["T-00:40", "Combine and simmer", "Add meat, fruit, stock", 0],
+      ["T-02:00", "Finish", "Garnish and serve", 0]
+    ],
+    "steps": [
+      ["Prep the lamb", "Cut lamb shoulder into 4cm cubes, trimming excess fat. Pat dry with paper towel.", "Dry meat browns better for deeper flavour.", null],
+      ["Brown the lamb", "Heat olive oil in a heavy-based pot over medium-high heat. Season lamb with salt and pepper. Brown in batches — don't overcrowd the pan. Set aside.", "Batch browning prevents steaming and develops colour.", null],
+      ["Caramelize onions", "Reduce heat to medium. Add onions to the pot with a pinch of salt. Cook slowly for 10–12 minutes until golden and soft, scraping up the browned bits from the bottom.", "Caramelized onions provide the flavour base.", null],
+      ["Add aromatics and spices", "Add garlic, cumin, coriander, ginger, cinnamon stick and saffron. Cook for 1 minute until fragrant, stirring constantly.", "Blooming spices releases their essential oils.", 60],
+      ["Combine everything", "Return lamb to the pot. Add apricots, blanched almonds, stock and honey. Stir to combine. Bring to a simmer, then reduce heat to low.", "Honey balances the tartness of apricots.", null],
+      ["Slow cook", "Cover and simmer gently for 90–120 minutes until lamb is meltingly tender. Check occasionally and add a splash of water if needed.", "Slow cooking breaks down connective tissue.", 7200],
+      ["Finish and serve", "Remove cinnamon stick. Stir in preserved lemon if using. Taste and adjust seasoning. Sprinkle with toasted almonds. Serve with couscous or flatbread.", "Toasted almonds add essential crunch.", null]
+    ]
+  }
+]

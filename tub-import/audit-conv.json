@@ -1,0 +1,39 @@
+{
+  "findings": [
+    {
+      "slug": "malva-pudding",
+      "severity": "high",
+      "field": "consensus",
+      "problem": "Malva pudding sponge is missing bicarbonate of soda. The consensus recipe pairs vinegar with bicarbonate of soda for lift — this is the essential chemical reaction that creates the sponge's rise. Current recipe has vinegar but no bicarb.",
+      "fix": "Add 'linear 15 g bicarbonate of soda' to sponge ingredients. In step 'Mix milk and vinegar', add 'Combine milk, white vinegar and bicarbonate of soda in a jug. Let stand 1 minute until frothy — this creates the lift.' The bicarb-vinegar reaction is non-negotiable for authentic malva pudding."
+    },
+    {
+      "slug": "creme-brulee",
+      "severity": "high",
+      "field": "consensus",
+      "problem": "Crème brûlée bake time is 45-55 minutes at 180°C, which is excessive. Consensus French technique bakes at 150-160°C for 35-45 minutes until 'set but wobbly'. Longer at 180°C risks curdling and rubbery texture.",
+      "fix": "Change bake temperature to 150°C (or 160°C max). Change bake time to 35-45 minutes. Update step text: 'Bake at 150°C for 35-45 minutes until edges are set but centre still wobbles like jelly — it will firm as it chills.' Lower temperature prevents curdling and ensures silky texture."
+    },
+    {
+      "slug": "chicken-biryani",
+      "severity": "med",
+      "field": "consensus",
+      "problem": "Chicken biryani rice par-cooking step says 'boil for 4-5 minutes until 70% cooked' but doesn't specify salt in the boiling water. Consensus technique salts rice boiling water generously (like pasta) for proper seasoning.",
+      "fix": "In step 'Par-cook the rice', change 'Boil 2 litres water with salt' to 'Boil 2 litres water with 1 tbsp salt — rice must be seasoned like pasta.' Add 'Salt the water generously' to the why note. Proper seasoning is essential for each layer in biryani."
+    },
+    {
+      "slug": "peppermint-crisp-tart",
+      "severity": "med",
+      "field": "consensus",
+      "problem": "Peppermint Crisp tart instructions say 'Crush 2 Peppermint Crisp bars' then 'Crush the third bar more finely' but ingredients list only '3 Peppermint Crisp chocolate bars' without specifying how to divide them. The recipe should specify '2 bars for topping' in ingredients.",
+      "fix": "Change topping ingredients from 'linear 3 Peppermint Crisp chocolate bars' to 'linear 2 Peppermint Crisp chocolate bars (for topping)'. Add 'static 1 extra Peppermint Crisp bar (for decoration)'. Clarify in step: 'Crush both Peppermint Crisp bars and sprinkle evenly over the filling.' Consistency between ingredients and steps is critical."
+    },
+    {
+      "slug": "hertzoggies",
+      "severity": "low",
+      "field": "consensus",
+      "problem": "Hertzoggies apricot jam quantity is 200g for 12 tartlets. Consensus SA recipes use ~1 tsp per tartlet, so 12 tartlets need ~60-80g jam. 200g would overflow the shells.",
+      "fix": "Reduce apricot jam from 'linear 200 g' to 'linear 80 g' (approximately 1 heaped tsp per tartlet). Update why note: 'A generous teaspoon per shell fills without overflowing during baking.' Overfilled shells bubble over in the oven."
+    }
+  ]
+}

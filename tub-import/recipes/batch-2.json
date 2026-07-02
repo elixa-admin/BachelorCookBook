@@ -1,0 +1,747 @@
+[
+  {
+    "slug":"beef-rendang",
+    "t":"Beef Rendang",
+    "tier":"premium",
+    "cui":"Indonesian · Minang",
+    "occ":["date","host"],
+    "time":"4 hr",
+    "method":"Stovetop · slow braise",
+    "diff":"Hard",
+    "blurb":"Rich, caramelised beef slow-cooked in coconut milk until the sauce intensifies into a dark, fragrant coating.",
+    "prov":{
+      "popular_in":"West Sumatra, Indonesia; Padang restaurants worldwide",
+      "famous_for":"CNN's World's Best Foods #1 (2011, 2017); culinary icon of Minangkabau cuisine",
+      "consists_of":"Beef braised in spiced coconut milk until liquid evaporates and spices caramelize into dark coating",
+      "name_origin":"Minangkabau language; 'rendang' refers to the slow-cooking process",
+      "why_loved":"Deep complexity from slow reduction; tender beef with intense coconut-spice caramelisation",
+      "method_detail":"Stovetop — constant stirring over low heat until coconut milk reduces and caramelises"
+    },
+    "brief":{
+      "lead":"Beef rendang is Indonesia's most celebrated dish — tender chunks of beef slow-braised in coconut milk with aromatics until the sauce reduces to a dark, caramelised coating. The dish evolves through distinct stages: gulai (soupy curry), kalio (thick curry), and finally dry rendang where the liquid has nearly evaporated and the meat turns rich brown.",
+      "expect":[[
+        "Tender beef coated in dark caramelised spice paste.",
+        "The long reduction creates impossibly tender meat with concentrated flavour."
+      ],[
+        "Coconut milk reduction intensifies flavours.",
+        "Four hours of gentle cooking transforms the liquid into a rich, fragrant coating."
+      ],[
+        "Aromatic spice base with galangal, lemongrass, and kaffir lime.",
+        "Traditional Minang aromatics provide the distinctive Indonesian flavour profile."
+      ],[
+        "Served with steamed rice.",
+        "The intense, rich flavour needs plain rice to balance it."
+      ]],
+      "stats":[["240","min","Active"],["0","min","Passive"],["4","","Serves"],["160°","","Temp"]],
+      "kit":["Large heavy-based pan or wok", "Blender or food processor", "Wooden spoon", "Sharp knife"]
+    },
+    "ing":[[
+      "Marinade & Spice Base",[["linear",1000,"g","beef top round or topside, cut into 4 cm pieces"],["linear",250,"g","large red chillies, chopped"],["countX",10,"","shallots, peeled"],["countX",5,"","garlic cloves, peeled"],["linear",4,"cm","fresh galangal, peeled"],["linear",4,"cm","fresh ginger, peeled"],["taper",1,"tsp","tamarind paste"],["linear",1.5,"L","fresh thick coconut milk"],["countN",2,"","lemongrass stalks, bruised and knotted"],["countN",4,"","kaffir lime leaves"],["countN",2,"","fresh turmeric leaves (optional)"],["taper","","to taste","flaky sea salt"]]
+    ]],
+    "tl":[[
+      "T+00:00","Prepare ingredients","Blend spice paste, assemble cooking components",0
+    ],[
+      "T+00:20","Start initial braise","Combine beef with spice paste and coconut milk, bring to boil",1200
+    ],[
+      "T+02:00","Continue slow reduction","Maintain gentle simmer, stir frequently until liquid reduces",5400
+    ],[
+      "T+03:30","Final caramelisation","Continue stirring as mixture darkens and coating forms",1800
+    ],[
+      "T+04:00","Rest & serve","Allow flavours to settle before serving over steamed rice",600
+    ]],
+    "steps":[[
+      "Prepare the spice paste",
+      "Blend chillies, shallots, garlic, galangal, and ginger into a smooth paste. Bruise lemongrass stalks and knot them. Set aside.",
+      "WHY: Creating a smooth aromatic paste ensures even flavour distribution and proper caramelisation during cooking.",
+      900
+    ],[
+      "Start the braising process",
+      "In a large non-stick pan, combine beef pieces with the spice paste. Add tamarind, salt, lemongrass, kaffir lime leaves, and turmeric leaves if using. Pour in the coconut milk and mix everything together.",
+      "WHY: Combining all components at the start allows the beef to absorb flavours as the coconut milk slowly reduces.",
+      600
+    ],[
+      "Initial simmer",
+      "Stir constantly over medium heat until the mixture comes to a boil. Reduce heat to low and continue cooking, maintaining gentle simmer.",
+      "WHY: Constant stirring during the first hour prevents sticking and ensures even cooking of the beef.",
+      3600
+    ],[
+      "Slow reduction phase",
+      "Continue cooking over low heat, stirring occasionally. The coconut milk will gradually reduce, and the sauce will thicken and darken.",
+      "WHY: This lengthy reduction phase is where the complex flavours develop and intensify.",
+      7200
+    ],[
+      "Final caramelisation",
+      "Increase stirring frequency as the liquid evaporates. Continue until the beef is tender and coated in a moist, dark brown paste.",
+      "WHY: The final stage creates the signature rendang coating — caramelised spices clinging to tender beef.",
+      1800
+    ],[
+      "Rest and serve",
+      "Remove from heat and allow to rest for 10 minutes. Transfer to a serving dish and serve with steamed rice.",
+      "WHY: Resting allows flavours to settle and the coating to set slightly for better texture.",
+      600
+    ]],
+    "pair":[[
+      "With the dish","Steamed jasmine rice","Indonesia · plain white","Neutral rice balances the intense, rich flavours of rendang"
+    ],[
+      "Aperitif","Teh botol","Indonesian sweet jasmine tea","Sweet tea provides refreshing contrast to the rich, spiced beef"
+    ]]
+  },
+  {
+    "slug":"bobotie",
+    "t":"Bobotie",
+    "tier":"premium",
+    "cui":"South African · Cape Malay",
+    "occ":["host","date"],
+    "time":"1 hr 45 min",
+    "method":"Oven · bake",
+    "diff":"Medium",
+    "blurb":"Spiced beef mince baked with a golden egg custard topping — South Africa's national dish with Cape Malay heritage.",
+    "prov":{
+      "popular_in":"South Africa, especially Cape Town; national dish",
+      "famous_for":"South Africa's national dish; Cape Malay culinary heritage",
+      "consists_of":"Curried spiced beef mince baked with egg custard and bay leaves until golden",
+      "name_origin":"Derived from Indonesian 'bobotok'; brought by Cape Malay slaves in 17th century",
+      "why_loved":"Perfect balance of sweet and savoury; gentle spices with comforting textures",
+      "method_detail":"Oven bake — spiced mince topped with egg custard, baked until golden brown"
+    },
+    "brief":{
+      "lead":"Bobotie is South Africa's most famous traditional dish — gently spiced beef mince baked with a golden egg custard topping. The flavour profile balances mild curry spices with fruit sweetness, while the custard adds a silky texture that permeates the meat. Traditionally served with geelrys (yellow rice), this Cape Malay classic represents the beautiful fusion of European and Indonesian influences in South African cuisine.",
+      "expect":[[
+        "Golden-topped spiced beef with fluffy custard.",
+        "The baked custard creates a silky layer that complements the spiced meat."
+      ],[
+        "Balanced sweet and savoury flavours.",
+        "Apricot chutney and raisins provide gentle sweetness against mild curry spices."
+      ],[
+        "Tender mince with aromatic depth.",
+        "Slow-cooked onions and ginger-garlic base create rich foundation."
+      ],[
+        "Served with yellow rice.",
+        "Turmeric-stained rice is the traditional accompaniment."
+      ]],
+      "stats":[["75","min","Active"],["35","min","Passive"],["4","","Serves"],["180°","","Temp"]],
+      "kit":["Large frying pan", "Ceramic baking dish", "Whisk", "Sharp knife"]
+    },
+    "ing":[[
+      "Spiced Mince Base",[["linear",750,"g","beef mince, 15-20% fat"],["linear",250,"g","onion, finely chopped"],["linear",30,"g","garlic-ginger paste"],["linear",50,"g","butter"],["countN",2,"tbsp","sultanas, soaked"],["countN",2,"tbsp","raisins, soaked"],["linear",150,"g","apricot chutney"],["linear",50,"ml","Worcestershire sauce"],["linear",50,"g","tomato paste"],["linear",30,"g","brown sugar"],["linear",12,"g","ground ginger"],["linear",12,"g","mild curry powder (Madras style)"],["linear",2,"g","turmeric powder"],["taper",8,"g","flaky sea salt"]]
+    ],[
+      "Egg Custard Topping",[["linear",350,"ml","whole milk"],["countX",2,"","large eggs"],["countN",4,"","bay leaves (optional decoration)"]]
+    ],[
+      "Yellow Rice (Sides)",[["linear",200,"g","basmati rice"],["linear",300,"ml","water"],["taper",4,"g","flaky sea salt"],["linear",25,"g","butter"],["linear",1,"g","turmeric powder"]]
+    ]],
+    "tl":[[
+      "T+00:00","Prep & brown mince","Soak raisins, chop onions, brown mince in batches",900
+    ],[
+      "T+00:15","Build flavour base","Fry aromatics, add spices, incorporate chutney and mince",900
+    ],[
+      "T+00:30","Assemble & bake","Transfer to dish, top with custard, bake at 180°C",2100
+    ],[
+      "T+01:05","Cook yellow rice","Prepare and cook turmeric rice while bobotie bakes",1200
+    ],[
+      "T+01:35","Rest & serve","Allow bobotie to settle, serve with yellow rice",600
+    ]],
+    "steps":[[
+      "Prepare and brown the mince",
+      "Soak raisins and sultanas in warm water. Finely chop onions. Heat a large pan on high and fry mince in batches until well browned. Drain through a sieve to remove excess fat.",
+      "WHY: Browning in batches prevents the mince from stewing in its own juices, ensuring better texture and flavour.",
+      900
+    ],[
+      "Build the flavour base",
+      "In the same pan, fry onions with garlic-ginger paste in butter over medium-low heat until softened. Add curry powder, turmeric, and soaked raisins. Cook briefly to combine, then add tomato paste and chutney. Cook for 1 minute until tomato paste loses rawness.",
+      "WHY: Cooking the tomato paste removes its raw taste and creates depth; gentle heat prevents onions from caramelising and becoming too sweet.",
+      600
+    ],[
+      "Combine and season",
+      "Add ginger powder, browned mince, salt, and Worcestershire sauce. Mix well and cook on low heat for 5 minutes until everything comes together. Adjust seasoning if needed.",
+      "WHY: The final gentle cook allows flavours to meld and the mince to absorb the aromatic base.",
+      600
+    ],[
+      "Prepare for baking",
+      "Preheat oven to 180°C. Transfer bobotie mix to a ceramic baking dish, spreading evenly without pressing down too firmly. Whisk together eggs and milk until combined. Pour over the meat mixture. Decorate with bay leaves if desired (brush with water to prevent burning).",
+      "WHY: Not pressing the mince allows the custard to penetrate through the meat rather than sitting on top.",
+      600
+    ],[
+      "Bake the bobotie",
+      "Place the dish in an oven tray filled with boiling water to create a bain-marie (optional but recommended). Bake for 35-40 minutes until the custard is set and golden brown.",
+      "WHY: The bain-marie prevents edges from overcooking while the gentle heat sets the custard evenly.",
+      2400
+    ],[
+      "Make yellow rice",
+      "While bobotie bakes, wash rice until water runs clear. Combine rice, water, salt, butter, and turmeric in a pot. Bring to boil, cover tightly, reduce to minimum heat, and cook for 15 minutes. Remove from heat and rest covered for 3 minutes.",
+      "WHY: The resting period allows rice to finish steaming through evenly for perfect texture.",
+      1200
+    ],[
+      "Rest and serve",
+      "Remove bobotie from oven and let rest for 5-10 minutes. Serve with yellow rice and additional sides like creamed spinach or mashed potatoes.",
+      "WHY: Resting allows the custard to set slightly for cleaner serving and better texture.",
+      600
+    ]],
+    "pair":[[
+      "With the dish","Yellow rice (geelrys)","South Africa · turmeric-stained","Traditional accompaniment with buttery turmeric flavour"
+    ],[
+      "Aperitif","Chenin Blanc","South Africa · Stellenbosch","Crisp white wine with good acidity balances the sweet-spiced mince"
+    ]]
+  },
+  {
+    "slug":"beef-bourguignon",
+    "t":"Beef Bourguignon",
+    "tier":"premium",
+    "cui":"French · Burgundy",
+    "occ":["host","date"],
+    "time":"3 hr 15 min",
+    "method":"Oven · slow braise",
+    "diff":"Hard",
+    "blurb":"Tender beef braised slowly in Burgundy wine with pearl onions, mushrooms, and bacon — French comfort at its finest.",
+    "prov":{
+      "popular_in":"Burgundy region, France; worldwide French classic",
+      "famous_for":"Iconic French beef stew; culinary school staple; Julia Child favourite",
+      "consists_of":"Beef chuck braised in red wine with bacon, pearl onions, mushrooms, and herbs",
+      "name_origin":"Bourguignon means 'from Burgundy'; wine is essential to the dish",
+      "why_loved":"Deep red wine flavour with impossibly tender beef and silky vegetables",
+      "method_detail":"Oven braise — seared beef slow-cooked in wine until falling-apart tender"
+    },
+    "brief":{
+      "lead":"Beef bourguignon is France's most celebrated beef stew — chunks of beef chuck slow-braised in full-bodied red wine with bacon, pearl onions, mushrooms, and herbs. The lengthy cooking time transforms tough beef into impossibly tender meat, while the wine reduces into a velvety sauce. This is the dish that defined French country cooking and remains the ultimate expression of Burgundy's culinary heritage.",
+      "expect":[[
+        "Meltingly tender beef in rich wine sauce.",
+        "Hours of gentle braising break down connective tissue into silk."
+      ],[
+        "Deep red wine flavour with savoury depth.",
+        "A full bottle of Burgundy wine reduces into a velvety, complex sauce."
+      ],[
+        "Bacon, pearl onions, and mushrooms throughout.",
+        "Classic garnishes add sweetness and earthiness to the dish."
+      ],[
+        "Served with crusty bread or potatoes.",
+        "The rich sauce needs something to soak it up."
+      ]],
+      "stats":[["90","min","Active"],["120","min","Passive"],["4","","Serves"],["175°","","Temp"]],
+      "kit":["Dutch oven or heavy oven-safe pot", "Large skillet", "Sharp knife", "Cutting board"]
+    },
+    "ing":[[
+      "Meat & Base",[["countX",1,"","large yellow onion, diced"],["countX",1,"","medium carrot, cut into 1cm rounds"],["countX",3,"","garlic cloves, minced"],["linear",225,"g","thick-cut bacon, cut into 1cm pieces"],["linear",1360,"g","boneless beef chuck roast (approx. 1.4kg), cut into 5cm cubes"],["taper",2,"tsp","flaky sea salt, divided"],["taper",0.75,"tsp","black pepper, divided"],["linear",15,"ml","tomato paste"],["linear",45,"ml","all-purpose flour"]]
+    ]],
+    "tl":[[
+      "T+00:00","Prep & sear bacon","Render bacon fat, prepare vegetables and beef",1200
+    ],[
+      "T+00:20","Sear beef","Brown beef in bacon fat, set aside with bacon",900
+    ],[
+      "T+00:35","Build flavour base","Cook vegetables, tomato paste, and wine",900
+    ],[
+      "T+00:50","Start oven braise","Combine everything, cover and transfer to oven",7200
+    ],[
+      "T+02:30","Add final vegetables","Sear pearl onions and mushrooms, add to pot",1800
+    ],[
+      "T+03:00","Final cook & rest","Finish cooking, season, and rest before serving",900
+    ]],
+    "steps":[[
+      "Prepare and render bacon",
+      "Preheat oven to 175°C. Dice onion, cut carrot into rounds, mince garlic. Cut bacon into 1cm pieces. Place in Dutch oven over medium heat and cook, stirring occasionally, until fat is rendered and bacon is crisp (10-12 minutes).",
+      "WHY: Rendering bacon slowly provides the fat needed for searing the beef and adds smoky depth to the dish.",
+      900
+    ],[
+      "Sear the beef",
+      "While bacon renders, trim excess fat from beef chuck and cut into 5cm cubes. Pat dry and season with 2 teaspoons salt and ½ teaspoon pepper. Remove bacon with slotted spoon and set aside. Add half the beef to pot in a single layer. Cook until browned on all sides (2-3 minutes per side). Transfer to bowl with bacon. Repeat with remaining beef.",
+      "WHY: Searing in batches prevents overcrowding, ensuring proper browning for flavour development.",
+      900
+    ],[
+      "Build the flavour base",
+      "Add onion and carrot to pot. Cook, stirring occasionally, until onion is softened (about 3 minutes). Add garlic and cook until fragrant (30 seconds). Add tomato paste and stir to coat vegetables. Cook until darkened (1-2 minutes). Sprinkle with flour and stir to coat. Cook for 1 minute to remove floury taste.",
+      "WHY: Cooking tomato paste concentrates its flavour and creates depth; flour provides gentle thickening for the sauce.",
+      600
+    ],[
+      "Deglaze and assemble",
+      "Add entire bottle of dry red wine to pot. Scrape up browned bits from bottom. Add beef broth, thyme sprigs, bay leaves, and remaining ½ teaspoon salt. Return beef, bacon, and any juices to pot. Increase heat to medium-high and bring to simmer.",
+      "WHY: Wine deglazes the pot, incorporating all the flavourful browned bits into the sauce.",
+      600
+    ],[
+      "Oven braise",
+      "Cover pot and transfer to oven. Cook until beef is very tender (about 2 hours). About 30 minutes before beef is ready, trim and peel pearl onions if needed, and quarter mushrooms.",
+      "WHY: The gentle, even heat of the oven breaks down connective tissue without risk of burning.",
+      7200
+    ],[
+      "Prepare and add vegetables",
+      "Melt butter in large skillet over medium heat. Add pearl onions, mushrooms, remaining ½ teaspoon salt, and remaining ¼ teaspoon pepper. Cook, stirring occasionally, until tender and lightly browned (12-15 minutes). Add to pot and stir to combine. Remove and discard bay leaves and thyme stems.",
+      "WHY: Searing vegetables separately ensures they're properly cooked and coloured before joining the stew.",
+      1800
+    ],[
+      "Final seasoning and service",
+      "Taste and adjust seasoning with more salt and pepper as needed. Remove from oven and let rest for 5-10 minutes. Garnish with chopped fresh parsley if desired. Serve with crusty bread, boiled potatoes, or over mashed potatoes.",
+      "WHY: Resting allows flavours to settle and the sauce to thicken slightly for better texture.",
+      600
+    ]],
+    "pair":[[
+      "With the dish","Crusty baguette","France · traditional","To soak up the rich, wine-infused sauce"
+    ],[
+      "With the dish","Pinot Noir","Burgundy · red wine","Same wine variety used in cooking creates perfect harmony"
+    ]]
+  },
+  {
+    "slug":"peking-duck",
+    "t":"Peking Duck",
+    "tier":"premium",
+    "cui":"Chinese · Beijing",
+    "occ":["host","date"],
+    "time":"25 hr",
+    "method":"Oven · roast",
+    "diff":"Hard",
+    "blurb":"Crispy-skinned roast duck served with thin pancakes, spring onions, and hoisin sauce — Beijing's imperial masterpiece.",
+    "prov":{
+      "popular_in":"Beijing, China; Chinese restaurants worldwide",
+      "famous_for":"Imperial Chinese dish; crispy skin prized above all; UNESCO intangible heritage",
+      "consists_of":"Whole duck air-dried then roasted until skin is paper-thin and crisp",
+      "name_origin":"Peking (old name for Beijing); imperial court dish dating to Ming Dynasty",
+      "why_loved":"Extraordinarily crispy skin contrasted with juicy, succulent meat",
+      "method_detail":"Oven roast — air-dried duck roasted at high heat then low heat for crispy skin"
+    },
+    "brief":{
+      "lead":"Peking duck is Beijing's most celebrated dish — a whole duck air-dried for 24 hours, then roasted until the skin becomes impossibly crisp and thin. The duck is carved tableside and served with delicate pancakes, fresh spring onions, cucumber, and sweet bean sauce. Each diner assembles their own wraps, balancing the rich duck with refreshing vegetables. This is imperial Chinese dining at its finest.",
+      "expect":[[
+        "Paper-thin, impossibly crispy skin.",
+        "The lengthy air-drying process allows the skin to crisp dramatically during roasting."
+      ],[
+        "Juicy, succulent meat underneath.",
+        "Protected by the skin, the meat stays moist while roasting."
+      ],[
+        "Interactive assembly with pancakes and vegetables.",
+        "Each person creates their own perfect balance of duck, vegetables, and sauce."
+      ],[
+        "Sweet-savoury flavour profile.",
+        "Hoisin or sweet bean sauce provides traditional Chinese sweetness."
+      ]],
+      "stats":[["30","min","Active"],["1440","min","Passive"],["4","","Serves"],["180°","","Temp"]],
+      "kit":["Sharp knife", "Kitchen shears", "Roasting rack", "Baking tray", "Brush"]
+    },
+    "ing":[[
+      "Duck Preparation",[["countX",1,"","whole duck (approx. 2kg), cleaned and lean"],["linear",5,"ml","white vinegar"],["linear",30,"ml","oyster sauce"],["linear",15,"ml","Chinese cooking wine"],["linear",5,"g","Chinese five-spice powder"],["linear",30,"ml","maltose or honey"],["linear",30,"ml","hot water"],["linear",2.5,"ml","white vinegar"]]
+    ]],
+    "tl":[[
+      "T-24:00","Air dry duck (Day Before)","Soak, hang, and begin air-drying process with maltose glaze",900
+    ],[
+      "T+00:00","Continue drying","Hang duck for at least 24 hours (up to 5 days in winter)",86400
+    ],[
+      "T+24:00","Roast duck","Initial roast at 180°C, then finish at 120°C",3900
+    ],[
+      "T+24:65","Crisp skin (Optional)","Final high-heat crisping or hot oil treatment",600
+    ],[
+      "T+24:75","Rest & carve","Rest duck, carve into thin slices",600
+    ],[
+      "T+24:85","Assemble & serve","Warm pancakes, prepare vegetables, assemble wraps",900
+    ]],
+    "steps":[[
+      "Prepare the duck for air-drying",
+      "Choose a lean, clean duck around 2kg. Soak in water with 1 teaspoon white vinegar for 1 hour. Using kitchen twine, tie the duck from the neck for hanging. In a small bowl, mix oyster sauce, Chinese cooking wine, and five-spice powder. Spread the mixture evenly on the inside of the duck.",
+      "WHY: The vinegar soak removes any gamey flavour; the internal seasoning adds depth to the meat.",
+      900
+    ],[
+      "Glaze for drying",
+      "In another small bowl, mix maltose (or honey) with hot water and ½ teaspoon white vinegar. The liquid should be warm for the first brushing. Brush the mixture evenly over the duck skin. Wait 30 minutes, then brush again. Hang the duck in a cool, well-ventilated area for at least 24 hours (up to 5 days in winter).",
+      "WHY: The maltose glaze promotes crisping; air-drying removes moisture from the skin for better texture.",
+      86400
+    ],[
+      "Prepare for roasting",
+      "Preheat oven to 180°C. Seal the bottom of the duck by tucking the neck skin under or securing with toothpicks. Place duck on a roasting rack set over a lined baking tray to catch drips.",
+      "WHY: Sealing the bottom prevents juices from escaping during roasting, keeping the meat moist.",
+      600
+    ],[
+      "Initial roast",
+      "Place duck in oven and roast for 20 minutes. Carefully turn duck over and roast other side for 15 minutes.",
+      "WHY: The initial high heat begins the crisping process and renders some of the fat.",
+      2100
+    ],[
+      "Slow-roast for tenderness",
+      "Reduce oven temperature to 120°C. Continue roasting for 30 minutes (extend by 10 minutes for each additional 500g of duck weight).",
+      "WHY: The lower, gentler heat cooks the meat through without drying it out while continuing fat rendering.",
+      1800
+    ],[
+      "Crisp the skin (choose one method)",
+      "Option 1: Heat oil until very hot. Holding duck by the neck, carefully pour hot oil over the skin. Option 2: Increase oven temperature back to 180°C and roast for 6-10 minutes, watching carefully to prevent burning.",
+      "WHY: The final high heat creates the signature paper-thin crispy skin characteristic of Peking duck.",
+      600
+    ],[
+      "Rest and carve",
+      "Remove duck from oven and rest for several minutes. Carve by first cutting around the breast, then dividing in half. Slice breast meat thinly with skin attached. Shred remaining meat from bones.",
+      "WHY: Resting allows juices to redistribute; slicing thinly creates the traditional presentation.",
+      600
+    ],[
+      "Prepare and serve",
+      "Make or warm Peking duck pancakes. Cut cucumber into thin strips. Slice spring onions into similar strips. Mix sweet bean sauce (2 tablespoons) with sesame oil (1 tablespoon). To assemble: brush sauce on pancake, add duck slices, cucumber strips, and spring onion strips. Roll up and enjoy.",
+      "WHY: The fresh vegetables provide crunch and contrast to the rich, crispy duck.",
+      900
+    ]],
+    "pair":[[
+      "With the dish","Peking duck pancakes","China · wheat wrappers","Traditional vehicle for duck, vegetables, and sauce"
+    ],[
+      "Aperitif","Tsingtao Beer","China · lager","Light lager balances the rich duck and refreshes between bites"
+    ]]
+  },
+  {
+    "slug":"slow-roast-lamb-kleftiko",
+    "t":"Slow Roast Lamb Kleftiko",
+    "tier":"premium",
+    "cui":"Greek · Islands",
+    "occ":["host"],
+    "time":"16 hr 30 min",
+    "method":"Oven · slow roast",
+    "diff":"Hard",
+    "blurb":"Leg of lamb slow-roasted in parchment with garlic, lemon, and herbs until falling-off-the-bone tender.",
+    "prov":{
+      "popular_in":"Greek islands; mainland Greece; Easter specialty",
+      "famous_for":"Traditional Greek Easter dish; underground cooking origins; melting tenderness",
+      "consists_of":"Whole leg of lamb slow-roasted in sealed parchment with potatoes and aromatics",
+      "name_origin":"Greek 'kleftis' meaning thief; stolen meat cooked secretly underground",
+      "why_loved":"Extraordinarily tender meat with aromatic potatoes; effortless hands-off cooking",
+      "method_detail":"Oven slow-roast — parchment-sealed lamb braises in own juices at low temperature"
+    },
+    "brief":{
+      "lead":"Lamb kleftiko is Greece's most celebrated lamb dish — a whole leg of lamb slow-roasted in a sealed parchment parcel with potatoes, olives, cheese, and aromatics until the meat falls from the bone. The parchment creates a self-braising environment where the lamb cooks in its own aromatic juices. The name means 'stolen meat,' referring to Greek rebels who would secretly cook stolen lamb in underground pits to avoid detection during Ottoman occupation.",
+      "expect":[[
+        "Falling-off-the-bone tender lamb.",
+        "Four hours at low temperature in parchment creates extraordinary tenderness."
+      ],[
+        "Aromatic potatoes with olives and cheese.",
+        "Vegetables cook in the lamb's juices, absorbing incredible flavour."
+      ],[
+        "Lemon, garlic, and cinnamon perfume.",
+        "The traditional Greek marinade creates bright, aromatic depth."
+      ],[
+        "Impressive presentation at table.",
+        "Opening the parchment parcel releases a cloud of aromatic steam."
+      ]],
+      "stats":[["45","min","Active"],["960","min","Passive"],["4","","Serves"],["160°","","Temp"]],
+      "kit":["Large roasting pan", "Parchment paper", "Sharp knife", "Food processor"]
+    },
+    "ing":[[
+      "Marinade",[["countX",1,"","leg of lamb, bone-in (approx. 2kg)"],["countX",6,"","garlic cloves"],["taper",0.5,"tsp","ground cinnamon"],["linear",45,"ml","extra virgin olive oil, divided"],["countX",3,"tbsp","fresh herb leaves (oregano, rosemary, or thyme)"],["countX",1,"","lemon, zested and juiced"],["taper","","to taste","flaky sea salt"],["taper","","to taste","black pepper"]]
+    ],[
+      "Parcel Ingredients",[["linear",900,"g","Yukon Gold potatoes, cut into chunks"],["linear",250,"g","cherry tomatoes"],["linear",225,"g","kefalotiri cheese, cut into 2cm cubes"],["linear",250,"ml","Greek olives, pitted"],["linear",15,"ml","extra virgin olive oil"],["countX",5,"","fresh herb sprigs (rosemary, oregano, thyme)"],["countX",1,"","lemon, juiced"],["taper",1,"tsp","dried oregano"]]
+    ]],
+    "tl":[[
+      "T-24:00","Marinate lamb (Day Before)","Prepare marinade, score and coat lamb, refrigerate overnight",43200
+    ],[
+      "T+00:00","Prepare parchment parcel","Cut vegetables, arrange in parchment with lamb",900
+    ],[
+      "T+00:15","Seal and slow-roast","Fold parchment, roast at 160°C for 3.5 hours",12600
+    ],[
+      "T+03:30","Open and finish","Open parchment, roast 30 minutes more for colour",1800
+    ],[
+      "T+04:00","Rest and carve","Rest 30 minutes, carve and serve",1800
+    ]],
+    "steps":[[
+      "Prepare the marinade",
+      "In a food processor, pulse garlic cloves, 1 teaspoon sea salt, fresh herbs, lemon zest, lemon juice, cinnamon, black pepper, and 2-3 tablespoons olive oil until combined into a paste.",
+      "WHY: Creating a marinade paste ensures even coverage and better penetration into the meat.",
+      600
+    ],[
+      "Marinate the lamb",
+      "Using a sharp knife, create many small holes all over the lamb. Rub the marinade paste over the lamb, pushing it into the holes. Transfer to a large pan or ziplock bag. Marinate overnight or at least 3-4 hours.",
+      "WHY: Scoring allows the marinade to penetrate deep into the meat for maximum flavour.",
+      43200
+    ],[
+      "Prepare the parchment parcel",
+      "Preheat oven to 160°C. Cut potatoes into chunks. Arrange two long pieces of parchment paper in a large roasting pan in a cross pattern. Place lamb in the center. Surround with potatoes. Add tomatoes, cheese, and olives. Tuck fresh herb sprigs around. Drizzle with lemon juice, remaining olive oil, dried oregano, salt, and pepper.",
+      "WHY: The parchment cross ensures enough paper to completely seal the parcel for proper braising.",
+      900
+    ],[
+      "Seal and begin roasting",
+      "Fold parchment paper over lamb and ingredients. Tuck edges tightly to seal completely. Roast for 3.5 hours.",
+      "WHY: A tight seal creates a self-braising environment where the lamb cooks in its own aromatic juices.",
+      12600
+    ],[
+      "Open and finish",
+      "Carefully open the parchment parcel. Return to oven for 30 minutes to brown the lamb and caramelize the vegetables.",
+      "WHY: Opening the parchment allows the exterior to brown while the interior remains moist.",
+      1800
+    ],[
+      "Rest and serve",
+      "Remove from oven and let rest for 30 minutes. Transfer to a serving platter with vegetables. Serve warm.",
+      "WHY: Resting allows juices to redistribute for more tender, juicy meat.",
+      1800
+    ]],
+    "pair":[[
+      "With the dish","Greek village salad","Greece · horiatiki","Crisp, acidic salad balances the rich, slow-roasted lamb"
+    ],[
+      "With the dish","Agiorgitiko","Greece · Nemea red wine","Medium-bodied Greek red with dark fruit complements lamb"
+    ]]
+  },
+  {
+    "slug":"grilled-crayfish-garlic-butter",
+    "t":"Grilled Crayfish with Garlic Butter",
+    "tier":"premium",
+    "cui":"South African · Coastal",
+    "occ":["date","host"],
+    "time":"40 min",
+    "method":"Braai · grill",
+    "diff":"Medium",
+    "blurb":"Fresh crayfish grilled over coals with garlicky butter baste — South Africa's luxury braai centerpiece.",
+    "prov":{
+      "popular_in":"South Africa coastal areas; special occasions",
+      "famous_for":"South African braai luxury; sustainable seafood; simple perfection",
+      "consists_of":"Whole crayfish grilled over coals with garlic-chilli butter baste",
+      "name_origin":"South Africa; 'crayfish' refers to rock lobster (spiny lobster)",
+      "why_loved":"Sweet, succulent meat enhanced by smoky grilling and aromatic garlic butter",
+      "method_detail":"Braai — crayfish boiled then grilled over coals with garlic butter baste"
+    },
+    "brief":{
+      "lead":"Grilled crayfish with garlic butter is South Africa's ultimate braai luxury — fresh crayfish lightly boiled, then grilled over hot coals while being basted with garlicky butter. The crayfish's sweet, delicate meat needs nothing more than simple preparation, making it perfect for the braai. The smoke from the butter dripping onto the coals infuses the crayfish with subtle flavour that defines authentic South African coastal cooking.",
+      "expect":[[
+        "Sweet, succulent crayfish meat.",
+        "Fresh crayfish has naturally sweet, delicate flesh that needs minimal enhancement."
+      ],[
+        "Smoky aroma from coals.",
+        "Butter dripping onto coals creates fragrant smoke that flavours the crayfish."
+      ],[
+        "Garlic and chilli butter baste.",
+        "Simple, aromatic butter enhances without overwhelming the delicate seafood."
+      ],[
+        "Hands-on, social eating.",
+        "Eating crayfish with your fingers is part of the experience."
+      ]],
+      "stats":[["25","min","Active"],["15","min","Passive"],["2","","Serves"],["200°","","Temp"]],
+      "kit":["Large pot", "Sharp kitchen shears", "Braai grid", "Small saucepan", "Brush"]
+    },
+    "ing":[[
+      "Crayfish",[["countX",2,"","whole crayfish (approx. 500g each)"],["taper","","to taste","flaky sea salt"]]
+    ],[
+      "Garlic Butter Baste",[["linear",100,"g","butter, melted"],["countX",6,"","garlic cloves, minced"],["taper",1,"tsp","chilli flakes"],["taper","","to taste","black pepper"]]
+    ]],
+    "tl":[[
+      "T+00:00","Boil crayfish","Bring water to boil, add crayfish, steam for 15 minutes",900
+    ],[
+      "T+00:15","Cool and prepare","Ice bath, halve crayfish, remove veins, rinse",600
+    ],[
+      "T+00:25","Prepare baste & fire","Melt garlic butter, prepare coals",600
+    ],[
+      "T+00:35","Grill over coals","Place crayfish shell-side down, baste with garlic butter",300
+    ],[
+      "T+00:40","Turn and finish","Flip meat-side down briefly, finish cooking",600
+    ]],
+    "steps":[[
+      "Prepare and boil crayfish",
+      "Break off feelers from crayfish. Add 2-3cm boiling water and pinch of salt to large pot. Add crayfish, cover, and steam on high heat for approximately 15 minutes until bright red.",
+      "WHY: Steaming in minimal water preserves the sweet flavour and prevents waterlogging.",
+      900
+    ],[
+      "Cool and prepare",
+      "Transfer cooked crayfish to cold water to stop cooking. Using sharp kitchen shears, cut crayfish in half lengthwise. Remove and discard the digestive tract (vein). Rinse interior clean.",
+      "WHY: Removing the vein prevents any bitterness and ensures clean, sweet flavour.",
+      600
+    ],[
+      "Prepare garlic butter baste",
+      "In a small saucepan over medium heat, melt butter with minced garlic, chilli flakes, and black pepper. Simmer for 2-3 minutes, then reduce to low heat for at least 10 minutes to infuse flavours.",
+      "WHY: Simmering garlic removes its raw harshness and mellows the flavour.",
+      600
+    ],[
+      "Prepare the braai",
+      "Prepare nice hot coals for the braai. The fire should be medium-hot — you want steady heat, not flames.",
+      "WHY: Steady, even coals provide consistent cooking without scorching the delicate meat.",
+      300
+    ],[
+      "Grill shell-side down",
+      "Place crayfish halves on braai grid, shell side down. Generously baste with garlic butter mixture. Cook until just warmed through and beginning to brown, basting frequently.",
+      "WHY: Shell-side down protects the delicate meat while the shell helps retain the butter baste.",
+      600
+    ],[
+      "Turn and finish",
+      "Turn crayfish over, meat side down, for approximately 30 seconds. The butter will drip onto coals, creating smoke that flavours the crayfish.",
+      "WHY: The brief meat-side down cooking adds smoky flavour while keeping the meat moist.",
+      300
+    ],[
+      "Serve immediately",
+      "Serve hot with mayonnaise and lemon wedges. Eat with fingers — this is hands-on dining.",
+      "WHY: Crayfish is best enjoyed immediately while still hot and the butter is fresh.",
+      0
+    ]],
+    "pair":[[
+      "With the dish","Lemon wedges & mayonnaise","South Africa · classic","Acidic lemon and creamy mayonnaise balance the rich butter"
+    ],[
+      "With the dish","Sauvignon Blanc","South Africa · coastal","Crisp white wine with good acidity complements sweet crayfish"
+    ]]
+  },
+  {
+    "slug":"osso-buco-gremolata",
+    "t":"Osso Buco with Gremolata",
+    "tier":"premium",
+    "cui":"Italian · Milanese",
+    "occ":["host","date"],
+    "time":"2 hr 30 min",
+    "method":"Stovetop · braise",
+    "diff":"Hard",
+    "blurb":"Veal shanks slowly braised in white wine until falling-off-the-bone, finished with bright gremolata.",
+    "prov":{
+      "popular_in":"Milan, Italy; Northern Italy; Italian restaurants worldwide",
+      "famous_for":"Milan's signature dish; traditionally served with risotto alla milanese",
+      "consists_of":"Cross-cut veal shanks braised in white wine with vegetables, finished with gremolata",
+      "name_origin":"Italian for 'bone with a hole'; refers to the marrow bone visible in the cross-section",
+      "why_loved":"Uniquely tender veal with rich marrow, brightened by fresh gremolata",
+      "method_detail":"Stovetop braise — veal shanks slowly cooked in wine and broth until tender"
+    },
+    "brief":{
+      "lead":"Osso buco is Milan's most celebrated dish — cross-cut veal shanks slowly braised in white wine and broth with vegetables until the meat falls from the bone. The marrow in the centre of each shank melts into the sauce, creating incredible richness. The dish is finished with gremolata — a bright mixture of lemon zest, parsley, and garlic sprinkled over just before serving. This classic of Lombard cuisine represents elegant comfort food at its finest.",
+      "expect":[[
+        "Falling-off-the-bone tender veal.",
+        "Slow braising breaks down connective tissue into meltingly tender meat."
+      ],[
+        "Rich, marrow-infused sauce.",
+        "The marrow from the bones melts into the cooking liquid for extraordinary depth."
+      ],[
+        "Bright gremolata finish.",
+        "Fresh lemon, parsley, and garlic cut through the richness."
+      ],[
+        "Served with risotto or polenta.",
+        "Creamy Italian starches are the traditional accompaniment."
+      ]],
+      "stats":[["60","min","Active"],["90","min","Passive"],["4","","Serves"],["170°","","Temp"]],
+      "kit":["Dutch oven or heavy pan", "Sharp knife", "Cutting board", "Microplane or zester"]
+    },
+    "ing":[[
+      "Osso Buco",[["countX",4,"","veal shanks (approx. 300g each, 4cm thick)"],["countX",0.5,"","medium white onion, finely chopped"],["countX",1,"","medium carrot, finely chopped"],["countX",1,"","medium celery stalk, finely chopped"],["linear",60,"g","butter, divided"],["linear",15,"ml","all-purpose flour"],["linear",475,"ml","dry white wine"],["linear",240,"ml","beef broth"],["taper","","to taste","flaky sea salt"],["taper","","to taste","black pepper"]]
+    ],[
+      "Gremolata",[["countX",0.5,"","garlic clove, minced"],["linear",15,"g","fresh parsley, chopped"],["countX",1,"","small lemon, zested (yellow part only)"]]
+    ]],
+    "tl":[[
+      "T+00:00","Prep & brown vegetables","Finely chop mirepoix vegetables, brown in butter",1200
+    ],[
+      "T+00:20","Sear veal shanks","Lightly flour and brown veal in same pan",900
+    ],[
+      "T+00:35","Deglaze & assemble","Add wine, reduce, then add broth and cover",900
+    ],[
+      "T+00:50","Slow braise","Simmer gently for 1.5 hours until very tender",5400
+    ],[
+      "T+02:20","Make gremolata & finish","Prepare gremolata, sprinkle over, serve immediately",600
+    ]],
+    "steps":[[
+      "Prepare and brown vegetables",
+      "Finely chop onion, carrot, and celery (mirepoix). In a Dutch oven or heavy pan, melt ¼ stick butter over medium heat. Add vegetables and brown until lightly coloured (about 10 minutes). Remove vegetables and set aside.",
+      "WHY: Browning vegetables develops sweetness and depth that forms the flavour foundation of the dish.",
+      900
+    ],[
+      "Prepare and sear veal shanks",
+      "Lightly flour veal shanks and season with salt. Return pan to medium-high heat. Add veal shanks and brown on both sides (2-3 minutes per side). Take care not to burn the vegetables remaining in pan.",
+      "WHY: Flour helps with browning and provides gentle thickening for the sauce.",
+      900
+    ],[
+      "Add wine and reduce",
+      "Add white wine to pan. Let it evaporate for 7-8 minutes until reduced by about half. Add pepper and beef broth.",
+      "WHY: Reducing wine concentrates its flavour and removes alcohol for sweeter, more aromatic sauce.",
+      600
+    ],[
+      "Braise until tender",
+      "Lower heat, cover pan, and cook for about 1.5 hours. Turn meat occasionally. If necessary, add more broth to keep meat moist. Cook until veal is tender enough to fall off the bone.",
+      "WHY: Gentle braising breaks down collagen and connective tissue into gelatin for melting texture.",
+      5400
+    ],[
+      "Make gremolata",
+      "While veal braises, combine minced garlic, chopped parsley, and grated lemon zest (yellow part only). Mix well with mortar and pestle or press with spoon to release oils.",
+      "WHY: The mortar releases essential oils from garlic and lemon for brighter flavour.",
+      300
+    ],[
+      "Finish and serve",
+      "When meat is finished cooking, ensure gremolata is well mixed. Sprinkle over cooked veal. Let meat and gremolata blend for one more minute. Serve warm, traditionally with risotto alla milanese.",
+      "WHY: The brief blending allows gremolata to release oils without losing its bright, fresh character.",
+      600
+    ]],
+    "pair":[[
+      "With the dish","Risotto alla milanese","Italy · saffron rice","Traditional accompaniment; creamy rice balances the rich veal"
+    ],[
+      "With the dish","Barolo","Italy · Piedmont red wine","Powerful Nebbiolo-based wine stands up to the rich, marrow-infused sauce"
+    ]]
+  },
+  {
+    "slug":"paella-mixta",
+    "t":"Paella Mixta",
+    "tier":"premium",
+    "cui":"Spanish · Coastal",
+    "occ":["host"],
+    "time":"1 hr 15 min",
+    "method":"Stovetop · simmer",
+    "diff":"Medium",
+    "blurb":"Saffron-infused rice loaded with chicken, chorizo, and seafood — Spain's most famous festive dish.",
+    "prov":{
+      "popular_in":"Valencia region, Spain; coastal Spain; worldwide Spanish restaurants",
+      "famous_for":"Spain's national dish; festive celebration food; socarrat (crispy bottom)",
+      "consists_of":"Short-grain rice cooked with saffron, chicken, chorizo, seafood in wide shallow pan",
+      "name_origin":"Valencia, Spain; from Arabic 'baqiya' meaning leftovers",
+      "why_loved":"Incredible saffron flavour with varied proteins; sociable, festive presentation",
+      "method_detail":"Stovetop simmer — rice cooked uncovered without stirring until tender with socarrat"
+    },
+    "brief":{
+      "lead":"Paella is Spain's most celebrated dish — short-grain rice cooked in a wide shallow pan with saffron, chicken, chorizo, and seafood. The rice absorbs incredible flavour from the proteins and forms a crispy bottom layer called socarrat. Paella mixta (mixed paella) combines meat and seafood, though purists note this is a modern variation. This is festive, communal dining meant to be relaxed and fun — perfect for bringing people together around the pan.",
+      "expect":[[
+        "Tender, saffron-stained rice grains.",
+        "Bomba rice absorbs liquid without becoming mushy, maintaining distinct grains."
+      ],[
+        "Crispy socarrat bottom layer.",
+        "The prized crispy bottom forms from rice cooked without stirring."
+      ],[
+        "Variety of proteins throughout.",
+        "Chicken, chorizo, prawns, and mussels create diverse flavours and textures."
+      ],[
+        "No-stirring cooking method.",
+        "Unlike risotto, paella is cooked uncovered without stirring for proper texture."
+      ]],
+      "stats":[["45","min","Active"],["30","min","Passive"],["4","","Serves"],["Medium","","Temp"]],
+      "kit":["30cm paella pan or large skillet", "Spatula", "Sharp knife", "Tongs"]
+    },
+    "ing":[[
+      "Proteins",[["linear",200,"g","chorizo, sliced ½cm thick"],["linear",200,"g","squid/calamari, cut into 7mm rings"],["countX",1,"","onion, diced"],["countX",3,"","garlic cloves, minced"],["countX",1,"","red capsicum/bell pepper, diced"],["linear",200,"g","chicken thigh fillets, cut into 3.5cm pieces"],["countX",12,"","medium/large prawns, whole"],["countX",12,"","large mussels, cleaned"]]
+    ]],
+    "tl":[[
+      "T+00:00","Prep & sear proteins","Cut all ingredients, sear chorizo and squid",600
+    ],[
+      "T+00:10","Build flavour base","Sauté aromatics, brown chicken, add rice and liquids",900
+    ],[
+      "T+00:25","Initial rice simmer","Cook rice uncovered for 10 minutes without stirring",600
+    ],[
+      "T+00:35","Add seafood & finish","Squidge in prawns and mussels, cook 8 minutes more",480
+    ],[
+      "T+00:43","Rest & serve","Cover and rest 5 minutes, then serve with lemon",300
+    ]],
+    "steps":[[
+      "Prepare ingredients and sear chorizo",
+      "Slice chorizo ½cm thick. Cut squid into 7mm rings. Dice onion, mince garlic, dice capsicum. Cut chicken into 3.5cm pieces. Heat 1 tablespoon oil in a 30cm paella pan or large skillet over high heat. Add chorizo and cook until browned on each side (about 3 minutes). Remove with slotted spoon and set aside.",
+      "WHY: Browning chorizo first renders its flavorful fat which will be used to cook other ingredients.",
+      300
+    ],[
+      "Sear squid quickly",
+      "Add squid rings to hot pan. Cook for 45 seconds on each side, then remove and set aside.",
+      "WHY: Squid cooks very quickly and becomes rubbery if overcooked — just 90 seconds total is perfect.",
+      180
+    ],[
+      "Build flavour base",
+      "Add remaining oil if needed. Add garlic and onion, cook for 2 minutes. Add capsicum, cook for 1 minute. Add chicken pieces. Cook for 2 minutes until lightly browned but still raw inside.",
+      "WHY: Building layers of flavour gradually creates the aromatic base that makes paella exceptional.",
+      300
+    ],[
+      "Add rice and liquids",
+      "Add paella rice and mix until grains are coated in oil. Add most of the chorizo (reserve ¼ for garnish), chicken stock, tomato, and saffron. Stir to combine.",
+      "WHY: Coating rice in oil helps grains remain separate during cooking for perfect texture.",
+      300
+    ],[
+      "Initial rice simmer",
+      "Bring to a simmer, then adjust heat to maintain gentle simmer (not rapid). Simmer for 10 minutes — no stirring. At this stage, some rice should be visible through the liquid but there should still be plenty of liquid.",
+      "WHY: No stirring is crucial — unlike risotto, paella should not be creamy; we want distinct grains.",
+      600
+    ],[
+      "Add seafood and finish",
+      "Scatter frozen peas over rice. Squidge prawns and mussels into rice (partial submerge is fine). Cook for 8 minutes or until prawns are opaque, mussels are open, and most liquid is absorbed. Discard any mussels that do not open.",
+      "WHY: Adding seafood partway through prevents overcooking while their juices flavour the rice.",
+      480
+    ],[
+      "Check and rest",
+      "Taste test rice — it should be firm but cooked through. If too firm, add splash of hot water and continue cooking. Remove from stove. Scatter over squid and reserved chorizo. Cover with lid and rest for 5 minutes.",
+      "WHY: Resting allows rice to absorb remaining liquid for perfect texture — juicy, not stodgy.",
+      300
+    ],[
+      "Serve",
+      "Garnish with chopped fresh parsley and lemon wedges. Take to table as is, then mix up rice with seafood before serving. The mix at the table is part of the paella ritual.",
+      "WHY: Mixing at the table distributes flavours and allows guests to customize their portions.",
+      0
+    ]],
+    "pair":[[
+      "With the dish","Albariño","Spain · Rías Baixas white wine","Crisp Spanish white with good acidity complements saffron and seafood"
+    ],[
+      "Aperitif","Gazpacho","Spain · cold soup","Refreshing cold soup provides light start before rich paella"
+    ]]
+  }
+]

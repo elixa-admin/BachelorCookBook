@@ -1,0 +1,292 @@
+[
+ {
+  "slug": "shakshuka-crusty-bread",
+  "title": "Shakshuka with Crusty Bread",
+  "blurb": "Eggs gently poached in a spiced tomato sauce — a North African breakfast now loved across the Middle East.",
+  "cui": "Middle Eastern · North African",
+  "time": "35 min",
+  "method": "Braise · egg poach in tomato sauce",
+  "ings": [
+   "45 mlExtra-virgin olive oil",
+   "1Large yellow onion, chopped",
+   "2Green capsicums, chopped",
+   "2Garlic cloves, minced",
+   "1 tspGround coriander",
+   "1 tspSweet paprika",
+   "½ tspGround cumin",
+   "¼ tspRed pepper flakes",
+   "6Medium tomatoes, chopped (about 900g)",
+   "120 mlTomato sauce",
+   "6 ×Large eggs",
+   "1 tspFlaky sea salt",
+   "15 gFresh parsley leaves, chopped",
+   "15 gFresh mint leaves, chopped"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "storage",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "smash-burgers-special-sauce",
+  "title": "Smash Burgers with Special Sauce",
+  "blurb": "The burger technique that changed everything: thin patties smashed onto a screaming-hot griddle for maximum crispy crust.",
+  "cui": "American",
+  "time": "20 min",
+  "method": "Griddle · Maillard crust maximisation",
+  "ings": [
+   "220 ×Freshly beef mince chuck (80/20 fat ratio), divided into 2 × 55g balls",
+   "1 tspFlaky sea salt, plus more",
+   "1 tspFreshly ground black pepper",
+   "2 ×Slices good melting cheese (American or cheddar)",
+   "2 ×Soft hamburger rolls, buttered and toasted",
+   "45 mlSpecial sauce (mayo-ketchup-mustard mix)",
+   "4Pickle slices",
+   "4Thin onion slices",
+   "30 gShredded lettuce"
+  ],
+  "miss": [
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "spaghetti-bolognese",
+  "title": "Spaghetti Bolognese",
+  "blurb": "The SA 'spag bol' — a slow, deep beef ragù with soffrito, tomato and a finish of milk, tossed through spaghetti.",
+  "cui": "Italian",
+  "time": "2 hr",
+  "method": "Stovetop · slow simmer",
+  "ings": [
+   "250 gspaghetti",
+   "400 gbeef mince",
+   "1 ×onion, finely diced",
+   "1 ×carrot, finely diced",
+   "1 ×celery, finely diced",
+   "2garlic, minced",
+   "2 tbspolive oil",
+   "400 gtinned tomatoes, crushed",
+   "125 mlred wine",
+   "125 mlfull-cream milk",
+   "2 tbsptomato paste",
+   "1 tspdried oregano",
+   "1 tspdried mixed herbs"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "carbonara",
+  "title": "Spaghetti Carbonara",
+  "blurb": "Four ingredients, no cream — the Roman classic where technique is everything and the sauce is silk.",
+  "cui": "Italian · Roman",
+  "time": "20 min",
+  "method": "Stovetop · emulsion",
+  "ings": [
+   "200 gdried spaghetti (or rigatoni)",
+   "100 gguanciale, diced — pancetta or streaky bacon work",
+   "3large egg yolks + 1 whole egg",
+   "50 gPecorino Romano, finely grated + extra",
+   "1 tbspcoarsely cracked black pepper"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "spanakopita",
+  "title": "Spanakopita",
+  "blurb": "Greece's spinach pie — crisp phyllo layers with spinach, feta, and herbs.",
+  "cui": "Greek",
+  "time": "1 hr",
+  "method": "Oven · bake",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "thai-green-curry",
+  "title": "Thai Green Curry",
+  "blurb": "The most popular curry in Thailand: coconut milk spiked with green chillies, aromatic with basil and lime leaves.",
+  "cui": "Thai",
+  "time": "35 min",
+  "method": "Stovetop · coconut curry emulsion",
+  "ings": [
+   "420 mlFull-fat coconut milk, divided",
+   "240 mlUnsaled chicken stock",
+   "50 gGreen curry paste (about 3½ tbsp)",
+   "450 ×Boneless skinless chicken thighs, 2.5cm pieces",
+   "225 gThai aubergine, quartered (or 1 × 540g can bamboo shoots)",
+   "1Red capsicum, julienned",
+   "30 gPalm sugar, finely chopped",
+   "30 mlFish sauce",
+   "5Fresh makrut lime leaves, torn",
+   "15 gFresh Thai basil leaves"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "french-onion-soup",
+  "title": "French Onion Soup, Gruyère Crouton",
+  "blurb": "Caramelised onions simmered in beef broth, topped with toasted baguette and melted Gruyère — French comfort at its finest.",
+  "cui": "French · Classic",
+  "time": "1 hr 30 min",
+  "method": "Stovetop & oven · caramelise & grill",
+  "ings": [
+   "6 ×large yellow onions, thinly sliced",
+   "60 gbutter",
+   "1½ Lbeef broth or stock",
+   "120 mldry white wine (optional)",
+   "2bay leaves",
+   "4sprigs fresh thyme",
+   "1 tspflaky sea salt",
+   "½ tspblack pepper",
+   "1baguette, sliced into 1cm rounds",
+   "200 gGruyère cheese, grated",
+   "30 gParmesan, grated"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "churros-chocolate",
+  "title": "Churros & Chocolate",
+  "blurb": "Crisp ridged batons, rolled in sugar, with a cup of dark chocolate.",
+  "cui": "Spanish",
+  "time": "30 min",
+  "method": "Stovetop · deep-fry",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "bobotie",
+  "title": "Bobotie",
+  "blurb": "South Africa's national dish — sweet, spiced Cape Malay mince baked under a savoury egg-custard lid, perfumed with bay and served with yellow rice.",
+  "cui": "South African · Cape Malay",
+  "time": "1 hr 15 min",
+  "method": "Stovetop · oven bake",
+  "ings": [
+   "250 gbeef mince",
+   "1 ×medium onion, finely chopped",
+   "1garlic clove, crushed",
+   "2 tspmedium curry powder",
+   "¼ tspground turmeric",
+   "¼ tspground coriander",
+   "¼ tspground ginger",
+   "1 ×small Granny Smith apple, finely diced",
+   "60 ggreen capsicum, finely diced",
+   "1 ×slice white bread, crusts removed",
+   "60 mlmilk, to soak the bread",
+   "1 tbspapricot jam",
+   "½ tbspwhite vinegar",
+   "½ tspbeef stock powder",
+   "½ tspsalt",
+   "3fresh bay leaves",
+   "1egg",
+   "60 mlmilk"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "breyani",
+  "title": "Breyani",
+  "blurb": "Durban's celebratory feast — layered rice and meat in aromatic spices, the crown of Durban Indian cuisine.",
+  "cui": "South African · Durban Indian",
+  "time": "2 hr (plus marinating)",
+  "method": "Stovetop · steam layered",
+  "ings": [
+   "500 ×boneless chicken thighs or lamb, cubed",
+   "200 ×plain yoghurt",
+   "30 ×ginger-garlic paste",
+   "2 tbspbiryani masala or mild curry powder",
+   "1 tspturmeric",
+   "1 tspsalt",
+   "30 mllemon juice",
+   "45 mloil",
+   "300 ×basmati rice",
+   "2potatoes, peeled and cubed",
+   "2onions, thinly sliced",
+   "2tomatoes, chopped",
+   "4whole cardamom pods",
+   "2cinnamon sticks",
+   "4cloves",
+   "1bay leaf",
+   "30 ×butter",
+   "15 ×coriander, chopped"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ }
+]

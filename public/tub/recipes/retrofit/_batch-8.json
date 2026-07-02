@@ -1,0 +1,270 @@
+[
+ {
+  "slug": "malva-pudding",
+  "title": "Malva Pudding",
+  "blurb": "South Africa's Sunday favourite — caramelised apricot sponge with hot cream-butter sauce.",
+  "cui": "South African",
+  "time": "50 min",
+  "method": "Oven · bake + sauce",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "potjiekos",
+  "title": "Potjiekos",
+  "blurb": "South Africa's fireside feast — meat and vegetables layered, never stirred, and simmered for hours in a three-legged cast-iron potjie.",
+  "cui": "South African · Cape Dutch",
+  "time": "2 hr 30 min",
+  "method": "Fire · slow-simmer in a potjie",
+  "ings": [
+   "800 ×lamb neck or oxtail, cubed",
+   "30 mlsunflower oil",
+   "1 tspsalt",
+   "½ tspblack pepper",
+   "½ tspdried thyme",
+   "2large onions, sliced",
+   "4baby potatoes, halved",
+   "2sweet potatoes, peeled and cubed",
+   "2carrots, cut into chunks",
+   "1butternut, cubed",
+   "150 ×green beans, trimmed",
+   "100 ×cabbage, wedged",
+   "250 mlbeef stock",
+   "150 mldry red wine",
+   "2 tspdried mixed herbs"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "beef-ribs-sticky-braise",
+  "title": "Beef Ribs with Sticky Glaze",
+  "blurb": "Slow-braised beef ribs lacquered in a sweet-savoury glaze — falling-off-the-bone, restaurant-quality.",
+  "cui": "American steakhouse · South African",
+  "time": "3 hr 30 min",
+  "method": "Oven-braise · optional braai finish",
+  "ings": [
+   "1 kgbeef ribs, bone-in rack",
+   "1½ tspsalt",
+   "1 tspblack pepper",
+   "1 tbspcooking oil",
+   "2large onions, thickly sliced",
+   "6garlic, crushed",
+   "2carrots, chopped",
+   "250 mlbeef stock or water",
+   "125 mlred wine",
+   "2 tbspWorcestershire sauce",
+   "3 tbsptomato sauce",
+   "2 tbspbrown sugar",
+   "2 tbspsoy sauce",
+   "1 tbspvinegar",
+   "2garlic, minced",
+   "1 tbsptomato paste",
+   "½ tspchilli flakes"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "espetada",
+  "title": "Espetada",
+  "blurb": "Beef cubes marinated in garlic, bay and vinegar, grilled on skewers — a Madeiran classic at the SA braai.",
+  "cui": "Portuguese · South African",
+  "time": "40 min (plus marinate)",
+  "method": "Grill · braai",
+  "ings": [
+   "500 grump or sirloin, cut into 3–4 cm cubes",
+   "6garlic, crushed",
+   "1 ×small onion, grated",
+   "4 tbspolive oil",
+   "2 tbspwine vinegar (red or white)",
+   "1 tspsalt",
+   "1 tspblack pepper",
+   "8fresh bay leaves",
+   "250 gbutton or baby mushrooms",
+   "2 tbspleftover marinade",
+   "1 tbspbutter, melted"
+  ],
+  "miss": [
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "roast-leg-lamb-rosemary-garlic",
+  "title": "Roast Leg of Lamb, Rosemary & Garlic",
+  "blurb": "Easter Sunday classic - leg of lamb roasted with rosemary, garlic, and lemon.",
+  "cui": "Mediterranean · Greek",
+  "time": "2 hr",
+  "method": "Oven · roast",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "boerewors",
+  "title": "Boerewors",
+  "blurb": "South Africa's national sausage — coarse beef sausage spiced with toasted coriander, grilled to smoky perfection over the coals.",
+  "cui": "South African · Afrikaans",
+  "time": "45 min (plus marinating)",
+  "method": "Fire · braai or stovetop · pan-fry",
+  "ings": [
+   "600 ×beef mince, coarse minced",
+   "200 ×pork fat or beef fat, cubed and frozen",
+   "30 mlvinegar (brown vinegar or white vinegar)",
+   "30 mlice-cold water",
+   "15 ×coriander seeds, toasted",
+   "1 tspblack peppercorns, crushed",
+   "¼ tspcloves",
+   "¼ tspallspice berries",
+   "1 tspsalt",
+   "½ tspground coriander",
+   "¼ tspnutmeg",
+   "¼ tspground cinnamon",
+   "¼ tspginger powder",
+   "2bread rolls, halved",
+   "30 mlmustard (English or mustard sauce)",
+   "45 mltomato relish or chakalaka"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "chakalaka",
+  "title": "Chakalaka",
+  "blurb": "South Africa's fiery relish — onions, peppers, carrots and baked beans simmered with curry spice, the heartbeat of any braai plate.",
+  "cui": "South African · townships",
+  "time": "35 min",
+  "method": "Stovetop · simmer",
+  "ings": [
+   "2onions, chopped",
+   "150 ×green capsicum, diced",
+   "150 ×red capsicum, diced",
+   "100 ×carrots, grated",
+   "30 mlsunflower oil",
+   "2garlic cloves, crushed",
+   "1fresh chilli, finely chopped",
+   "2 tbspcurry powder",
+   "1 tspground ginger",
+   "400 ×tomatoes, grated or chopped",
+   "400 ×baked beans in tomato sauce",
+   "½ tspsalt",
+   "¼ tspblack pepper"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "focaccia",
+  "title": "Focaccia",
+  "blurb": "Liguria's olive-oil flatbread — a dimpled, pillowy crumb with a crackling golden bottom, scattered with sea salt and rosemary.",
+  "cui": "Italian · Liguria",
+  "time": "2 hr 30 min (plus proving)",
+  "method": "Oven · bake",
+  "ings": [
+   "350 ×bread flour",
+   "7 ginstant yeast",
+   "1½ tspsalt",
+   "30 mlextra-virgin olive oil",
+   "250 mllukewarm water",
+   "3 tbspextra-virgin olive oil, for topping",
+   "2 tbspfresh rosemary leaves",
+   "1 tspflaky sea salt"
+  ],
+  "miss": [
+   "prep",
+   "cook",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "mealie-bread",
+  "title": "Mealie Bread",
+  "blurb": "Sweet corn bread — moist, golden and flecked with corn kernels, a beloved braai side and tea-time treat.",
+  "cui": "South African · Afrikaans",
+  "time": "1 hr",
+  "method": "Oven · bake",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "sides",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ },
+ {
+  "slug": "naan-bread",
+  "title": "Naan Bread",
+  "blurb": "Indian flatbread classic - soft, pillowy naan baked in a hot tandoor or oven.",
+  "cui": "Indian · Traditional",
+  "time": "1 hr (plus proving)",
+  "method": "Oven · bake",
+  "ings": [],
+  "miss": [
+   "prep",
+   "cook",
+   "mistakes",
+   "storage",
+   "chef_upgrade",
+   "health_forward",
+   "diets",
+   "diet_notes"
+  ]
+ }
+]

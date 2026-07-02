@@ -60,14 +60,26 @@
     <h1>The Ultimate Bachelor Cookbook</h1>
     <p class="tagline">"Dinner is on you."</p>
     <p class="lede">Feed yourself well. Impress everyone else. An intimate kitchen companion for the eligible man — date-night showstoppers, effortless hosting, and a dozen dishes worth mastering.</p>
-    <span class="status"><span class="dot"></span> Locked · Warm Premium · Dark &amp; Moody · Date-led</span>
+    <span class="status"><span class="dot"></span> Live app: TUB · 146 dishes · wine-red/gold editorial</span>
   </header>
 
-  <h2>Start here</h2>
+  <h2>Live app</h2>
+  <div class="grid">
+    <a class="card" href="../public/tub/tub-app.html">
+      <p class="t">TUB — open the app</p>
+      <p class="d">The working copy. Also served at site root (/) via a redirect.</p>
+    </a>
+    <a class="card" href="../knowledge/ROADMAP.md">
+      <p class="t">Roadmap — start here</p>
+      <p class="d">What TUB supersedes, what's still open, full provenance.</p>
+    </a>
+  </div>
+
+  <h2>Legacy Next.js build (dormant, not deleted)</h2>
   <div class="grid">
     <a class="card" href="../knowledge/PROJECT_BRIEF.md">
       <p class="t">Project Brief</p>
-      <p class="d">Positioning, voice, look &amp; goals.</p>
+      <p class="d">Positioning, voice, look &amp; goals — original v1 framing.</p>
     </a>
     <a class="card" href="../knowledge/CONTENT_MODEL.md">
       <p class="t">Content Model</p>
@@ -75,11 +87,55 @@
     </a>
     <a class="card" href="../DESIGN.md">
       <p class="t">Design Language</p>
-      <p class="d">Palette, type, photography, components.</p>
+      <p class="d">Dark &amp; Moody — superseded for TUB, see Roadmap.</p>
     </a>
     <a class="card" href="../CLAUDE.md">
       <p class="t">Project Rules</p>
-      <p class="d">How AI agents work in this repo.</p>
+      <p class="d">How AI agents work in this repo — TUB banner up top.</p>
+    </a>
+  </div>
+
+  <h2>Planning</h2>
+  <div class="grid">
+    <a class="card" href="../knowledge/ROADMAP.md">
+      <p class="t">Roadmap</p>
+      <p class="d">Master plan: current state, phases, owner decisions.</p>
+    </a>
+    <a class="card" href="../knowledge/LIBRARY_PLAN.md">
+      <p class="t">Library Plan</p>
+      <p class="d">Target 100 recipes — active content expansion plan.</p>
+    </a>
+  </div>
+
+  <h2>Brand &amp; craft</h2>
+  <div class="grid">
+    <a class="card" href="../knowledge/SIGNATURE_12.md">
+      <p class="t">The Signature 12</p>
+      <p class="d">The dozen dishes every man should own by heart.</p>
+    </a>
+    <a class="card" href="../knowledge/UX_NAVIGATION.md">
+      <p class="t">Navigation &amp; Personalisation</p>
+      <p class="d">Occasion as entry point; adaptive detail, not a quiz.</p>
+    </a>
+    <a class="card" href="../knowledge/INFLUENCES.md">
+      <p class="t">House Influences</p>
+      <p class="d">The technique DNA behind how recipes are written.</p>
+    </a>
+  </div>
+
+  <h2>Proposals — not yet adopted</h2>
+  <div class="grid">
+    <a class="card" href="../knowledge/CONTENT_MODEL_V2_PROPOSAL.md">
+      <p class="t">Content Model v2</p>
+      <p class="d">Nutrition, pairings, method options. Deferred — see Roadmap owner decisions.</p>
+    </a>
+    <a class="card" href="../knowledge/GUIDED_COOK_SPEC.md">
+      <p class="t">Guided Cook Spec</p>
+      <p class="d">Brief &rarr; Timeline &rarr; Cook flow. Blocked on Content Model v2.</p>
+    </a>
+    <a class="card" href="../design/ELEVATION_PROPOSAL.md">
+      <p class="t">Design Elevation Proposal</p>
+      <p class="d">Motion, glass &amp; glow tokens on the locked palette. Not started.</p>
     </a>
   </div>
 
@@ -87,14 +143,18 @@
   <div class="tree"><b>BachelorCookBook/</b>
 ├── CLAUDE.md          project rules (read first)
 ├── DESIGN.md          design language
-├── AI_AGENT_OS.md -&gt;  the OS (symlink)
+├── AI_AGENT_OS.md      the OS
 ├── <b>docs/</b>
 │   └── index.html     this portal
 ├── <b>knowledge/</b>      canonical source of truth
-│   ├── PROJECT_BRIEF.md
-│   └── CONTENT_MODEL.md
-├── <b>design/</b>         Open Design exports
-└── <b>prompts/</b>        reusable agent prompts</div>
+│   ├── PROJECT_BRIEF.md, CONTENT_MODEL.md, SIGNATURE_12.md
+│   ├── UX_NAVIGATION.md, INFLUENCES.md
+│   ├── ROADMAP.md, LIBRARY_PLAN.md
+│   ├── *_PROPOSAL.md, GUIDED_COOK_SPEC.md  (not yet adopted)
+│   └── <b>recipes/</b>    recipe markdown + frontmatter
+├── <b>design/</b>         Open Design exports (images, proposals)
+├── <b>prompts/</b>        reusable agent prompts
+└── <b>src/</b>            Next.js app (App Router)</div>
 
   <footer>
     Runs under the <a href="../AI_AGENT_OS.md">AI Agent OS</a>. Knowledge is canonical; this HTML is a generated portal.

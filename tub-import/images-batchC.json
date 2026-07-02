@@ -1,0 +1,6 @@
+{"items":[
+{"slug":"focaccia","url":"https://images.unsplash.com/photo-1767065888180-067124f4bedd?auto=format&fit=crop&w=1200&q=80","match":"exact"},
+{"slug":"borscht","url":"https://images.unsplash.com/photo-1780814303735-686588637714?auto=format&fit=crop&w=1200&q=80","match":"exact"},
+{"slug":"potbrood","url":"https://images.unsplash.com/photo-1770672438590-413eae05e595?auto=format&fit=crop&w=1200&q=80","match":"good"},
+{"slug":"vetkoek","url":"https://images.unsplash.com/photo-1711919432544-ba04b9b18169?auto=format&fit=crop&w=1200&q=80","match":"approx"}
+]}

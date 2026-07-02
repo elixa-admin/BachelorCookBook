@@ -1,0 +1,627 @@
+[
+  {
+    "slug": "mussakhan",
+    "t": "Musakhan",
+    "cui": "Palestinian"
+  },
+  {
+    "slug": "kibbeh",
+    "t": "Kibbeh",
+    "cui": "Levantine"
+  },
+  {
+    "slug": "fattoush",
+    "t": "Fattoush",
+    "cui": "Levantine"
+  },
+  {
+    "slug": "palak-paneer",
+    "t": "Palak Paneer",
+    "cui": "North Indian"
+  },
+  {
+    "slug": "malai-kofta",
+    "t": "Malai Kofta",
+    "cui": "North Indian · Mughlai"
+  },
+  {
+    "slug": "potjiekos",
+    "t": "Potjiekos",
+    "cui": "South African · Cape Dutch"
+  },
+  {
+    "slug": "melktert",
+    "t": "Melktert",
+    "cui": "South African · Cape Dutch"
+  },
+  {
+    "slug": "koeksisters",
+    "t": "Koeksisters",
+    "cui": "South African · Cape Malay / Afrikaans"
+  },
+  {
+    "slug": "vetkoek",
+    "t": "Vetkoek with Curried Mince",
+    "cui": "South African"
+  },
+  {
+    "slug": "potbrood",
+    "t": "Potbrood",
+    "cui": "South African"
+  },
+  {
+    "slug": "chakalaka",
+    "t": "Chakalaka",
+    "cui": "South African · townships"
+  },
+  {
+    "slug": "focaccia",
+    "t": "Focaccia",
+    "cui": "Italian · Liguria"
+  },
+  {
+    "slug": "crepes",
+    "t": "Crêpes",
+    "cui": "French"
+  },
+  {
+    "slug": "lamb-shank-red-wine",
+    "t": "Red-Wine Braised Lamb Shank",
+    "cui": "Mediterranean"
+  },
+  {
+    "slug": "steak-frites-cafe-de-paris",
+    "t": "Steak Frites, Café de Paris Butter",
+    "cui": "Bistro · French"
+  },
+  {
+    "slug": "bouillabaisse",
+    "t": "Bouillabaisse",
+    "cui": "French · Mediterranean"
+  },
+  {
+    "slug": "duck-a-l-orange",
+    "t": "Duck à l'Orange",
+    "cui": "French · Classic"
+  },
+  {
+    "slug": "chicken-tikka-masala",
+    "t": "Chicken Tikka Masala",
+    "cui": "British-Indian · Curry"
+  },
+  {
+    "slug": "bibimbap",
+    "t": "Bibimbap",
+    "cui": "Korean · Mixed Rice"
+  },
+  {
+    "slug": "macaroni-cheese",
+    "t": "Macaroni Cheese",
+    "cui": "American · Comfort"
+  },
+  {
+    "slug": "chicken-satay",
+    "t": "Chicken Satay",
+    "cui": "Indonesian · Street Food"
+  },
+  {
+    "slug": "dan-dan-noodles",
+    "t": "Dan Dan Noodles",
+    "cui": "Sichuanese · Chinese"
+  },
+  {
+    "slug": "tteokbokki",
+    "t": "Tteokbokki",
+    "cui": "Korean · Street Food"
+  },
+  {
+    "slug": "char-siu-pork",
+    "t": "Char Siu Pork",
+    "cui": "Chinese · Cantonese"
+  },
+  {
+    "slug": "bunny-chow",
+    "t": "Bunny Chow",
+    "cui": "South African · Durban Indian"
+  },
+  {
+    "slug": "durban-mutton-curry",
+    "t": "Durban Mutton Curry",
+    "cui": "South African · Durban Indian"
+  },
+  {
+    "slug": "boerewors",
+    "t": "Boerewors",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "shisa-nyama",
+    "t": "Shisa Nyama",
+    "cui": "South African · Township"
+  },
+  {
+    "slug": "mozambican-peri-peri-chicken",
+    "t": "Mozambican Peri-Peri Chicken",
+    "cui": "Mozambican · Southern African"
+  },
+  {
+    "slug": "waterblommetjie-bredie",
+    "t": "Waterblommetjie Bredie",
+    "cui": "South African · Cape Dutch"
+  },
+  {
+    "slug": "denningvleis",
+    "t": "Denningvleis",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "sosaties",
+    "t": "Sosaties",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "snoek-braai-apricot-jam",
+    "t": "Snoek Braai with Apricot Jam",
+    "cui": "South African · Cape"
+  },
+  {
+    "slug": "umngqusho",
+    "t": "Umngqusho (Samp & Beans)",
+    "cui": "South African · Xhosa"
+  },
+  {
+    "slug": "breyani",
+    "t": "Breyani",
+    "cui": "South African · Durban Indian"
+  },
+  {
+    "slug": "pickled-fish",
+    "t": "Pickled Fish",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "pap",
+    "t": "Pap (Mealie Meal)",
+    "cui": "South African"
+  },
+  {
+    "slug": "roosterkoek",
+    "t": "Roosterkoek",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "mealie-bread",
+    "t": "Mealie Bread",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "biltong",
+    "t": "Biltong",
+    "cui": "South African · Traditional"
+  },
+  {
+    "slug": "droewors",
+    "t": "Droëwors",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "peppermint-crisp-tart",
+    "t": "Peppermint Crisp Tart",
+    "cui": "South African"
+  },
+  {
+    "slug": "hertzoggies",
+    "t": "Hertzoggies",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "linguine-vongole-clams",
+    "t": "Linguine alle Vongole (Clams)",
+    "cui": "Italian · Neapolitan"
+  },
+  {
+    "slug": "braai-lamb-chops-chimichurri",
+    "t": "Braai Lamb Chops, Chimichurri",
+    "cui": "South African · Argentine"
+  },
+  {
+    "slug": "roast-leg-lamb-rosemary-garlic",
+    "t": "Roast Leg of Lamb, Rosemary & Garlic",
+    "cui": "Mediterranean · Greek"
+  },
+  {
+    "slug": "pappardelle-venison-wild-mushroom-ragu",
+    "t": "Pappardelle, Venison & Wild Mushroom Ragù",
+    "cui": "Italian · Tuscan"
+  },
+  {
+    "slug": "arroz-negro-black-paella",
+    "t": "Arroz Negro (Black Paella)",
+    "cui": "Spanish · Valencian"
+  },
+  {
+    "slug": "red-wine-braised-short-rib",
+    "t": "Red-Wine Braised Short Rib",
+    "cui": "Modern · American"
+  },
+  {
+    "slug": "oysters-mignonette",
+    "t": "Oysters, Mignonette",
+    "cui": "French · Classic"
+  },
+  {
+    "slug": "steak-tartare",
+    "t": "Steak Tartare",
+    "cui": "French · Classic"
+  },
+  {
+    "slug": "whole-roast-sea-bass",
+    "t": "Whole Roast Sea Bass",
+    "cui": "Mediterranean · Greek"
+  },
+  {
+    "slug": "naan-bread",
+    "t": "Naan Bread",
+    "cui": "Indian · Traditional"
+  },
+  {
+    "slug": "guacamole",
+    "t": "Guacamole",
+    "cui": "Mexican · Traditional"
+  },
+  {
+    "slug": "elote-mexican-street-corn",
+    "t": "Elote (Mexican Street Corn)",
+    "cui": "Mexican · Street Food"
+  },
+  {
+    "slug": "croissants",
+    "t": "Croissants",
+    "cui": "French · Bakery"
+  },
+  {
+    "slug": "quesadillas",
+    "t": "Quesadillas",
+    "cui": "Mexican · Street Food"
+  },
+  {
+    "slug": "gemista-stuffed-peppers-aubergine",
+    "t": "Gemista (Stuffed Peppers & Aubergine)",
+    "cui": "Greek · Traditional"
+  },
+  {
+    "slug": "pozole",
+    "t": "Pozole",
+    "cui": "Mexican · Traditional"
+  },
+  {
+    "slug": "tamales",
+    "t": "Tamales",
+    "cui": "Mexican · Traditional"
+  },
+  {
+    "slug": "harira-lamb-chickpea-soup",
+    "t": "Harira (Lamb & Chickpea Soup)",
+    "cui": "Moroccan · Traditional"
+  },
+  {
+    "slug": "causa-limena",
+    "t": "Causa Limeña",
+    "cui": "Peruvian · Lima"
+  },
+  {
+    "slug": "beef-teriyaki",
+    "t": "Beef Teriyaki",
+    "cui": "Japanese · Home Cooking"
+  },
+  {
+    "slug": "chicken-biryani",
+    "t": "Chicken Biryani",
+    "cui": "Indian · Mughlai"
+  },
+  {
+    "slug": "southern-fried-chicken",
+    "t": "Southern Fried Chicken",
+    "cui": "American South"
+  },
+  {
+    "slug": "quiche-lorraine",
+    "t": "Quiche Lorraine",
+    "cui": "French · Lorraine"
+  },
+  {
+    "slug": "bun-cha",
+    "t": "Bun Cha",
+    "cui": "Vietnamese · Hanoi"
+  },
+  {
+    "slug": "korean-fried-chicken",
+    "t": "Korean Fried Chicken",
+    "cui": "Korean"
+  },
+  {
+    "slug": "doro-wat",
+    "t": "Doro Wat (Ethiopian Chicken)",
+    "cui": "Ethiopian"
+  },
+  {
+    "slug": "tiramisu",
+    "t": "Tiramisu",
+    "cui": "Italian"
+  },
+  {
+    "slug": "creme-brulee",
+    "t": "Crème Brûlée",
+    "cui": "French"
+  },
+  {
+    "slug": "malva-pudding",
+    "t": "Malva Pudding",
+    "cui": "South African"
+  },
+  {
+    "slug": "mango-sticky-rice",
+    "t": "Mango Sticky Rice",
+    "cui": "Thai"
+  },
+  {
+    "slug": "spanakopita",
+    "t": "Spanakopita",
+    "cui": "Greek"
+  },
+  {
+    "slug": "gatsby",
+    "t": "Gatsby",
+    "cui": "South African · Township"
+  },
+  {
+    "slug": "braaibroodjie",
+    "t": "Braaibroodjie",
+    "cui": "South African · Braai"
+  },
+  {
+    "slug": "frikkadels",
+    "t": "Frikkadels",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "tamatiebredie",
+    "t": "Tamatiebredie",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "geelrys",
+    "t": "Geelrys (Yellow Rice)",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "dombolo",
+    "t": "Dombolo (Steamed Bread Dumplings)",
+    "cui": "South African · Sotho/Zulu"
+  },
+  {
+    "slug": "magwinya",
+    "t": "Magwinya (Amagwinya)",
+    "cui": "South African · Township"
+  },
+  {
+    "slug": "morogo",
+    "t": "Morogo (Stewed Spinach)",
+    "cui": "South African · Sotho/Tswana"
+  },
+  {
+    "slug": "skilpadjies",
+    "t": "Skilpadjies",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "mosbolletjies",
+    "t": "Mosbolletjies",
+    "cui": "South African · Cape Dutch"
+  },
+  {
+    "slug": "pampoenkoekies",
+    "t": "Pampoenkoekies (Pumpkin Fritters)",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "boeber",
+    "t": "Boeber",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "buttermilk-rusks",
+    "t": "Buttermilk Rusks (Karringmelk Beskuit)",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "atchar",
+    "t": "Mango Atchar",
+    "cui": "South African · Indian/Durban"
+  },
+  {
+    "slug": "umqombothi",
+    "t": "Umqombothi (Traditional African Beer)",
+    "cui": "South African · Xhosa/Zulu"
+  },
+  {
+    "slug": "dom-pedro",
+    "t": "Dom Pedro",
+    "cui": "South African"
+  },
+  {
+    "slug": "kaiings",
+    "t": "Kaiings",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "umphokoqo",
+    "t": "Umphokoqo (Crumbly Pap)",
+    "cui": "South African · Xhosa"
+  },
+  {
+    "slug": "isidudu",
+    "t": "Isidudu (Pumpkin Porridge)",
+    "cui": "South African · Xhosa/Zulu"
+  },
+  {
+    "slug": "amadumbe",
+    "t": "Amadumbe (Yam)",
+    "cui": "South African · Zulu"
+  },
+  {
+    "slug": "oxtail-potjie",
+    "t": "Oxtail Potjie",
+    "cui": "South African · Potjie"
+  },
+  {
+    "slug": "vetkoek-curry-mince",
+    "t": "Vetkoek with Curried Mince",
+    "cui": "South African · Afrikaans"
+  },
+  {
+    "slug": "putu-pap",
+    "t": "Putu Pap (Krummelpap)",
+    "cui": "South African"
+  },
+  {
+    "slug": "moroho-sotho",
+    "t": "Moroho (Basotho Greens)",
+    "cui": "South African · Sotho"
+  },
+  {
+    "slug": "potato-bredie",
+    "t": "Potato Bredie",
+    "cui": "South African · Cape Malay/Afrikaans"
+  },
+  {
+    "slug": "cape-malay-apricot-chicken",
+    "t": "Cape Malay Apricot Chicken",
+    "cui": "South African · Cape Malay"
+  },
+  {
+    "slug": "mozambican-prawns",
+    "t": "Mozambican LM Prawns with Peri-Peri Garlic Butter",
+    "cui": "Mozambican · Coastal"
+  },
+  {
+    "slug": "fish-and-chips",
+    "t": "Fish and Chips",
+    "cui": "British"
+  },
+  {
+    "slug": "shepherds-pie",
+    "t": "Shepherd's Pie",
+    "cui": "British · Irish"
+  },
+  {
+    "slug": "cottage-pie",
+    "t": "Cottage Pie",
+    "cui": "British"
+  },
+  {
+    "slug": "chicken-noodle-soup",
+    "t": "Chicken Noodle Soup",
+    "cui": "American · Jewish"
+  },
+  {
+    "slug": "garlic-bread",
+    "t": "Garlic Bread",
+    "cui": "Italian-American"
+  },
+  {
+    "slug": "bruschetta",
+    "t": "Bruschetta",
+    "cui": "Italian"
+  },
+  {
+    "slug": "caprese-salad",
+    "t": "Caprese Salad",
+    "cui": "Italian"
+  },
+  {
+    "slug": "caesar-salad",
+    "t": "Caesar Salad",
+    "cui": "Mexican-American"
+  },
+  {
+    "slug": "nachos",
+    "t": "Nachos",
+    "cui": "Mexican-American"
+  },
+  {
+    "slug": "pulled-pork",
+    "t": "Pulled Pork",
+    "cui": "American · Southern"
+  },
+  {
+    "slug": "sausage-rolls",
+    "t": "Sausage Rolls",
+    "cui": "British"
+  },
+  {
+    "slug": "frittata",
+    "t": "Frittata",
+    "cui": "Italian"
+  },
+  {
+    "slug": "french-toast",
+    "t": "French Toast",
+    "cui": "European · American"
+  },
+  {
+    "slug": "ceviche-classico",
+    "t": "Ceviche Classico",
+    "cui": "Peruvian · Latin American"
+  },
+  {
+    "slug": "xiaolongbao",
+    "t": "Xiaolongbao (Soup Dumplings)",
+    "cui": "Chinese · Shanghainese"
+  },
+  {
+    "slug": "okonomiyaki",
+    "t": "Okonomiyaki",
+    "cui": "Japanese · Osaka"
+  },
+  {
+    "slug": "yakitori",
+    "t": "Yakitori",
+    "cui": "Japanese · Izakaya"
+  },
+  {
+    "slug": "takoyaki",
+    "t": "Takoyaki",
+    "cui": "Japanese · Osaka"
+  },
+  {
+    "slug": "banh-xeo",
+    "t": "Bánh Xèo",
+    "cui": "Vietnamese · Central Vietnam"
+  },
+  {
+    "slug": "laarb-mince",
+    "t": "Laarb (Minced Meat Salad)",
+    "cui": "Lao · Isan (Northeastern Thai)"
+  },
+  {
+    "slug": "laksa-curry",
+    "t": "Laksa (Curry)",
+    "cui": "Malaysian · Nyonya"
+  },
+  {
+    "slug": "taiwanese-beef-noodle-soup",
+    "t": "Taiwanese Beef Noodle Soup",
+    "cui": "Taiwanese"
+  },
+  {
+    "slug": "jianbing",
+    "t": "Jianbing",
+    "cui": "Chinese · Street Food"
+  },
+  {
+    "slug": "khachapuri",
+    "t": "Khachapuri (Georgian Cheese Bread)",
+    "cui": "Georgian · Caucasus"
+  }
+]

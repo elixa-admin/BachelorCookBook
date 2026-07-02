@@ -1,0 +1,22 @@
+const puppeteer=require('puppeteer-core');
+const CHROME='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+(async()=>{
+  const b=await puppeteer.launch({executablePath:CHROME,headless:'new',args:['--no-sandbox','--disable-gpu','--hide-scrollbars']});
+  const p=await b.newPage();
+  await p.setViewport({width:390,height:844,deviceScaleFactor:1,isMobile:true,hasTouch:true});
+  await p.goto('http://localhost:8000/tub-app.html',{waitUntil:'networkidle2'});
+  await p.waitForSelector('#grid .card',{timeout:10000});await wait(400);
+  await p.evaluate(()=>{if(window.addToList){window.addToList('steak',2);window.addToList('denningvleis',4);window.addToList('thai-green-curry',2);}});
+  await p.evaluate(()=>{if(window.openShop)window.openShop();});
+  await wait(800);
+  let st=await p.evaluate(()=>{const s=document.getElementById('shop');const cs=s?getComputedStyle(s):null;return s?('open='+s.classList.contains('open')+' pos='+cs.position+' disp='+cs.display+' z='+cs.zIndex+' scrollH='+s.scrollHeight):'no shop';});
+  console.log('SHOP state: '+st);
+  const shopEl=await p.$('#shop'); if(shopEl)await shopEl.screenshot({path:'shot-shop-el.png'}); 
+  await p.evaluate(()=>{['detail','cook','shop','plan','methods'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('open');});});
+  await wait(250);
+  await p.evaluate(()=>{if(window.openPlan)window.openPlan();});
+  await wait(800);
+  const planEl=await p.$('#plan'); if(planEl)await planEl.screenshot({path:'shot-plan-el.png'});
+  await b.close();console.log('element shots done');
+})().catch(e=>console.error('FAIL',e.message));

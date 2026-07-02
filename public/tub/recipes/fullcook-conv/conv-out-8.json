@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "beef-teriyaki",
+    "t": "Beef Teriyaki",
+    "tier": "global",
+    "cui": "Japanese · Home Cooking",
+    "occ": ["solo", "date"],
+    "time": "30 min (plus marinating)",
+    "method": "Grill · grill",
+    "diff": "Easy",
+    "blurb": "Japanese home classic - beef grilled with sweet-savoury soy glaze.",
+    "prov": {
+      "popular_in": "Japanese households; izakayas; worldwide teriyaki popularity",
+      "famous_for": "The Japanese sweet-savoury glaze that became a global favourite",
+      "consists_of": "Beef grilled with teriyaki sauce (soy, mirin, sugar, ginger)",
+      "name_origin": "Japanese teriyaki (teri=gloss, yaki=grill); cooking technique name",
+      "why_loved": "Sweet-savoury glaze, caramelised edges, tender beef, quick cooking",
+      "method_detail": "Grill - beef marinated, grilled, brushed with teriyaki glaze until caramelised"
+    },
+    "brief": {
+      "lead": "A weeknight Japanese favourite - sirloin or ribeye steaks marinated in a soy-mirin glaze, seared in a smoking-hot pan until caramelised and glossy. Serve immediately over steamed rice with a side of miso soup and pickled vegetables.",
+      "expect": [["Quick", "30-minute cook after 20-minute marinade"], ["High heat", "Sear in smoking-hot pan for caramelisation"], ["Glossy finish", "Teriyaki sauce reduces to sticky glaze"], ["Tender", "Slice against grain for maximum tenderness"]],
+      "stats": [["30", "min", "Active"], ["2", "", "Serves 2"], ["Med", "", "Doneness"], ["4", "", "Steaks"]],
+      "kit": ["Large frying pan or grill pan", "Tongs", "Sharp knife", "Small saucepan"]
+    },
+    "ing": [
+      ["Marinade", [["linear", 125, "ml", "<b>soy sauce</b>"], ["linear", 60, "ml", "<b>mirin</b>"], ["linear", 45, "ml", "sugar"], ["taper", 1, "tbsp", "grated <b>fresh ginger</b>"], ["countN", 2, "cloves", "<b>garlic</b>, minced"], ["taper", 0.5, "tsp", "freshly ground black pepper"]]],
+      ["Beef", [["linear", 500, "g", "<b>beef sirloin or ribeye</b> steaks (2-3cm thick)"]]],
+      ["Serving", [["static", "", "steamed rice"], ["static", "", "miso soup"], ["static", "", "pickled ginger or vegetables"], ["static", "", "toasted sesame seeds"]]]
+    ],
+    "tl": [
+      ["T-00:00", "Make teriyaki sauce", "Combine soy, mirin, sugar, ginger, garlic in pan, simmer 2 min", 0],
+      ["T-00:05", "Marinate beef", "Cool sauce, coat beef, rest 20 min at room temperature", 1],
+      ["T-00:25", "Sear steaks", "Sear 2-3 min per side in smoking-hot pan", 0],
+      ["T-00:32", "Glaze and rest", "Brush with reduced sauce, rest 5 min", 1],
+      ["T-00:37", "Slice and serve", "Slice against grain, serve over rice", 0]
+    ],
+    "steps": [
+      ["Make the teriyaki sauce", "Combine soy sauce, mirin, sugar, ginger, garlic and black pepper in a small saucepan. Simmer for 2 minutes until sugar dissolves, then cool completely.", "Cooking the sauce mellows the garlic and ginger while dissolving the sugar.", 120],
+      ["Marinate the beef", "Place beef in a shallow dish, pour cooled teriyaki sauce over, turning to coat. Let stand at room temperature for 20 minutes.", "Room temperature meat sears evenly and stays tender.", 1200],
+      ["Sear the steaks", "Heat a large frying pan or grill pan over high heat until smoking. Remove beef from marinade (reserve sauce). Sear steaks 2-3 minutes per side for medium-rare.", "High heat creates the caramelised crust essential to teriyaki.", 150],
+      ["Glaze and rest", "Return reserved marinade to pan, simmer 1 minute until syrupy. Brush over steaks. Remove to a board, rest loosely tented for 5 minutes.", "Resting redistributes juices for tender meat; glaze adds glossy finish.", 300],
+      ["Slice and serve", "Slice beef against the grain into thin strips. Serve immediately over steamed rice with remaining sauce drizzled over, plus miso soup and pickles.", "Slicing against grain maximises tenderness; rice balances the salty-sweet glaze.", null]
+    ]
+  },
+  {
+    "slug": "braai-lamb-chops-chimichurri",
+    "t": "Braai Lamb Chops, Chimichurri",
+    "tier": "premium",
+    "cui": "South African · Argentine",
+    "occ": ["host", "date"],
+    "time": "40 min (plus marinating)",
+    "method": "Braai · grill",
+    "diff": "Medium",
+    "blurb": "Lamb chops grilled over coals, served with vibrant Argentine chimichurri sauce.",
+    "prov": {
+      "popular_in": "South African braais; Argentine asados",
+      "famous_for": "The perfect pairing - grilled lamb and herbaceous chimichurri",
+      "consists_of": "Lamb chops grilled over coals, served with parsley-garlic chimichurri sauce",
+      "name_origin": "South African braai tradition with Argentine chimichurri influence",
+      "why_loved": "Smoky char from coals, vibrant herb sauce, meltingly tender lamb",
+      "method_detail": "Braai - lamb chops marinated, grilled over hot coals, served with chimichurri"
+    },
+    "brief": {
+      "lead": "A fusion favourite - well-trimmed lamb chops marinated in olive oil and garlic, grilled over hot coals until charred and smoky, served with a bright, herbaceous chimichurri sauce. The sauce cuts through the rich lamb with vinegar and fresh herbs, while open-fire cooking adds that signature South African braai flavour. Serve with pap, grilled vegetables or a fresh salad.",
+      "expect": [["Open fire", "Grilled over hot coals for smoky char"], ["Marinated", "20 minutes in oil and garlic"], ["Vibrant sauce", "Fresh parsley, garlic and vinegar"], ["Medium doneness", "3-4 minutes per side for pink, tender lamb"]],
+      "stats": [["35", "min", "Active"], ["4", "", "Serves 4"], ["Med", "", "Doneness"], ["8", "", "Chops"]],
+      "kit": ["Braai grid or braai tongs", "Small mixing bowl", "Chopping board", "Brush for oiling"]
+    },
+    "ing": [
+      ["Lamb", [["linear", 8, "", "<b>lamb chops</b> (well-trimmed, 2-3cm thick)"], ["linear", 45, "ml", "<b>olive oil</b>"], ["countN", 4, "cloves", "<b>garlic</b>, minced"], ["taper", 1, "tsp", "salt"], ["taper", 0.5, "tsp", "freshly ground black pepper"]]],
+      ["Chimichurri", [["linear", 60, "g", "packed fresh <b>parsley</b> leaves"], ["countN", 4, "cloves", "<b>garlic</b>, roughly chopped"], ["linear", 60, "ml", "<b>olive oil</b>"], ["linear", 45, "ml", "<b>red wine vinegar</b>"], ["taper", 0.5, "tsp", "<b>dried oregano</b>"], ["taper", 0.25, "tsp", "salt"], ["taper", 0.25, "tsp", "freshly ground black pepper"], ["static", "", "chilli flakes to taste"]]],
+      ["Serving", [["static", "", "pap or potato wedges"], ["static", "", "grilled vegetables or salad"]]]
+    ]
+    ,
+    "tl": [
+      ["T-00:00", "Make chimichurri", "Blend herbs, garlic, oil, vinegar, spices, rest 10 min", 0],
+      ["T-00:10", "Marinate lamb", "Coat chops in oil-garlic mix, rest 20 min", 1],
+      ["T-00:30", "Prepare fire", "Heat coals until medium-hot (you can hold hand 5cm above for 3 sec)", 1],
+      ["T-00:35", "Grill chops", "Sear 3-4 min per side over medium-hot coals", 0],
+      ["T-00:44", "Rest and serve", "Rest 5 min, serve with chimichurri", 1]
+    ],
+    "steps": [
+      ["Make the chimichurri sauce", "Place parsley, garlic, olive oil, red wine vinegar, oregano, salt, pepper and chilli flakes in a blender. Pulse until roughly chopped but still textured. Pour into a bowl and rest for 10 minutes to meld flavours.", "Resting allows herbs and garlic to infuse the oil and vinegar.", 600],
+      ["Marinate the lamb", "Mix olive oil, minced garlic, salt and pepper in a shallow dish. Coat lamb chops thoroughly, turning to cover both sides. Let stand at room temperature for 20 minutes.", "Marinating adds flavour and helps the lamb sear, not steam.", 1200],
+      ["Prepare the braai", "Build a medium-hot fire - you should be able to hold your hand 5cm above the coals for 3 seconds. Rake the coals into an even bed.", "Medium heat allows fat rendering without burning the exterior.", 60],
+      ["Grill the chops", "Place lamb on the braai grid over medium-hot coals. Grill for 3-4 minutes per side for medium-rare to medium, turning once. The chops should develop a rich, charred crust.", "Open-fire cooking creates the signature smoky flavour of a braai.", 240],
+      ["Rest and serve", "Remove chops to a board, loosely tent with foil, and rest for 5 minutes. Serve with chimichurri spooned generously over, alongside pap, potato wedges or grilled vegetables.", "Resting redistributes juices for tender meat; chimichurri's acidity cuts the richness.", 300]
+    ]
+  },
+  {
+    "slug": "pap",
+    "t": "Pap (Mealie Meal)",
+    "tier": "signature",
+    "cui": "South African",
+    "occ": ["solo", "host"],
+    "time": "30 min",
+    "method": "Stovetop · simmer",
+    "diff": "Easy",
+    "blurb": "South Africa's daily bread - maize meal porridge, from crumbly phutu to smooth slap pap, the base of every meal.",
+    "prov": {
+      "popular_in": "Every South African home, across all cultures",
+      "famous_for": "Being the universal staple that accompanies stews, braais and curries nationwide",
+      "consists_of": "Maize meal cooked with water and salt into a stiff porridge, ranging from crumbly (phutu) to smooth (slap pap)",
+      "name_origin": "'Pap' is Afrikaans for porridge; maize meal was introduced by Dutch traders and became the staple crop",
+      "why_loved": "Humble, filling and endlessly versatile - the foundation of South African cuisine",
+      "method_detail": "Stovetop - water brought to boil, maize meal added while stirring, simmered 20-30 min until desired texture, stiff for phutu, softer for slap pap"
+    },
+    "brief": {
+      "lead": "The foundation of South African cooking - fine maize meal cooked with salted water into a smooth, thick porridge. For phutu (crumbly pap), cook to a stiff texture that breaks apart in soft mounds. For slap pap (smooth porridge), add more water and cook longer until silky. Serve immediately as the perfect accompaniment to curries, stews and braais, or with milk and sugar for breakfast.",
+      "expect": [["One pot", "Cooked entirely in a single heavy pot"], ["Constant stirring", "Prevents lumps and ensures smoothness"], ["Texture choice", "Stiff phutu or smooth slap pap"], ["Immediate serving", "Best served hot, straight from the stove"]],
+      "stats": [["25", "min", "Active"], ["4", "", "Serves 4"], ["Easy", "", "Difficulty"], ["250", "g", "Mealie meal"]],
+      "kit": ["Heavy-based pot (3 litres)", "Long-handled wooden spoon", "Measuring jug", "Ladle"]
+    },
+    "ing": [
+      ["Pap", [["linear", 1, "l", "<b>water</b>"], ["linear", 250, "g", "<b>maize meal</b> (fine white mealie meal)"], ["taper", 0.5, "tsp", "<b>salt</b>"]]],
+      ["Serving variations", [["static", "", "milk and sugar (for breakfast pap)"], ["static", "", "tomato and onion (for tomato pap)"], ["static", "", "stews, curries or braai meats"]]]
+    ],
+    "tl": [
+      ["T-00:00", "Boil water", "Bring salted water to rolling boil in heavy pot", 0],
+      ["T-00:05", "Add maize meal", "Pour in steady stream while stirring constantly", 0],
+      ["T-00:10", "First simmer", "Cook 5 min over low heat, stirring occasionally", 0],
+      ["T-00:15", "Second cook", "Cover and cook 10-15 min for phutu (20 min for slap pap)", 0],
+      ["T-00:30", "Beat and serve", "Beat with wooden spoon until smooth, serve hot", 0]
+    ],
+    "steps": [
+      ["Bring water to boil", "Place water and salt in a heavy-based pot and bring to a rolling boil over high heat. A heavy pot prevents scorching.", "Boiling water prevents lumps when maize meal is added.", 120],
+      ["Add the maize meal", "Pour maize meal into the boiling water in a steady stream with one hand while stirring vigorously with the other hand using a wooden spoon.", "Stirring while adding prevents lumps from forming.", 180],
+      ["First simmer", "Reduce heat to low, cover, and simmer for 5 minutes, stirring once or twice to prevent sticking.", "Initial cooking softens the maize meal grains.", 300],
+      ["Second cook for texture", "For phutu (stiff, crumbly pap), cook another 10-15 minutes until very thick and pulls away from the sides. For slap pap (smooth, soft porridge), add 125ml more water and cook another 15-20 minutes until silky.", "Longer cooking breaks down grains for desired texture.", 900],
+      ["Beat and serve", "Remove from heat and beat vigorously with the wooden spoon until smooth and glossy. Serve immediately in soft mounds alongside stews, curries or braai meats, or with milk and sugar for breakfast.", "Beating aerates the pap for lighter texture; serves best hot.", 60]
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+const fs=require('fs');const DIR='/Users/brandondienar/.claude/jobs/d2505485/tmp/recipes/';
+global.window={};
+['recipes-data.js','premium-batch.js','global-exotic-batch.js','compendium-batch.js','recipes-batch5.js'].forEach(f=>eval(fs.readFileSync(DIR+f,'utf8')));
+const W=window;
+const full=new Set(['steak','carbonara','salmon','roast-chicken','churros','churros-chocolate']);
+[W.RECIPES,W.PREMIUM_BATCH,W.GLOBAL_EXOTIC_BATCH,W.COMPENDIUM].forEach(s=>(s||[]).forEach(r=>{if(r&&r.slug)full.add(r.slug);}));
+const SEMDUP=['pan-seared-steak-butter-thyme','roast-chicken-lemon-garlic-herbs','crispy-skin-salmon-brown-butter-capers','spaghetti-carbonara','churros-dipping-chocolate','pizza-margherita'];
+const all=W.BATCH5||[];
+const kept=all.filter(r=>r&&r.slug&&!full.has(r.slug)&&!SEMDUP.includes(r.slug));
+const removed=all.filter(r=>!r||full.has(r.slug)||SEMDUP.includes(r.slug)).map(r=>r?r.slug:'(bad)');
+fs.writeFileSync(DIR+'recipes-batch5.js','window.BATCH5='+JSON.stringify(kept,null,2)+';\n');
+console.log('batch5: before='+all.length+' kept='+kept.length+' removed='+removed.length);
+console.log('removed: ['+removed.join(', ')+']');
+console.log('kept('+kept.length+'): '+kept.map(r=>r.slug).join(', '));

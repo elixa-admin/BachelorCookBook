@@ -1,0 +1,338 @@
+{
+  "palak-paneer": {
+    "q": "Palak Paneer",
+    "match": "Matar Paneer",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg"
+  },
+  "malai-kofta": {
+    "q": "Malai Kofta",
+    "match": "kofta burgers",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/lgmnff1763789847.jpg"
+  },
+  "sticky-toffee-pudding": {
+    "q": "Sticky Toffee Pudding",
+    "match": "Sticky Toffee Pudding",
+    "score": 1.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/xqqqtu1511637379.jpg"
+  },
+  "borscht": {
+    "q": "Borscht",
+    "match": "Beetroot Soup (Borscht)",
+    "score": 0.84,
+    "thumb": "https://www.themealdb.com/images/media/meals/zadvgb1699012544.jpg"
+  },
+  "coq-au-vin": {
+    "q": "Coq au Vin",
+    "match": "Coq au vin",
+    "score": 1.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/qstyvs1505931190.jpg"
+  },
+  "rogan-josh": {
+    "q": "Rogan Josh",
+    "match": "Lamb Rogan josh",
+    "score": 1.14,
+    "thumb": "https://www.themealdb.com/images/media/meals/vvstvq1487342592.jpg"
+  },
+  "french-onion-soup": {
+    "q": "French Onion Soup, Gruyère Crouton",
+    "match": "French Onion Soup",
+    "score": 0.79,
+    "thumb": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg"
+  },
+  "duck-a-l-orange": {
+    "q": "Duck à l'Orange",
+    "match": "Duck Confit",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wvpvsu1511786158.jpg"
+  },
+  "beef-wellington": {
+    "q": "Beef Wellington",
+    "match": "Beef Wellington",
+    "score": 1.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/vvpprx1487325699.jpg"
+  },
+  "macaroni-cheese": {
+    "q": "Macaroni Cheese",
+    "match": "Cheese Borek",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/oal8x31764119345.jpg"
+  },
+  "chicken-satay": {
+    "q": "Chicken Satay",
+    "match": "Chicken Basquaise",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg"
+  },
+  "tom-yum-goong": {
+    "q": "Tom Yum Goong",
+    "match": "Tom yum soup with prawns",
+    "score": 0.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/l50vz41763422681.jpg"
+  },
+  "banh-mi": {
+    "q": "Bánh Mì",
+    "match": "Turkey Bánh mì",
+    "score": 1.01,
+    "thumb": "https://www.themealdb.com/images/media/meals/1wj8w31763781990.jpg"
+  },
+  "bunny-chow": {
+    "q": "Bunny Chow",
+    "match": "Mango chow",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/8hx4fi1780087744.jpg"
+  },
+  "pickled-fish": {
+    "q": "Pickled Fish",
+    "match": "Escovitch Fish",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/1520084413.jpg"
+  },
+  "mealie-bread": {
+    "q": "Mealie Bread",
+    "match": "Bread omelette",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/hqaejl1695738653.jpg"
+  },
+  "braai-lamb-chops-chimichurri": {
+    "q": "Braai Lamb Chops, Chimichurri",
+    "match": "Chilli ginger lamb chops",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/8xuvhj1763794991.jpg"
+  },
+  "roast-leg-lamb-rosemary-garlic": {
+    "q": "Roast Leg of Lamb, Rosemary & Garlic",
+    "match": "Leg of Lamb Armenian-Style",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/vy6k391780090969.jpg"
+  },
+  "arroz-negro-black-paella": {
+    "q": "Arroz Negro (Black Paella)",
+    "match": "Paella",
+    "score": 0.52,
+    "thumb": "https://www.themealdb.com/images/media/meals/9bl20p1763248192.jpg"
+  },
+  "steak-tartare": {
+    "q": "Steak Tartare",
+    "match": "Steak Diane",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg"
+  },
+  "naan-bread": {
+    "q": "Naan Bread",
+    "match": "Bread omelette",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/hqaejl1695738653.jpg"
+  },
+  "flapjacks-pancakes": {
+    "q": "Flapjacks (American Pancakes)",
+    "match": "Pancakes",
+    "score": 0.62,
+    "thumb": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg"
+  },
+  "eggs-benedict-hollandaise": {
+    "q": "Eggs Benedict, Hollandaise",
+    "match": "Salmon Eggs Eggs Benedict",
+    "score": 0.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/1550440197.jpg"
+  },
+  "harira-lamb-chickpea-soup": {
+    "q": "Harira (Lamb & Chickpea Soup)",
+    "match": "Chorizo & chickpea soup",
+    "score": 0.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/kggfo91763288633.jpg"
+  },
+  "beef-teriyaki": {
+    "q": "Beef Teriyaki",
+    "match": "Beef Asado",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/pkopc31683207947.jpg"
+  },
+  "chicken-biryani": {
+    "q": "Chicken Biryani",
+    "match": "Chicken Basquaise",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg"
+  },
+  "southern-fried-chicken": {
+    "q": "Southern Fried Chicken",
+    "match": "Chicken Basquaise",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg"
+  },
+  "lasagne-bolognese": {
+    "q": "Lasagne Bolognese",
+    "match": "Lasagne",
+    "score": 0.79,
+    "thumb": "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg"
+  },
+  "falafel-plate": {
+    "q": "Falafel Plate",
+    "match": "Falafel",
+    "score": 0.79,
+    "thumb": "https://www.themealdb.com/images/media/meals/u5e9qq1763795441.jpg"
+  },
+  "korean-fried-chicken": {
+    "q": "Korean Fried Chicken",
+    "match": "Chicken Basquaise",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg"
+  },
+  "malva-pudding": {
+    "q": "Malva Pudding",
+    "match": "Classic Christmas pudding",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/1d85821576790598.jpg"
+  },
+  "mango-sticky-rice": {
+    "q": "Mango Sticky Rice",
+    "match": "Num Ansom – Sticky Rice Cake",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/fycrai1782690897.jpg"
+  },
+  "chicken-liver-parfait": {
+    "q": "Chicken Liver Parfait",
+    "match": "Chicken Liver Pate Recipe",
+    "score": 0.67,
+    "thumb": "https://www.themealdb.com/images/media/meals/hob03q1780264260.jpg"
+  },
+  "lamb-tagine-apricot-almond": {
+    "q": "Lamb Tagine, Apricot & Almond",
+    "match": "Lamb Tagine",
+    "score": 0.79,
+    "thumb": "https://www.themealdb.com/images/media/meals/yuwtuu1511295751.jpg"
+  },
+  "atchar": {
+    "q": "Mango Atchar",
+    "match": "Mango chow",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/8hx4fi1780087744.jpg"
+  },
+  "potato-bredie": {
+    "q": "Potato Bredie",
+    "match": "Potato Moussaka Recipe",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/08ez421782683409.jpg"
+  },
+  "fish-and-chips": {
+    "q": "Fish and Chips",
+    "match": "Escovitch Fish",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/1520084413.jpg"
+  },
+  "shepherds-pie": {
+    "q": "Shepherd's Pie",
+    "match": "Cumberland Pie",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/pvfkz61761595976.jpg"
+  },
+  "cottage-pie": {
+    "q": "Cottage Pie",
+    "match": "Cumberland Pie",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/pvfkz61761595976.jpg"
+  },
+  "chicken-pot-pie": {
+    "q": "Chicken Pot Pie",
+    "match": "Spanish chicken pie",
+    "score": 0.67,
+    "thumb": "https://www.themealdb.com/images/media/meals/8ovxf41763253962.jpg"
+  },
+  "chicken-noodle-soup": {
+    "q": "Chicken Noodle Soup",
+    "match": "Salmon noodle soup",
+    "score": 0.67,
+    "thumb": "https://www.themealdb.com/images/media/meals/ikizdm1763760862.jpg"
+  },
+  "cream-of-tomato-soup": {
+    "q": "Cream of Tomato Soup",
+    "match": "Creamy Tomato Soup",
+    "score": 0.67,
+    "thumb": "https://www.themealdb.com/images/media/meals/stpuws1511191310.jpg"
+  },
+  "garlic-bread": {
+    "q": "Garlic Bread",
+    "match": "Bread omelette",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/hqaejl1695738653.jpg"
+  },
+  "caprese-salad": {
+    "q": "Caprese Salad",
+    "match": "Liegeoise Salad",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/ji3mho1782499823.jpg"
+  },
+  "caesar-salad": {
+    "q": "Caesar Salad",
+    "match": "Liegeoise Salad",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/ji3mho1782499823.jpg"
+  },
+  "chicken-wings": {
+    "q": "Chicken Wings",
+    "match": "Chicken wings with cumin, lemon & garlic",
+    "score": 0.91,
+    "thumb": "https://www.themealdb.com/images/media/meals/4hzyvq1763792564.jpg"
+  },
+  "pulled-pork": {
+    "q": "Pulled Pork",
+    "match": "Pork Cassoulet",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/wxuvuv1511299147.jpg"
+  },
+  "meatloaf": {
+    "q": "Meatloaf",
+    "match": "Turkey Meatloaf",
+    "score": 1.01,
+    "thumb": "https://www.themealdb.com/images/media/meals/ypuxtw1511297463.jpg"
+  },
+  "roast-beef": {
+    "q": "Roast Beef",
+    "match": "Beef Sunday Roast",
+    "score": 1.02,
+    "thumb": "https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg"
+  },
+  "french-toast": {
+    "q": "French Toast",
+    "match": "French Omelette",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/yvpuuy1511797244.jpg"
+  },
+  "waffles": {
+    "q": "Waffles",
+    "match": "Cambodian Waffles (Num Poum)",
+    "score": 0.74,
+    "thumb": "https://www.themealdb.com/images/media/meals/h7zrys1779736460.jpg"
+  },
+  "xiaolongbao": {
+    "q": "Xiaolongbao (Soup Dumplings)",
+    "match": "Clear Soup with Semolina Dumplings",
+    "score": 0.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/qserum1780156275.jpg"
+  },
+  "banh-xeo": {
+    "q": "Bánh Xèo",
+    "match": "Turkey Bánh mì",
+    "score": 0.89,
+    "thumb": "https://www.themealdb.com/images/media/meals/1wj8w31763781990.jpg"
+  },
+  "nasi-lemak": {
+    "q": "Nasi Lemak",
+    "match": "Nasi lemak",
+    "score": 1.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg"
+  },
+  "taiwanese-beef-noodle-soup": {
+    "q": "Taiwanese Beef Noodle Soup",
+    "match": "Salmon noodle soup",
+    "score": 0.57,
+    "thumb": "https://www.themealdb.com/images/media/meals/ikizdm1763760862.jpg"
+  },
+  "khachapuri": {
+    "q": "Khachapuri (Georgian Cheese Bread)",
+    "match": "Brazilian cheese bread (pão de queijo)",
+    "score": 0.5,
+    "thumb": "https://www.themealdb.com/images/media/meals/sl7cr91782588539.jpg"
+  }
+}
