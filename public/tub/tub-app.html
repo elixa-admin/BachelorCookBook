@@ -1353,10 +1353,8 @@ function renderFull(r){
     <div class="cookgrid"><div><div class="scaler" role="group" aria-label="Servings"><span class="lbl">Serves</span>
       <button data-serv="1">1</button><button data-serv="2" aria-pressed="true">2</button><button data-serv="4">4</button><button data-serv="6">6</button></div><div id="ings"></div><button class="btn ghost addlist" onclick="addAndToast('${r.slug}',currentServ())">＋ Add to shopping list</button></div>
       <div><h4 class="label" style="margin:0 0 12px">Timeline</h4>${timelineHTML(r)}</div></div></div></div></div>`;
-  var steps=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Step by step</span><h2>Guided cook</h2><span class="rule"></span></div>
-    <button class="btn primary cookstart" onclick="startCook('${r.slug}')">▶ Start guided cook — step through, hands-free</button>
-    <div class="steps" id="steps">${r.steps.map(s=>`<div class="step"><div class="n"></div><div class="body"><h4>${s[0]}</h4><p>${gloss(s[1])}</p><div class="why"><b>WHY</b> · ${gloss(s[2])}</div>
-      <div class="ctrls">${s[3]?`<button class="timerbtn" data-sec="${s[3]}"><span class="tm">${fmtClock(s[3])}</span> timer</button>`:''}<span class="check"><span class="bx"></span> done</span></div></div></div>`).join('')}</div></div></div>`;
+  var steps=`<div class="steps" id="steps">${r.steps.map(s=>`<div class="step"><div class="n"></div><div class="body"><h4>${s[0]}</h4><p>${gloss(s[1])}</p><div class="why"><b>WHY</b> · ${gloss(s[2])}</div>
+      <div class="ctrls">${s[3]?`<button class="timerbtn" data-sec="${s[3]}"><span class="tm">${fmtClock(s[3])}</span> timer</button>`:''}<span class="check"><span class="bx"></span> done</span></div></div></div>`).join('')}</div>`;
   var pair=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">To drink</span><h2>The pairing</h2><span class="rule"></span></div>
     <div class="pair">${(r.pair||[]).map(p=>`<div class="pcard"><div class="kind">${p[0]}</div><h3>${p[1]}</h3><div class="bot">${p[2]}</div><p>${p[3]}</p></div>`).join('')}</div></div></div>`;
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
