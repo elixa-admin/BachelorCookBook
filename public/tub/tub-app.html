@@ -216,6 +216,12 @@ button{font-family:var(--font)}
 .brief-core b{color:var(--accent-text);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
 .prov-p{font-size:19px;line-height:1.88;color:var(--text);margin:0 0 22px;letter-spacing:.008em}
 .prov-p .muted{color:var(--muted)}
+.story-body{max-width:72ch}
+.story-p{font-size:19px;line-height:1.88;color:var(--text);margin:0 0 22px;letter-spacing:.008em}
+.story-p .muted{color:var(--muted)}
+.dinner-fact{margin:36px 0 0;padding:18px 18px;background:rgba(188,58,66,0.08);border-left:3px solid var(--accent-bright);border-radius:2px}
+.dinner-fact .df-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-bright);font-weight:600;display:block;margin-bottom:8px}
+.dinner-fact p{font-size:16px;line-height:1.7;color:var(--text);margin:0}
 @media(max-width:640px){.pv-row{grid-template-columns:1fr;gap:6px}}
 .brief{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start}
 .brief p.lead{font-size:18px;line-height:1.6;margin:0 0 18px;max-width:60ch}
@@ -813,6 +819,7 @@ main{padding-bottom:64px}
 <script src="recipes/recipes-images.js"></script>
 <script src="recipes/glossary.js"></script>
 <script src="recipes/recipes-tips.js"></script>
+<script src="recipes/stories.js"></script>
 <script src="recipes/premium-batch.js"></script>
 <script src="recipes/global-exotic-batch.js"></script>
 <script src="recipes/substitutes.js"></script>
@@ -1240,6 +1247,18 @@ function provHTML(p){
   return `<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Provenance</span><h2>Where it comes from</h2><span class="rule"></span></div>
    <div class="prov-p-wrap"><p class="prov-p">${gloss(para)}</p><span class="mchip">⬢ ${p.method_detail}</span></div></div></div>`;
 }
+function storyHTML(slug){
+  var s=window.RECIPE_STORIES&&RECIPE_STORIES[slug];
+  if(!s)return provHTML(window.RECIPES_COMBINED&&RECIPES_COMBINED[slug]&&RECIPES_COMBINED[slug].prov)||'';
+  var html='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Editorial</span><h2>The story</h2><span class="rule"></span></div>';
+  html+='<div class="story-body">';
+  if(s.para1)html+='<p class="story-p">'+gloss(s.para1)+'</p>';
+  if(s.para2)html+='<p class="story-p">'+gloss(s.para2)+'</p>';
+  if(s.para3)html+='<p class="story-p">'+gloss(s.para3)+'</p>';
+  if(s.dinner_fact)html+='<div class="dinner-fact"><span class="df-label">Dinner fact</span><p>'+gloss(s.dinner_fact)+'</p></div>';
+  html+='</div></div></div>';
+  return html;
+}
 function __shapeMin(s){if(!s)return 0;var h=/(\d+(?:\.\d+)?)\s*h/i.exec(s),m=/(\d+)\s*min/i.exec(s);return (h?parseFloat(h[1])*60:0)+(m?parseInt(m[1],10):0);}
 function __tlParse(s){var m=/T([+\-−]?)(\d+):(\d+)/.exec(s||'');if(!m)return null;return {sign:(m[1]==='-'||m[1]==='−')?-1:1,a:parseInt(m[2],10),b:parseInt(m[3],10)};}
 function __tlSplitIdx(tl,prepMin,cookMin){
@@ -1360,7 +1379,7 @@ function renderFull(r){
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
     '<div class="rtabs-wrap"><div class="wrap rtabs"><button class="rtab active" data-t="cook" onclick="switchRecipeTab(\'cook\')">Cook</button><button class="rtab" data-t="story" onclick="switchRecipeTab(\'story\')">Story</button><button class="rtab" data-t="learn" onclick="switchRecipeTab(\'learn\')">Learn</button></div></div>'+
     '<div id="rtab-cook" class="rtabpane">'+brief+'<div id="variants"></div>'+gatherHTML(r)+mise+steps+extrasHTML(r)+'</div>'+
-    '<div id="rtab-story" class="rtabpane" style="display:none">'+provHTML(r.prov)+nomenHTML(r.slug)+platingHTML(r)+pair+'</div>'+
+    '<div id="rtab-story" class="rtabpane" style="display:none">'+storyHTML(r.slug)+nomenHTML(r.slug)+platingHTML(r)+pair+'</div>'+
     '<div id="rtab-learn" class="rtabpane" style="display:none">'+masterclassHTML(r)+tipsHTML(r.slug)+subsHTML(r)+nutritionHTML(r.slug)+'</div>';
   renderIgs(r.ing);renderVariants(r);wireDetail();showDetail();switchRecipeTab('cook');
 }
