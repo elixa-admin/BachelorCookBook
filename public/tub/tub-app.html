@@ -679,6 +679,21 @@ mark{background:var(--accent);color:var(--on-accent);padding:0 .14em;border-radi
 .pp-item:last-child{border-bottom:none}
 .pp-item .pp-cui{margin-left:auto;font-size:11px;color:var(--faint)}
 .pp-empty{text-align:center;color:var(--faint);font-size:13px;padding:24px}
+.botnav{position:fixed;bottom:0;left:0;right:0;height:56px;background:var(--ink);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:200}
+.botnav .wrap-wide{display:flex;gap:0;width:100%}
+.botnav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:none;background:none;color:var(--steel);font-size:11px;cursor:pointer;position:relative;transition:.2s ease;text-decoration:none}
+.botnav-btn:hover{color:var(--muted)}
+.botnav-btn.active{color:var(--accent)}
+.botnav-btn i{font-size:20px}
+.botnav-badge{position:absolute;top:8px;right:8px;min-width:16px;height:16px;padding:0 3px;border-radius:8px;background:var(--accent);color:var(--on-accent);font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
+.botnav-more{position:relative}
+.botnav-menu{display:none;position:absolute;bottom:56px;right:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;min-width:160px;z-index:201;box-shadow:0 -4px 12px rgba(0,0,0,0.2)}
+.botnav-menu.show{display:block}
+.botnav-item{display:flex;align-items:center;gap:12px;padding:12px 16px;color:var(--text);font-size:13px;cursor:pointer;border:none;background:none;width:100%;text-align:left;transition:.15s ease}
+.botnav-item:hover{background:var(--line-soft)}
+.botnav-item i{font-size:16px}
+main{padding-bottom:64px}
+@media(max-width:680px){.botnav-btn .lbl{display:none}.botnav-btn i{font-size:22px}}
 </style>
 </head>
 <body>
@@ -687,10 +702,6 @@ mark{background:var(--accent);color:var(--on-accent);padding:0 .14em;border-radi
 <div class="topbar"><div class="wrap-wide"><div class="row">
   <button class="brand" onclick="goBrowse()" aria-label="TUB home"><span class="mark" aria-hidden="true"></span><span class="wm">TUB<small>The Ultimate Bachelor Cookbook</small></span></button>
   <div class="search"><span>⌕</span><input id="q" placeholder="Search the library — rendang, steak, date night…" oninput="filterCards()" aria-label="Search recipes"><span class="x" id="qx" onclick="clearSearch()" title="Clear">✕</span></div>
-  <button class="topbtn" onclick="surpriseMe()" title="Surprise me — a random dish from this view"><span class="mi">✦</span><span class="lbl"> Surprise</span></button>
-<button class="topbtn" onclick="openMethods()" title="Food intelligence — atlas, masterclasses & terms"><span class="mi">⌗</span><span class="lbl"> Learn</span></button>
-<button class="topbtn" onclick="openPlan()" title="Plan the week — your dinner menu"><span class="mi">▦</span><span class="lbl"> Plan</span><span id="plan-badge"></span></button>
-<button class="topbtn" onclick="openShop()" title="Your shopping list"><span class="mi">☰</span><span class="lbl"> List</span><span id="shop-badge"></span></button>
 </div></div></div>
 
 <!-- OCCASION NAV -->
@@ -1129,7 +1140,7 @@ function shopCount(){var c=0;for(var i=0;i<shop.length;i++){if(!shop[i].checked)
 function saveShop(){try{localStorage.setItem('tub_list',JSON.stringify(shop));}catch(e){}}
 function loadShop(){try{var s=localStorage.getItem('tub_list');if(s)shop=JSON.parse(s);if(!Array.isArray(shop))shop=[];}catch(e){shop=[];}}
 function shopInPantry(key){key=(key||'').toLowerCase();var vals=Array.isArray(pantry)?pantry:[...pantry];for(var i=0;i<vals.length;i++){var v=(vals[i]||'').toLowerCase();if(v&&v.length>2&&(key.indexOf(v)>-1||v.indexOf(key)>-1))return true;}return false;}
-function renderShopBadge(){var b=document.getElementById('shop-badge');if(b){var c=shopCount();b.textContent=c>9?'9+':c;b.style.display=c>0?'inline-flex':'none';}}
+function renderShopBadge(){var b=document.getElementById('shop-badge');var bb=document.getElementById('shop-badge-btn');var c=shopCount();if(b){b.textContent=c>9?'9+':c;b.style.display=c>0?'inline-flex':'none';}if(bb){bb.textContent=c>9?'9+':c;bb.style.display=c>0?'flex':'none';}}
 function openShop(){if(document.getElementById('cook').classList.contains('open'))return;shopOpen=true;document.getElementById('browse').style.display='none';document.getElementById('detail').classList.remove('open');document.getElementById('methods').classList.remove('open');document.getElementById('shop').classList.add('open');window.scrollTo(0,0);renderShop();}
 function closeShop(){shopOpen=false;document.getElementById('shop').classList.remove('open');goBrowse();}
 function renderShop(){
@@ -1162,7 +1173,7 @@ function todayIdx(){try{return (new Date().getDay()+6)%7;}catch(e){return 0;}}
 function loadPlan(){try{var s=localStorage.getItem('tub_plan');if(s)plan=JSON.parse(s);}catch(e){}if(!Array.isArray(plan)||plan.length!==7)plan=[0,1,2,3,4,5,6].map(function(){return {slug:null,serv:2};});}
 function savePlan(){try{localStorage.setItem('tub_plan',JSON.stringify(plan));}catch(e){}}
 function planFilled(){var n=0;for(var i=0;i<plan.length;i++){if(plan[i].slug)n++;}return n;}
-function planBadge(){var b=document.getElementById('plan-badge');if(b){var n=planFilled();b.textContent=n||'';b.style.display=n>0?'inline-flex':'none';}}
+function planBadge(){var b=document.getElementById('plan-badge');var bb=document.getElementById('plan-badge-btn');var n=planFilled();if(b){b.textContent=n||'';b.style.display=n>0?'inline-flex':'none';}if(bb){bb.textContent=n||'';bb.style.display=n>0?'flex':'none';}}
 function planNudge(){var f=plan.filter(function(s){return s.slug;});if(f.length<3)return '';var c={};f.forEach(function(s){var r=R.find(function(x){return x.slug===s.slug;});if(r&&r.cui)c[r.cui]=(c[r.cui]||0)+1;});var top=null;for(var k in c){if(!top||c[k]>c[top])top=k;}if(top&&c[top]>=3)return c[top]+' of your nights are '+top+' — mix it up for a more balanced week.';return '';}
 function openPlan(){if(document.getElementById('cook').classList.contains('open'))return;planPick=-1;planQuery='';planMode='';document.getElementById('browse').style.display='none';document.getElementById('detail').classList.remove('open');document.getElementById('methods').classList.remove('open');document.getElementById('shop').classList.remove('open');document.getElementById('plan').classList.add('open');window.scrollTo(0,0);renderPlan();}
 function closePlan(){planPick=-1;document.getElementById('plan').classList.remove('open');goBrowse();}
@@ -1546,8 +1557,34 @@ function observeReveal(){document.querySelectorAll('.rv:not(.in)').forEach(el=>_
 const _mo=new MutationObserver(()=>observeReveal());_mo.observe(document.getElementById('grid'),{childList:true});
 window.addEventListener('load',()=>{document.querySelectorAll('.home-hero .rv').forEach((el,i)=>setTimeout(()=>el.classList.add('in'),60+i*90));});
 
+/* bottom nav wiring */
+(function(){
+  var moreBtn=document.querySelector('.botnav-more');
+  var menu=document.querySelector('.botnav-menu');
+  if(moreBtn&&menu){
+    moreBtn.addEventListener('click',function(e){
+      e.stopPropagation();
+      menu.classList.toggle('show');
+    });
+    document.addEventListener('click',function(){menu.classList.remove('show');});
+  }
+})();
+
 /* init */
 loadPantry();loadFavs();loadCooked();loadShop();loadPlan();viewHead();renderFilters();renderGrid();renderShopBadge();planBadge();observeReveal();(function(){var dc=document.getElementById('dish-count');if(dc)dc.textContent=R.length;})();
 </script>
+
+<div class="botnav"><div class="wrap-wide">
+  <button class="botnav-btn active" onclick="goBrowse()" title="Browse recipes"><i class="ti ti-home"></i><span class="lbl">Browse</span></button>
+  <button class="botnav-btn" onclick="openPlan()" title="Plan the week"><i class="ti ti-calendar"></i><span class="lbl">Plan</span><span id="plan-badge-btn" class="botnav-badge" style="display:none;"></span></button>
+  <button class="botnav-btn" onclick="openShop()" title="Shopping list"><i class="ti ti-shopping-cart"></i><span class="lbl">List</span><span id="shop-badge-btn" class="botnav-badge" style="display:none;"></span></button>
+  <button class="botnav-btn botnav-more" title="More options"><i class="ti ti-dots-vertical"></i><span class="lbl">More</span>
+    <div class="botnav-menu">
+      <button class="botnav-item" onclick="surpriseMe();document.querySelector('.botnav-menu').classList.remove('show');" title="Random dish"><i class="ti ti-dices" aria-hidden="true"></i>Surprise me</button>
+      <button class="botnav-item" onclick="openMethods();document.querySelector('.botnav-menu').classList.remove('show');" title="Food intelligence"><i class="ti ti-book-2" aria-hidden="true"></i>Learn</button>
+    </div>
+  </button>
+</div></div>
+
 </body>
 </html>
