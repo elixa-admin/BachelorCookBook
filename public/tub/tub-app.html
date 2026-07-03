@@ -1252,7 +1252,7 @@ function storyHTML(slug){
   if(!s)return provHTML(window.RECIPES_COMBINED&&RECIPES_COMBINED[slug]&&RECIPES_COMBINED[slug].prov)||'';
   var html='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Editorial</span><h2>The story</h2><span class="rule"></span></div>';
   html+='<div class="story-body">';
-  if(s.para1)html+='<p class="story-p">'+gloss(s.para1)+'</p>';
+  if(s.para1){var p1=s.para1;var idx=p1.indexOf(' comes ');if(idx>0){var dishName=p1.substring(0,idx);p1='<strong>'+dishName+'</strong>'+p1.substring(idx);}html+='<p class="story-p">'+gloss(p1)+'</p>';}
   if(s.para2)html+='<p class="story-p">'+gloss(s.para2)+'</p>';
   if(s.para3)html+='<p class="story-p">'+gloss(s.para3)+'</p>';
   if(s.para4)html+='<p class="story-p">'+gloss(s.para4)+'</p>';
