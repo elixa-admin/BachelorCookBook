@@ -733,7 +733,7 @@ main{padding-bottom:64px}
   <div class="wrap-wide">
     <div class="view-head rv">
       <div class="left">
-        <div class="vn" id="vh-num">01 — Cooking for One</div>
+        <div class="vn" id="vh-num">01</div>
         <h2 id="vh-title">Cooking for One</h2>
         <p class="vd" id="vh-desc">Eat well on any night — fast, assured, repeatable.</p>
       </div>
@@ -1003,7 +1003,7 @@ function viewHead(){
   if(query){
     const n=countGrid();
     vn.textContent='Search';t.textContent=`“${query}”`;d.textContent=n+' dish'+(n===1?'':'es')+' across the library';
-  }else if(activeOcc==='pantry'){vn.textContent='04 — From my pantry';t.textContent='From my pantry';d.textContent='Add what you have on hand — every dish ranks by how much you can make right now.';}else if(activeOcc==='skill-path'){vn.textContent='05 — Learn the craft';t.textContent='The skill path';d.textContent='A curated arc — novice to chef. Cook each milestone to earn the technique the next one needs.';}else if(activeOcc==='favs'){vn.textContent='06 — My Cookbook';t.textContent='My Cookbook';d.textContent='Your saved dishes and what you’ve cooked recently — your personal collection.';}else if(activeOcc==='accomp'){vn.textContent='07 — Accompaniments';t.textContent='Accompaniments & Components';d.textContent='Sides, breads, sauces and bases — the pieces that build a plate. Not standalone dishes.';}else{const o=OCC[activeOcc];vn.textContent=o.n+' — '+o.t;t.textContent=o.t;d.textContent=o.d;}
+  }else if(activeOcc===’pantry’){vn.textContent=’04’;t.textContent=’From my pantry’;d.textContent=’Add what you have on hand — every dish ranks by how much you can make right now.’;}else if(activeOcc===’skill-path’){vn.textContent=’05’;t.textContent=’The skill path’;d.textContent=’A curated arc — novice to chef. Cook each milestone to earn the technique the next one needs.’;}else if(activeOcc===’favs’){vn.textContent=’06’;t.textContent=’My Cookbook’;d.textContent=’Your saved dishes and what you’ve cooked recently — your personal collection.’;}else if(activeOcc===’accomp’){vn.textContent=’07’;t.textContent=’Accompaniments & Components’;d.textContent=’Sides, breads, sauces and bases — the pieces that build a plate. Not standalone dishes.’;}else{const o=OCC[activeOcc];vn.textContent=o.n;t.textContent=o.t;d.textContent=o.d;}
 }
 function countGrid(){return gridItems().length;}
 function gridItems(){
