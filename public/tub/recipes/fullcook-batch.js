@@ -22,13 +22,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Potjiekos (small-pot food) is South Africa's answer to the campfire stew — cooked in a three-legged cast-iron potjie over hot coals. The golden rule is never stir it; instead, layer the ingredients so each steams in the juices of what lies beneath.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hr 30 min (mostly hands-off slow cooking).",
-        "A rich, layered stew with tender meat and vegetables."
+        ["Never stir it — that's the rule.", "Each layer steams in the juices of what's beneath it; stirring collapses the whole point of a potjie."],
+        ["Layer it like it matters.", "Meat at the base, onions next, then the vegetables stacked on top — the order is what makes it work."],
+        ["The fire needs managing, not the pot.", "Once it's layered and lidded, your job is keeping the coals steady — not touching what's inside."],
+        ["Give it the full two hours.", "This isn't a stew you can rush — the low, slow simmer is what turns tough cuts tender."]
       ],
       "stats": [
-        "~650 kcal/serving",
-        "Medium difficulty, needs fire management"
+        ["~650", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "3-legged cast-iron potjie",
@@ -248,13 +249,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Melktert (milk tart) is South Africa's beloved dessert — a silken cinnamon custard in a buttery biscuit crust. The filling is a creamy milk-based custard, lightly thickened and baked until just set, then chilled until cool and wobbly.",
       "expect": [
-        "Serves 2.",
-        "Ready in 1 hr 15 min (plus 2 hr chilling).",
-        "A delicate, creamy tart with gentle cinnamon spice."
+        ["Chill the pastry before it bakes.", "Thirty minutes in the fridge relaxes the gluten so the crust holds its shape instead of shrinking."],
+        ["Blind-bake for a crisp base.", "Beans and paper hold the pastry flat while it dries out — skip it and the base turns soggy under the custard."],
+        ["The custard should still wobble.", "Pull it from the oven when the centre still trembles slightly — it firms up fully as it chills."],
+        ["Patience after the oven.", "Two hours in the fridge is what turns a warm custard into the silken, sliceable tart."]
       ],
       "stats": [
-        "~380 kcal/serving",
-        "Medium difficulty, needs pastry and custard skills"
+        ["~380", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "23 cm tart tin",
@@ -478,13 +480,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Koeksisters are South Africa's iconic sweet treat — plaited doughnuts deep-fried until golden and immediately plunged into ice-cold syrup. The thermal shock makes the sugar crystallise inside, creating a shatter-crisp outside and gooey, syrupy centre.",
       "expect": [
-        "Serves 2 (makes 8–10 koeksisters).",
-        "Ready in 1 hr (plus 1 hr chilling).",
-        "Crisp, sticky and intensely sweet — an SA classic."
+        ["The syrup must be ice-cold.", "Make it first and chill it properly — the shock of hot dough hitting cold syrup is what crystallises the sugar."],
+        ["Plait them properly.", "A tight three-strand braid gives more surface area for the syrup to cling to and crisp against."],
+        ["Fry, then plunge immediately.", "Straight from the hot oil into the cold syrup, no pause — that temperature swing is the entire trick."],
+        ["Let them cool completely before eating.", "The shatter-crisp coating only forms as the syrup sets on the outside — warm koeksisters are just sticky, not crisp."]
       ],
       "stats": [
-        "~220 kcal/koeksister",
-        "Medium difficulty, needs frying and syrup handling"
+        ["~220", "kcal", "Per koeksister"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "Deep pot or wok",
@@ -697,13 +700,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Vetkoek (fat cake) is South Africa's beloved fried dough — crisp outside, pillowy within, split and filled with curried mince. The dough is yeasted, proved until puffy and deep-fried until golden, then stuffed with a sweet-savoury beef filling.",
       "expect": [
-        "Serves 2 (makes 6 vetkoek).",
-        "Ready in 1 hr (plus 1 hr proving).",
-        "Crisp, fluffy fried dough with spiced mince."
+        ["Let the dough prove properly.", "A full hour until doubled is what gives vetkoek its pillowy, bread-like inside — rushing it makes them dense."],
+        ["Cook the mince dry.", "Let any liquid evaporate before it goes in the bread — a wet filling turns the crisp shell soggy."],
+        ["Fry hot enough to puff, not soak.", "180°C oil seals the outside fast, so the vetkoek puffs up instead of drinking oil."],
+        ["Fill it while it's still warm.", "Split and stuff straight from the fryer — the heat of the bread is part of what makes it comforting."]
       ],
       "stats": [
-        "~480 kcal/vetkoek",
-        "Medium difficulty, needs dough proving and frying"
+        ["~480", "kcal", "Per vetkoek"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "Deep pot or wok",
@@ -941,13 +945,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Potbrood (pot bread) is South Africa's campfire loaf — baked in a greased, lidded cast-iron potjie over coals. The trapped steam creates a thick, crackling crust and soft, pillowy crumb. Tear it warm with butter alongside a potjie.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hr (plus 1 hr proving).",
-        "A golden loaf with thick crust and soft crumb."
+        ["Warm the pot before the dough goes in.", "A cold cast-iron potjie can kill the second prove — give it a few minutes near the coals first."],
+        ["Coals go on the lid too.", "Heat from above as well as below is what bakes the top of the loaf without needing to flip it."],
+        ["Listen for the hollow sound.", "Tap the base when it's done — a deep, hollow knock means it's properly baked through, not just golden."],
+        ["Tear it warm, don't slice.", "Fresh potbrood pulls apart in soft, steaming chunks — that's the point, not neat slices."]
       ],
       "stats": [
-        "~180 kcal/slice (8 slices)",
-        "Medium difficulty, needs dough and fire management"
+        ["~180", "kcal", "Per slice"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "3-legged cast-iron potjie with lid",
@@ -1126,13 +1131,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Chakalaka is the spicy soul of South African braai culture — a vibrant relish that brings heat, sweetness and texture to any plate. Born in Johannesburg's mining townships, this cheap, cheerful condiment turns simple pap and boerewors into a feast.",
       "expect": [
-        "Serves 2.",
-        "Ready in 35 minutes.",
-        "A fiery, vegetable-packed relish perfect with pap, bread or grilled meats."
+        ["Soften the vegetables first.", "Ten minutes before any spice goes in builds the base — onions, capsicum and carrot need to lose their bite."],
+        ["Bloom the curry powder in the pan.", "A minute in hot oil before the tomatoes go in wakes the spice up properly."],
+        ["Let it thicken, don't rush it off the heat.", "Fifteen minutes of simmering is what turns it from a wet mix into a proper relish."],
+        ["It's better the next day.", "Like most relishes, chakalaka's flavours settle and deepen overnight — make extra."]
       ],
       "stats": [
-        "~85 kcal/serv",
-        "Easy"
+        ["~85", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "Large heavy-based pan",
@@ -2619,13 +2625,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Focaccia is Liguria's gift to the bread world — a wet, olive-oil-rich dough dimpled by hand and scattered with flaky sea salt and fresh rosemary. The crumb is pillowy and open, the bottom crisp and golden, the surface glistening with oil. Tear it warm and dip it in more oil, or use it for the ultimate sandwich base.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hr 30 min (plus proving).",
-        "No kneading required — just stretch and fold."
+        ["No kneading — just stretch and fold.", "A few gentle folds every thirty minutes build strength in this wet dough without ever needing a knead."],
+        ["Let the first prove run long.", "An hour to ninety minutes of slow rising is what gives focaccia its open, bubbly crumb."],
+        ["Dimple it properly.", "Deep fingertip presses all over hold the oil and salt where they belong, instead of pooling at the edges."],
+        ["Oil is not optional.", "In the tray, in the dimples, on top — it's what gives the base its crackle and the crumb its richness."]
       ],
       "stats": [
-        "~180 kcal/serv",
-        "Easy — wet dough, no shaping"
+        ["~180", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "Baking tray (30 × 20 cm)",
@@ -2814,13 +2821,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Sticky Toffee Pudding is Britain's beloved comfort pud — a moist, date-sweetened sponge baked dark and golden, then drowned in a warm toffee sauce of butter, brown sugar and cream. The sponge soaks up the sauce, turning sticky and rich, while the top stays glossy and caramelised. Serve warm with cream, custard or vanilla ice cream.",
       "expect": [
-        "Serves 2.",
-        "Ready in 1 hr.",
-        "The sauce is essential — don't skip it."
+        ["Steep the dates properly.", "Bicarb and boiling water break them down into the sponge — this is what makes it moist, not a heavy hand with butter."],
+        ["It really is one bowl.", "No creaming, no folding technique to worry about — just mix and bake."],
+        ["The sauce isn't a topping, it's the dish.", "Poured over warm, it soaks into the sponge until the whole thing turns sticky and rich — this is not optional."],
+        ["Serve it hot, sauce and all.", "Cream or ice cream alongside, straight from the oven — this pudding has no business sitting around."]
       ],
       "stats": [
-        "~520 kcal/serv",
-        "Easy — one-bowl sponge"
+        ["~520", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "Baking dish (20 × 15 cm)",
@@ -3256,13 +3264,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Crêpes are France's elegant answer to pancakes — thin as paper, lacy at the edges, golden and tender. They're infinitely versatile: sweet with lemon and sugar, Nutella or jam, or savoury with ham and cheese, spinach and feta. The batter rests for 20 min to relax the gluten, ensuring the crêpes stay delicate. Master the swirl, and you'll make these forever.",
       "expect": [
-        "Serves 2.",
-        "Ready in 30 min (plus 20 min resting).",
-        "A 20 cm non-stick pan is ideal."
+        ["Rest the batter — don't skip it.", "Twenty minutes relaxes the gluten, which is the difference between a delicate crêpe and a rubbery one."],
+        ["It's about the swirl, not the ladle.", "Pour, then tilt and rotate the pan fast — a thin, even layer is what makes a crêpe lacy instead of a thick pancake."],
+        ["One side barely needs colour.", "Forty-five seconds on the first side, thirty on the second — the first side is the one that shows, so watch it, not the clock."],
+        ["Fill it however you like.", "Sweet with lemon and sugar or savoury with ham and cheese — the crêpe itself is just the vehicle."]
       ],
       "stats": [
-        "~140 kcal/serv (plain)",
-        "Easy — but pan technique matters"
+        ["~140", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "20 cm non-stick frying pan",
@@ -3427,13 +3436,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Durban's most famous export and South Africa's ultimate street food — hollowed-out bread loaves filled with aromatic curry that softens the bread as it soaks up every drop of spiced gravy. The scooped-out bread becomes your edible spoon.",
       "expect": [
-        "Serves 2.",
-        "Ready in 1 hour",
-        "A complete meal in edible packaging"
+        ["Temper the spices first.", "Cumin and mustard seeds bloom in hot oil before anything else goes in — it's the base the whole curry builds on."],
+        ["Let it simmer, undisturbed.", "Thirty-five minutes covered turns the meat tender and thickens the gravy into something worth mopping up."],
+        ["The bread is the vessel.", "Hollow it to a thick-walled well — it needs to hold a generous ladle of curry without collapsing."],
+        ["Serve it the moment it's ready.", "The bread starts soaking up gravy immediately — bring it straight to the table, not after it sits."]
       ],
       "stats": [
-        "~650 kcal/serv",
-        "Medium"
+        ["~650", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "large heavy-based pot",
@@ -3680,13 +3690,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "The crown jewel of Durban's culinary heritage — mutton on the bone slow-cooked in a fiery, aromatic gravy that defines what makes Durban curry distinct. Generous curry leaves, whole spices and bone-in meat create depth of flavour that puts this in a league of its own.",
       "expect": [
-        "Serves 2.",
-        "Ready in 1 hour 30 minutes",
-        "Tender meat that falls off the bone with rich, fiery gravy"
+        ["Bone-in is non-negotiable.", "The marrow and connective tissue are what give this curry its depth — boneless mutton just won't taste the same."],
+        ["Curry leaves go in whole, and generously.", "They're bloomed in oil early and stay in the pot — this is what separates Durban curry from any other."],
+        ["Brown the meat properly first.", "A hard sear before anything else builds a base of flavour the simmer alone can't create."],
+        ["Give it the full hour and a half.", "The meat should fall off the bone on its own — if you're still working at it with a fork, it needs longer."]
       ],
       "stats": [
-        "~720 kcal/serv",
-        "Medium"
+        ["~720", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "heavy-based pot with lid",
@@ -3938,13 +3949,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "The farmer's sausage that built a nation — coarsely minced beef spiced with toasted coriander, nutmeg and a hint of cloves. The coarse texture and distinctive spice blend make this unlike any other sausage in the world. Best grilled over hot coals until smoky and juicy, then served in a roll with mustard and tomato relish.",
       "expect": [
-        "Serves 2.",
-        "Ready in 45 minutes (plus marinating)",
-        "Classic braai central"
+        ["Toast the coriander seeds yourself.", "It's the single spice that defines boerewors — pre-ground just doesn't hit the same."],
+        ["Keep the mince coarse.", "A fine grind turns it into a different sausage entirely — texture is half of what boerewors is."],
+        ["Turn it often over the coals.", "Boerewors coils cook unevenly if left alone too long — frequent turning is how you get it browned all over without drying out."],
+        ["Don't rush past medium heat.", "Too hot and the casing splits before the inside's done — steady coals win over flame."]
       ],
       "stats": [
-        "~480 kcal/serv",
-        "Easy"
+        ["~480", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "braai grid or heavy-based frying pan",
@@ -4172,13 +4184,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "The township braai experience that brings South Africa together — selecting raw meat from the butchery, watching it grilled over open coals, and eating with pap, chakalaka and good music. More than a meal, shisa nyama is a cultural celebration of community, fire and perfectly grilled meat.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hours (mostly marinating)",
-        "Mixed meat feast"
+        ["Mix your meats.", "Beef, chicken, lamb and boerewors together is the point — shisa nyama is a feast, not a single cut done well."],
+        ["Marinate each cut on its own terms.", "Different meats want different treatment — don't drown everything in one blanket marinade."],
+        ["Coals over flame, always.", "Direct fire chars the outside before the inside's ready — you want steady, glowing heat."],
+        ["It's built to share.", "Grill it in batches as people gather, plate it with pap and chakalaka, and let the fire do the hosting."]
       ],
       "stats": [
-        "~680 kcal/serv",
-        "Easy"
+        ["~680", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "braai grid or tongs",
@@ -4459,13 +4472,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Mozambique's fiery contribution to Southern African cuisine — chicken bathed in a marinade of African bird's eye chilli, garlic and lemon, then grilled until the skin chars and crisps. The combination of intense heat, bright citrus and smoky char creates an addictive flavour profile that has captivated the world.",
       "expect": [
-        "Serves 2.",
-        "Ready in 1 hour 30 minutes (plus marinating)",
-        "Fiery, flavourful and char-grilled"
+        ["Marinate as long as you can.", "Two hours works, but overnight is where the chilli, garlic and lemon really get into the meat."],
+        ["Baste it again and again.", "Frequent basting while it cooks is what builds the sticky, charred crust — a one-time brush-on isn't enough."],
+        ["Bone-in, skin-on, no exceptions.", "The skin is what chars and crisps; the bone keeps the meat from drying out under all that heat."],
+        ["Char is the goal, not just colour.", "You want visible dark, slightly blackened edges — that's the smoky bitterness that balances the heat."]
       ],
       "stats": [
-        "~580 kcal/serv",
-        "Medium"
+        ["~580", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "braai grid or roasting pan",
@@ -4688,13 +4702,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Umngqusho is Xhosa comfort food at its finest — samp (crushed maize) and sugar beans transformed through slow cooking into a rich, creamy porridge that sustained Nelson Mandela through his life. This humble dish embodies the Xhosa philosophy of ubuntu, filling the belly and warming the soul.",
       "expect": [
-        "Serves 2.",
-        "Ready in 3 hours plus overnight soaking.",
-        "A thick, creamy porridge with tender beans and subtle sweetness."
+        ["Soak it overnight — there's no shortcut.", "Samp and beans need the full soak to cook evenly; skip it and you'll be simmering for hours longer with patchy results."],
+        ["Let it simmer low and long.", "Two to three hours of gentle heat is what turns firm samp and beans into something creamy — rushing it just leaves them tough."],
+        ["Stir occasionally, not constantly.", "It needs enough attention to stop it catching on the bottom, but this isn't a risotto you have to babysit."],
+        ["Finish with butter, not before.", "Stirred in right at the end, it rounds out the dish without stopping the beans from softening properly."]
       ],
       "stats": [
-        "~280 kcal/serv",
-        "Easy"
+        ["~280", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "Large pot",
@@ -4869,13 +4884,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Breyani is Durban Indian cuisine at its most lavish — marinated meat, fragrant rice and potatoes layered with whole spices and steamed into a single pot of aromatic perfection. This festive dish brings people together, the anticipation of lifting the lid part of the ritual.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hours plus 2–4 hours marinating.",
-        "Tender meat, fluffy rice and melting potatoes in a rich spiced aroma."
+        ["The layers are not decorative.", "Marinated meat, par-cooked rice and potatoes go in a specific order — that's what steams each layer in the flavour of the one below."],
+        ["A tight-fitting lid matters here.", "Trapped steam is what finishes the rice and melts everything together — a loose lid lets that aroma (and the cook) escape."],
+        ["Resist lifting the lid early.", "Every peek lets steam out that the dish needs to cook through — the reveal at the end is part of the ritual."],
+        ["Marinate for the full window.", "Two to four hours gives the yoghurt and spices time to actually get into the meat, not just coat it."]
       ],
       "stats": [
-        "~650 kcal/serv",
-        "Medium"
+        ["~650", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "Heavy pot with tight-fitting lid",
@@ -5129,13 +5145,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Sosaties are Cape Malay's brilliant answer to satay — plump lamb cubes and sweet dried apricots marinated in a tangy curry-spiced apricot sauce, then grilled to sticky perfection. The interplay of tender meat, chewy fruit and spicy-sweet glaze makes them the ultimate braai starter.",
       "expect": [
-        "Serves 2.",
-        "Ready in 2 hours plus 4–24 hours marinating.",
-        "Tender lamb with sweet-spicy glazed apricots on skewers."
+        ["Marinate as long as you can manage.", "Four hours is the minimum, but the full twenty-four is where the curry and apricot really get into the lamb."],
+        ["Thread meat and apricot together.", "They cook and glaze side by side on the skewer — that's the sweet-savoury contrast the dish is built on."],
+        ["Baste while it grills, not just before.", "Brushing on more marinade as it cooks is what builds the sticky, lacquered glaze."],
+        ["Watch the sugar, watch the fire.", "Apricot jam in the marinade caramelises fast — keep the heat moderate so it glazes instead of burning."]
       ],
       "stats": [
-        "~420 kcal/serv",
-        "Medium"
+        ["~420", "kcal", "Per serving"],
+        ["Medium", "", "Difficulty"]
       ],
       "kit": [
         "Braai or oven",
@@ -5571,13 +5588,14 @@ window.FULLCOOK_BATCH=[
     "brief": {
       "lead": "Pickled fish is Cape Malay's brilliant preservation dish turned delicacy — white fish fried until golden, then steeped in a complex pickle of vinegar, onions, curry spices and sugar. Traditionally made for Easter when no meat was eaten, it's now beloved for its sweet-sour depth.",
       "expect": [
-        "Serves 2.",
-        "Ready in 45 minutes plus 24 hours pickling.",
-        "Tender fish in a tangy, aromatic curry pickle — better each day."
+        ["It needs the full 24 hours.", "This isn't a marinade you can rush — the fish only takes on the sweet-sour pickle flavour properly overnight in the fridge."],
+        ["Fry it firm before it pickles.", "A good crisp fry holds the fish together through a day of soaking in vinegar — underdone fish falls apart in the pickle."],
+        ["The onions matter as much as the fish.", "They soak up the curry-vinegar liquid and turn into half the dish — don't skimp on them."],
+        ["It's better on day two or three.", "This was built to be made ahead — the flavour deepens the longer it sits in the fridge."]
       ],
       "stats": [
-        "~320 kcal/serv",
-        "Easy"
+        ["~320", "kcal", "Per serving"],
+        ["Easy", "", "Difficulty"]
       ],
       "kit": [
         "Frying pan",

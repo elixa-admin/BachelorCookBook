@@ -24,8 +24,8 @@ window.SA_ADDITIONS=[
  },
  "brief":{
   "lead":"Bobotie (boo-boo-tee) is South Africa's national dish — Cape Malay spiced mince baked under a golden egg custard. Sweet from apricot jam and apple, warm with curry, it is the one dish every South African cook claims as their own.",
-  "expect":["Serves 2 (scales to 1, 4 or 6).","About 1 hr — 25 min prep, 30–35 min bake.","One pan plus a baking dish; gentle, forgiving heat."],
-  "stats":["~385 kcal/serving","Capable beginner — a one-pan bake"],
+  "expect":[["Bloom the spices into the mince.","Curry powder, turmeric and ginger cook into the meat before anything else goes in — warmth, not heat, is the point."],["Apple and apricot jam do the work.","That instantly recognisable sweet-savoury balance comes from fruit stirred through the mince, not sugar."],["The custard is the whole dish.","A simple egg-and-milk lid bakes over the meat into a golden, savoury crust — press the mince flat first so it sits properly on top."],["Rest it before you serve.","Five minutes out of the oven lets the custard set fully, so it slices cleanly instead of collapsing."]],
+  "stats":[["~385","kcal","Per serving"],["Capable","","Difficulty"]],
   "kit":["Large frying pan","1.5 litre baking dish","Small bowl","Measuring jug","Whisk"]
  },
  "tl":[["T−25:00","Prep and soak","Soak the bread; finely chop the onion, garlic, apple and capsicum.",1],["T+00:00","Bloom and brown","Onion and garlic soften; spices bloom; mince browns.",0],["T+08:00","Build the body","Add fruit, jam, vinegar and bread; season; taste.",0],["T+12:00","Custard and dish","Press into the dish; pour over the egg-milk; lay on bay leaves.",0],["T+15:00","Bake","170 °C oven, 30–35 min until set and golden.",1],["T+50:00","Rest and serve","Rest 5 min; serve with yellow rice.",1]],
@@ -62,8 +62,8 @@ window.SA_ADDITIONS=[
  },
  "brief":{
   "lead":"Butter chicken (murgh makhani) is the creamy tomato curry South Africa cooks most at home. Charred yoghurt-marinated chicken in a silk-smooth sauce of tomato, butter, cream and warm spices — mild, rich and impossible to stop eating.",
-  "expect":["Serves 2 (scales to 1, 4 or 6).","About 1 hr including a 20-min marinate.","One pan; a stick blender makes the sauce silky."],
-  "stats":["~385 kcal/serving","Capable beginner — marinate, sear, simmer"],
+  "expect":[["Marinate longer than feels necessary.","Twenty minutes minimum in yoghurt and spice — the acid is what makes the chicken silky, not just seasoned."],["Sear for char, not colour.","A hot, dry pan in batches gives the tandoor-style edge that a crowded pan never will."],["Cashews build the velvet, not the cream.","Blended soft-simmered cashews give the sauce its body — the cream at the end is finish, not foundation."],["Cream goes in off the heat.","Stir it through once the pan's away from the flame, or it can split instead of turning glossy."]],
+  "stats":[["~385","kcal","Per serving"],["Capable","","Difficulty"]],
   "kit":["Heavy pan or griddle","Large saucepan","Stick blender (optional)","Mixing bowl"]
  },
  "tl":[["T−20:00","Marinate","Coat the chicken in the yoghurt spice mix; rest 20 min (overnight is better).",1],["T+00:00","Sear hot","Char the chicken in batches; set aside.",0],["T+06:00","Build the base","Butter and aromatics; bloom the ground spices.",0],["T+11:00","Simmer and blend","Tomato and cashew simmer soft; blend silky smooth.",1],["T+26:00","Combine","Chicken and water; cover and simmer 8–10 min.",0],["T+36:00","Finish","Methi, salt, sugar; off the heat, swirl in cream.",0]],
@@ -99,8 +99,8 @@ window.SA_ADDITIONS=[
  },
  "brief":{
   "lead":"Cape Malay chicken curry is the fragrant, gently sweet curry of the Western Cape — distinct from hotter, redder Durban curry. Built on a roasted wet masala with apricot and potato, it is aromatic and warming rather than fierce.",
-  "expect":["Serves 2 (scales to 1, 4 or 6).","About 1 hr 15 min — mostly a hands-off simmer.","A heavy lidded pot; a spice grinder or mortar helps."],
-  "stats":["~520 kcal/serving","Capable beginner — spice toasting + slow simmer"],
+  "expect":[["Toast the masala from scratch.","Dry-toasting coriander, cumin and fennel before grinding is what makes this taste different from a jar of curry powder."],["Sweat the onions properly.","Ten to twelve minutes low and slow builds the sweetness this curry is known for — rushing it leaves the sauce tasting raw."],["Apricot jam is not a garnish.","It's stirred into the base itself, giving Cape Malay curry its gentle, fragrant sweetness instead of Durban curry's heat."],["Then it mostly cooks itself.","Once the chicken and potato go in, thirty-five to forty-five minutes covered does the rest — check back to stir occasionally."]],
+  "stats":[["~520","kcal","Per serving"],["Capable","","Difficulty"]],
   "kit":["Heavy lidded pot","Spice grinder or mortar and pestle","Wooden spoon"]
  },
  "tl":[["T−05:00","Toast the masala","Toast and grind the coriander, cumin and fennel.",0],["T+00:00","Sweat the onions","Low and slow, 10–12 min, until soft and golden.",1],["T+12:00","Bloom the spices","Whole and ground spices, 1 min, until the oil is speckled.",0],["T+13:00","Tomato and apricot","Cook 3–4 min until the oil separates from the sauce.",0],["T+17:00","Coat and simmer","Add chicken, stock and potato; cover, 35–45 min.",1],["T+60:00","Finish","Reduce a little if needed; stir in coriander; season.",0]],
