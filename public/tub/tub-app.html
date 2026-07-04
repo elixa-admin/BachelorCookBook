@@ -331,6 +331,11 @@ button{font-family:var(--font)}
 .pair h3{font-size:21px;font-weight:700;letter-spacing:-.02em;margin:8px 0 5px}
 .pair .bot{font-size:12px;color:var(--faint);font-family:var(--mono);margin-bottom:12px}
 .pair p{font-size:14px;color:var(--muted);line-height:1.6;margin:0}
+.pcard-sa{margin-top:16px;padding-top:16px;border-top:1px solid rgba(192,144,96,.18)}
+.pcard-sa-badge{display:inline-block;font-family:var(--display);font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c09060;border:1px solid rgba(192,144,96,.3);border-radius:4px;padding:3px 8px;margin-bottom:10px}
+.pcard-sa h3{font-size:17px;margin:6px 0 4px}
+.pcard-sa .kind{color:#c09060}
+.pcard-sa p{font-size:13px}
 .nutri{display:flex;align-items:stretch;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
 .nbig{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--accent-text);padding:22px 20px;min-width:90px;text-align:center;flex-shrink:0}
 .nbig-n{font-family:var(--display);font-size:44px;font-weight:700;line-height:1;color:#fff}
@@ -888,6 +893,7 @@ main{padding-bottom:64px}
 <script src="recipes/sa-additions.js"></script>
 <script src="recipes/sa-additions-2.js"></script>
 <script src="recipes/retrofit.js"></script>
+<script src="recipes/sa-drinks.js"></script>
 <script src="recipes/fullcook-conversions.js"></script>
 <script>
 const OCC={
@@ -1453,7 +1459,8 @@ function renderFull(r){
   var allPairs=r.pair||[];
   var drinkPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())<0;});
   var foodPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())>=0;});
-  var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p){return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p></div>';}).join('')+'</div></div></div>':'';
+  var saDrinks=(window.SA_DRINKS&&window.SA_DRINKS[r.slug])||null;
+  var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p,i){var sa=saDrinks&&saDrinks.pair_sa&&saDrinks.pair_sa[i];var saHtml=sa?'<div class="pcard-sa"><span class="pcard-sa-badge">SA Alternative</span><h3>'+sa[0]+'</h3><div class="bot">'+sa[1]+'</div><p>'+sa[2]+'</p></div>':'';return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p>'+saHtml+'</div>';}).join('')+'</div></div></div>':'';
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
     '<div class="rtabs-wrap"><div class="wrap rtabs"><button class="rtab active" data-t="cook" onclick="switchRecipeTab(\'cook\')">Cook</button><button class="rtab" data-t="story" onclick="switchRecipeTab(\'story\')">Story</button><button class="rtab" data-t="learn" onclick="switchRecipeTab(\'learn\')">Learn</button></div></div>'+
     '<div id="rtab-cook" class="rtabpane">'+brief+'<div id="variants"></div>'+gatherHTML(r)+mise+steps+plateHTML(r,pair,foodPairs)+'</div>'+
