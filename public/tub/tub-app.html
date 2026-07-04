@@ -53,16 +53,16 @@ button{font-family:var(--font)}
   box-shadow:0 2px 12px rgba(0,0,0,.5),0 0 0 3px rgba(8,9,11,.5);transition:transform .35s var(--ease)}
 .brand:hover .mark{transform:rotate(-5deg) scale(1.05)}
 .brand .wm{font-family:var(--display);font-weight:700;font-size:27px;letter-spacing:.14em;line-height:1}
-.brand .wm small{display:block;font-family:var(--font);font-weight:500;font-size:9.5px;letter-spacing:.22em;color:var(--faint);margin-top:3px;text-transform:uppercase}
-.search{flex:1;max-width:330px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);
+.brand .wm small{display:block;font-family:var(--font);font-weight:400;font-size:10px;letter-spacing:.12em;color:rgba(188,58,66,.5);margin-top:2px;text-transform:uppercase}
+.search{flex:1;min-width:0;max-width:330px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-pill);padding:10px 15px;color:var(--faint);transition:.2s var(--ease)}
 .search:focus-within{border-color:var(--accent-line);box-shadow:0 0 0 3px var(--accent-soft)}
-.search input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:var(--font);font-size:13.5px}
+.search input{flex:1;min-width:0;background:none;border:none;outline:none;color:var(--text);font-family:var(--font);font-size:13.5px}
 .search input::placeholder{color:var(--faint)}
 .search .x{cursor:pointer;color:var(--faint);font-size:16px;line-height:1;display:none;padding:2px}
 .search .x.on{display:inline}
 .search .x:hover{color:var(--text)}
-@media(max-width:980px){.brand .wm small{display:none}}
+@media(max-width:980px){.brand .wm small{font-size:9px;letter-spacing:.1em}}
 @media(max-width:680px){.brand .wm{font-size:22px}.brand .mark{width:42px;height:42px;font-size:15px}}
 
 /* ── occasion nav (primary) ── */
@@ -158,6 +158,8 @@ button{font-family:var(--font)}
 /* ── detail ── */
 #detail{position:fixed;inset:0;z-index:100;background:var(--ink);overflow-y:auto;display:none}
 #detail.open{display:block}
+#shop,#plan{position:fixed;inset:0;z-index:100;background:var(--ink);overflow-y:auto;display:none}
+#shop.open,#plan.open{display:block}
 .dbar{position:sticky;top:0;z-index:5;background:rgba(8,9,11,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
 .dbar .row{display:flex;align-items:center;justify-content:space-between;height:64px}
 .dback{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:8px 10px;box-sizing:border-box;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;background:none;border:none;border-radius:8px}
@@ -905,7 +907,7 @@ salmon:{slug:'salmon',t:'Crispy-Skin Salmon, Brown Butter & Capers',tier:'signat
   kit:["Roasting tray","Instant-read thermometer","Carving board"]},
  ing:[["The bird",[["countX",1,"","whole free-range chicken, ~1.6 kg"]]],["The butter",[["linear",80,"g","butter, softened"],["taper",1,"tsp","flaky sea salt + black pepper"],["countN",5,"","sprigs <b>thyme</b> + 1 rosemary, chopped"]]],["The aromatics",[["countX",1,"","<b>lemon</b>, halved"],["countX",1,"","head <b>garlic</b>, halved"],["static","","extra thyme/rosemary sprigs"]]],["To serve",[["linear",1,"tbsp","olive oil"],["static","","2 onions or lemons, quartered (optional)"]]]],
  tl:[["T−hrs","Dry the bird","Uncovered in the fridge a few hours if possible.",1],["T+00:00","Prep & butter","Oven 220 °C. Butter under skin; stuff cavity.",0],["T+02:00","Hot start","Into the oven, breast-up, 20 min.",0],["T+22:00","Turn down","200 °C; roast on.",0],["T+50:00","Baste","Once, with the pan juices.",0],["T+60–70:00","Check & rest","74 °C thigh, clear juices. Rest 15 min.",1],["T+","Carve & pour","Carve; pour the lemony juices over.",0]],
- steps:[["Dry the bird","Pat dry inside and out — and, if time allows, leave uncovered in the fridge a few hours.","Dry skin is crisp skin; fridge-drying is the professional route to glass skin.",null],["Butter under the skin","Mix butter with salt, pepper, chopped herbs. Ease fingers under the breast skin and smear butter on the meat; rub the rest outside. Stuff the cavity with lemon, garlic, herbs.","Butter under the skin bastes the breast within and crisps the skin above; cavity aromatics perfume from inside.",null],["Hot start","Into a 220 °C oven, breast-up, twenty minutes.","The initial blast sets and colours the skin.",null],["Turn down & roast","Drop to 200 °C and roast about 15–20 min per 500 g, basting once.","Lower heat cooks the joints through without burning; basting adds gloss and flavour.",null],["Check & rest","Done at 74 °C in the thickest thigh, juices clear. Rest, loosely tented, 15 min.","Resting lets juices settle; carve immediately and the breast runs dry.",null],["Carve & pour","Carve at the table for theatre; pour the lemony pan juices over everything.","Those juices are liquid gold — spooning them over is the difference between good and unforgettable.",null]],
+ steps:[["Dry the bird","Pat dry inside and out — and, if time allows, leave uncovered in the fridge a few hours.","Dry skin is crisp skin; fridge-drying is the professional route to glass skin.",null],["Butter under the skin","Mix butter with salt, pepper, chopped herbs. Ease fingers under the breast skin and smear butter on the meat; rub the rest outside. Stuff the cavity with lemon, garlic, herbs.","Butter under the skin bastes the breast within and crisps the skin above; cavity aromatics perfume from inside.",null],["Hot start","Into a 220 °C oven, breast-up, twenty minutes.","The initial blast colours the skin fast, before the meat beneath has time to dry out.",null],["Turn down & roast","Drop to 200 °C and roast about 15–20 min per 500 g, basting once.","Lower heat cooks the joints through without burning; basting adds gloss and flavour.",null],["Check & rest","Done at 74 °C in the thickest thigh, juices clear. Rest, loosely tented, 15 min.","Carryover heat keeps finishing the centre off the flame, and resting lets those juices settle back through the meat; carve immediately and the breast runs dry.",null],["Carve & pour","Carve at the table for theatre; pour the lemony pan juices over everything.","Those juices are liquid gold — spooning them over is the difference between good and unforgettable.",null]],
  pair:[["With the bird","Pinot Noir or Cru Beaujolais","Red · bright fruit, gentle tannin","Suits the bird without overpowering it; a lightly oaked Chardonnay is the white answer."],["Aperitif","Champagne","Brut · cold","Sets the evening — and the bird won't keep you waiting at the stove."]]}
 };
 
@@ -1010,7 +1012,7 @@ function viewHead(){
   if(query){
     const n=countGrid();
     vn.textContent='Search';t.textContent=`“${query}”`;d.textContent=n+' dish'+(n===1?'':'es')+' across the library';
-  }else if(activeOcc===’pantry’){vn.textContent=’04’;t.textContent=’From my pantry’;d.textContent=’Add what you have on hand — every dish ranks by how much you can make right now.’;}else if(activeOcc===’skill-path’){vn.textContent=’05’;t.textContent=’The skill path’;d.textContent=’A curated arc — novice to chef. Cook each milestone to earn the technique the next one needs.’;}else if(activeOcc===’favs’){vn.textContent=’06’;t.textContent=’My Cookbook’;d.textContent=’Your saved dishes and what you’ve cooked recently — your personal collection.’;}else if(activeOcc===’accomp’){vn.textContent=’07’;t.textContent=’Accompaniments & Components’;d.textContent=’Sides, breads, sauces and bases — the pieces that build a plate. Not standalone dishes.’;}else{const o=OCC[activeOcc];vn.textContent=o.n;t.textContent=o.t;d.textContent=o.d;}
+  }else if(activeOcc==='pantry'){vn.textContent='04';t.textContent='From my pantry';d.textContent='Add what you have on hand — every dish ranks by how much you can make right now.';}else if(activeOcc==='skill-path'){vn.textContent='05';t.textContent='The skill path';d.textContent='A curated arc — novice to chef. Cook each milestone to earn the technique the next one needs.';}else if(activeOcc==='favs'){vn.textContent='06';t.textContent='My Cookbook';d.textContent="Your saved dishes and what you've cooked recently — your personal collection.";}else if(activeOcc==='accomp'){vn.textContent='07';t.textContent='Accompaniments & Components';d.textContent='Sides, breads, sauces and bases — the pieces that build a plate. Not standalone dishes.';}else{const o=OCC[activeOcc];vn.textContent=o.n;t.textContent=o.t;d.textContent=o.d;}
 }
 function countGrid(){return gridItems().length;}
 function gridItems(){
@@ -1018,6 +1020,7 @@ function gridItems(){
   if(activeOcc==='pantry'){items=pantryItems();}
   else if(activeOcc==='favs'){items=R.filter(r=>favs.has(r.slug));}
   else if(activeOcc==='accomp'){items=R.filter(r=>(r.cat||'main')==='byo');}
+  else if(activeOcc==='skill-path'){items=R;}
   else{items=query?[...R]:R.filter(r=>r.occ.includes(activeOcc)&&(r.cat||'main')!=='byo');if(!query&&activeFilter!=='all')items=items.filter(r=>r.tier===activeFilter);if(activeCat!=='all')items=items.filter(r=>(r.cat||'main')===activeCat);}
   if(activeSkill!=='all-skills')items=items.filter(function(r){var s=skillOf(r);return s&&s.level===activeSkill;});
   if(activeRegion!=='all')items=items.filter(r=>r.region===activeRegion);
@@ -1372,7 +1375,7 @@ function renderFull(r){
   var mise=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Get ready</span><h2>Ingredients &amp; preparations</h2><span class="rule"></span></div><p class="dsub">Everything you need, already scaled to your servings — read it through, tick items off as you set them out, then follow the cook itself, timed step by step from start to serve.</p>
     <div class="cookgrid"><div><div class="scaler" role="group" aria-label="Servings"><span class="lbl">Serves</span>
       <button data-serv="1">1</button><button data-serv="2" aria-pressed="true">2</button><button data-serv="4">4</button><button data-serv="6">6</button></div><div id="ings"></div><button class="btn ghost addlist" onclick="addAndToast('${r.slug}',currentServ())">＋ Add to shopping list</button></div>
-      <div><h4 class="label" style="margin:0 0 12px">Timeline</h4>${timelineHTML(r)}</div></div></div></div></div>`;
+      <div><h4 class="label" style="margin:0 0 12px">Timeline</h4>${timelineHTML(r)}</div></div></div></div>`;
   var steps=`<div class="steps" id="steps">${r.steps.map(s=>`<div class="step"><div class="n"></div><div class="body"><h4>${s[0]}</h4><p>${gloss(s[1])}</p><div class="why"><b>WHY</b> · ${gloss(s[2])}</div>
       <div class="ctrls">${s[3]?`<button class="timerbtn" data-sec="${s[3]}"><span class="tm">${fmtClock(s[3])}</span> timer</button>`:''}<span class="check"><span class="bx"></span> done</span></div></div></div>`).join('')}</div>`;
   var pair=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">To drink</span><h2>The pairing</h2><span class="rule"></span></div>
