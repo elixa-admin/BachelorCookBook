@@ -9,19 +9,19 @@ window.ROSTER_CLASSES={
     "cat": "main", "tier": "heritage"
   },
   "mussakhan": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "kibbeh": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "fattoush": {
-    "cat": "special", "tier": "adopted", "cut": true
+    "cat": "special", "tier": "adopted", "cut": false
   },
   "palak-paneer": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "malai-kofta": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "potjiekos": {
     "cat": "main", "tier": "heritage", "cut": false
@@ -48,7 +48,7 @@ window.ROSTER_CLASSES={
     "cat": "sweet", "tier": "adopted", "cut": false
   },
   "borscht": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "crepes": {
     "cat": "main", "tier": "adopted", "cut": false
@@ -69,19 +69,19 @@ window.ROSTER_CLASSES={
     "cat": "main", "tier": "aspirational", "cut": false
   },
   "bouillabaisse": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "duck-a-l-orange": {
     "cat": "main", "tier": "aspirational", "cut": false
   },
   "beef-wellington": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "chicken-tikka-masala": {
     "cat": "main", "tier": "adopted", "cut": false
   },
   "bibimbap": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "macaroni-cheese": {
     "cat": "main", "tier": "adopted", "cut": false
@@ -90,19 +90,19 @@ window.ROSTER_CLASSES={
     "cat": "main", "tier": "adopted", "cut": false
   },
   "dan-dan-noodles": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "tom-yum-goong": {
-    "cat": "special", "tier": "adopted", "cut": true
+    "cat": "special", "tier": "adopted", "cut": false
   },
   "banh-mi": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "tteokbokki": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "char-siu-pork": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "bunny-chow": {
     "cat": "main", "tier": "heritage", "cut": false
@@ -129,7 +129,7 @@ window.ROSTER_CLASSES={
     "cat": "main", "tier": "aspirational", "cut": false
   },
   "snoek-braai-apricot-jam": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "umngqusho": {
     "cat": "main", "tier": "heritage", "cut": false
@@ -489,61 +489,61 @@ window.ROSTER_CLASSES={
     "cat": "main", "tier": "adopted"
   },
   "pho-bo": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "mapo-tofu": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "pad-thai": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "tonkotsu-ramen": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "khao-soi": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "som-tum": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "beef-bulgogi": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "beef-rendang": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "massaman-curry": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "katsu-curry": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "jollof-rice": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "tacos-al-pastor": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "tagliatelle-al-ragu-bolognese": {
-    "cat": "main", "tier": "adopted", "cut": true
+    "cat": "main", "tier": "adopted", "cut": false
   },
   "beef-bourguignon": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "peking-duck": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "paella-mixta": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "slow-roast-lamb-kleftiko": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "grilled-crayfish-garlic-butter": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "osso-buco-gremolata": {
-    "cat": "main", "tier": "aspirational", "cut": true
+    "cat": "main", "tier": "aspirational", "cut": false
   },
   "carbonara": {
     "cut": false, "cat": "main", "tier": "adopted"
