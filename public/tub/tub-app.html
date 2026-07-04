@@ -126,7 +126,8 @@ button{font-family:var(--font)}
 .card:hover,.card:focus-visible{transform:translateY(-4px);border-color:var(--accent-line);box-shadow:0 26px 54px -26px rgba(0,0,0,.75),0 0 0 1px var(--accent-line)}
 .card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--surface-2)}
 .card .thumb .glow{position:absolute;inset:0;background:radial-gradient(75% 85% at 50% 62%,var(--cardc,rgba(201,162,75,.15)),transparent 70%)}
-.card .thumb .thumb-img{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;opacity:.96;filter:saturate(.92) contrast(1.06) brightness(.84);transition:transform .5s ease,filter .5s ease}
+.card .thumb .thumb-img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;opacity:.96;filter:saturate(.92) contrast(1.06) brightness(.84);transition:transform .5s ease,filter .5s ease}
+.card .thumb:has(.thumb-img) .ph{display:none}
 .card:hover .thumb-img{transform:scale(1.045);filter:saturate(.98) contrast(1.08) brightness(.94)}
 .card .thumb::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(8,9,11,.42),transparent 24%,transparent 58%,rgba(8,9,11,.62))}
 .card .thumb .ph{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden}
@@ -957,7 +958,6 @@ let R=[
  {t:'Crème Brûlée',tier:'others',cui:'French',occ:['date'],time:'45 min + chill',method:'Oven · bain-marie',blurb:'Cold custard, crackling burnt-sugar lid — the restaurant dessert mastered with a blowtorch.'},
  {t:'Malva Pudding',tier:'others',cui:'South African',occ:['host'],time:'60 min',method:'Oven · bake',blurb:'Warm, sponge-soft, drowning in cream sauce — the South African pudding that ends a braai.'}
 ];
-R.forEach(r=>{if(!r.slug)r.slug=r.t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');r.tierName=TIERS[r.tier].n;r.tierColor=TIERS[r.tier].c;r.live=FULL[r.slug]?'full':(r.prov?'prov':null);if(!r.diff)r.diff='Med';});
 const TIERS2={heritage:{n:'Heritage',c:'#c9a24b'},adopted:{n:'Adopted',c:'#b8b0a4'},aspirational:{n:'Aspirational',c:'#9B2C33'},component:{n:'Component',c:'#857c70'}};
 /* merge authored research recipes, then rebuild the roster around them */
 if(window.FULLCOOK_BATCH){FULLCOOK_BATCH.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
@@ -1037,7 +1037,7 @@ function renderGrid(){
 }
 function cardHTML(r){
   return `<article class="card" tabindex="0" onclick="openRecipe('${r.slug}')" onkeydown="if(event.key==='Enter'||event.key===' ')openRecipe('${r.slug}')" style="--cardc:${r.tierColor}33">
-    <div class="thumb"><div class="glow"></div>${(window.IMAGES&&IMAGES[r.slug])?'<img class="thumb-img" loading="lazy" decoding="async" src="'+IMAGES[r.slug]+'" alt="" onerror="this.remove()">':''}<div class="ph ph-${dishDomain(r)}"><span class="ph-g">${domainIcon(dishDomain(r))}</span></div>
+    <div class="thumb"><div class="glow"></div>${r.image?'<img class="thumb-img" loading="lazy" decoding="async" src="'+r.image+'" alt="'+(r.imageAlt||r.t)+'" onerror="this.remove()">':''}<div class="ph ph-${dishDomain(r)}"><span class="ph-g">${domainIcon(dishDomain(r))}</span></div>
       <span class="badge"><span class="td" style="background:${r.tierColor}"></span>${r.tierName}</span>${skillBadgeHTML(r)}<button class="fav-btn ${favs.has(r.slug)?'on':''}" data-slug="${r.slug}" onclick="event.stopPropagation();toggleFav('${r.slug}')" title="Save to cookbook">${favs.has(r.slug)?'♥':'♡'}</button>
       ${r.live==='full'?`<span class="live">Full cook ▸</span>`:r.live==='comp'?`<span class="live">Compendium ▸</span>`:r.live==='prov'?`<span class="live">Story ▸</span>`:''}
     </div>
