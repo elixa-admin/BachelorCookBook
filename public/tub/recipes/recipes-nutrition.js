@@ -7,7 +7,7 @@ window.NUTRITION={
   "thai-green-curry":{srv:2,kcal:525,kJ:2197,protein:32,carbs:18,fat:36,diet:["gluten-free","dairy-free","nut-free"]},
   "carnitas-tacos":{srv:6,kcal:485,kJ:2029,protein:28,carbs:12,fat:38,diet:["gluten-free","dairy-free","nut-free"]},
   "mussels-white-wine-garlic":{srv:2,kcal:385,kJ:1611,protein:32,carbs:8,fat:24,diet:["gluten-free","dairy-free","nut-free"]},
-  "cacio-e-pepe":{srv:2,kcal:525,kJ:2197,protein:18,carbs:72,fat:18,diet:["vegetarian","nut-free"]},
+  "cacio-e-pepe":{srv:2,kcal:488,kJ:2042,protein:14,carbs:38,fat:29,diet:["vegetarian","nut-free"],confidence:"high",source:"USDA FoodData Central",verified:"2026-01-15",baseline:{pasta:"225g dry spaghetti",cheese:"55g Pecorino Romano",oil:"45mL extra-virgin olive oil",pepper:"1 tsp fresh-ground black pepper"}},
   "shakshuka-crusty-bread":{srv:2,kcal:425,kJ:1778,protein:18,carbs:42,fat:22,diet:["vegetarian","gluten-free","dairy-free","nut-free"]},
   "molten-chocolate-fondant":{srv:2,kcal:585,kJ:2448,protein:8,carbs:42,fat:42,diet:["vegetarian","nut-free"]},
   "smash-burgers-special-sauce":{srv:4,kcal:642,kJ:2686,protein:32,carbs:28,fat:44,diet:["gluten-free","nut-free"]},
