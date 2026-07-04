@@ -2,6 +2,64 @@
 
 > **Consolidated source-of-truth roadmap** synthesizing current state, full feature roadmap, execution order, and the tub-cookbook divergence analysis. This is THE roadmap going forward.
 
+## SESSION UPDATE (2026-07-04): critical bugs fixed, recipe count reconciled, RECIPE_REVIEW.md pruning question resolved
+
+**Two bugs were making the live site far less functional than it appeared in review:**
+1. A line in `tub-app.html` used smart/curly quotes (`'pantry'`) instead of
+   straight quotes as JS string delimiters. That's a syntax error, and a syntax
+   error anywhere in a `<script>` block prevents the whole block from parsing —
+   so every click handler, tab, and render function was silently undefined.
+   Recipe data loaded (from a separate file), but nothing was clickable.
+2. An extra closing `</div>` in the recipe detail template closed the Cook tab's
+   pane early, leaking the full step-by-step method into the Story and Learn
+   tabs on every recipe.
+
+Both fixed. Also fixed in the same pass: Shopping List and Meal Planner had no
+default `display:none` (unlike Detail/Methods/Cook, which all follow that
+pattern) and rendered permanently in-page below the recipe grid instead of as
+overlays; Surprise Me silently did nothing when invoked from the Skill Path
+tab; the mobile search box overflowed the viewport at narrow widths.
+
+**Recipe count reconciled — the "146 dishes" figure was stale.** Actual live
+roster before this session: 83 (verified by replicating the browser's exact
+script-load order and merge/cut logic in Node, not by reading claims). Two
+independent problems were suppressing content:
+- `fullcook-conversions.js` referenced `FULLCOOK_CONV` before ever declaring
+  it (missing the `window.` prefix every other batch file uses), throwing a
+  `ReferenceError` on every load and silently dropping the 27 recipes inside
+  it. Fixed — one-line prefix fix.
+- 162 step explanations across 32 recipes had a redundant `"WHY:"`/`"Why "`
+  prefix baked into the stored text, which doubled up with the UI's own bold
+  WHY label. Stripped programmatically, verified zero remaining.
+- 78 recipes were flagged `cut:true` in `roster-classes.js`. Cross-referencing
+  against `tub-import/RECIPE_REVIEW.md` (which proposed pruning the roster to
+  83 "proper meals," cutting 63 non-meals + 3 duplicates) showed the cut set
+  didn't match that proposal — it had also swept up genuine proper-meal mains
+  that review explicitly listed to *keep* (Beef Wellington, Mussakhan, Bibimbap,
+  Dan Dan Noodles, Palak Paneer, Malai Kofta, Borscht, Bouillabaisse, Banh Mi,
+  Char Siu Pork, plus older Signature-tier mains like Beef Bourguignon, Beef
+  Rendang, Peking Duck). 34 of the 78 had complete ingredients + steps sitting
+  unused; restored them. Live roster: **117**, all full-cook.
+- This resolves the "pending content-pruning sign-off" item noted below —
+  decision: don't prune to 83; the review's own classification shows most of
+  what was cut belongs in the book.
+
+**Known gap surfaced, not yet actioned:** cross-referencing the remaining 44
+cut-and-empty slugs against `RECIPE_REVIEW.md` shows roughly 20 of them are
+also classified as proper meals there (Gatsby, Harira, Pozole, Tamales, Bun
+Cha, Nasi Lemak, Khachapuri, Southern Fried Chicken, Whole Roast Sea Bass,
+Cape Malay Apricot Chicken, Okonomiyaki, Banh Xeo, and others) but have never
+been authored — no ingredients or steps exist anywhere. The other ~17-18
+(Biltong, Droëwors, snacks, drinks, condiments, the 3 confirmed duplicates)
+correctly correspond to the review's non-meal prune list and are fine left as
+they are. Authoring ~20 new full recipes to `RECIPE_STANDARD.md`'s bar is a
+real, separate body of work — not attempted this session.
+
+Full detail on the bug fixes: git log (`fix: critical bugs breaking site
+interactivity and navigation`, `content: fix WHY-field formatting bug and
+restore 34 complete recipes`). Recipe-by-recipe audit trail:
+`RECIPE_AUDIT_FRAMEWORK.md`, `AUDIT_WEEK1_SIGNATURE3.md`, `AUDIT_WEEK2_SIGNATURE3.md`.
+
 ## MAJOR UPDATE (2026-07-02, same session as the decisions below): TUB discovered
 
 Everything in "Current State Assessment" and "Owner Decisions — LOCKED" below was
@@ -47,9 +105,12 @@ step. The legacy Next.js build (`src/`, `knowledge/recipes/*.md`) stays in the r
 dormant, not deleted — CLAUDE.md flags it as such.
 
 **Still open (unblocked by the above, revisit later):**
-`RECIPE_REVIEW.md`'s pending content-pruning sign-off (~83 meals vs ~63 non-meals, 3
-duplicates, in the 146-dish roster), and photo coverage (~95 of 146 dishes still show
-generative gradient tiles instead of real photos).
+~~`RECIPE_REVIEW.md`'s pending content-pruning sign-off~~ — **resolved 2026-07-04,
+see SESSION UPDATE at top: decision was not to prune.** Photo coverage remains
+open (most of the 117 live dishes still show generative gradient tiles instead
+of real photos). New gap surfaced by the same session: ~20 proper-meal recipes
+identified in `RECIPE_REVIEW.md` were never authored (no ingredients/steps) —
+see SESSION UPDATE for the list.
 
 ## Current State Assessment
 
@@ -423,6 +484,7 @@ enforced default for every recipe, not an optional flavour choice.
 **Status:** TUB (`public/tub/tub-app.html`) is the live product, published to GitHub
 (`elixa-admin/BachelorCookBook`) and Vercel (2026-07-02). Site root redirects there.
 Owner Decisions 0-3 and the Batch 1 pilot recipes from earlier today stand as real,
-usable work on the dormant legacy build, not discarded. Next action, whenever
-picked up: `RECIPE_REVIEW.md`'s content-pruning sign-off and closing the photo gap
-(~95 of 146 dishes) — see "Still open" above.
+usable work on the dormant legacy build, not discarded. Live roster is 117 dishes
+as of 2026-07-04 (see SESSION UPDATE at top). Next action, whenever picked up:
+closing the photo gap, and authoring the ~20 proper-meal recipes identified as
+missing — see "Still open" above.
