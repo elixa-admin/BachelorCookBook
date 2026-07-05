@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serve With — Chip Selection Variants II</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #08090b;
+    --ink-2: #0f1114;
+    --surface: #141618;
+    --line: #1e2024;
+    --line-soft: #17191c;
+    --text: #e8e0d6;
+    --muted: #8a8680;
+    --faint: #4a4845;
+    --accent: #bc3a42;
+    --r-pill: 100px;
+  }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--ink); color: var(--text); min-height: 100vh; }
+  .page-header {
+    background: var(--ink-2); border-bottom: 1px solid var(--line);
+    padding: 18px 28px; position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .page-header h1 { font-family: 'Oswald', Impact, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .series { font-size: 11px; color: var(--faint); letter-spacing: .1em; font-family: 'Oswald', Impact, sans-serif; text-transform: uppercase; }
+  .series b { color: var(--accent); }
+
+  .variants { display: grid; grid-template-columns: repeat(2, 1fr); }
+  @media(max-width:680px){ .variants { grid-template-columns: 1fr; } }
+
+  .variant { padding: 36px 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .variant:nth-child(2n) { border-right: none; }
+  .variant:nth-last-child(-n+2) { border-bottom: none; }
+
+  .variant-label { font-family: 'Oswald', Impact, sans-serif; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--faint); margin-bottom: 3px; }
+  .variant-descriptor { font-size: 11px; color: var(--muted); margin-bottom: 22px; }
+
+  .dhead { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; }
+  .dhead h2 { font-family: 'Oswald', Impact, sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .02em; font-size: 24px; }
+  .dhead .rule { flex: 1; height: 1px; background: var(--line); }
+  .dsub { font-size: 12.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.55; }
+
+  .sides-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+
+  .chip {
+    font-size: 13px; font-weight: 500; color: var(--muted);
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--r-pill); padding: 8px 15px; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 7px;
+  }
+
+  .sides-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 13px; border-top: 1px solid var(--line-soft);
+  }
+  .bar-note { font-size: 12.5px; color: var(--muted); }
+  .bar-note b { color: var(--text); }
+  .bar-btn {
+    font-family: 'Oswald', Impact, sans-serif;
+    font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+    padding: 8px 18px; cursor: pointer; border-radius: var(--r-pill);
+  }
+
+  /* ── CHIPS ─────────────────────────────────── */
+
+  /* B-chip: dark + neon glow border */
+  .b-chip .chip.sel {
+    background: rgba(57,255,20,.07); border: 1.5px solid #39FF14;
+    color: #39FF14; font-weight: 600;
+    box-shadow: 0 0 0 2px rgba(57,255,20,.1), 0 0 12px rgba(57,255,20,.1);
+  }
+  .b-chip .chip.sel::before { content: "✓"; font-size: 11px; }
+
+  /* C-chip: muted lime */
+  .c-chip .chip.sel {
+    background: rgba(180,255,100,.08); border-color: #b4ff64;
+    color: #b4ff64; font-weight: 600;
+  }
+  .c-chip .chip.sel::before { content: "✓"; font-size: 11px; opacity: .8; }
+
+  /* ── BUTTONS ────────────────────────────────── */
+
+  /* D-btn: white pill with neon left stripe */
+  .d-btn {
+    background: #ededea; border: none; color: #111; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 0; padding: 0;
+    overflow: hidden;
+  }
+  .d-btn::before {
+    content: ""; display: block; width: 5px; min-height: 36px;
+    flex-shrink: 0; align-self: stretch;
+  }
+  .d-btn .inner { padding: 0 16px 0 12px; }
+
+  .d-btn.neon-b::before { background: #39FF14; }
+  .d-btn.neon-c::before { background: #b4ff64; }
+
+  /* X-btn: white pill, no stripe */
+  .x-btn {
+    background: #ededea; border: none; color: #111;
+    font-weight: 700; padding: 8px 18px;
+  }
+
+  /* Y-btn: glass — semi-transparent white with neon border */
+  .y-btn-b {
+    background: rgba(255,255,255,.06); border: 1.5px solid rgba(57,255,20,.5);
+    color: #39FF14; font-weight: 600;
+    box-shadow: inset 0 0 0 0 transparent, 0 0 8px rgba(57,255,20,.12);
+  }
+  .y-btn-c {
+    background: rgba(255,255,255,.06); border: 1.5px solid rgba(180,255,100,.5);
+    color: #b4ff64; font-weight: 600;
+  }
+
+  /* Z-btn: solid lime fill, dark text */
+  .z-btn-b { background: #39FF14; border: none; color: #050f02; font-weight: 700; }
+  .z-btn-c { background: #b4ff64; border: none; color: #0d160a; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Serve With — Variants II</h1>
+  <span class="series">Series II · <b>B &amp; C chips</b> · 4 button treatments</span>
+</div>
+
+<div class="variants">
+
+  <!-- E: B chip · D button (neon stripe, white pill) -->
+  <div class="variant b-chip">
+    <div class="variant-label">Option E</div>
+    <div class="variant-descriptor">B chip (neon glow) · D button (white + neon stripe)</div>
+    <div class="dhead"><h2>Serve with</h2><span class="rule"></span></div>
+    <p class="dsub">Select what you'll make alongside — then add to your shopping list.</p>
+    <div class="sides-grid">
+      <div class="chip sel">Simple green salad with lemon dressing</div>
+      <div class="chip sel">Roasted asparagus or broccoli</div>
+      <div class="chip">Glass of dry white wine</div>
+      <div class="chip">Crusty bread to mop up the sauce</div>
+    </div>
+    <div class="sides-bar">
+      <span class="bar-note"><b>2</b> selected</span>
+      <button class="bar-btn d-btn neon-b"><span class="inner">＋ Add to list</span></button>
+    </div>
+  </div>
+
+  <!-- F: C chip · D button (muted lime stripe, white pill) -->
+  <div class="variant c-chip">
+    <div class="variant-label">Option F</div>
+    <div class="variant-descriptor">C chip (muted lime) · D button (white + lime stripe)</div>
+    <div class="dhead"><h2>Serve with</h2><span class="rule"></span></div>
+    <p class="dsub">Select what you'll make alongside — then add to your shopping list.</p>
+    <div class="sides-grid">
+      <div class="chip sel">Simple green salad with lemon dressing</div>
+      <div class="chip sel">Roasted asparagus or broccoli</div>
+      <div class="chip">Glass of dry white wine</div>
+      <div class="chip">Crusty bread to mop up the sauce</div>
+    </div>
+    <div class="sides-bar">
+      <span class="bar-note"><b>2</b> selected</span>
+      <button class="bar-btn d-btn neon-c"><span class="inner">＋ Add to list</span></button>
+    </div>
+  </div>
+
+  <!-- G: B chip · glass button (semi-transparent neon border) -->
+  <div class="variant b-chip">
+    <div class="variant-label">Option G</div>
+    <div class="variant-descriptor">B chip (neon glow) · Glass button (frosted + neon border)</div>
+    <div class="dhead"><h2>Serve with</h2><span class="rule"></span></div>
+    <p class="dsub">Select what you'll make alongside — then add to your shopping list.</p>
+    <div class="sides-grid">
+      <div class="chip sel">Simple green salad with lemon dressing</div>
+      <div class="chip sel">Roasted asparagus or broccoli</div>
+      <div class="chip">Glass of dry white wine</div>
+      <div class="chip">Crusty bread to mop up the sauce</div>
+    </div>
+    <div class="sides-bar">
+      <span class="bar-note"><b>2</b> selected</span>
+      <button class="bar-btn y-btn-b">＋ Add to list</button>
+    </div>
+  </div>
+
+  <!-- H: C chip · white pill button (no stripe, clean contrast) -->
+  <div class="variant c-chip">
+    <div class="variant-label">Option H</div>
+    <div class="variant-descriptor">C chip (muted lime) · Clean white pill button</div>
+    <div class="dhead"><h2>Serve with</h2><span class="rule"></span></div>
+    <p class="dsub">Select what you'll make alongside — then add to your shopping list.</p>
+    <div class="sides-grid">
+      <div class="chip sel">Simple green salad with lemon dressing</div>
+      <div class="chip sel">Roasted asparagus or broccoli</div>
+      <div class="chip">Glass of dry white wine</div>
+      <div class="chip">Crusty bread to mop up the sauce</div>
+    </div>
+    <div class="sides-bar">
+      <span class="bar-note"><b>2</b> selected</span>
+      <button class="bar-btn x-btn">＋ Add to list</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -583,5 +583,44 @@ window.ROSTER_CLASSES={
   },
   "moussaka": {
     "cut": false, "cat": "main", "tier": "adopted"
+  },
+  "braai-lamb-chops-chimichurri": {
+    "cat": "main", "tier": "signature"
+  },
+  "oxtail-potjie": {
+    "cat": "main", "tier": "signature"
+  },
+  "waterblommetjie-bredie": {
+    "cat": "main", "tier": "premium"
+  },
+  "snoek-braai-apricot-jam": {
+    "cat": "main", "tier": "premium"
+  },
+  "boerewors-pap": {
+    "cat": "main", "tier": "premium"
+  },
+  "sosaties-malay-kebabs": {
+    "cat": "main", "tier": "premium"
+  },
+  "potjiekos-boerie-pot": {
+    "cat": "main", "tier": "signature"
+  },
+  "denningvleis-malay-mince-curry": {
+    "cat": "main", "tier": "premium"
+  },
+  "yellow-rice-raisins-turmeric": {
+    "cat": "main", "tier": "premium"
+  },
+  "cape-malay-fish-curry": {
+    "cat": "main", "tier": "premium"
+  },
+  "breyani-hyderabadi-cape-malay": {
+    "cat": "main", "tier": "signature"
+  },
+  "atchar-pickled-mango-lemon": {
+    "cat": "byo", "tier": "premium"
+  },
+  "koesisters-spiced-dough-ginger-syrup": {
+    "cat": "sweet", "tier": "premium"
   }
 };
