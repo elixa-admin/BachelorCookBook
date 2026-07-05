@@ -1080,8 +1080,9 @@ function renderGrid(){
   g.innerHTML=items.map(cardHTML).join('');
 }
 function cardHTML(r){
+  var imgSrc=r.image||(window.IMAGES&&IMAGES[r.slug])||null;
   return `<article class="card" tabindex="0" onclick="openRecipe('${r.slug}')" onkeydown="if(event.key==='Enter'||event.key===' ')openRecipe('${r.slug}')" style="--cardc:${r.tierColor}33">
-    <div class="thumb"><div class="glow"></div>${r.image?'<img class="thumb-img" loading="lazy" decoding="async" src="'+r.image+'" alt="'+(r.imageAlt||r.t)+'" onerror="this.remove()">':''}<div class="ph ph-${dishDomain(r)}"><span class="ph-g">${domainIcon(dishDomain(r))}</span></div>
+    <div class="thumb"><div class="glow"></div>${imgSrc?'<img class="thumb-img" loading="lazy" decoding="async" src="'+imgSrc+'" alt="'+(r.imageAlt||r.t)+'" onerror="this.remove()">':''}<div class="ph ph-${dishDomain(r)}"><span class="ph-g">${domainIcon(dishDomain(r))}</span></div>
       <span class="badge"><span class="td" style="background:${r.tierColor}"></span>${r.tierName}</span>${skillBadgeHTML(r)}<button class="fav-btn ${favs.has(r.slug)?'on':''}" data-slug="${r.slug}" onclick="event.stopPropagation();toggleFav('${r.slug}')" title="Save to cookbook">${favs.has(r.slug)?'♥':'♡'}</button>
       ${r.live==='full'?`<span class="live">Full cook ▸</span>`:r.live==='comp'?`<span class="live">Compendium ▸</span>`:r.live==='prov'?`<span class="live">Story ▸</span>`:''}
     </div>
