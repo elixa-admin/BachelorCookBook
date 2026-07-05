@@ -868,6 +868,7 @@ main{padding-bottom:64px}
 <script src="recipes/glossary.js"></script>
 <script src="recipes/recipes-tips.js"></script>
 <script src="recipes/stories.js"></script>
+<script src="recipes/stories-new-sa.js"></script>
 <script src="recipes/premium-batch.js"></script>
 <script src="recipes/global-exotic-batch.js"></script>
 <script src="recipes/substitutes.js"></script>
@@ -883,6 +884,7 @@ main{padding-bottom:64px}
 <script src="recipes/sa-batch.js"></script>
 <script src="recipes/sa-heritage-batch.js"></script>
 <script src="recipes/sa-additional-batch.js"></script>
+<script src="recipes/batch-new-sa.js"></script>
 <script src="recipes/fullcook-batch.js"></script>
 <script src="recipes/courses.js"></script>
 <script src="recipes/regions.js"></script>
@@ -1014,6 +1016,7 @@ if(window.PREMIUM_BATCH){PREMIUM_BATCH.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&
 if(window.SA_ADDITIONS){SA_ADDITIONS.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
 if(window.SA_ADDITIONS_2){SA_ADDITIONS_2.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
 if(window.FULLCOOK_CONV){FULLCOOK_CONV.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
+if(window.NEW_BATCH_SA){NEW_BATCH_SA.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
 if(window.RECIPES){RECIPES.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});if(window.SA_ADDITIONS){SA_ADDITIONS.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}if(window.SA_ADDITIONS_2){SA_ADDITIONS_2.forEach(function(r){if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
  const _COMING=[{t:'Tiramisu',tier:'others',cui:'Italian',occ:['date','host'],time:'30 min + chill',method:'No-cook · assemble',blurb:'Coffee-soaked, mascarpone-cloud, dusted with cocoa — the no-bake closer.'},{t:'Crème Brûlée',tier:'others',cui:'French',occ:['date'],time:'45 min + chill',method:'Oven · bain-marie',blurb:'Cold custard, a crackling burnt-sugar lid — mastered with a blowtorch.'},{t:'Malva Pudding',tier:'others',cui:'South African',occ:['host'],time:'60 min',method:'Oven · bake',blurb:'Warm, sponge-soft, drowning in cream sauce — the SA pudding that ends a braai.'},{t:'Mango Sticky Rice',tier:'others',cui:'Thai',occ:['date'],time:'40 min + soak',method:'Stovetop · steam',blurb:'Coconut-sticky rice with sun-yellow mango — Thailand’s sweet finish.'},{t:'Churros & Chocolate',tier:'others',cui:'Spanish',occ:['solo','date'],time:'30 min',method:'Stovetop · deep-fry',blurb:'Crisp ridged batons, rolled in sugar, with a cup of dark chocolate.'}];
  const _TO={signature:1,premium:2,global:3,exotic:4,others:5};

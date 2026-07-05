@@ -661,5 +661,13 @@ window.ROSTER_CLASSES={
   },
   "chakalaka-spicy-relish": {
     "cat": "byo", "tier": "premium"
-  }
+  },
+  "snoek-pate": { "cat": "special", "tier": "heritage" },
+  "crayfish-bisque": { "cat": "special", "tier": "signature" },
+  "cape-malay-lamb-braised": { "cat": "main", "tier": "heritage" },
+  "fish-cakes-tartare": { "cat": "main", "tier": "heritage" },
+  "milk-tart-cheesecake": { "cat": "sweet", "tier": "heritage" },
+  "kingklip-en-papillote": { "cat": "main", "tier": "signature" },
+  "sardines-braai-lemon": { "cat": "main", "tier": "heritage" },
+  "prime-rib-roast": { "cat": "main", "tier": "signature" }
 };
