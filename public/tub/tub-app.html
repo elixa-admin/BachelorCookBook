@@ -927,17 +927,55 @@ main{padding-bottom:64px}
 }
 .ing-sub-trigger:hover { opacity: 1; }
 .ing-sub-panel {
-  margin-top: 6px;
-  padding: 10px;
+  margin-top: 12px;
+  padding: 12px;
   background: var(--surface-2);
   border: 1px solid var(--line-soft);
-  border-radius: 6px;
-  font-size: 12px;
-  color: var(--faint);
-  line-height: 1.5;
+  border-radius: 8px;
   animation: fadeIn 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.ing-sub-panel b { color: var(--gold); }
+.ing-sub-panel .sub-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin: 0;
+}
+.ing-sub-panel .sub-card {
+  padding: 10px 12px;
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ing-sub-panel .sub-card:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+.ing-sub-panel .sub-card.sel {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.8);
+}
+.ing-sub-panel .sub-card-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+.ing-sub-panel .sub-card-note {
+  font-size: 11px;
+  color: var(--faint);
+  margin: 0;
+  line-height: 1.4;
+}
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 /* WAKE LOCK INDICATOR */
@@ -2485,57 +2523,85 @@ function toggleInSituSub(btn, event) {
     container.innerHTML = '';
     return;
   }
-  
+
   document.querySelectorAll('.sub-panel-container').forEach(function(el) {
     if (el !== container) el.innerHTML = '';
   });
-  
+
   var key = btn.dataset.ingkey;
   var S = window.SUBS || {};
   var entry = S[key];
   if (!entry) return;
-  
+
   var html = '<div class="ing-sub-panel">';
-  html += '<p style="margin:0 0 8px; font-weight:600; color:var(--gold);">Substitutes for ' + key + ':</p>';
-  html += '<div style="margin-bottom:6px;"><button class="vchip sel" style="padding: 2px 8px; font-size:11px;" onclick="swapInSitu(this, -1)">Use Original (' + key + ')</button></div>';
-  
+  html += '<p class="sub-title">Substitutes for ' + key + '</p>';
+
+  // "Use Original" card
+  html += '<button class="sub-card sel" onclick="swapInSitu(this, -1)">' +
+    '<p class="sub-card-name">Use Original</p>' +
+    '<p class="sub-card-note">' + key + '</p>' +
+  '</button>';
+
+  // Alternative cards
   (entry.alts || []).forEach(function(alt, idx) {
-    html += '<div style="margin-bottom:8px; display:flex; flex-direction:column; gap:4px;">' +
-      '<button class="vchip" style="padding: 2px 8px; font-size:11px; align-self:flex-start;" onclick="swapInSitu(this, ' + idx + ')">' + alt[0] + '</button>' +
-      '<span style="font-size:11px; color:var(--faint); padding-left:4px;">' + alt[1] + '</span>' +
-    '</div>';
+    html += '<button class="sub-card" onclick="swapInSitu(this, ' + idx + ')">' +
+      '<p class="sub-card-name">' + alt[0] + '</p>' +
+      '<p class="sub-card-note">' + alt[1] + '</p>' +
+    '</button>';
   });
+
+  // "Don't Have" card
+  html += '<button class="sub-card" onclick="swapInSitu(this, -2)" style="opacity:0.7;">' +
+    '<p class="sub-card-name">Don\'t Have</p>' +
+    '<p class="sub-card-note">Mark this ingredient as not available</p>' +
+  '</button>';
+
   html += '</div>';
-  
+
   container.innerHTML = html;
 }
 
 function swapInSitu(btn, altIdx) {
   var li = btn.closest('.ing');
   if (!li) return;
-  
+
   var rawName = li.dataset.name;
   var sub = findSubs(rawName);
   if (!sub) return;
-  
-  if (altIdx < 0) {
+
+  // Handle "Don't Have" (altIdx === -2)
+  if (altIdx === -2) {
+    li.classList.add('have');
+    li.dataset.vname = '';
+    delete li.dataset.vmult;
+  } else if (altIdx === -1) {
+    // Use Original
+    li.classList.remove('have');
     delete li.dataset.vname;
     delete li.dataset.vmult;
   } else {
+    // Use alternative
+    li.classList.remove('have');
     var alt = sub.s.alts[altIdx];
     if (alt) {
       li.dataset.vname = variantName(alt[0], rawName);
       li.dataset.vmult = parseRatio(alt[1]);
     }
   }
-  
+
   var panel = li.querySelector('.ing-sub-panel');
   if (panel) {
-    panel.querySelectorAll('.vchip').forEach(function(c, i) {
-      c.classList.toggle('sel', (altIdx === -1 && i === 0) || (altIdx === i - 1));
+    panel.querySelectorAll('.sub-card').forEach(function(c, i) {
+      if (altIdx === -2) {
+        c.classList.toggle('sel', i === panel.querySelectorAll('.sub-card').length - 1);
+      } else if (altIdx === -1) {
+        c.classList.toggle('sel', i === 0);
+      } else {
+        c.classList.toggle('sel', i === altIdx + 1);
+      }
     });
   }
-  
+
   for (var vk in _VAR) {
     if (_VAR[vk].core === sub.k) {
       document.querySelectorAll('.vchip[data-vk="' + vk + '"]').forEach(function(c) {
@@ -2544,7 +2610,7 @@ function swapInSitu(btn, altIdx) {
       break;
     }
   }
-  
+
   scaleIgs(_serv);
 }
 
