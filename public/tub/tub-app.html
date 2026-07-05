@@ -882,6 +882,7 @@ main{padding-bottom:64px}
 <script src="recipes/foundation-batch.js"></script>
 <script src="recipes/sa-batch.js"></script>
 <script src="recipes/sa-heritage-batch.js"></script>
+<script src="recipes/sa-additional-batch.js"></script>
 <script src="recipes/fullcook-batch.js"></script>
 <script src="recipes/courses.js"></script>
 <script src="recipes/regions.js"></script>
@@ -1017,7 +1018,7 @@ if(window.RECIPES){RECIPES.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL
  const _COMING=[{t:'Tiramisu',tier:'others',cui:'Italian',occ:['date','host'],time:'30 min + chill',method:'No-cook · assemble',blurb:'Coffee-soaked, mascarpone-cloud, dusted with cocoa — the no-bake closer.'},{t:'Crème Brûlée',tier:'others',cui:'French',occ:['date'],time:'45 min + chill',method:'Oven · bain-marie',blurb:'Cold custard, a crackling burnt-sugar lid — mastered with a blowtorch.'},{t:'Malva Pudding',tier:'others',cui:'South African',occ:['host'],time:'60 min',method:'Oven · bake',blurb:'Warm, sponge-soft, drowning in cream sauce — the SA pudding that ends a braai.'},{t:'Mango Sticky Rice',tier:'others',cui:'Thai',occ:['date'],time:'40 min + soak',method:'Stovetop · steam',blurb:'Coconut-sticky rice with sun-yellow mango — Thailand’s sweet finish.'},{t:'Churros & Chocolate',tier:'others',cui:'Spanish',occ:['solo','date'],time:'30 min',method:'Stovetop · deep-fry',blurb:'Crisp ridged batons, rolled in sugar, with a cup of dark chocolate.'}];
  const _TO={signature:1,premium:2,global:3,exotic:4,others:5};
  let _all=[...Object.values(FULL)];
- [window.COMPENDIUM,window.BATCH5,window.FOUNDATION_BATCH,window.SA_BATCH,window.SA_HERITAGE_BATCH].forEach(function(src){if(src)src.forEach(function(r){if(r&&r.slug&&!FULL[r.slug]&&!_all.find(x=>x.slug===r.slug))_all.push(r);});});
+ [window.COMPENDIUM,window.BATCH5,window.FOUNDATION_BATCH,window.SA_BATCH,window.SA_HERITAGE_BATCH,window.SA_ADDITIONAL_BATCH].forEach(function(src){if(src)src.forEach(function(r){if(r&&r.slug&&!FULL[r.slug]&&!_all.find(x=>x.slug===r.slug))_all.push(r);});});
  _COMING.forEach(c=>{if(!_all.find(x=>x.t===c.t))_all.push(c);});
  var _CL=window.ROSTER_CLASSES||{},_T2={heritage:1,adopted:2,aspirational:3,component:4};
  R=_all.filter(function(r){if(!r.slug)r.slug=r.t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');var c=_CL[r.slug];return !(c&&c.cut);}).sort(function(a,b){return (_T2[(_CL[a.slug]||{}).tier]||9)-(_T2[(_CL[b.slug]||{}).tier]||9)||a.t.localeCompare(b.t);});

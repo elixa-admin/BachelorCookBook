@@ -622,5 +622,44 @@ window.ROSTER_CLASSES={
   },
   "koesisters-spiced-dough-ginger-syrup": {
     "cat": "sweet", "tier": "premium"
+  },
+  "durban-mutton-curry": {
+    "cat": "main", "tier": "premium"
+  },
+  "prawn-curry-cape-malay": {
+    "cat": "main", "tier": "premium"
+  },
+  "samoosas-spiced-mince": {
+    "cat": "special", "tier": "premium"
+  },
+  "melktert-milk-tart": {
+    "cat": "sweet", "tier": "premium"
+  },
+  "lamb-sosaties-variant": {
+    "cat": "main", "tier": "premium"
+  },
+  "karoo-lamb-neck-rosemary": {
+    "cat": "main", "tier": "signature"
+  },
+  "sausage-pap-township": {
+    "cat": "main", "tier": "premium"
+  },
+  "vetkoek-fried-dough": {
+    "cat": "main", "tier": "premium"
+  },
+  "pap-sous": {
+    "cat": "main", "tier": "premium"
+  },
+  "malva-pudding-apricot": {
+    "cat": "sweet", "tier": "premium"
+  },
+  "peppermint-crisp-tart": {
+    "cat": "sweet", "tier": "premium"
+  },
+  "amarula-cheesecake": {
+    "cat": "sweet", "tier": "premium"
+  },
+  "chakalaka-spicy-relish": {
+    "cat": "byo", "tier": "premium"
   }
 };
