@@ -291,17 +291,17 @@ button{font-family:var(--font)}
 .ings li.have .nm{text-decoration:line-through;text-decoration-color:var(--faint)}
 .ings li.have .igcheck{background:var(--accent);border-color:var(--accent)}
 .ings li.have .igcheck::after{content:"✓";color:var(--on-accent);font-size:12px;font-weight:800;position:absolute;inset:0;display:grid;place-items:center}
-.timeline{display:grid;gap:0;background:linear-gradient(to bottom,rgb(46,98,157,0.1),rgb(201,162,75,0.1),rgb(187,67,66,0.1));border-radius:var(--r)}
+.timeline{display:grid;gap:0;background:transparent;border-radius:var(--r)}
 .tl{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:13px 0;position:relative}
-.tl::before{content:"";position:absolute;left:84px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,rgba(46,98,157,0.4),rgba(201,162,75,0.4),rgba(187,67,66,0.4))}
+.tl::before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:rgba(212,175,55,0.3)}
 .tl .t{font-family:var(--mono);font-size:12.5px;color:var(--steel);font-weight:500;padding-top:1px}
 .tl .b{position:relative;padding-left:22px}
-.tl .b::before{content:"";position:absolute;left:-5.5px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--dotc-bg,var(--ink));border:2px solid var(--dotc,var(--steel));transition:.3s ease}
-.tl.passive .b::before{opacity:.55}
+.tl .b::before{content:"";position:absolute;left:-5px;top:7px;width:11px;height:11px;border-radius:50%;background:rgba(212,175,55,0.2);border:2px solid rgba(212,175,55,0.8);transition:.3s ease}
+.tl.passive .b::before{opacity:.4;border-color:rgba(212,175,55,0.5)}
 .tl .ttl{font-size:14.5px;font-weight:600;color:var(--text)}
 .tl .d{font-size:12.5px;color:var(--faint);margin-top:1px}
 .tl .tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-text);margin-left:7px;font-weight:600}
-.tl.passive{opacity:.72}
+.tl.passive{opacity:.85}
 .tl.passive .ttl{color:var(--muted)}
 .tl-mile{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:2px 0;position:relative;align-items:center}
 .tl-mile .line{height:1px;background:linear-gradient(90deg,rgba(201,162,75,.6),rgba(224,122,112,.5));position:relative}
@@ -2172,12 +2172,14 @@ function renderFull(r){
   var saDrinks=(window.SA_DRINKS&&window.SA_DRINKS[r.slug])||null;
   var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p,i){
     var sa=saDrinks&&saDrinks.pair_sa&&saDrinks.pair_sa[i];
+    var drinkName=capitalizeWords(p[1]);
+    var saName=sa?capitalizeWords(sa[0]):'';
     var saKey=sa?getCocktailKey(sa[0]):null;
     var origKey=getCocktailKey(p[1]);
     var saBtn=saKey?'<button class="btn-cocktail-trigger" onclick="openCocktailModal(\''+saKey+'\')"><i class="ti ti-glass-cocktail"></i> View Recipe</button>':'';
     var origBtn=origKey?'<button class="btn-cocktail-trigger" onclick="openCocktailModal(\''+origKey+'\')"><i class="ti ti-glass-cocktail"></i> View Recipe</button>':'';
-    var saHtml=sa?'<div class="pcard-sa"><span class="pcard-sa-badge">SA Alternative</span><h3>'+sa[0]+'</h3><div class="bot">'+sa[1]+'</div><p>'+sa[2]+'</p>'+drinkTasteHTML(sa[0],sa[1],sa[2])+saBtn+'</div>':'';
-    return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p>'+drinkTasteHTML(p[1],p[2],p[3])+origBtn+saHtml+'</div>';
+    var saHtml=sa?'<div class="pcard-sa"><span class="pcard-sa-badge">SA Alternative</span><h3>'+saName+'</h3><div class="bot">'+sa[1]+'</div><p>'+sa[2]+'</p>'+drinkTasteHTML(sa[0],sa[1],sa[2])+saBtn+'</div>':'';
+    return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+drinkName+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p>'+drinkTasteHTML(p[1],p[2],p[3])+origBtn+saHtml+'</div>';
   }).join('')+'</div></div></div>':'';
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
     '<div class="rtabs-wrap"><div class="wrap rtabs"><button class="rtab active" data-t="cook" onclick="switchRecipeTab(\'cook\')">Cook</button><button class="rtab" data-t="story" onclick="switchRecipeTab(\'story\')">Story</button><button class="rtab" data-t="learn" onclick="switchRecipeTab(\'learn\')">Learn</button></div></div>'+
@@ -2878,6 +2880,13 @@ function fmtTime(sec) {
   var m = Math.floor(sec / 60);
   var s = sec % 60;
   return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+}
+
+function capitalizeWords(str) {
+  if (!str) return str;
+  return str.split(' ').map(function(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  }).join(' ');
 }
 
 /* SHOPPING QUANTITY SUMMING UTILITY */
