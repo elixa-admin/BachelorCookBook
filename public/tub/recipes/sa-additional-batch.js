@@ -750,7 +750,7 @@ window.SA_ADDITIONAL_BATCH=[
       ],
       stats:[['15','min','Active'],['15','min','Cook'],['Makes 4 servings','',''],['Tender-crisp','','Doneness']],
       kit:['Frying pan','Wooden spoon']
-    ],
+    },
     ing:[
       ['The relish',[
         ['countN',2,'','Large onions, finely diced'],
