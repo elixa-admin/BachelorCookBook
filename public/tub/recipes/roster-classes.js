@@ -585,89 +585,89 @@ window.ROSTER_CLASSES={
     "cut": false, "cat": "main", "tier": "adopted"
   },
   "braai-lamb-chops-chimichurri": {
-    "cat": "main", "tier": "signature"
+    "cat": "main", "tier": "heritage"
   },
   "oxtail-potjie": {
-    "cat": "main", "tier": "signature"
+    "cat": "main", "tier": "heritage"
   },
   "waterblommetjie-bredie": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "snoek-braai-apricot-jam": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "boerewors-pap": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "sosaties-malay-kebabs": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "potjiekos-boerie-pot": {
-    "cat": "main", "tier": "signature"
+    "cat": "main", "tier": "heritage"
   },
   "denningvleis-malay-mince-curry": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "yellow-rice-raisins-turmeric": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "cape-malay-fish-curry": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "breyani-hyderabadi-cape-malay": {
-    "cat": "main", "tier": "signature"
+    "cat": "main", "tier": "heritage"
   },
   "atchar-pickled-mango-lemon": {
-    "cat": "byo", "tier": "premium"
+    "cat": "byo", "tier": "component"
   },
   "koesisters-spiced-dough-ginger-syrup": {
-    "cat": "sweet", "tier": "premium"
+    "cat": "sweet", "tier": "heritage"
   },
   "durban-mutton-curry": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "prawn-curry-cape-malay": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "samoosas-spiced-mince": {
-    "cat": "special", "tier": "premium"
+    "cat": "special", "tier": "heritage"
   },
   "melktert-milk-tart": {
-    "cat": "sweet", "tier": "premium"
+    "cat": "sweet", "tier": "heritage"
   },
   "lamb-sosaties-variant": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "karoo-lamb-neck-rosemary": {
-    "cat": "main", "tier": "signature"
+    "cat": "main", "tier": "heritage"
   },
   "sausage-pap-township": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "vetkoek-fried-dough": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "pap-sous": {
-    "cat": "main", "tier": "premium"
+    "cat": "main", "tier": "heritage"
   },
   "malva-pudding-apricot": {
-    "cat": "sweet", "tier": "premium"
+    "cat": "sweet", "tier": "heritage"
   },
   "peppermint-crisp-tart": {
-    "cat": "sweet", "tier": "premium"
+    "cat": "sweet", "tier": "heritage"
   },
   "amarula-cheesecake": {
-    "cat": "sweet", "tier": "premium"
+    "cat": "sweet", "tier": "heritage"
   },
   "chakalaka-spicy-relish": {
-    "cat": "byo", "tier": "premium"
+    "cat": "byo", "tier": "component"
   },
   "snoek-pate": { "cat": "special", "tier": "heritage" },
-  "crayfish-bisque": { "cat": "special", "tier": "signature" },
+  "crayfish-bisque": { "cat": "special", "tier": "heritage" },
   "cape-malay-lamb-braised": { "cat": "main", "tier": "heritage" },
   "fish-cakes-tartare": { "cat": "main", "tier": "heritage" },
   "milk-tart-cheesecake": { "cat": "sweet", "tier": "heritage" },
-  "kingklip-en-papillote": { "cat": "main", "tier": "signature" },
+  "kingklip-en-papillote": { "cat": "main", "tier": "heritage" },
   "sardines-braai-lemon": { "cat": "main", "tier": "heritage" },
-  "prime-rib-roast": { "cat": "main", "tier": "signature" }
+  "prime-rib-roast": { "cat": "main", "tier": "heritage" }
 };

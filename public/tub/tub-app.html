@@ -1564,7 +1564,7 @@ if(window.RECIPES){RECIPES.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL
  _COMING.forEach(c=>{if(!_all.find(x=>x.t===c.t))_all.push(c);});
  var _CL=window.ROSTER_CLASSES||{},_T2={heritage:1,adopted:2,aspirational:3,component:4};
  R=_all.filter(function(r){if(!r.slug)r.slug=r.t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');var c=_CL[r.slug];return !(c&&c.cut);}).sort(function(a,b){return (_T2[(_CL[a.slug]||{}).tier]||9)-(_T2[(_CL[b.slug]||{}).tier]||9)||a.t.localeCompare(b.t);});
- R.forEach(function(r){var cl=_CL[r.slug]||{};r.tier=cl.tier||'adopted';r.cat=cl.cat||'main';r.tierName=TIERS2[r.tier].n;r.tierColor=TIERS2[r.tier].c;r.live=(FULL[r.slug]&&FULL[r.slug].ing)?'full':(r.key_ings?'comp':(r.prov?'prov':null));r.region=window.regionOf?regionOf(r.cui):'mediterranean';if(!r.diff)r.diff='Med';});
+ R.forEach(function(r){var cl=_CL[r.slug]||{};r.tier=cl.tier||'adopted';if(!TIERS2[r.tier])r.tier='adopted';r.cat=cl.cat||'main';r.tierName=TIERS2[r.tier].n;r.tierColor=TIERS2[r.tier].c;r.live=(FULL[r.slug]&&FULL[r.slug].ing)?'full':(r.key_ings?'comp':(r.prov?'prov':null));r.region=window.regionOf?regionOf(r.cui):'mediterranean';if(!r.diff)r.diff='Med';});
  if(window.RETROFIT){R.forEach(function(r){var o=RETROFIT[r.slug];if(o){for(var k in o){if(r[k]===undefined)r[k]=o[k];}}});}
 }
 
