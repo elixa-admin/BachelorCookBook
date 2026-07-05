@@ -2115,6 +2115,30 @@ function tipsHTML(slug){var t=window.TIPS&&TIPS[slug];if(!t)return'';
   +(tips?'<div><div class="tips-sub-h">Technique tips</div><ul class="tiplist">'+tips+'</ul></div>':'')
   +(co?'<div><div class="tips-sub-h">Callouts</div><div class="callouts">'+co+'</div></div>':'')
   +'</div></div></div>';}
+
+/* Context-aware beverage suggestions by meal course */
+function getDefaultDrinkPairs(course){
+  var pairings={
+    breakfast:[
+      ["Tea","Origin Coffee or rooibos","Cape specialty","A warm cup of rooibos or specialty filter coffee"],
+      ["Juice","Fresh orange or citrus","Morning refreshment","Cold-pressed citrus or fresh juice"]
+    ],
+    brunch:[
+      ["Coffee","Specialty filter or cap","Morning ritual","A warm specialty coffee, fresh from Cape Town roasters"],
+      ["Juice","Fresh orange or sparkling","Light refreshment","Fresh juice or sparkling elderflower"]
+    ],
+    dessert:[
+      ["Wine","Tawny or dessert Muscat","Sweet finish","A small glass of dessert wine or fortified"],
+      ["Tea","Strong rooibos or Ceylon","Warm pairing","A strong cup of tea, warm alongside the plate"]
+    ],
+    snack:[
+      ["Tea","Rooibos or filter coffee","Casual pairing","Warm tea or cold coffee over ice"],
+      ["Juice","Fresh juice or cordial","Light refresh","Fresh juice or sparkling water"]
+    ]
+  };
+  return pairings[course]||[];
+}
+
 function plateHTML(r,pair,foodPairs){var out='';
   var hasSides=r.sides&&r.sides.length;var hasFP=foodPairs&&foodPairs.length;
   if(hasSides||hasFP){var sid=r.slug;out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Complete the plate</span><h2>Elevate the dish with</h2><span class="rule"></span></div>';
@@ -2169,6 +2193,9 @@ function renderFull(r){
   var allPairs=r.pair||[];
   var drinkPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())<0;});
   var foodPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())>=0;});
+  if(drinkPairs.length===0&&r.course&&['breakfast','brunch','dessert','snack'].indexOf(r.course)>-1){
+    drinkPairs=getDefaultDrinkPairs(r.course);
+  }
   var saDrinks=(window.SA_DRINKS&&window.SA_DRINKS[r.slug])||null;
   var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p,i){
     var sa=saDrinks&&saDrinks.pair_sa&&saDrinks.pair_sa[i];
