@@ -202,6 +202,10 @@ button{font-family:var(--font)}
 .dsection--storage{background:rgba(85,183,221,.06);border-bottom:none!important;border-top:1px solid rgba(85,183,221,.15)}
 .dsection--storage .wrap{border-left:3px solid rgba(85,183,221,.35);padding-left:28px}
 .dsection--storage .dhead h2{color:rgba(85,183,221,.7)}
+.dsection--lore{background:rgba(168,214,97,.06);border-bottom:none!important;border-top:1px solid rgba(168,214,97,.2)}
+.dsection--lore .lore-card{border-left:3px solid rgba(168,214,97,.6);padding-left:16px}
+.dsection--lore .lore-header{font-weight:600;color:rgba(168,214,97,.9);font-size:11px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px}
+.dsection--lore .lore-text{font-size:14px;line-height:1.6;color:var(--text-primary);margin:0}
 .pair-food-row{margin-top:20px;padding-top:18px;border-top:1px solid var(--line-soft);display:flex;flex-direction:column;gap:10px}
 .pair-food-head{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
 .pair-food-chip{background:rgba(255,255,255,.03);border:1px dashed var(--line);border-radius:var(--r-md);padding:12px 16px}
@@ -292,16 +296,23 @@ button{font-family:var(--font)}
 .ings li.have .igcheck{background:var(--accent);border-color:var(--accent)}
 .ings li.have .igcheck::after{content:"✓";color:var(--on-accent);font-size:12px;font-weight:800;position:absolute;inset:0;display:grid;place-items:center}
 .timeline{display:grid;gap:0;background:transparent;border-radius:var(--r)}
-.tl{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:13px 0;position:relative}
-.tl::before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:rgba(212,175,55,0.3)}
-.tl .t{font-family:var(--mono);font-size:12.5px;color:var(--steel);font-weight:500;padding-top:1px}
-.tl .b{position:relative;padding-left:22px}
-.tl .b::before{content:"";position:absolute;left:-5px;top:7px;width:11px;height:11px;border-radius:50%;background:rgba(212,175,55,0.2);border:2px solid rgba(212,175,55,0.8);transition:.3s ease}
-.tl.passive .b::before{opacity:.4;border-color:rgba(212,175,55,0.5)}
-.tl .ttl{font-size:14.5px;font-weight:600;color:var(--text)}
-.tl .d{font-size:12.5px;color:var(--faint);margin-top:1px}
+.tl-section{padding:12px 16px;margin-bottom:12px;border-radius:8px;border-left:3px solid}
+.tl-section.prep{background:rgba(46,98,157,0.06);border-left-color:rgb(46,98,157)}
+.tl-section.cook{background:rgba(201,162,75,0.08);border-left-color:rgb(201,162,75)}
+.tl-section-label{font-size:10px;font-weight:700;text-transform:uppercase;margin:0 0 8px 0;letter-spacing:0.1em}
+.tl-section.prep .tl-section-label{color:rgb(46,98,157)}
+.tl-section.cook .tl-section-label{color:rgb(201,162,75)}
+.tl{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:0;margin-bottom:8px;position:relative}
+.tl:last-child{margin-bottom:0}
+.tl::before{display:none}
+.tl .t{font-family:var(--mono);font-size:11px;color:var(--text-secondary);font-weight:500}
+.tl .b{position:relative;padding-left:0}
+.tl .b::before{content:"";position:absolute;left:-28px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--tl-dot-bg,rgba(201,162,75,0.2));border:2px solid var(--tl-dot,rgb(201,162,75));transition:.3s ease}
+.tl.passive .b::before{opacity:.4;border-color:rgba(201,162,75,0.5)}
+.tl .ttl{font-size:14px;font-weight:600;color:var(--text);margin:0}
+.tl .d{font-size:12px;color:var(--text-secondary);margin:4px 0 0 0}
 .tl .tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-text);margin-left:7px;font-weight:600}
-.tl.passive{opacity:.85}
+.tl.passive{opacity:1}
 .tl.passive .ttl{color:var(--muted)}
 .tl-mile{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:2px 0;position:relative;align-items:center}
 .tl-mile .line{height:1px;background:linear-gradient(90deg,rgba(201,162,75,.6),rgba(224,122,112,.5));position:relative}
@@ -2015,31 +2026,40 @@ function timelineHTML(r){
   var heatIdx=__tlFirstHeatIdx(tl);
   if(heatIdx>=0&&(idx<0||heatIdx<idx))idx=heatIdx;
   var cookCount=idx<0?0:(tl.length-idx);
-  var rows=tl.map(function(t,i){
+
+  var prepRows=[], cookRows=[];
+  tl.forEach(function(t,i){
     var col=(idx<0||i<idx)?('rgb('+__TL_PREP_C.join(',')+')'):__tlCookColor(i-idx,cookCount);
     var disp=__tlDispTS(i,idx,parsed,hasSgn);
     var duration=t[3];
     var isPassive=(typeof duration==='number'&&duration>0)||duration===true;
     var ttl=(isPassive?'⏱ ':'')+t[1];
-    
+
     var timerHtml='';
     if (typeof duration==='number'&&duration>0) {
       if (activeTimer.stepIndex===i&&activeTimer.timeLeft>0) {
-        timerHtml='<div class="tl-timer-active">'
-          +'<span class="tl-timer-val" id="tl-timer-val-'+i+'">'+fmtTime(activeTimer.timeLeft)+'</span>'
-          +'<button class="tl-timer-ctrl tl-timer-ctrl-toggle" onclick="toggleActiveTimer()"><i class="ti ti-player-pause"></i></button>'
-          +'<button class="tl-timer-ctrl cancel" onclick="cancelActiveTimer()"><i class="ti ti-trash"></i></button>'
-          +'</div>';
+        timerHtml='<div class="tl-timer-active"><span class="tl-timer-val" id="tl-timer-val-'+i+'">'+fmtTime(activeTimer.timeLeft)+'</span><button class="tl-timer-ctrl tl-timer-ctrl-toggle" onclick="toggleActiveTimer()"><i class="ti ti-player-pause"></i></button><button class="tl-timer-ctrl cancel" onclick="cancelActiveTimer()"><i class="ti ti-trash"></i></button></div>';
       } else {
         var minLabel=Math.round(duration/60);
         timerHtml='<button class="tl-timer-btn" onclick="startStepTimer('+i+','+duration+',\''+t[1].replace(/'/g,"\\'")+'\')"><i class="ti ti-alarm"></i> Start Timer ('+minLabel+'m)</button>';
       }
     }
-    
-    return '<div class="tl '+(isPassive?'passive':'')+'" style="--dotc:'+col+';--dotc-bg:'+col.replace('rgb','rgba').replace(')',',.3)')+'"><div class="t t-num">'+disp+'</div><div class="b"><div class="ttl">'+ttl+'</div><div class="d">'+t[2]+'</div>'+timerHtml+'</div></div>';
+
+    var itemHtml='<div class="tl '+(isPassive?'passive':'')+'" style="--tl-dot:'+col+';--tl-dot-bg:'+col.replace('rgb','rgba').replace(')',',.2)')+'"><div class="t">'+disp+'</div><div class="b"><div class="ttl">'+ttl+'</div><div class="d">'+t[2]+'</div>'+timerHtml+'</div></div>';
+
+    if(idx<0||i<idx) prepRows.push(itemHtml);
+    else cookRows.push(itemHtml);
   });
-  if(idx>0&&idx<tl.length)rows.splice(idx,0,'<div class="tl-mile"><div class="t"></div><div class="line"><span class="pill">Heat on</span></div></div>');
-  return '<div class="timeline">'+rows.join('')+'</div>';
+
+  var html='<div class="timeline">';
+  if(prepRows.length){
+    html+='<div class="tl-section prep"><p class="tl-section-label">Prep</p>'+prepRows.join('')+'</div>';
+  }
+  if(cookRows.length){
+    html+='<div class="tl-section cook"><p class="tl-section-label">Cook</p>'+cookRows.join('')+'</div>';
+  }
+  html+='</div>';
+  return html;
 }
 function __shapeHandsOff(r){var tl=r.tl;if(!tl||!tl.length)return false;var c=tl.filter(function(t){return /^T\+/.test(''+t[0]);});if(!c.length)c=tl;var p=c.filter(function(t){return !!t[3];}).length;return p/c.length>=0.6;}
 var OCC_PHRASE={solo:'cooking solo',date:'a date night',host:'the table'};
@@ -2211,7 +2231,7 @@ function renderFull(r){
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
     '<div class="rtabs-wrap"><div class="wrap rtabs"><button class="rtab active" data-t="cook" onclick="switchRecipeTab(\'cook\')">Cook</button><button class="rtab" data-t="story" onclick="switchRecipeTab(\'story\')">Story</button><button class="rtab" data-t="learn" onclick="switchRecipeTab(\'learn\')">Learn</button></div></div>'+
     '<div id="rtab-cook" class="rtabpane">'+brief+'<div id="variants"></div>'+gatherHTML(r)+mise+steps+pantryLoreHTML(r)+plateHTML(r,pair,foodPairs)+'</div>'+
-    '<div id="rtab-story" class="rtabpane" style="display:none">'+storyHTML(r.slug)+pantryLoreHTML(r)+nomenHTML(r.slug)+platingHTML(r)+'</div>'+
+    '<div id="rtab-story" class="rtabpane" style="display:none">'+storyHTML(r.slug)+nomenHTML(r.slug)+pantryLoreHTML(r)+platingHTML(r)+'</div>'+
     '<div id="rtab-learn" class="rtabpane" style="display:none">'+knowHTML(r)+masterclassHTML(r)+tipsHTML(r.slug)+subsHTML(r)+nutritionHTML(r.slug)+'</div>';
   renderIgs(r.ing);renderVariants(r);wireDetail();showDetail();switchRecipeTab('cook');
 }
