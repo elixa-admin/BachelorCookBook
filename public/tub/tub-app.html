@@ -154,6 +154,8 @@ button{font-family:var(--font)}
 .card .meta span{font-size:11.5px;color:var(--faint);display:inline-flex;align-items:center;gap:5px}
 .card .meta span b{color:var(--muted);font-weight:500}
 .card .meta .dot{width:3px;height:3px;border-radius:50%;background:var(--faint)}
+.card .meta .chip{display:inline-flex;align-items:center;padding:6px 11px;background:rgba(192,144,96,.12);border:0.5px solid rgba(192,144,96,.28);border-radius:12px;font-size:11.5px;color:#c09060;gap:4px}
+.card .meta .chip b{color:#d4a860;font-weight:500}
 .empty{padding:70px 0;text-align:center;color:var(--faint);grid-column:1/-1}
 .empty b{color:var(--muted)}
 
@@ -1087,7 +1089,7 @@ function cardHTML(r){
       ${r.live==='full'?`<span class="live">Full cook ▸</span>`:r.live==='comp'?`<span class="live">Compendium ▸</span>`:r.live==='prov'?`<span class="live">Story ▸</span>`:''}
     </div>
     <div class="body">${pmHTML(r)}<h3>${hl(r.t)}</h3>${(r.cat||'main')==='byo'?'<p class="accomp-note">Accompaniment — not a standalone meal</p>':''}<p class="blurb">${hl(r.blurb)}</p>
-      <div class="meta"><span><b>${r.cui}</b></span><span class="dot"></span><span class="region-tag">${regionLabel(r.region)||''}</span><span class="dot"></span><span class="num">${r.time}</span><span class="dot"></span><span>${r.method}</span></div>
+      <div class="meta"><span class="chip"><b>${r.cui}</b></span><span class="chip">${regionLabel(r.region)||''}</span><span class="chip"><b>${r.time}</b></span><span class="chip">${r.method}</span></div>
     </div></article>`;
 }
 function renderFavsView(){
