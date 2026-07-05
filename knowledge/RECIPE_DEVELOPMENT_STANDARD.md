@@ -110,6 +110,35 @@ Condiments and sauces are part of the plate spec.
 
 ---
 
+## 6.1. Plating and Visual Presentation Standard
+
+To achieve the "Warm Premium" aesthetic—intimate, moody, candlelit, and cinematic—the visual presentation of a dish is as critical as its taste. Cooking is leverage; plating is the visual proof. Follow these core design and chef principles:
+
+### Visual Composition Principles
+1. **Focus on the Hero (The Star)**:
+   - Every plate needs an anchor. The main protein (e.g. ribeye steak, poached Kingklip) or main component should occupy the focal point of the dish (typically centered or at the front of the plate).
+   - Never hide the hero. Sauces should be spooned underneath or partially across the meat to reveal its seared crust or texture, never poured to completely drown it.
+2. **The Power of Negative Space**:
+   - Do not crowd the plate. Leave at least 1/3 of the plate empty (negative space). This frames the food, feels intentional, and mirrors fine-dining standards.
+3. **Height and Layering (Verticality)**:
+   - Build vertically rather than spreading flat. Rest the steak partially on a bed of creamed spinach, stack fish cakes slightly, or mound rice using a cup/ramekin mould. This adds dimension and catches light beautifully.
+4. **Odd Numbers (The Rule of Thirds)**:
+   - When serving discrete items (scallops, fish cakes, lamb chops), always plate in odd numbers (3 or 5). The human brain finds odd-numbered arrangements more natural and visually appealing than symmetrical even pairs.
+
+### Color Theory & Contrast
+- **High-Contrast Accents**: Against earthy starches (pap, potatoes, rice), introduce vibrant green herb oils, bright red chili slivers, or deep purple pickled onions. 
+- **Warm Editorial Hues**: Match the app's wine-red/gold palette. Deep crimson sauces (red-wine reductions), golden-brown caramelization (Maillard reaction crusts), and bright yellow turmeric rice create an intimate, candlelit ambiance.
+- **Micro-Garnishing**: Use fresh, functional microgreens, torn herbs (never whole sprigs unless grilled), toasted sesame seeds, or citrus zest. Every garnish must be edible and directly relate to the flavor profile.
+
+### Plating Specific Dish Categories in TUB
+- **Steaks & Large Roasts**: Slice steaks on a bias (at a 45-degree angle) to show the pink center and arrange them fanned out. Spoon pan *jus* or chimichurri around the meat rather than over the crust to preserve the Maillard crunch.
+- **Cape Malay Curries**: Serve the curry in a low, wide bowl. Place a perfect mound of yellow rice at the side, and rest a folded, flaky roti against the edge. Scatter fresh coriander leaves (*dhanya*) and bright red pomegranate seeds over the curry for a premium color pop.
+- **Seafood & Steamed Fish**: Plate fish skin-side up if crispy. For *en papillote*, serve the closed parcel on a dark, flat plate with a knife alongside, letting the diner release the steam.
+- **Braais and Staples**: Serve braai meats on wooden boards with bowls of pap and chakalaka. Garnish pap with a drizzle of infused herb butter.
+- **Desserts**: Serve cheesecakes and tarts on cold plates. Dust cinnamon or cocoa powder through a stencil or fine sieve for a clean, sharp look. Add a single organic drizzle of fruit coulis or caramel sauce using a squeeze bottle or spoon-drag.
+
+---
+
 ## 7. Drinks Pairing Standard
 
 Every recipe gets 4 pairing categories:
@@ -129,14 +158,38 @@ Every recipe gets 4 pairing categories:
 ## 8. Story Standard
 
 Every recipe gets a story with these fields:
-- `para1` — Origin: where, when, who, why
-- `para2` — Name meaning + what it's called elsewhere
-- `para3` — What makes it special / the technique insight
-- `para4` — The deeper cultural meaning or occasion context
-- `dinner_fact` — One surprising, short, dinner-table conversation starter
+- `para1` — Origin: where, when, who, why. Focus on historical and cultural context.
+- `para2` — Name meaning + what it's called elsewhere, etymology, and visual/cultural significance.
+- `para3` — Technique insight: What makes it special, the culinary principle/science (e.g. Maillard reaction, emulsification, caramelization).
+- `para4` — The deeper cultural meaning or occasion context: why it matters to the cuisine, what it reveals about the culture.
+- `dinner_fact` — One surprising, short, dinner-table conversation starter (one sentence setup, one sentence payoff).
 
-**Voice:** Warm, assured, specific. Written like a knowledgeable host, not a history textbook.
-**Dinner fact format:** One sentence setup + one sentence payoff. Never longer.
+### Word Counts & Research Expectations
+- **Target word count:** 250–400 words per story (roughly 60–100 words per paragraph).
+- **Research depth:** Minimum 7/8 consensus approach. Cite implicit historical sources and techniques.
+- **Sensory language:** Warm Premium tone (sensory, unhurried, assured; atmosphere over punch).
+
+### Research Source Hierarchy
+1. **Regional culinary archives / food historians** (e.g., Cape Malay history, regional culture).
+2. **Technique references:** Serious Eats (Kenji López-Alt), Samin Nosrat, Harold McGee, Jacques Pépin.
+3. **Crowd consensus:** BBC Good Food (high rated), NYT Cooking, AllRecipes.
+4. **Chef references:** Gordon Ramsay, Yotam Ottolenghi.
+
+### Before vs. After Example
+
+#### Before (Brief — ~100 words)
+- `para1`: "Beef Teriyaki comes from Japanese households; izakayas; worldwide teriyaki popularity."
+- `para2`: "The Japanese sweet-savoury glaze that became a global favourite. The name: Japanese teriyaki (teri=gloss, yaki=grill); cooking technique name."
+- `para3`: "The cooking reveals a principle: Sweet-savoury glaze, caramelised edges, tender beef, quick cooking. This teaches you about the Maillard reaction — the browned crust where flavour concentrates is the whole point."
+- `para4`: "Teriyaki shows us that restraint is its own form of abundance. A few ingredients, understood completely, layered with intention. The gloss of the sauce reflects not richness but honesty — the beauty of the caramelization itself."
+- `dinner_fact`: "Teriyaki glaze should be thick enough to coat the meat — if it's too thin, it will run off instead of clinging."
+
+#### After (Target Enhanced Depth — ~350 words)
+- `para1`: "Beef Teriyaki emerged in 1960s Japan, when Western beef—expensive, lean, imported—forced Japanese cooks to rethink their grilling tradition. Where yakitori used chicken fat as an ally, beef needed seduction. Enter teriyaki: a sweetened soy glaze that clings to the meat, protecting it from the fierce heat and lending it an almost lacquered finish. This is the marriage of izakaya speed-cooking with high technique—five minutes, five ingredients, a lifetime of understanding."
+- `para2`: "The name alone tells you everything: teri (the glossy shine from caramelized sugars) and yaki (to grill or sear). It's not just a cooking method; it's a visual philosophy. The glaze should catch the light like lacquer on a wooden box. Japanese food culture prizes this balance between restraint and richness—a few ingredients, each one essential, working in absolute harmony. The soy provides umami depth and saltiness; the mirin (rice wine) adds subtle sweetness and body; a touch of ginger and garlic becomes invisible scaffolding. Nothing announces itself. Everything supports."
+- `para3`: "What you're actually learning here is the Maillard reaction rendered visible. When that glaze hits the hot pan and meat, sugars and proteins reorganize at the molecular level, creating hundreds of new flavor compounds in seconds. The browning isn't decoration—it's chemistry that transforms lean beef into something tender and complex. This teaches you that speed and precision aren't opposed; they're the same thing. A high pan, quick timing, constant motion. The meat spends less than five minutes cooking, yet the depth rivals a two-hour braise."
+- `para4`: "Teriyaki reveals something deeper about Japanese cooking philosophy: that abundance lives in restraint. A few ingredients, each understood completely, layered with intention and respect. The gloss of the sauce isn't about richness—it's about honesty. The beauty of caramelization itself. This is why teriyaki works: not despite its simplicity, but because of it."
+- `dinner_fact`: "Teriyaki glaze should be thick enough to coat the meat—if it's too thin, it will run off instead of clinging."
 
 ---
 

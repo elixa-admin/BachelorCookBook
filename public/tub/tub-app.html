@@ -748,6 +748,539 @@ mark{background:var(--accent);color:var(--on-accent);padding:0 .14em;border-radi
 .botnav-item:hover{background:var(--line-soft)}
 .botnav-item i{font-size:16px}
 main{padding-bottom:64px}
+
+/* GLASSMORPHISM & BADGES */
+#detail, #shop, #plan {
+  background: rgba(8, 9, 11, 0.85) !important;
+  backdrop-filter: blur(16px) saturate(185%);
+  -webkit-backdrop-filter: blur(16px) saturate(185%);
+}
+.botnav {
+  background: rgba(8, 9, 11, 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.botnav-menu {
+  background: rgba(18, 20, 24, 0.9) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow animations on Signature/Premium recipe cards */
+.rcard[data-tier="signature"], .rcard[data-tier="premium"] {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.rcard[data-tier="signature"]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.rcard[data-tier="signature"]:hover {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+.rcard[data-tier="premium"]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(163, 116, 255, 0.2);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.rcard[data-tier="premium"]:hover {
+  box-shadow: 0 0 20px rgba(163, 116, 255, 0.12);
+  border-color: rgba(163, 116, 255, 0.3);
+}
+
+/* INTERACTIVE COCKTAIL COMPANION */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(8, 9, 11, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-content {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: modalSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes modalSlide {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: none; border: none;
+  font-size: 28px; color: var(--faint);
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.modal-close:hover { color: #fff; }
+.cocktail-header { margin-bottom: 20px; border-bottom: 1px solid var(--line-soft); padding-bottom: 15px; }
+.cocktail-header h2 { font-family: 'Inter Tight', sans-serif; font-weight: 700; margin: 0 0 6px; font-size: 22px; color: #fff; }
+.cocktail-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 0.05em; display: flex; gap: 10px 15px; flex-wrap: wrap; }
+.cocktail-meta span { background: rgba(212, 175, 55, 0.1); padding: 4px 8px; border-radius: 4px; }
+.cocktail-section-title { font-family: 'Oswald', sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin: 20px 0 10px; }
+.cocktail-ings { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.cocktail-ings li { display: flex; justify-content: space-between; border-bottom: 1px dashed var(--line-soft); padding-bottom: 6px; font-size: 13px; color: var(--mid); align-items: baseline; }
+.cocktail-ings li span.qty { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: #fff; text-align: right; min-width: 60px; }
+.cocktail-steps { padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: var(--mid); line-height: 1.6; }
+.cocktail-steps li::marker { font-family: 'JetBrains Mono', monospace; color: var(--gold); }
+.cocktail-note-card { background: var(--surface-2); border-left: 3px solid var(--gold); padding: 12px; border-radius: 0 8px 8px 0; margin-top: 15px; font-size: 12px; color: var(--faint); line-height: 1.6; }
+.cocktail-note-card b { color: var(--gold); }
+.btn-cocktail-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--mid);
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+.btn-cocktail-trigger:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.cocktail-scaler {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 15px;
+}
+.cocktail-scaler span { font-size: 12px; color: var(--faint); font-family: 'JetBrains Mono', monospace; }
+.cocktail-scaler-btns { display: flex; gap: 4px; }
+.cocktail-scaler-btns button {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--mid);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.2s;
+}
+.cocktail-scaler-btns button.active {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+  font-weight: bold;
+}
+
+/* IN-SITU INGREDIENT SUBSTITUTES */
+.ing-sub-trigger {
+  color: var(--gold);
+  background: none; border: none;
+  font-size: 11px; padding: 2px 6px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  display: inline-block;
+  margin-left: 6px;
+}
+.ing-sub-trigger:hover { opacity: 1; }
+.ing-sub-panel {
+  margin-top: 6px;
+  padding: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--faint);
+  line-height: 1.5;
+  animation: fadeIn 0.2s ease;
+}
+.ing-sub-panel b { color: var(--gold); }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* WAKE LOCK INDICATOR */
+.wakelock-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(46, 204, 113, 0.15);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.wakelock-indicator.disabled {
+  background: rgba(231, 76, 60, 0.15);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  color: #e74c3c;
+}
+
+/* STORAGE LAYOUT */
+.storage-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.storage-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0,0,0,0.1);
+}
+.stab {
+  flex: 1;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--faint);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.stab:hover {
+  color: var(--mid);
+}
+.stab.active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+  background: var(--surface);
+}
+.storage-pane {
+  padding: 20px;
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.6;
+  display: none;
+}
+.storage-pane.active {
+  display: block;
+}
+
+/* DRINK TASTE PROFILE STYLES */
+.drink-taste-box {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  font-size: 12px;
+  animation: fadeIn 0.3s ease;
+}
+.drink-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.drink-tag-pill {
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--gold);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.drink-harmony-text {
+  color: var(--muted);
+  line-height: 1.45;
+}
+.drink-harmony-text b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* TIMER STYLES */
+.tl-timer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  color: var(--gold);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+.tl-timer-btn:hover {
+  background: rgba(212, 175, 55, 0.18);
+  border-color: var(--gold);
+}
+.tl-timer-active {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink-2);
+  border: 1px solid var(--gold);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 11px;
+  animation: fadeIn 0.2s ease;
+}
+.tl-timer-val {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 13px;
+}
+.tl-timer-ctrl {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+.tl-timer-ctrl:hover {
+  color: var(--text);
+}
+.tl-timer-ctrl.cancel:hover {
+  color: #e74c3c;
+}
+.global-timer-bar {
+  position: fixed;
+  bottom: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 640px;
+  background: rgba(23, 26, 31, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 12px 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes slideUp {
+  from { transform: translate(-50%, 30px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+.global-timer-bar .gt-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.global-timer-bar .gt-lbl {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+  font-weight: 600;
+}
+.global-timer-bar .gt-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.global-timer-bar .gt-time-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.global-timer-bar .gt-time {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.global-timer-bar .gt-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.global-timer-bar .gt-btn {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  color: var(--text);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.global-timer-bar .gt-btn:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--muted);
+}
+.global-timer-bar .gt-btn.cancel:hover {
+  background: rgba(231, 76, 60, 0.15);
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+/* PLANNER NUTRITION STYLES */
+.plan-nutrition-card {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease;
+}
+.pn-head {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pn-sub {
+  font-size: 10px;
+  color: var(--faint);
+  text-transform: none;
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+.pn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.pn-cell {
+  background: rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 8px 4px;
+}
+.pn-val {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pn-lbl {
+  display: block;
+  font-size: 9px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+.pn-macro-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--line);
+  margin-bottom: 6px;
+}
+.pmb-p { background: #3498db; }
+.pmb-c { background: #2ecc71; }
+.pmb-f { background: #f1c40f; }
+.pn-macro-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--faint);
+  margin-bottom: 12px;
+}
+.pn-macro-legend .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.pn-macro-legend .dot.p { background: #3498db; }
+.pn-macro-legend .dot.c { background: #2ecc71; }
+.pn-macro-legend .dot.f { background: #f1c40f; }
+.pn-diets {
+  font-size: 11px;
+  color: var(--muted);
+  border-top: 1px solid var(--line-soft);
+  padding-top: 10px;
+}
+.pn-diet-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 10px;
+  color: var(--text);
+  margin-right: 4px;
+  margin-top: 4px;
+}
 </style>
 </head>
 <body>
@@ -869,6 +1402,7 @@ main{padding-bottom:64px}
 <script src="recipes/recipes-tips.js"></script>
 <script src="recipes/stories.js"></script>
 <script src="recipes/stories-new-sa.js"></script>
+<script src="recipes/stories-extra.js"></script>
 <script src="recipes/pantry-tiers.js"></script>
 <script src="recipes/premium-batch.js"></script>
 <script src="recipes/global-exotic-batch.js"></script>
@@ -901,6 +1435,10 @@ main{padding-bottom:64px}
 <script src="recipes/sa-additions-2.js"></script>
 <script src="recipes/retrofit.js"></script>
 <script src="recipes/sa-drinks.js"></script>
+<script src="recipes/sa-drinks-extra.js"></script>
+<script src="recipes/storage.js"></script>
+<script src="recipes/cocktails.js"></script>
+<script src="recipes/pantry-lore.js"></script>
 <script src="recipes/fullcook-conversions.js"></script>
 <script>
 const OCC={
@@ -1219,7 +1757,7 @@ function renderShop(){
     var items=shop.filter(function(x){return x.cat===cat;});if(!items.length)return;
     html+='<div class="shop-group"><h4 class="sg-h">'+(labels[cat]||cat)+'</h4><ul class="sg-list">';
     items.forEach(function(it){
-      var qty=it.parts.map(function(p){return p.disp;}).filter(function(d){return d;}).join(' + ');
+      var qty=sumShopQuantities(it.parts);
       var inP=shopInPantry(it.key);
       html+='<li class="si '+(it.checked?'done':'')+'"><label class="si-c"><input type="checkbox" '+(it.checked?'checked':'')+' onchange="toggleShopItem(\''+it.key+'\')"><span class="si-bx"></span></label>'+
         '<div class="si-main"><div class="si-nm">'+(qty?'<span class="si-q">'+qty+'</span> ':'')+it.name+
@@ -1253,6 +1791,90 @@ function setPlanQuery(v){planQuery=v;renderPickerList();}
 function surpriseFillPlan(){var pool=R.slice();var changed=0;plan.forEach(function(s){if(!s.slug){var p=pool[Math.floor(Math.random()*pool.length)];if(p){s.slug=p.slug;changed++;}}});savePlan();planBadge();renderPlan();toast(changed?('Filled '+changed+' night'+(changed===1?'':'s')+' with a surprise menu'):'Your week is already full');}
 function pantryFillPlan(){if(pantry.size===0){toast('Add ingredients to your pantry first — occasion 04');return;}var pool=R.filter(function(r){return (r.ing||r.key_ings)&&pantryMatch(r).missing.length<=2;});if(!pool.length)pool=R.slice();var changed=0;plan.forEach(function(s){if(!s.slug){var p=pool[Math.floor(Math.random()*pool.length)];if(p){s.slug=p.slug;changed++;}}});savePlan();planBadge();renderPlan();toast(changed?('Planned '+changed+' from your pantry'):'Your week is already full');}
 function addPlanToList(){var filled=planFilled();if(!filled){toast('Plan some dinners first');return;}var n=0;plan.forEach(function(s){if(s.slug)n+=addToList(s.slug,s.serv||2);});toast(n?(n+' ingredients from your week added to the list'):'Nothing to add');}
+/* PLANNER NUTRITION UTILITIES */
+function calculatePlanNutrition() {
+  var totals = { kcal: 0, protein: 0, carbs: 0, fat: 0, count: 0 };
+  var diets = {};
+  
+  plan.forEach(function(s) {
+    if (s && s.slug) {
+      var n = window.NUTRITION && window.NUTRITION[s.slug];
+      if (n) {
+        var servings = s.serv || 2;
+        var recipeBaseServings = n.srv || 2;
+        var ratio = servings / recipeBaseServings;
+        
+        totals.kcal += (n.kcal || 0) * ratio;
+        totals.protein += (n.protein || 0) * ratio;
+        totals.carbs += (n.carbs || 0) * ratio;
+        totals.fat += (n.fat || 0) * ratio;
+        totals.count += servings;
+        
+        if (n.diet) {
+          n.diet.forEach(function(d) {
+            diets[d] = (diets[d] || 0) + 1;
+          });
+        }
+      }
+    }
+  });
+  
+  return {
+    totals: totals,
+    diets: diets
+  };
+}
+
+function planNutritionHTML() {
+  var data = calculatePlanNutrition();
+  var t = data.totals;
+  if (t.count === 0) return '';
+  
+  var avgKcal = Math.round(t.kcal / t.count);
+  var avgProt = Math.round(t.protein / t.count);
+  var avgCarbs = Math.round(t.carbs / t.count);
+  var avgFat = Math.round(t.fat / t.count);
+  
+  var pKcal = avgProt * 4;
+  var cKcal = avgCarbs * 4;
+  var fKcal = avgFat * 9;
+  var sumKcal = pKcal + cKcal + fKcal;
+  
+  var pPct = sumKcal > 0 ? Math.round(pKcal / sumKcal * 100) : 0;
+  var cPct = sumKcal > 0 ? Math.round(cKcal / sumKcal * 100) : 0;
+  var fPct = sumKcal > 0 ? (100 - pPct - cPct) : 0;
+  if (fPct < 0) fPct = 0;
+  
+  var dietsHtml = '';
+  var dietKeys = Object.keys(data.diets);
+  if (dietKeys.length > 0) {
+    dietsHtml = '<div class="pn-diets"><b>Dietary tags:</b> ' + dietKeys.map(function(k) {
+      return '<span class="pn-diet-badge">' + k + ' (' + data.diets[k] + ')</span>';
+    }).join(' ') + '</div>';
+  }
+  
+  return '<div class="plan-nutrition-card">' +
+    '<div class="pn-head">Weekly Nutrition Averages <span class="pn-sub">per serving</span></div>' +
+    '<div class="pn-grid">' +
+      '<div class="pn-cell"><span class="pn-val">' + avgKcal + '</span><span class="pn-lbl">kcal</span></div>' +
+      '<div class="pn-cell"><span class="pn-val">' + avgProt + 'g</span><span class="pn-lbl">Protein</span></div>' +
+      '<div class="pn-cell"><span class="pn-val">' + avgCarbs + 'g</span><span class="pn-lbl">Carbs</span></div>' +
+      '<div class="pn-cell"><span class="pn-val">' + avgFat + 'g</span><span class="pn-lbl">Fat</span></div>' +
+    '</div>' +
+    '<div class="pn-macro-bar" title="Macro energy distribution: Protein ' + pPct + '%, Carbs ' + cPct + '%, Fat ' + fPct + '%">' +
+      '<span class="pmb-p" style="width:' + pPct + '%"></span>' +
+      '<span class="pmb-c" style="width:' + cPct + '%"></span>' +
+      '<span class="pmb-f" style="width:' + fPct + '%"></span>' +
+    '</div>' +
+    '<div class="pn-macro-legend">' +
+      '<span><span class="dot p"></span> Protein (' + pPct + '%)</span>' +
+      '<span><span class="dot c"></span> Carbs (' + cPct + '%)</span>' +
+      '<span><span class="dot f"></span> Fat (' + fPct + '%)</span>' +
+    '</div>' +
+    dietsHtml +
+  '</div>';
+}
+
 function renderPlan(){
   var box=document.getElementById('plan-body');if(!box)return;
   var ti=todayIdx(),filled=planFilled();
@@ -1261,6 +1883,7 @@ function renderPlan(){
     '<button class="btn ghost small" onclick="pantryFillPlan()">From pantry</button>'+
     '<button class="btn primary small" onclick="addPlanToList()"'+(filled?'':' disabled')+'>Add week to list</button></div></div>';
   var nd=planNudge();if(nd)html+='<div class="plan-nudge">'+nd+'</div>';
+  html+=planNutritionHTML();
   html+='<div class="plan-week">';
   for(var i=0;i<7;i++){var s=plan[i],r=s.slug?(R.find(function(x){return x.slug===s.slug;})):null, isT=i===ti;
     html+='<div class="pday'+(isT?' today':'')+(planPick===i?' picking':'')+(r?' filled':' empty')+'"><div class="pd-head"><span class="pd-d">'+DAYLAB[i]+'</span>'+(isT?'<span class="pd-today">Today</span>':'')+'</div>';
@@ -1349,8 +1972,25 @@ function timelineHTML(r){
   var rows=tl.map(function(t,i){
     var col=(idx<0||i<idx)?('rgb('+__TL_PREP_C.join(',')+')'):__tlCookColor(i-idx,cookCount);
     var disp=__tlDispTS(i,idx,parsed,hasSgn);
-    var ttl=(t[3]?'⏱ ':'')+t[1];
-    return '<div class="tl '+(t[3]?'passive':'')+'" style="--dotc:'+col+';--dotc-bg:'+col.replace('rgb','rgba').replace(')',',.3)')+'"><div class="t t-num">'+disp+'</div><div class="b"><div class="ttl">'+ttl+'</div><div class="d">'+t[2]+'</div></div></div>';
+    var duration=t[3];
+    var isPassive=(typeof duration==='number'&&duration>0)||duration===true;
+    var ttl=(isPassive?'⏱ ':'')+t[1];
+    
+    var timerHtml='';
+    if (typeof duration==='number'&&duration>0) {
+      if (activeTimer.stepIndex===i&&activeTimer.timeLeft>0) {
+        timerHtml='<div class="tl-timer-active">'
+          +'<span class="tl-timer-val" id="tl-timer-val-'+i+'">'+fmtTime(activeTimer.timeLeft)+'</span>'
+          +'<button class="tl-timer-ctrl tl-timer-ctrl-toggle" onclick="toggleActiveTimer()"><i class="ti ti-player-pause"></i></button>'
+          +'<button class="tl-timer-ctrl cancel" onclick="cancelActiveTimer()"><i class="ti ti-trash"></i></button>'
+          +'</div>';
+      } else {
+        var minLabel=Math.round(duration/60);
+        timerHtml='<button class="tl-timer-btn" onclick="startStepTimer('+i+','+duration+',\''+t[1].replace(/'/g,"\\'")+'\')"><i class="ti ti-alarm"></i> Start Timer ('+minLabel+'m)</button>';
+      }
+    }
+    
+    return '<div class="tl '+(isPassive?'passive':'')+'" style="--dotc:'+col+';--dotc-bg:'+col.replace('rgb','rgba').replace(')',',.3)')+'"><div class="t t-num">'+disp+'</div><div class="b"><div class="ttl">'+ttl+'</div><div class="d">'+t[2]+'</div>'+timerHtml+'</div></div>';
   });
   if(idx>0&&idx<tl.length)rows.splice(idx,0,'<div class="tl-mile"><div class="t"></div><div class="line"><span class="pill">Heat on</span></div></div>');
   return '<div class="timeline">'+rows.join('')+'</div>';
@@ -1436,8 +2076,23 @@ function plateHTML(r,pair,foodPairs){var out='';
     if(hasFP)out+='<div class="pair-food-row"><span class="pair-food-head">Recommended alongside</span>'+foodPairs.map(function(p){return '<div class="pair-food-chip"><span class="pair-food-kind">'+p[0]+'</span><span class="pair-food-name">'+p[1]+'</span>'+(p[3]?'<span class="pair-food-note">'+p[3]+'</span>':'')+'</div>';}).join('')+'</div>';
     out+='</div></div>';}
   out+=pair;
-  if(r.storage)out+='<div class="dsection dsection--storage"><div class="wrap"><div class="dhead"><span class="label">Afterwards</span><h2>Storage &amp; reheating</h2><span class="rule"></span></div><p class="plate-p">'+r.storage+'</p></div></div>';
-  if(!hasSides&&!hasFP&&!r.storage&&!pair)out+='<div class="dsection"><div class="wrap"><p class="plate-p" style="color:var(--faint)">Pairing and storage notes coming soon.</p></div></div>';
+  if(window.RECIPE_STORAGE && window.RECIPE_STORAGE[r.slug]){
+    var s=window.RECIPE_STORAGE[r.slug];
+    out+='<div class="dsection dsection--storage"><div class="wrap"><div class="dhead"><span class="label">Afterwards</span><h2>Storage &amp; reheating</h2><span class="rule"></span></div>'
+      +'<div class="storage-box">'
+      +'<div class="storage-tabs">'
+      +'<button class="stab active" onclick="switchStorageTab(this,\'fridge-'+r.slug+'\')">Fridge</button>'
+      +'<button class="stab" onclick="switchStorageTab(this,\'freezer-'+r.slug+'\')">Freezer</button>'
+      +'<button class="stab" onclick="switchStorageTab(this,\'reheat-'+r.slug+'\')">Reheating</button>'
+      +'</div>'
+      +'<div id="fridge-'+r.slug+'" class="storage-pane active">'+s.fridge+'</div>'
+      +'<div id="freezer-'+r.slug+'" class="storage-pane" style="display:none">'+s.freezer+'</div>'
+      +'<div id="reheat-'+r.slug+'" class="storage-pane" style="display:none">'+s.reheat+'</div>'
+      +'</div></div></div>';
+  }else if(r.storage){
+    out+='<div class="dsection dsection--storage"><div class="wrap"><div class="dhead"><span class="label">Afterwards</span><h2>Storage &amp; reheating</h2><span class="rule"></span></div><p class="plate-p">'+r.storage+'</p></div></div>';
+  }
+  if(!hasSides&&!hasFP&&!r.storage&&!(window.RECIPE_STORAGE && window.RECIPE_STORAGE[r.slug])&&!pair)out+='<div class="dsection"><div class="wrap"><p class="plate-p" style="color:var(--faint)">Pairing and storage notes coming soon.</p></div></div>';
   return out;}
 function knowHTML(r){var out='';
   if(r.chef_upgrade)out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Take it further</span><h2>Chef\u2019s upgrade</h2><span class="rule"></span></div><div class="mc-card"><p class="mc-why"><b>Elevate it \u2014</b> '+r.chef_upgrade+'</p></div></div></div>';
@@ -1451,7 +2106,7 @@ function knowHTML(r){var out='';
 
 function renderFull(r){
   document.getElementById('d-tier').textContent=r.tierName+' · '+r.cui;
-  var brief=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Before you start</span><h2>The brief</h2><span class="rule"></span></div>
+  var brief=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Before you start</span><h2>The brief <span id="wakelock-status" class="wakelock-indicator" style="display:none;"></span></h2><span class="rule"></span></div>
     <div class="brief"><div>
       <h3 class="lead-name">${r.t}.</h3>${r.blurb?'<p class="lead-blurb">'+r.blurb+'</p>':''}<p class="lead">${gloss(r.brief.lead)}</p>
       ${r.prov&&r.prov.consists_of?'<p class="brief-core"><b>At its core</b> · '+gloss(r.prov.consists_of)+'</p>':''}
@@ -1469,15 +2124,43 @@ function renderFull(r){
   var drinkPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())<0;});
   var foodPairs=allPairs.filter(function(p){return FOOD_KINDS.indexOf((p[0]||'').toLowerCase())>=0;});
   var saDrinks=(window.SA_DRINKS&&window.SA_DRINKS[r.slug])||null;
-  var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p,i){var sa=saDrinks&&saDrinks.pair_sa&&saDrinks.pair_sa[i];var saHtml=sa?'<div class="pcard-sa"><span class="pcard-sa-badge">SA Alternative</span><h3>'+sa[0]+'</h3><div class="bot">'+sa[1]+'</div><p>'+sa[2]+'</p></div>':'';return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p>'+saHtml+'</div>';}).join('')+'</div></div></div>':'';
+  var pair=drinkPairs.length?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">What to pour</span><h2>Drinks pairing</h2><span class="rule"></span></div><div class="pair">'+drinkPairs.map(function(p,i){
+    var sa=saDrinks&&saDrinks.pair_sa&&saDrinks.pair_sa[i];
+    var saKey=sa?getCocktailKey(sa[0]):null;
+    var origKey=getCocktailKey(p[1]);
+    var saBtn=saKey?'<button class="btn-cocktail-trigger" onclick="openCocktailModal(\''+saKey+'\')"><i class="ti ti-glass-cocktail"></i> View Recipe</button>':'';
+    var origBtn=origKey?'<button class="btn-cocktail-trigger" onclick="openCocktailModal(\''+origKey+'\')"><i class="ti ti-glass-cocktail"></i> View Recipe</button>':'';
+    var saHtml=sa?'<div class="pcard-sa"><span class="pcard-sa-badge">SA Alternative</span><h3>'+sa[0]+'</h3><div class="bot">'+sa[1]+'</div><p>'+sa[2]+'</p>'+drinkTasteHTML(sa[0],sa[1],sa[2])+saBtn+'</div>':'';
+    return '<div class="pcard"><div class="kind">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="bot">'+p[2]+'</div><p>'+p[3]+'</p>'+drinkTasteHTML(p[1],p[2],p[3])+origBtn+saHtml+'</div>';
+  }).join('')+'</div></div></div>':'';
   document.getElementById('detail-body').innerHTML=dheroHTML(r,'Collection — '+r.tierName)+
     '<div class="rtabs-wrap"><div class="wrap rtabs"><button class="rtab active" data-t="cook" onclick="switchRecipeTab(\'cook\')">Cook</button><button class="rtab" data-t="story" onclick="switchRecipeTab(\'story\')">Story</button><button class="rtab" data-t="learn" onclick="switchRecipeTab(\'learn\')">Learn</button></div></div>'+
-    '<div id="rtab-cook" class="rtabpane">'+brief+'<div id="variants"></div>'+gatherHTML(r)+mise+steps+plateHTML(r,pair,foodPairs)+'</div>'+
-    '<div id="rtab-story" class="rtabpane" style="display:none">'+storyHTML(r.slug)+nomenHTML(r.slug)+platingHTML(r)+'</div>'+
+    '<div id="rtab-cook" class="rtabpane">'+brief+'<div id="variants"></div>'+gatherHTML(r)+mise+steps+pantryLoreHTML(r)+plateHTML(r,pair,foodPairs)+'</div>'+
+    '<div id="rtab-story" class="rtabpane" style="display:none">'+storyHTML(r.slug)+pantryLoreHTML(r)+nomenHTML(r.slug)+platingHTML(r)+'</div>'+
     '<div id="rtab-learn" class="rtabpane" style="display:none">'+knowHTML(r)+masterclassHTML(r)+tipsHTML(r.slug)+subsHTML(r)+nutritionHTML(r.slug)+'</div>';
   renderIgs(r.ing);renderVariants(r);wireDetail();showDetail();switchRecipeTab('cook');
 }
-function switchRecipeTab(tab){['cook','story','learn'].forEach(function(t){var el=document.getElementById('rtab-'+t);if(el)el.style.display=(t===tab?'block':'none');});document.querySelectorAll('.rtab').forEach(function(b){b.classList.toggle('active',b.dataset.t===tab);});var d=document.getElementById('detail');if(d)d.scrollTop=0;}
+function switchRecipeTab(tab){
+  ['cook','story','learn'].forEach(function(t){var el=document.getElementById('rtab-'+t);if(el)el.style.display=(t===tab?'block':'none');});
+  document.querySelectorAll('.rtab').forEach(function(b){b.classList.toggle('active',b.dataset.t===tab);});
+  var d=document.getElementById('detail');if(d)d.scrollTop=0;
+  if(tab==='cook')requestWakeLock();
+  else releaseWakeLock();
+}
+function switchStorageTab(btn, paneId) {
+  var parent = btn.parentElement;
+  var container = parent.parentElement;
+  
+  var tabs = parent.querySelectorAll('.stab');
+  tabs.forEach(function(t) {
+    t.classList.toggle('active', t === btn);
+  });
+  
+  var panes = container.querySelectorAll('.storage-pane');
+  panes.forEach(function(p) {
+    p.style.display = (p.id === paneId) ? 'block' : 'none';
+  });
+}
 function switchCookTab(ct){['make','plate','know'].forEach(function(t){var el=document.getElementById('ctab-'+t);if(el)el.style.display=(t===ct?'block':'none');});document.querySelectorAll('.ctab').forEach(function(b){b.classList.toggle('active',b.dataset.ct===ct);});var d=document.getElementById('detail');if(d)d.scrollTop=0;}
 function nomenHTML(slug){var n=window.NOMEN&&NOMEN[slug];if(!n)return'';var row=function(k,v){return v?'<div class="nom-row"><span class="nom-k">'+k+'</span><span class="nom-v">'+v+'</span></div>':'';};return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Name &amp; meaning</span><h2>'+(n.english||'Translation')+'</h2><span class="rule"></span></div><div class="nomen">'+row('Literally',n.direct)+row('Found in',n.predominant_in)+row('The language',n.linguistic)+row('Why it matters',n.cultural)+row('Recognise it',n.recognise)+'</div></div></div>';}
 function platingHTML(r){var p=r.plating||(r.steps&&r.steps.length?r.steps[r.steps.length-1][1]:'');if(!p)return'';var body=Array.isArray(p)?'<ol class="plate-steps">'+p.map(function(s){return '<li><b>'+s[0]+'</b> '+gloss(s[1])+'</li>';}).join('')+'</ol>':'<p class="plate-p">'+gloss(p)+'</p>';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">To serve</span><h2>Plating</h2><span class="rule"></span></div>'+body+'</div></div>';}
@@ -1504,7 +2187,13 @@ function renderProv(r){
   showDetail();
 }
 function showDetail(){document.getElementById('detail').classList.add('open');document.getElementById('browse').style.display='none';document.getElementById('detail').scrollTop=0;window.scrollTo(0,0);}
-function goBrowse(){document.getElementById('detail').classList.remove('open');document.getElementById('detail-body').innerHTML='';document.getElementById('browse').style.display='block';window.scrollTo(0,savedScroll);}
+function goBrowse(){
+  releaseWakeLock();
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('detail-body').innerHTML='';
+  document.getElementById('browse').style.display='block';
+  window.scrollTo(0,savedScroll);
+}
 
 /* ── methods & culinary terms hub ── */
 function _allCulinary(){var C={};[window.METHODS,window.EXTRA,window.CULINARY].forEach(function(s){if(s)Object.keys(s).forEach(function(k){C[k]=s[k];});});return C;}
@@ -1628,7 +2317,24 @@ const BASE=2,FRAC={'0.125':'⅛','0.25':'¼','0.375':'⅜','0.5':'½','0.625':'�
 function fmt(v){const r=Math.round(v*1000)/1000;if(FRAC[String(r)])return FRAC[String(r)];if(r<1&&r>0){const e=Math.round(r*8);if(e>=1&&e<=7)return['⅛','¼','⅜','½','⅝','¾','⅞'][e-1];}return Number.isInteger(r)?String(r):(Math.round(r*2)/2).toString();}
 function fmtClock(s){const m=Math.floor(s/60),x=s%60;return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
 function fmtCook(s){return fmtClock(s);}
-function renderIgs(ing){document.getElementById('ings').innerHTML=ing.map(g=>`<div class="ingroup"><h4>${g[0]}</h4><ul class="ings">${g[1].map(it=>{if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;return `<li class="ing" data-mode="${it[0]}" data-base="${it[1]}" data-unit="${it[2]}" data-name="${it[3].replace(/"/g,'&quot;')}"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q num"></span><span class="nm"></span></li>`}).join('')}</ul></div>`).join('');scaleIgs(2);}
+function renderIgs(ing){
+  document.getElementById('ings').innerHTML=ing.map(g=>`<div class="ingroup"><h4>${g[0]}</h4><ul class="ings">${g[1].map(it=>{
+    if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
+    var sub = findSubs(it[3]);
+    var subTrigger = '';
+    if (sub) {
+      subTrigger = `<button class="ing-sub-trigger" onclick="toggleInSituSub(this, event)" data-ingkey="${sub.k}"><i class="ti ti-arrows-exchange"></i> Swap</button>`;
+    }
+    return `<li class="ing" data-mode="${it[0]}" data-base="${it[1]}" data-unit="${it[2]}" data-name="${it[3].replace(/"/g,'&quot;')}">` +
+      `<span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span>` +
+      `<span class="q num"></span>` +
+      `<span class="nm"></span>` +
+      `<span class="sub-trigger-container">${subTrigger}</span>` +
+      `<div class="sub-panel-container"></div>` +
+    `</li>`;
+  }).join('')}</ul></div>`).join('');
+  scaleIgs(2);
+}
 var _serv=2,_VAR={};
 function scaleIgs(serv){_serv=serv;document.querySelectorAll('#detail .scaler button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.serv==String(serv)));const mult=serv/BASE;document.querySelectorAll('#detail .ing').forEach(li=>{const mode=li.dataset.mode;let base=parseFloat(li.dataset.base)*(li.dataset.vmult?parseFloat(li.dataset.vmult):1);let v;if(mode==='linear')v=base*mult;else if(mode==='taper')v=base*(1+(mult-1)*0.8);else v=Math.max(1,Math.round(base*mult));const q=li.querySelector('.q'),nm=li.querySelector('.nm');if(mode==='countX')q.textContent=fmt(v)+' ×';else if(mode==='countN')q.textContent=fmt(v);else q.textContent=fmt(v)+(li.dataset.unit?' '+li.dataset.unit:'');nm.innerHTML=li.dataset.vname||li.dataset.name;});}
 function parseFrac(s){s=(''+s).trim();var M={'½':.5,'¼':.25,'¾':.75,'⅓':1/3,'⅔':2/3,'⅛':.125,'⅜':.375,'⅞':.875,'⅝':.625};if(M[s]!==undefined)return M[s];if(/^\d+\/\d+$/.test(s)){var p=s.split('/');return +p[0]/+p[1];}return parseFloat(s)||0;}
@@ -1653,7 +2359,7 @@ function showMethodChoice(r,apps){var box=document.getElementById('cook-method')
 function chooseMethod(id){var box=document.getElementById('cook-method'),step=document.getElementById('cook-step'),nav=document.querySelector('#cook .ck-nav');box.innerHTML='';box.style.display='none';step.style.display='';if(nav)nav.style.display='';beginCookSteps(id,_cook&&FULL[_cook.slug]?FULL[_cook.slug]:null);}
 function beginCookSteps(methodId,r){if(!r&&_cook)r=FULL[_cook.slug];if(!r)return;_cook.method=methodId||null;setMethodChip(_cook.method);_cook.timing=(methodId&&((window.METHOD_TIMINGS&&METHOD_TIMINGS[r.slug]&&METHOD_TIMINGS[r.slug][methodId])||(typeof deriveMethodTiming==='function'&&deriveMethodTiming(r.slug,methodId))))||null;renderCookStep(0);}
 function renderCookStep(i){var c=_cook,st=c.steps[i],n=c.steps.length;c.i=i;var T=c.timing;var Tbn=(T&&T.time)?('<div class="ck-timing"><span class="ck-ti">'+T.time+(T.temp?' · '+T.temp:'')+'</span>'+(T.note?'<span class="ck-tn">'+T.note+'</span>':'')+'</div>'):'';var Tsn=(T&&T.stepNotes&&T.stepNotes[i+1])?('<div class="ck-snote"><b>Adapted for '+(c.method||'this method')+':</b> '+T.stepNotes[i+1]+'</div>'):'';var timer=st[3]?('<div class="ck-timer" data-sec="'+st[3]+'"><div class="ck-tnum" id="cktnum">'+fmtCook(st[3])+'</div><div class="ck-tctrls"><button class="ck-tbtn" id="cktbtn" onclick="cookTimer()">Start</button><button class="ck-tbtn ghost" onclick="cookTimerReset()">Reset</button></div><div class="ck-thint">Counts down, vibrates and auto-advances when done</div></div>'):'<div class="ck-notimer">No timer for this step — move on when it looks right</div>';document.getElementById('cook-step').innerHTML='<div class="ck-num">STEP '+String(i+1).padStart(2,'0')+'</div><div class="ck-progress"><span style="width:'+Math.round((i+1)/n*100)+'%"></span></div><div class="ck-count">'+(i+1)+' of '+n+'</div>'+Tbn+'<h2 class="ck-title">'+st[0]+'</h2><p class="ck-body">'+gloss(st[1])+'</p><div class="ck-why"><b>WHY</b> · '+gloss(st[2])+'</div>'+Tsn+timer;document.getElementById('cook-prev').disabled=(i===0);document.getElementById('cook-next').textContent=(i===n-1)?'Finish ✓':'Next →';cookTimerReset();}
-function cookTimer(){var btn=document.getElementById('cktbtn'),tnum=document.getElementById('cktnum'),wrap=document.querySelector('.ck-timer');if(!wrap||!btn)return;if(_cookIv){clearInterval(_cookIv);_cookIv=null;btn.textContent='Resume';btn.classList.remove('running');return;}if(_cookLeft<=0)_cookLeft=parseInt(wrap.dataset.sec);btn.textContent='Pause';btn.classList.add('running');_cookIv=setInterval(function(){_cookLeft--;if(_cookLeft<=0){clearInterval(_cookIv);_cookIv=null;btn.textContent='✓ Done';btn.classList.remove('running');tnum.textContent='✓';try{navigator.vibrate&&navigator.vibrate([120,80,120]);}catch(e){}setTimeout(function(){if(_cook.i<_cook.steps.length-1)nextStep();},1600);}else tnum.textContent=fmtCook(_cookLeft);},1000);}
+function cookTimer(){var btn=document.getElementById('cktbtn'),tnum=document.getElementById('cktnum'),wrap=document.querySelector('.ck-timer');if(!wrap||!btn)return;if(_cookIv){clearInterval(_cookIv);_cookIv=null;btn.textContent='Resume';btn.classList.remove('running');return;}if(_cookLeft<=0)_cookLeft=parseInt(wrap.dataset.sec);btn.textContent='Pause';btn.classList.add('running');_cookIv=setInterval(function(){_cookLeft--;if(_cookLeft<=0){clearInterval(_cookIv);_cookIv=null;btn.textContent='✓ Done';btn.classList.remove('running');tnum.textContent='✓';playChime();try{navigator.vibrate&&navigator.vibrate([120,80,120]);}catch(e){}setTimeout(function(){if(_cook.i<_cook.steps.length-1)nextStep();},1600);}else tnum.textContent=fmtCook(_cookLeft);},1000);}
 function cookTimerReset(){if(_cookIv){clearInterval(_cookIv);_cookIv=null;}var wrap=document.querySelector('.ck-timer');if(wrap){var tn=document.getElementById('cktnum');if(tn)tn.textContent=fmtCook(parseInt(wrap.dataset.sec));var b=document.getElementById('cktbtn');if(b){b.textContent='▶ Start';b.classList.remove('running');}}_cookLeft=0;}
 function nextStep(){if(_cook.i<_cook.steps.length-1)renderCookStep(_cook.i+1);else exitCook();}
 function prevStep(){if(_cook.i>0)renderCookStep(_cook.i-1);}
@@ -1673,6 +2379,581 @@ window.addEventListener('load',()=>{document.querySelectorAll('.home-hero .rv').
 function toggleBotnavMenu(e){e.stopPropagation();document.querySelector('.botnav-menu').classList.toggle('show');}
 document.addEventListener('click',function(){var m=document.querySelector('.botnav-menu');if(m)m.classList.remove('show');});
 
+/* COCKTAIL COMPANION LOGIC */
+var currentCocktailKey = null;
+var currentCocktailServings = 2;
+
+function getCocktailKey(name) {
+  if (!name) return null;
+  var n = name.toLowerCase();
+  if (n.indexOf('negroni') > -1) return 'negroni';
+  if (n.indexOf('martini') > -1) return 'martini';
+  if (n.indexOf('paloma') > -1) return 'paloma';
+  if (n.indexOf('highball') > -1) return 'highball';
+  if (n.indexOf('spritz') > -1) return 'spritz';
+  if (n.indexOf('margarita') > -1) return 'margarita';
+  if (n.indexOf('espresso') > -1) return 'espresso_martini';
+  return null;
+}
+
+function scaleCocktailIngredients(key, serv) {
+  currentCocktailServings = serv;
+  var c = window.COCKTAIL_RECIPES && window.COCKTAIL_RECIPES[key];
+  if (!c) return;
+  
+  document.querySelectorAll('.cocktail-scaler-btns button').forEach(function(b) {
+    b.classList.toggle('active', parseInt(b.dataset.cserv) === serv);
+  });
+  
+  var mult = serv / 2; // base recipes are scaled for 2
+  var ingsHtml = c.ing.map(function(i) {
+    var qtyStr = i[1];
+    var qtyVal = parseFloat(qtyStr);
+    var newQty = qtyStr;
+    if (!isNaN(qtyVal)) {
+      var scaledVal = qtyVal * mult;
+      var unit = qtyStr.replace(/^[0-9\.]+\s*/, '');
+      newQty = Math.round(scaledVal * 100) / 100 + (unit ? ' ' + unit : '');
+    }
+    return '<li><span><b>' + i[0] + '</b> &middot; <span style="font-size:12px;color:var(--faint)">' + i[2] + '</span></span><span class="qty">' + newQty + '</span></li>';
+  }).join('');
+  
+  document.getElementById('cocktail-ings-list').innerHTML = ingsHtml;
+}
+
+function openCocktailModal(key) {
+  currentCocktailKey = key;
+  currentCocktailServings = 2;
+  var c = window.COCKTAIL_RECIPES && window.COCKTAIL_RECIPES[key];
+  if (!c) return;
+  
+  var html = '<div class="cocktail-header">' +
+    '<h2>' + c.name + '</h2>' +
+    '<div class="cocktail-meta">' +
+      '<span>Origin: ' + c.origin + '</span>' +
+      '<span>Glass: ' + c.glass + '</span>' +
+      '<span>Ice: ' + c.ice + '</span>' +
+      '<span>Method: ' + c.method + '</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="cocktail-scaler">' +
+    '<span>Yield:</span>' +
+    '<div class="cocktail-scaler-btns">' +
+      '<button data-cserv="2" class="active" onclick="scaleCocktailIngredients(\''+key+'\', 2)">2</button>' +
+      '<button data-cserv="4" onclick="scaleCocktailIngredients(\''+key+'\', 4)">4</button>' +
+      '<button data-cserv="6" onclick="scaleCocktailIngredients(\''+key+'\', 6)">6</button>' +
+      '<button data-cserv="8" onclick="scaleCocktailIngredients(\''+key+'\', 8)">8</button>' +
+    '</div>' +
+    '<span>guests</span>' +
+  '</div>' +
+  '<div class="cocktail-section-title">Ingredients</div>' +
+  '<ul class="cocktail-ings" id="cocktail-ings-list"></ul>' +
+  '<div class="cocktail-section-title">Preparation</div>' +
+  '<ol class="cocktail-steps">' +
+    c.steps.map(function(s) {
+      return '<li>' + s + '</li>';
+    }).join('') +
+  '</ol>' +
+  '<div class="cocktail-section-title">Plating &amp; Science</div>' +
+  '<div class="cocktail-note-card"><b>The Chemistry: </b>' + c.science + '</div>' +
+  '<div class="cocktail-note-card"><b>Hosting Tip: </b>' + c.hosting + '</div>';
+  
+  document.getElementById('cocktail-modal-body').innerHTML = html;
+  scaleCocktailIngredients(key, 2);
+  document.getElementById('cocktail-modal').classList.add('open');
+}
+
+function closeCocktailModal(event) {
+  if (event) event.stopPropagation();
+  document.getElementById('cocktail-modal').classList.remove('open');
+}
+
+/* IN-SITU INGREDIENT SWAP LOGIC */
+function toggleInSituSub(btn, event) {
+  if (event) event.stopPropagation();
+  var li = btn.closest('li');
+  var container = li.querySelector('.sub-panel-container');
+  if (container.innerHTML) {
+    container.innerHTML = '';
+    return;
+  }
+  
+  document.querySelectorAll('.sub-panel-container').forEach(function(el) {
+    if (el !== container) el.innerHTML = '';
+  });
+  
+  var key = btn.dataset.ingkey;
+  var S = window.SUBS || {};
+  var entry = S[key];
+  if (!entry) return;
+  
+  var html = '<div class="ing-sub-panel">';
+  html += '<p style="margin:0 0 8px; font-weight:600; color:var(--gold);">Substitutes for ' + key + ':</p>';
+  html += '<div style="margin-bottom:6px;"><button class="vchip sel" style="padding: 2px 8px; font-size:11px;" onclick="swapInSitu(this, -1)">Use Original (' + key + ')</button></div>';
+  
+  (entry.alts || []).forEach(function(alt, idx) {
+    html += '<div style="margin-bottom:8px; display:flex; flex-direction:column; gap:4px;">' +
+      '<button class="vchip" style="padding: 2px 8px; font-size:11px; align-self:flex-start;" onclick="swapInSitu(this, ' + idx + ')">' + alt[0] + '</button>' +
+      '<span style="font-size:11px; color:var(--faint); padding-left:4px;">' + alt[1] + '</span>' +
+    '</div>';
+  });
+  html += '</div>';
+  
+  container.innerHTML = html;
+}
+
+function swapInSitu(btn, altIdx) {
+  var li = btn.closest('.ing');
+  if (!li) return;
+  
+  var rawName = li.dataset.name;
+  var sub = findSubs(rawName);
+  if (!sub) return;
+  
+  if (altIdx < 0) {
+    delete li.dataset.vname;
+    delete li.dataset.vmult;
+  } else {
+    var alt = sub.s.alts[altIdx];
+    if (alt) {
+      li.dataset.vname = variantName(alt[0], rawName);
+      li.dataset.vmult = parseRatio(alt[1]);
+    }
+  }
+  
+  var panel = li.querySelector('.ing-sub-panel');
+  if (panel) {
+    panel.querySelectorAll('.vchip').forEach(function(c, i) {
+      c.classList.toggle('sel', (altIdx === -1 && i === 0) || (altIdx === i - 1));
+    });
+  }
+  
+  for (var vk in _VAR) {
+    if (_VAR[vk].core === sub.k) {
+      document.querySelectorAll('.vchip[data-vk="' + vk + '"]').forEach(function(c) {
+        c.classList.toggle('sel', +c.dataset.alt === altIdx);
+      });
+      break;
+    }
+  }
+  
+  scaleIgs(_serv);
+}
+
+/* PANTRY LORE / TRIVIA LOGIC */
+function pantryLoreHTML(r) {
+  if (!window.PANTRY_LORE) return '';
+  
+  var ings = [];
+  if (r.ing) {
+    r.ing.forEach(function(g) {
+      g[1].forEach(function(it) {
+        if (it[3]) ings.push(it[3].toLowerCase());
+      });
+    });
+  }
+  
+  var keys = Object.keys(window.PANTRY_LORE);
+  var matchedKeys = keys.filter(function(k) {
+    return ings.some(function(ingName) { return ingName.indexOf(k) > -1; });
+  });
+  
+  if (matchedKeys.length === 0) return '';
+  
+  var seed = 0;
+  for (var i = 0; i < r.slug.length; i++) seed += r.slug.charCodeAt(i);
+  var keyIdx = seed % matchedKeys.length;
+  var key = matchedKeys[keyIdx];
+  var facts = window.PANTRY_LORE[key];
+  var factIdx = seed % facts.length;
+  var fact = facts[factIdx];
+  
+  return '<div class="dsection dsection--lore"><div class="wrap">' +
+    '<div class="lore-card">' +
+      '<div class="lore-header"><i class="ti ti-bulb"></i> Pantry Secrets &middot; ' + key.toUpperCase() + '</div>' +
+      '<p class="lore-text"><b>Did you know?</b> ' + fact + '</p>' +
+    '</div>' +
+  '</div></div>';
+}
+
+/* SCREEN WAKE LOCK LOGIC */
+var wakeLock = null;
+
+async function requestWakeLock() {
+  if (!('wakeLock' in navigator)) {
+    console.log('Screen Wake Lock API not supported on this browser.');
+    updateWakeLockIndicator(false);
+    return;
+  }
+  try {
+    wakeLock = await navigator.wakeLock.request('screen');
+    console.log('Screen Wake Lock is active.');
+    updateWakeLockIndicator(true);
+    wakeLock.addEventListener('release', () => {
+      console.log('Screen Wake Lock was released.');
+      updateWakeLockIndicator(false);
+    });
+  } catch (err) {
+    console.error(`${err.name}, ${err.message}`);
+    updateWakeLockIndicator(false);
+  }
+}
+
+function releaseWakeLock() {
+  if (wakeLock !== null) {
+    wakeLock.release();
+    wakeLock = null;
+  }
+}
+
+function updateWakeLockIndicator(isActive) {
+  var indicator = document.getElementById('wakelock-status');
+  if (indicator) {
+    if (isActive) {
+      indicator.textContent = 'Keep Awake Active';
+      indicator.classList.remove('disabled');
+      indicator.style.display = 'inline-flex';
+    } else {
+      indicator.textContent = 'Keep Awake Inactive';
+      indicator.classList.add('disabled');
+      indicator.style.display = 'none';
+    }
+  }
+}
+
+/* COOKING STEP TIMERS & AUDIO INTEGRATION */
+var activeTimer = {
+  stepIndex: -1,
+  timeLeft: 0,
+  total: 0,
+  title: '',
+  intervalId: null,
+  paused: false
+};
+
+function playChime() {
+  if (typeof AudioContext === 'undefined' && typeof webkitAudioContext === 'undefined') return;
+  try {
+    var ctx = new (window.AudioContext || window.webkitAudioContext)();
+    var osc1 = ctx.createOscillator();
+    var osc2 = ctx.createOscillator();
+    var gain = ctx.createGain();
+    
+    osc1.type = 'sine';
+    osc2.type = 'triangle';
+    
+    osc1.frequency.setValueAtTime(523.25, ctx.currentTime); // C5
+    osc1.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.15); // A5
+    
+    osc2.frequency.setValueAtTime(659.25, ctx.currentTime); // E5
+    osc2.frequency.exponentialRampToValueAtTime(1046.5, ctx.currentTime + 0.15); // C6
+    
+    gain.gain.setValueAtTime(0.3, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
+    
+    osc1.connect(gain);
+    osc2.connect(gain);
+    gain.connect(ctx.destination);
+    
+    osc1.start();
+    osc2.start();
+    osc1.stop(ctx.currentTime + 1.2);
+    osc2.stop(ctx.currentTime + 1.2);
+  } catch (err) {
+    console.error('Audio synthesis failed:', err);
+  }
+}
+
+function startStepTimer(idx, seconds, title) {
+  if (activeTimer.intervalId) {
+    clearInterval(activeTimer.intervalId);
+  }
+  
+  // Unlock audio context safely under user interaction
+  if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
+    var dummyCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (dummyCtx.state === 'suspended') dummyCtx.resume();
+  }
+  
+  activeTimer.stepIndex = idx;
+  activeTimer.timeLeft = seconds;
+  activeTimer.total = seconds;
+  activeTimer.title = title;
+  activeTimer.paused = false;
+  
+  activeTimer.intervalId = setInterval(tickActiveTimer, 1000);
+  
+  // Re-render timeline to update inline elements
+  var curD = document.getElementById('detail-body');
+  if (curD && window.currentRecipeSlug) {
+    var r = FULL[window.currentRecipeSlug] || R.find(function(x){return x.slug===window.currentRecipeSlug;});
+    if (r) {
+      var tlBox = document.querySelector('.timeline');
+      if (tlBox) tlBox.outerHTML = timelineHTML(r);
+    }
+  }
+  
+  updateTimerUI();
+}
+
+function toggleActiveTimer() {
+  if (activeTimer.stepIndex < 0) return;
+  
+  activeTimer.paused = !activeTimer.paused;
+  
+  var btn = document.getElementById('gt-toggle-btn');
+  if (btn) {
+    btn.innerHTML = activeTimer.paused ? '<i class="ti ti-player-play"></i>' : '<i class="ti ti-player-pause"></i>';
+  }
+  
+  // also update inline btn if displayed
+  var inlineCtrls = document.querySelectorAll('.tl-timer-ctrl-toggle');
+  inlineCtrls.forEach(function(el) {
+    el.innerHTML = activeTimer.paused ? '<i class="ti ti-player-play"></i>' : '<i class="ti ti-player-pause"></i>';
+  });
+  
+  updateTimerUI();
+}
+
+function cancelActiveTimer() {
+  if (activeTimer.intervalId) {
+    clearInterval(activeTimer.intervalId);
+  }
+  activeTimer.stepIndex = -1;
+  activeTimer.timeLeft = 0;
+  activeTimer.intervalId = null;
+  activeTimer.paused = false;
+  
+  // Hide global bar
+  var bar = document.getElementById('global-timer-bar');
+  if (bar) bar.style.display = 'none';
+  
+  // Re-render timeline to restore button
+  var curD = document.getElementById('detail-body');
+  if (curD && window.currentRecipeSlug) {
+    var r = FULL[window.currentRecipeSlug] || R.find(function(x){return x.slug===window.currentRecipeSlug;});
+    if (r) {
+      var tlBox = document.querySelector('.timeline');
+      if (tlBox) tlBox.outerHTML = timelineHTML(r);
+    }
+  }
+}
+
+function tickActiveTimer() {
+  if (activeTimer.paused) return;
+  
+  activeTimer.timeLeft--;
+  
+  if (activeTimer.timeLeft <= 0) {
+    clearInterval(activeTimer.intervalId);
+    activeTimer.intervalId = null;
+    playChime();
+    
+    // Flash screen alert
+    var flash = document.createElement('div');
+    flash.style.position = 'fixed';
+    flash.style.inset = '0';
+    flash.style.background = 'rgba(212, 175, 55, 0.4)';
+    flash.style.zIndex = '9999';
+    flash.style.pointerEvents = 'none';
+    flash.style.transition = 'opacity 0.2s';
+    document.body.appendChild(flash);
+    
+    var flashCount = 0;
+    var flashInterval = setInterval(function() {
+      flash.style.opacity = flash.style.opacity === '0' ? '1' : '0';
+      flashCount++;
+      if (flashCount > 10) {
+        clearInterval(flashInterval);
+        flash.remove();
+      }
+    }, 150);
+    
+    alert('Timer finished: ' + activeTimer.title + '!');
+    
+    cancelActiveTimer();
+  } else {
+    updateTimerUI();
+  }
+}
+
+function updateTimerUI() {
+  var timeStr = fmtTime(activeTimer.timeLeft);
+  
+  // Update global bar
+  var bar = document.getElementById('global-timer-bar');
+  var gtTime = document.getElementById('gt-time-el');
+  var gtTitle = document.getElementById('gt-title-el');
+  var gtLbl = document.getElementById('gt-lbl-el');
+  
+  if (bar && gtTime && gtTitle) {
+    gtTime.textContent = timeStr;
+    gtTitle.textContent = activeTimer.title;
+    gtLbl.textContent = activeTimer.paused ? 'Timer Paused' : 'Timer Active';
+    bar.style.display = 'flex';
+  }
+  
+  // Update inline containers
+  var inlineVal = document.getElementById('tl-timer-val-' + activeTimer.stepIndex);
+  if (inlineVal) {
+    inlineVal.textContent = timeStr;
+  }
+}
+
+function fmtTime(sec) {
+  var m = Math.floor(sec / 60);
+  var s = sec % 60;
+  return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+}
+
+/* SHOPPING QUANTITY SUMMING UTILITY */
+function parseIngredientQty(str) {
+  if (!str) return NaN;
+  var s = str.trim()
+             .replace(/⅛/g, '0.125')
+             .replace(/¼/g, '0.25')
+             .replace(/⅜/g, '0.375')
+             .replace(/½/g, '0.5')
+             .replace(/⅝/g, '0.625')
+             .replace(/¾/g, '0.75')
+             .replace(/⅞/g, '0.875');
+  
+  if (s.indexOf('/') > -1) {
+    var f = s.split('/');
+    if (f.length === 2) {
+      var num = parseFloat(f[0]);
+      var den = parseFloat(f[1]);
+      return num / den;
+    }
+  }
+  return parseFloat(s);
+}
+
+function sumShopQuantities(parts) {
+  if (!parts || !parts.length) return '';
+  var unitSums = {};
+  var nonNumeric = [];
+  
+  parts.forEach(function(p) {
+    if (!p || !p.disp) return;
+    var disp = p.disp.trim();
+    var m = disp.match(/^([0-9\/\.\s⅛¼⅜½⅝¾⅞]+)\s*(.*)$/);
+    if (m) {
+      var numStr = m[1].trim();
+      var unit = m[2].trim().toLowerCase();
+      var val = parseIngredientQty(numStr);
+      if (!isNaN(val)) {
+        unitSums[unit] = (unitSums[unit] || 0) + val;
+        return;
+      }
+    }
+    nonNumeric.push(disp);
+  });
+  
+  var results = [];
+  for (var u in unitSums) {
+    var val = unitSums[u];
+    results.push(fmt(val) + (u ? ' ' + u : ''));
+  }
+  return results.concat(nonNumeric).join(' + ');
+}
+
+/* DRINK TASTE PROFILE GENERATOR */
+function getDrinkTasteProfile(name, category, desc) {
+  var n = (name || '').toLowerCase();
+  var c = (category || '').toLowerCase();
+  var d = (desc || '').toLowerCase();
+  
+  var tags = [];
+  var harmony = '';
+  
+  if (n.indexOf('sauvignon') > -1 || n.indexOf('chenin') > -1 || n.indexOf('riesling') > -1 || n.indexOf('chablis') > -1) {
+    tags = ['Crisp', 'Acidity', 'Citrusy'];
+  } else if (n.indexOf('chardonnay') > -1 || n.indexOf('viognier') > -1 || n.indexOf('semillon') > -1) {
+    tags = ['Rich', 'Creamy', 'Oaky'];
+  } else if (n.indexOf('cabernet') > -1 || n.indexOf('shiraz') > -1 || n.indexOf('syrah') > -1 || n.indexOf('malbec') > -1 || n.indexOf('bordeaux') > -1 || n.indexOf('pinotage') > -1) {
+    tags = ['Bold', 'Tannic', 'Deep'];
+  } else if (n.indexOf('pinot noir') > -1 || n.indexOf('nebbiolo') > -1 || n.indexOf('chianti') > -1 || n.indexOf('cinsault') > -1 || n.indexOf('grenache') > -1) {
+    tags = ['Complex', 'Acidity', 'Earthy'];
+  } else if (n.indexOf('champagne') > -1 || n.indexOf('mcc') > -1 || n.indexOf('prosecco') > -1 || n.indexOf('sparkling') > -1 || n.indexOf('bubbly') > -1) {
+    tags = ['Fizzy', 'Crisp', 'Yeasty'];
+  } else if (n.indexOf('sweet') > -1 || n.indexOf('muscat') > -1 || n.indexOf('port') > -1 || n.indexOf('sherry') > -1 || n.indexOf('sauternes') > -1) {
+    tags = ['Sweet', 'Rich', 'Viscous'];
+  } else if (n.indexOf('ipa') > -1 || n.indexOf('pale ale') > -1) {
+    tags = ['Bitter', 'Hoppy', 'Citrusy'];
+  } else if (n.indexOf('lager') > -1 || n.indexOf('pilsner') > -1 || n.indexOf('blonde') > -1) {
+    tags = ['Refreshing', 'Crisp', 'Clean'];
+  } else if (n.indexOf('stout') > -1 || n.indexOf('porter') > -1) {
+    tags = ['Deep', 'Roasty', 'Rich'];
+  } else if (n.indexOf('amber') > -1 || n.indexOf('weiss') > -1 || n.indexOf('wheat') > -1) {
+    tags = ['Malty', 'Spiced', 'Smooth'];
+  } else if (n.indexOf('negroni') > -1) {
+    tags = ['Bitter', 'Herbaceous', 'Complex'];
+  } else if (n.indexOf('martini') > -1) {
+    tags = ['Dry', 'Botanical', 'Strong'];
+  } else if (n.indexOf('margarita') > -1 || n.indexOf('paloma') > -1 || n.indexOf('sour') > -1) {
+    tags = ['Citrusy', 'Tart', 'Refreshing'];
+  } else if (n.indexOf('spritz') > -1 || n.indexOf('highball') > -1 || n.indexOf('tonic') > -1) {
+    tags = ['Fizzy', 'Refreshing', 'Light'];
+  } else if (n.indexOf('cider') > -1) {
+    tags = ['Sweet-Tart', 'Fruity', 'Crisp'];
+  } else if (n.indexOf('tea') > -1 || n.indexOf('rooibos') > -1) {
+    tags = ['Earthy', 'Herbal', 'Refreshing'];
+  } else if (c.indexOf('beer') > -1) {
+    tags = ['Refreshing', 'Malty', 'Crisp'];
+  } else if (c.indexOf('red wine') > -1 || c.indexOf('ruby') > -1) {
+    tags = ['Tannic', 'Dark Fruit', 'Smooth'];
+  } else if (c.indexOf('white wine') > -1) {
+    tags = ['Bright', 'Acidity', 'Fresh'];
+  } else {
+    if (d.indexOf('acid') > -1 || d.indexOf('citrus') > -1) tags.push('Acidity');
+    if (d.indexOf('bitter') > -1 || d.indexOf('hop') > -1) tags.push('Bitter');
+    if (d.indexOf('sweet') > -1 || d.indexOf('honey') > -1) tags.push('Sweet');
+    if (d.indexOf('refresh') > -1 || d.indexOf('clean') > -1) tags.push('Refreshing');
+    if (d.indexOf('rich') > -1 || d.indexOf('creamy') > -1) tags.push('Rich');
+    if (tags.length === 0) tags = ['Balanced', 'Harmonious'];
+  }
+  
+  if (d.indexOf('cut through') > -1 || d.indexOf('cuts through') > -1 || d.indexOf('slice through') > -1) {
+    harmony = 'High acidity or bitterness actively slices through the rich fats, cleansing the palate.';
+  } else if (d.indexOf('contrast') > -1) {
+    harmony = 'A pleasant flavor contrast that balances sweet/spicy components without cloying.';
+  } else if (d.indexOf('match') > -1 || d.indexOf('complement') > -1 || d.indexOf('marry') > -1 || d.indexOf('echoes') > -1) {
+    harmony = 'A congruent pairing where shared flavor compounds and weight reinforce each other.';
+  } else if (d.indexOf('tame') > -1 || d.indexOf('heat') > -1 || d.indexOf('spic') > -1) {
+    harmony = 'Cool, refreshing elements or slight sweetness offset capsaicin burn on the tongue.';
+  } else if (d.indexOf('salt') > -1 || d.indexOf('brine') > -1) {
+    harmony = 'Crisp mineral profiles highlight natural seaside salinity and umami.';
+  } else {
+    if (tags.indexOf('Acidity') > -1 || tags.indexOf('Tart') > -1) {
+      harmony = 'Sharp acidity cuts the weight of fats and dairy, resetting your tastebuds.';
+    } else if (tags.indexOf('Bitter') > -1 || tags.indexOf('Hoppy') > -1) {
+      harmony = 'Lively bitterness cleanses rich proteins and oiliness, keeping flavors crisp.';
+    } else if (tags.indexOf('Sweet') > -1) {
+      harmony = 'Natural sweetness counterbalances heat, salt, or high spice levels.';
+    } else if (tags.indexOf('Fizzy') > -1 || tags.indexOf('Crisp') > -1) {
+      harmony = 'Active carbonation lifts heavy oils and texturizes the meal on the palate.';
+    } else if (tags.indexOf('Bold') > -1 || tags.indexOf('Tannic') > -1) {
+      harmony = 'Structured tannins bind to meat proteins, softening the drink and tenderizing the bite.';
+    } else {
+      harmony = 'Enhances character elements of the dish while keeping the palate refreshed.';
+    }
+  }
+  
+  return { tags: tags, harmony: harmony };
+}
+
+function drinkTasteHTML(name, category, desc) {
+  var prof = getDrinkTasteProfile(name, category, desc);
+  var tagsHtml = prof.tags.map(function(t) {
+    return '<span class="drink-tag-pill">' + t + '</span>';
+  }).join('');
+  return '<div class="drink-taste-box">' +
+    '<div class="drink-tags-wrap">' + tagsHtml + '</div>' +
+    '<div class="drink-harmony-text"><b>Pairing Science: </b>' + prof.harmony + '</div>' +
+  '</div>';
+}
+
 /* init */
 loadPantry();loadFavs();loadCooked();loadShop();loadPlan();viewHead();renderFilters();renderGrid();renderShopBadge();planBadge();observeReveal();(function(){var dc=document.getElementById('dish-count');if(dc)dc.textContent=R.length;})();
 </script>
@@ -1689,6 +2970,28 @@ loadPantry();loadFavs();loadCooked();loadShop();loadPlan();viewHead();renderFilt
     </div>
   </div>
 </div></div>
+
+<!-- COCKTAIL RECIPE MODAL -->
+<div id="cocktail-modal" class="modal-overlay" onclick="closeCocktailModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeCocktailModal(event)">×</button>
+    <div id="cocktail-modal-body"></div>
+  </div>
+</div>
+<!-- GLOBAL FLOATING TIMER BAR -->
+<div id="global-timer-bar" class="global-timer-bar" style="display:none">
+  <div class="gt-info">
+    <span class="gt-lbl" id="gt-lbl-el">Timer Active</span>
+    <span class="gt-title" id="gt-title-el">Cooking step</span>
+  </div>
+  <div class="gt-time-wrap">
+    <span class="gt-time" id="gt-time-el">00:00</span>
+    <div class="gt-btns">
+      <button class="gt-btn" id="gt-toggle-btn" onclick="toggleActiveTimer()" title="Pause/Resume"><i class="ti ti-player-pause"></i></button>
+      <button class="gt-btn cancel" onclick="cancelActiveTimer()" title="Cancel Timer"><i class="ti ti-trash"></i></button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
