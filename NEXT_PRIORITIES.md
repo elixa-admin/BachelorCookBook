@@ -1,12 +1,24 @@
 # Next Priorities — Sprint 66 & Beyond
 
 **Date:** 2026-07-06  
-**Status:** All testing complete, master handoff ready, dev branch deployed  
+**Status:** Collection LOCKED to 58 curated recipes | Master handoff ready | Dev branch deployed  
+**Target:** Apply consistent standards (look, feel, functionality) across all 58  
 **Token Budget:** 200k sprint limit (160k threshold at 80%)  
 
 ---
 
-## PRIORITY TIER 1: Quick Wins (8-15k tokens each, 1-2 hours)
+## ✅ CRITICAL COMPLETION: Collection Finalized
+
+**LOCKED:** 58 recipes (curated, production-ready)
+- 8 user-selected recipes (exist in data files)
+- 50 supporting recipes (quality collection)
+- 171 removed (bloat reduction)
+
+**Next phase:** Standardization across all 58
+
+---
+
+## PRIORITY TIER 1: Standardization Foundation (20-30k tokens)
 
 ### ⭐ HIGHEST PRIORITY: Phase A Audit
 **Effort:** 8-10k tokens | **Time:** 60-90 min | **Model:** Haiku  
