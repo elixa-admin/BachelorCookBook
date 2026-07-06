@@ -281,14 +281,19 @@ button{font-family:var(--font)}
 .scaler button{font-size:14px;font-weight:600;color:var(--muted);background:transparent;border:none;width:42px;height:40px;border-radius:var(--r-pill);cursor:pointer;transition:.18s var(--ease)}
 .scaler button:hover{color:var(--text)}
 .scaler button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
-.ingroup{margin-bottom:24px}
-.ingroup h4{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border-left:2px solid var(--accent-bright);padding-left:9px;margin:0 0 11px;border-radius:0}
+.ingroup{margin-bottom:24px;position:relative}
+.ingroup h4{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border-left:2px solid var(--accent-bright);padding-left:9px;margin:0 0 11px;border-radius:0;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.ingroup:hover h4 .ingroup-swap-btn{opacity:1;pointer-events:auto}
+.ingroup-swap-btn{color:var(--gold);background:none;border:none;font-size:11px;padding:2px 8px;cursor:pointer;text-decoration:underline;opacity:0;pointer-events:none;transition:opacity 0.2s;display:inline-flex;align-items:center;gap:4px}
 .ings{list-style:none;margin:0;padding:0;display:grid;gap:1px}
 .ings li{display:flex;align-items:baseline;gap:14px;padding:8px 0;border-bottom:1px dashed var(--line-soft);font-size:14.5px}
 .ings li:last-child{border-bottom:none}
 .ings .q{flex:0 0 92px;font-family:var(--mono);font-size:13px;color:var(--accent-text);font-weight:500}
 .ings .nm{color:var(--muted)}.ings .nm b{color:var(--text);font-weight:500}
 .ings li.static .q{color:var(--faint)}
+.ings li.static .igcheck{display:none}
+.ings li.static{gap:0;padding:6px 0;color:var(--muted);font-size:13.5px}
+.ings li.static .nm{color:inherit}
 .igcheck{flex:0 0 auto;width:18px;height:18px;border-radius:5px;border:1.5px solid var(--steel);margin-right:6px;cursor:pointer;transition:.18s var(--ease);align-self:center;position:relative}
 .igcheck:hover{border-color:var(--accent-text)}
 .ings li.have{opacity:.42}
@@ -930,15 +935,7 @@ main{padding-bottom:64px}
 
 /* IN-SITU INGREDIENT SUBSTITUTES */
 .ing-sub-trigger {
-  color: var(--gold);
-  background: none; border: none;
-  font-size: 11px; padding: 2px 6px;
-  cursor: pointer;
-  text-decoration: underline;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-  display: inline-block;
-  margin-left: 6px;
+  display: none;
 }
 .ing-sub-trigger:hover { opacity: 1; }
 .ing-sub-panel {
@@ -2429,21 +2426,32 @@ function fmt(v){const r=Math.round(v*1000)/1000;if(FRAC[String(r)])return FRAC[S
 function fmtClock(s){const m=Math.floor(s/60),x=s%60;return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
 function fmtCook(s){return fmtClock(s);}
 function renderIgs(ing){
-  document.getElementById('ings').innerHTML=ing.map(g=>`<div class="ingroup"><h4>${g[0]}</h4><ul class="ings">${g[1].map(it=>{
-    if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
-    var sub = findSubs(it[3]);
-    var subTrigger = '';
-    if (sub) {
-      subTrigger = `<button class="ing-sub-trigger" onclick="toggleInSituSub(this, event)" data-ingkey="${sub.k}"><i class="ti ti-arrows-exchange"></i> Swap</button>`;
-    }
-    return `<li class="ing" data-mode="${it[0]}" data-base="${it[1]}" data-unit="${it[2]}" data-name="${it[3].replace(/"/g,'&quot;')}">` +
-      `<span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span>` +
-      `<span class="q num"></span>` +
-      `<span class="nm"></span>` +
-      `<span class="sub-trigger-container">${subTrigger}</span>` +
-      `<div class="sub-panel-container"></div>` +
-    `</li>`;
-  }).join('')}</ul></div>`).join('');
+  document.getElementById('ings').innerHTML=ing.map(g=>{
+    const groupName=g[0];
+    const isServing=groupName.toUpperCase()==='SERVING';
+    const swapBtn=isServing?'':'<button class="ingroup-swap-btn" onclick="openGroupSwapModal(this, event)"><i class="ti ti-arrows-exchange"></i> Swap</button>';
+
+    const listHTML=g[1].map(it=>{
+      if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
+      if(isServing){
+        return `<li class="static"><span class="nm">${it[2]}</span></li>`;
+      }
+      var sub = findSubs(it[3]);
+      var subTrigger = '';
+      if (sub) {
+        subTrigger = `<button class="ing-sub-trigger" onclick="toggleInSituSub(this, event)" data-ingkey="${sub.k}"><i class="ti ti-arrows-exchange"></i> Swap</button>`;
+      }
+      return `<li class="ing" data-mode="${it[0]}" data-base="${it[1]}" data-unit="${it[2]}" data-name="${it[3].replace(/"/g,'&quot;')}">` +
+        `<span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span>` +
+        `<span class="q num"></span>` +
+        `<span class="nm"></span>` +
+        `<span class="sub-trigger-container">${subTrigger}</span>` +
+        `<div class="sub-panel-container"></div>` +
+      `</li>`;
+    }).join('');
+
+    return `<div class="ingroup"><h4>${groupName}${swapBtn}</h4><ul class="ings">${listHTML}</ul></div>`;
+  }).join('');
   scaleIgs(2);
 }
 var _serv=2,_VAR={};
@@ -2453,6 +2461,39 @@ function parseRatio(note){var m=(''+(note||'')).match(/([0-9½¼¾⅜⅞⅝⅓�
 function variantName(alt,orig){var n=orig||'',c=n.split(',')[1];return '<b>'+alt+'</b>'+(typeof c==='string'?','+c:'');}
 function renderVariants(r){_VAR={};var box=document.getElementById('variants');if(!box||!r.ing||!window.SUBS){if(box)box.innerHTML='';return;}var vk=0,rows='',seen={};document.querySelectorAll('#detail .ing').forEach(function(li){var nm=li.dataset.name||'';var f=findSubs(nm);if(!f||seen[f.k])return;seen[f.k]=1;li.dataset.vk=vk;_VAR[vk]={alts:f.s.alts||[],core:f.k,orig:nm};var chips='<button class="vchip sel" data-vk="'+vk+'" data-alt="-1" onclick="setVariant('+vk+',-1)">'+f.k+'</button>';(f.s.alts||[]).forEach(function(a,i){chips+='<button class="vchip" data-vk="'+vk+'" data-alt="'+i+'" onclick="setVariant('+vk+','+i+')">'+a[0]+'</button>';});rows+='<div class="vrow"><span class="vlabel">'+f.k+'</span><div class="vchips">'+chips+'</div></div>';vk++;});box.innerHTML=rows?'<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Adapt it</span><h2>Your version</h2><span class="rule"></span></div><p class="dsub">Cook with what you actually have. Tap an ingredient to swap it for a common alternative that gives a similar result — the quantity re-scales automatically to keep the dish right.</p><div class="yv">'+rows+'</div></div></div>':'';}
 function setVariant(vk,alt){var V=_VAR[vk];if(!V)return;var li=document.querySelector('#detail .ing[data-vk="'+vk+'"]');if(!li)return;if(alt<0){delete li.dataset.vmult;}else{var a=V.alts[alt];if(a){li.dataset.vname=variantName(a[0],V.orig);li.dataset.vmult=parseRatio(a[1]);}}document.querySelectorAll('.vchip[data-vk="'+vk+'"]').forEach(function(c){c.classList.toggle('sel',+c.dataset.alt===alt);});scaleIgs(_serv);}
+function openGroupSwapModal(btn, e){
+  e.stopPropagation();
+  const group=btn.closest('.ingroup');
+  const ingList=group.querySelectorAll('.ing[data-vk]');
+  if(!ingList.length)return;
+  const opts=Array.from(ingList).map(li=>`<label style="display:block;padding:8px 0;"><input type="checkbox" data-vk="${li.dataset.vk}"/> ${li.dataset.name}</label>`).join('');
+  const modal=document.createElement('div');
+  modal.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:9999;';
+  modal.innerHTML=`<div style="background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:24px;max-width:400px;width:90%;">
+    <h3 style="margin:0 0 16px;color:var(--text);">Swap ingredients in this section</h3>
+    <div style="max-height:300px;overflow-y:auto;margin-bottom:20px;border:1px solid var(--line-soft);padding:12px;border-radius:6px;background:rgba(0,0,0,0.2);">${opts}</div>
+    <div style="display:flex;gap:12px;">
+      <button onclick="this.closest('div').parentElement.remove()" style="flex:1;padding:10px;background:var(--line);border:none;border-radius:6px;color:var(--text);cursor:pointer;">Cancel</button>
+      <button onclick="applyGroupSwaps(this);this.closest('div').parentElement.remove();" style="flex:1;padding:10px;background:var(--gold);border:none;border-radius:6px;color:#000;cursor:pointer;font-weight:600;">Apply</button>
+    </div>
+  </div>`;
+  document.body.appendChild(modal);
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});
+}
+function applyGroupSwaps(btn){
+  const modal=btn.closest('[style*="background:var(--surface-2)"]');
+  const checks=modal.querySelectorAll('input[type="checkbox"]:checked');
+  checks.forEach(ch=>{
+    const vk=ch.dataset.vk;
+    const li=document.querySelector(`.ing[data-vk="${vk}"]`);
+    if(li){
+      const subs=li.dataset.subs?JSON.parse(li.dataset.subs):[];
+      if(subs.length>0){
+        setVariant(vk,0);
+      }
+    }
+  });
+}
 function wireDetail(){
   document.querySelectorAll('#detail .scaler button').forEach(b=>b.addEventListener('click',()=>scaleIgs(parseInt(b.dataset.serv))));
   document.querySelectorAll('#detail .check').forEach(c=>c.addEventListener('click',()=>c.closest('.step').classList.toggle('done')));
