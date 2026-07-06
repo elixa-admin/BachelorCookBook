@@ -388,7 +388,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     waste_notes: "Asian + baking; lasts 12 months"
   },
 
-  "spice.chili-powder.cayenne": {
+  "spice.chilli-powder.cayenne": {
     pack_sizes: [40, 100],
     common_size: 40,
     unit: "g",

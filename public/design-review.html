@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUB Design Review — Multiple Choice Options</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: 'Inter Tight', -apple-system, sans-serif;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { font-size: 32px; margin-bottom: 40px; text-align: center; color: #d4af37; }
+    .question-block { margin-bottom: 60px; }
+    .q-title { font-size: 20px; font-weight: 700; margin-bottom: 30px; color: #fff; }
+    .options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .option-card {
+      background: rgba(255,255,255,0.02);
+      border: 2px solid rgba(212,175,55,0.2);
+      border-radius: 12px;
+      padding: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .option-card:hover {
+      border-color: rgba(212,175,55,0.6);
+      background: rgba(212,175,55,0.08);
+      transform: translateY(-4px);
+    }
+    .option-card.selected {
+      border-color: #d4af37;
+      background: rgba(212,175,55,0.15);
+      box-shadow: 0 0 20px rgba(212,175,55,0.3);
+    }
+    .option-letter { font-size: 24px; font-weight: 700; color: #d4af37; margin-bottom: 12px; }
+    .option-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; color: #fff; }
+    .option-description { font-size: 13px; color: #b0b0b0; margin-bottom: 16px; line-height: 1.5; }
+    .option-visual {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(212,175,55,0.2);
+      border-radius: 6px;
+      padding: 16px;
+      font-size: 12px;
+      font-family: 'Courier New', monospace;
+      color: #888;
+      margin-bottom: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .vote-btn {
+      width: 100%;
+      padding: 10px;
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: #d4af37;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .vote-btn:hover { background: rgba(212,175,55,0.2); }
+    .vote-btn.selected { background: #d4af37; color: #1a1a1a; }
+    .vote-count { text-align: center; margin-top: 8px; font-size: 12px; color: #d4af37; }
+    .summary-box {
+      background: rgba(110,30,36,0.1);
+      border-left: 3px solid rgb(110,30,36);
+      padding: 16px;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    .summary-title { font-weight: 700; color: #fff; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 TUB Design Review — Multiple Choice</h1>
+
+    <!-- QUESTION 1: INGREDIENT SWAP -->
+    <div class="question-block">
+      <div class="q-title">❓ Question 1: How should ingredient substitution work?</div>
+      <p style="margin-bottom: 30px; color: #aaa; font-size: 14px;">Currently: Individual "Swap" buttons scattered throughout ingredients, causing visual clutter and poor alignment.</p>
+
+      <div class="options-grid">
+        <!-- Option A -->
+        <div class="option-card" onclick="vote('swap', 'A', this)">
+          <div class="option-letter">A</div>
+          <div class="option-title">Section-Level "Swap All"</div>
+          <div class="option-description">One button per ingredient section. Click to replace all ingredients in that group at once.</div>
+          <div class="option-visual">
+┌─ MARINADE          [SWAP ALL ↻]
+├─ 125 ml  soy sauce
+├─ 60 ml   mirin
+├─ 45 ml   sugar
+├─ 1 tbsp  grated ginger
+├─ 2       garlic
+└─ ½ tsp   black pepper
+          </div>
+          <button class="vote-btn">Choose Option A</button>
+          <div class="vote-count" id="swap-A">0 votes</div>
+        </div>
+
+        <!-- Option B -->
+        <div class="option-card" onclick="vote('swap', 'B', this)">
+          <div class="option-letter">B</div>
+          <div class="option-title">Hover-Reveal Swap Button</div>
+          <div class="option-description">Clean, minimal. "Swap" button appears on hover over section header. Opens ingredient-by-ingredient modal.</div>
+          <div class="option-visual">
+┌─ MARINADE                   [SWAP]*
+├─ 125 ml  soy sauce
+├─ 60 ml   mirin
+├─ 45 ml   sugar
+├─ 1 tbsp  grated ginger
+├─ 2       garlic
+└─ ½ tsp   black pepper
+
+*Shows only on hover
+          </div>
+          <button class="vote-btn">Choose Option B</button>
+          <div class="vote-count" id="swap-B">0 votes</div>
+        </div>
+
+        <!-- Option C -->
+        <div class="option-card" onclick="vote('swap', 'C', this)">
+          <div class="option-letter">C</div>
+          <div class="option-title">Floating Action Below</div>
+          <div class="option-description">Swap button sits below section, aligned left. Individual toggles for each ingredient.</div>
+          <div class="option-visual">
+┌─ MARINADE
+├─ 125 ml  soy sauce
+├─ 60 ml   mirin
+├─ 45 ml   sugar
+├─ 1 tbsp  grated ginger
+├─ 2       garlic
+└─ ½ tsp   black pepper
+└─ ↻ Swap Ingredients
+          </div>
+          <button class="vote-btn">Choose Option C</button>
+          <div class="vote-count" id="swap-C">0 votes</div>
+        </div>
+
+        <!-- Option D -->
+        <div class="option-card" onclick="vote('swap', 'D', this)">
+          <div class="option-letter">D</div>
+          <div class="option-title">Keep Current + Improve Alignment</div>
+          <div class="option-description">Keep individual swap buttons, but align them all to the right edge for neat columns.</div>
+          <div class="option-visual">
+┌─ MARINADE
+├─ 125 ml  soy sauce          [↻ Swap]
+├─ 60 ml   mirin
+├─ 45 ml   sugar
+├─ 1 tbsp  grated ginger      [↻ Swap]
+├─ 2       garlic             [↻ Swap]
+└─ ½ tsp   black pepper       [↻ Swap]
+          </div>
+          <button class="vote-btn">Choose Option D</button>
+          <div class="vote-count" id="swap-D">0 votes</div>
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <div class="summary-title">💡 Your Choice:</div>
+        <div id="swap-choice">No selection yet</div>
+      </div>
+    </div>
+
+    <!-- QUESTION 2: SERVING SECTION -->
+    <div class="question-block">
+      <div class="q-title">❓ Question 2: What should the SERVING section represent?</div>
+      <p style="margin-bottom: 30px; color: #aaa; font-size: 14px;">Currently: Checkboxes with "-" quantities, unclear purpose. Should this be info, interactive, or removed?</p>
+
+      <div class="options-grid">
+        <!-- Option A -->
+        <div class="option-card" onclick="vote('serving', 'A', this)">
+          <div class="option-letter">A</div>
+          <div class="option-title">Suggested Accompaniments (Read-Only)</div>
+          <div class="option-description">Info-only list of recommended sides/pairings. Clean, no interaction needed.</div>
+          <div class="option-visual">
+┌─ SERVE WITH
+├─ Steamed rice
+├─ Miso soup
+├─ Pickled ginger or vegetables
+└─ Toasted sesame seeds
+          </div>
+          <button class="vote-btn">Choose Option A</button>
+          <div class="vote-count" id="serving-A">0 votes</div>
+        </div>
+
+        <!-- Option B -->
+        <div class="option-card" onclick="vote('serving', 'B', this)">
+          <div class="option-letter">B</div>
+          <div class="option-title">Optional Components (Interactive)</div>
+          <div class="option-description">Checkboxes let you pick which sides to make. "Add to Ingredients" button adds their ingredients to main list.</div>
+          <div class="option-visual">
+┌─ OPTIONAL SIDES   [ADD TO INGREDIENTS]
+├─ ☐ Steamed rice
+├─ ☐ Miso soup
+├─ ☐ Pickled ginger/vegetables
+└─ ☐ Toasted sesame seeds
+          </div>
+          <button class="vote-btn">Choose Option B</button>
+          <div class="vote-count" id="serving-B">0 votes</div>
+        </div>
+
+        <!-- Option C -->
+        <div class="option-card" onclick="vote('serving', 'C', this)">
+          <div class="option-letter">C</div>
+          <div class="option-title">Visual Pairing Chips</div>
+          <div class="option-description">Card-based visual suggestions. Click each for quick recipe or prep tip.</div>
+          <div class="option-visual">
+Perfect with:
+  🍚 Steamed Rice | 🍲 Miso Soup | 🥒 Pickled Veg | ✨ Sesame
+          </div>
+          <button class="vote-btn">Choose Option C</button>
+          <div class="vote-count" id="serving-C">0 votes</div>
+        </div>
+
+        <!-- Option D -->
+        <div class="option-card" onclick="vote('serving', 'D', this)">
+          <div class="option-letter">D</div>
+          <div class="option-title">Remove Entirely</div>
+          <div class="option-description">Delete the SERVING section. This info is redundant with DRINKS PAIRING or belongs elsewhere.</div>
+          <div class="option-visual">
+[No SERVING section displayed]
+
+Space saved for other content
+or cleaner recipe view
+          </div>
+          <button class="vote-btn">Choose Option D</button>
+          <div class="vote-count" id="serving-D">0 votes</div>
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <div class="summary-title">💡 Your Choice:</div>
+        <div id="serving-choice">No selection yet</div>
+      </div>
+    </div>
+
+    <!-- SUBMIT -->
+    <div style="text-align: center; margin-top: 60px; padding: 40px; background: rgba(212,175,55,0.05); border-radius: 12px;">
+      <h2 style="margin-bottom: 20px;">Ready to decide?</h2>
+      <button onclick="submitChoices()" style="padding: 12px 32px; background: #d4af37; color: #1a1a1a; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 16px;">
+        Submit Your Design Choices
+      </button>
+      <div id="submission-status" style="margin-top: 20px; color: #d4af37; font-size: 14px;"></div>
+    </div>
+  </div>
+
+  <script>
+    const votes = { swap: {}, serving: {} };
+    const selected = { swap: null, serving: null };
+
+    function vote(category, option, element) {
+      // Update selection
+      document.querySelectorAll(`.options-grid`).forEach(grid => {
+        grid.querySelectorAll('.option-card').forEach(card => {
+          card.classList.remove('selected');
+          card.querySelector('.vote-btn').classList.remove('selected');
+        });
+      });
+
+      element.closest('.option-card').classList.add('selected');
+      element.classList.add('selected');
+
+      // Update count
+      if (!votes[category][option]) votes[category][option] = 0;
+      votes[category][option]++;
+      document.getElementById(`${category}-${option}`).textContent = votes[category][option] + ' vote' + (votes[category][option] !== 1 ? 's' : '');
+
+      // Update selected
+      selected[category] = option;
+      document.getElementById(`${category}-choice`).textContent = `✅ You selected Option ${option}`;
+    }
+
+    function submitChoices() {
+      if (!selected.swap || !selected.serving) {
+        document.getElementById('submission-status').textContent = '⚠️ Please select both options before submitting';
+        return;
+      }
+
+      const summary = `
+🎨 Design Choices Submitted:
+
+Question 1 (Ingredient Swap): Option ${selected.swap}
+Question 2 (Serving Section): Option ${selected.serving}
+
+These choices will guide the implementation.
+Redirecting to implementation...
+      `;
+
+      document.getElementById('submission-status').innerHTML = summary.replace(/\n/g, '<br>');
+
+      // Store choices in sessionStorage for later
+      sessionStorage.setItem('designChoices', JSON.stringify(selected));
+
+      setTimeout(() => {
+        alert(`✅ Design choices saved!\n\nSwap Button: Option ${selected.swap}\nServing Section: Option ${selected.serving}\n\nProceeding with implementation...`);
+        window.location.href = '/';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

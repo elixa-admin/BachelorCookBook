@@ -721,7 +721,7 @@ window.MASTERCLASS=[
       "ragu",
       "tagine",
       "curry",
-      "chili",
+      "chilli",
       "goulash",
       "carbonade"
     ],

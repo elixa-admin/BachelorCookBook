@@ -381,7 +381,7 @@ window.SA_INGREDIENT_SEASONALITY = {
   // NOTE: Continued mapping of remaining ~50 ingredients
   // TODO: Additional produce (potatoes, broccoli, cauliflower, peas, beans)
   // TODO: Additional pantry (honey, tomato paste, canned beans, lentils, stock)
-  // TODO: Additional spices (thyme, rosemary, oregano, bay leaves, chili flakes)
+  // TODO: Additional spices (thyme, rosemary, oregano, bay leaves, chilli flakes)
   // TODO: Additional dairy (mozzarella, parmesan, ricotta, sour cream)
   // TODO: Wine & beverages (red wine, white wine, stock varieties)
 

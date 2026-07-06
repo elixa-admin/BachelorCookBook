@@ -334,7 +334,7 @@ window.SA_INGREDIENT_RETAILERS = {
     local_butcher: { stock: false, price_r: null, unit: null, quality: null, notes: "Asian shops: R25-35" }
   },
 
-  "spice.chili-powder.cayenne": {
+  "spice.chilli-powder.cayenne": {
     pnp: { stock: true, price_r: 28, unit: "per 40g", quality: "high", notes: "Hot, bright; use sparingly" },
     checkers: { stock: true, price_r: 30, unit: "per 40g", quality: "high", notes: "Consistent heat" },
     woolworths: { stock: true, price_r: 40, unit: "per 40g", quality: "high", notes: "Organic (R48)" },

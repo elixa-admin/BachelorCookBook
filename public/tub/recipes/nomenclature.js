@@ -193,7 +193,7 @@ window.NOMEN = {
     direct:"literally 'Lima-style occasion [dish]' (causa = occasion/dish, limeña = from Lima; possibly from Quechua 'kausay' = life)",
     predominant_in:"Peru — Lima's signature dish",
     linguistic:"Spanish; 'causa' comes from 'causa' (cause/occasion) — meaning 'for the occasion'. The Quechua word 'kausay' (life) may also influence the name. 'Limena' = from Lima.",
-    cultural:"Invented in Lima during colonial period; uses yellow potato (native Peruvian) with Spanish influences (lime, chili). The dish represents Peruvian cuisine's fusion of Inca ingredients with Spanish technique.",
+    cultural:"Invented in Lima during colonial period; uses yellow potato (native Peruvian) with Spanish influences (lime, chilli). The dish represents Peruvian cuisine's fusion of Inca ingredients with Spanish technique.",
     recognise:"Peruvian dishes often indicate geography: 'limeña' (Lima), 'arequipeña' (Arequipa), 'criolla' (Creole). 'Causa' is unusual for meaning 'occasion'. Spot the pattern: Peruvian cuisine names often reveal regional geography or colonial history."
   },
 

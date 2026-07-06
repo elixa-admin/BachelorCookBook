@@ -82,11 +82,11 @@ window.PANTRY_LORE = {
 
   "pap": "**Did you know?** Pap is one of Africa's oldest staple foods, made from ground millet or maize boiled into a porridge. It sustained millions across centuries and remains a comfort food symbol—associated with childhood, resilience, and the deep cultural memory of African peoples.",
 
-  "penne-arrabbiata": "**Did you know?** Arrabbiata (angry) pasta emerged in Rome's working-class districts, made with just tomato, garlic, and chili—ingredients affordable enough for daily meals. The simplicity hides technique: the sauce must emulsify with pasta water at exactly the right moment, or the entire dish fails.",
+  "penne-arrabbiata": "**Did you know?** Arrabbiata (angry) pasta emerged in Rome's working-class districts, made with just tomato, garlic, and chilli—ingredients affordable enough for daily meals. The simplicity hides technique: the sauce must emulsify with pasta water at exactly the right moment, or the entire dish fails.",
 
   "peppermint-crisp-tart": "**Did you know?** Peppermint Crisp tart is a uniquely South African dessert, born from British toffee imports and local chocolate traditions. The combination—chocolate, peppermint, and toffee—represents mid-20th century innovation, becoming a beloved standard at South African celebrations and gatherings.",
 
-  "peri-peri-chicken-livers": "**Did you know?** Peri-peri (also 'pili-pili') derives from Portuguese 'pimenta' (pepper), brought to Mozambique and Southern Africa by colonial traders. The bird's eye chili—though now synonymous with African cuisine—is actually from Asia, making this dish a story of trade, adaptation, and cultural appropriation.",
+  "peri-peri-chicken-livers": "**Did you know?** Peri-peri (also 'pili-pili') derives from Portuguese 'pimenta' (pepper), brought to Mozambique and Southern Africa by colonial traders. The bird's eye chilli—though now synonymous with African cuisine—is actually from Asia, making this dish a story of trade, adaptation, and cultural appropriation.",
 
   "pizza-margherita": "**Did you know?** Pizza Margherita was created in 1889 to honor Queen Margherita of Savoy, using red tomato, white mozzarella, and green basil—the Italian flag in food form. This 'royal pizza' elevated street food to national symbol, proving that politics and cuisine are inseparable.",
 

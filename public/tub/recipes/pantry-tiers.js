@@ -128,7 +128,7 @@ window.PANTRY_TIERS = {
         essentials: ['Canned whole tomatoes (1-2 x 400g tins weekly)', 'Tomato paste (1 small tube)'],
         storage: 'Pantry: 1 year. Once opened, tomato paste: refrigerate in airtight container 3-4 weeks.',
         notes: 'San Marzano cans are premium but pricey. Regular canned works fine. Paste is intense: use sparingly.',
-        uses: 'Pasta sauces, curries, soups, braises, shakshuka, chili'
+        uses: 'Pasta sauces, curries, soups, braises, shakshuka, chilli'
       },
       {
         slug: 'ginger',
