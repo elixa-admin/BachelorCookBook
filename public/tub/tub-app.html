@@ -55,7 +55,7 @@ button{font-family:var(--font)}
   box-shadow:0 2px 12px rgba(0,0,0,.5),0 0 0 3px rgba(8,9,11,.5);transition:transform .35s var(--ease)}
 .brand:hover .mark{transform:rotate(-5deg) scale(1.05)}
 .brand .wm{font-size:0}
-.brand .wm small{display:block;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.13em;line-height:1.25;color:rgba(232,220,210,.9);margin:0;text-transform:uppercase;width:120px;word-wrap:break-word;overflow-wrap:break-word}
+.brand .wm small{display:block;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.12em;line-height:1;color:rgba(232,220,210,.95);margin:0;text-transform:uppercase;white-space:nowrap}
 .search{flex:1;min-width:0;max-width:330px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-pill);padding:10px 15px;color:var(--faint);transition:.2s var(--ease)}
 .search:focus-within{border-color:var(--accent-line);box-shadow:0 0 0 3px var(--accent-soft)}
@@ -64,7 +64,8 @@ button{font-family:var(--font)}
 .search .x{cursor:pointer;color:var(--faint);font-size:16px;line-height:1;display:none;padding:2px}
 .search .x.on{display:inline}
 .search .x:hover{color:var(--text)}
-@media(max-width:980px){.brand .wm small{font-size:9px;letter-spacing:.1em}}
+@media(max-width:980px){.brand .wm small{font-size:12px;letter-spacing:.08em}}
+@media(max-width:680px){.brand .wm small{font-size:10px;letter-spacing:.06em}}
 @media(max-width:680px){.brand .wm{font-size:22px}.brand .mark{width:42px;height:42px;font-size:15px}}
 
 /* ── occasion nav (primary) ── */
@@ -206,6 +207,28 @@ button{font-family:var(--font)}
 .dsection--lore .lore-card{border-left:3px solid rgba(168,214,97,.6);padding-left:16px}
 .dsection--lore .lore-header{font-weight:600;color:rgba(168,214,97,.9);font-size:11px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px}
 .dsection--lore .lore-text{font-size:14px;line-height:1.6;color:var(--text-primary);margin:0}
+.dsection--upgrade{background:rgba(212,175,55,.03)}
+.dsection--upgrade .wrap{border-left:3px solid rgba(212,175,55,.4);padding-left:26px}
+.dsection--upgrade .dhead h2{color:rgba(212,175,55,.85)}
+.dsection--upgrade .label{color:rgba(212,175,55,.65)!important}
+.dsection--health{background:rgba(168,211,81,.03)}
+.dsection--health .wrap{border-left:3px solid rgba(168,211,81,.45);padding-left:26px}
+.dsection--health .dhead h2{color:rgba(168,211,81,.85)}
+.dsection--health .label{color:rgba(168,211,81,.6)!important}
+.dsection--diet{background:rgba(85,183,221,.03)}
+.dsection--diet .wrap{border-left:3px solid rgba(85,183,221,.45);padding-left:26px}
+.dsection--diet .dhead h2{color:rgba(85,183,221,.85)}
+.dsection--diet .label{color:rgba(85,183,221,.6)!important}
+.diet-pill{display:flex;flex-direction:column;gap:4px;padding:12px 16px;border:1px solid rgba(85,183,221,.25);border-radius:var(--r-md);background:rgba(85,183,221,.06);margin-bottom:8px}
+.diet-pill:last-child{margin-bottom:0}
+.diet-pill-name{font-size:13.5px;font-weight:700;color:rgba(85,183,221,.9);display:flex;align-items:center;gap:8px}
+.diet-pill-desc{font-size:13px;color:var(--muted);line-height:1.5;margin-top:2px}
+.dsection--adapt .wrap{border-left:3px solid rgba(200,155,100,.3);padding-left:26px}
+.dsection--adapt .label{color:rgba(200,155,100,.65)!important}
+.dsection--mistakes{background:rgba(187,67,66,.03)}
+.dsection--mistakes .wrap{border-left:3px solid rgba(187,67,66,.45);padding-left:26px}
+.dsection--mistakes .dhead h2{color:rgba(187,67,66,.85)}
+.dsection--mistakes .label{color:rgba(187,67,66,.65)!important}
 .pair-food-row{margin-top:20px;padding-top:18px;border-top:1px solid var(--line-soft);display:flex;flex-direction:column;gap:10px}
 .pair-food-head{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
 .pair-food-chip{background:rgba(255,255,255,.03);border:1px dashed var(--line);border-radius:var(--r-md);padding:12px 16px}
@@ -307,28 +330,28 @@ button{font-family:var(--font)}
 .ings li.have .igcheck{background:var(--accent);border-color:var(--accent)}
 .ings li.have .igcheck::after{content:"✓";color:var(--on-accent);font-size:12px;font-weight:800;position:absolute;inset:0;display:grid;place-items:center}
 .timeline{display:grid;gap:0;background:transparent;border-radius:var(--r)}
-.tl-section{padding:12px 16px;margin-bottom:12px;border-radius:8px;border-left:3px solid}
+.tl-section{padding:16px 18px;margin-bottom:10px;border-radius:8px;border-left:3px solid}
 .tl-section.prep{background:rgba(46,98,157,0.06);border-left-color:rgb(46,98,157)}
 .tl-section.cook{background:rgba(201,162,75,0.08);border-left-color:rgb(201,162,75)}
 .tl-section.rest{background:rgba(187,67,66,0.06);border-left-color:rgb(187,67,66)}
 .tl-section.serve{background:rgba(168,211,81,0.06);border-left-color:rgb(168,211,81)}
-.tl-section-label{font-size:10px;font-weight:700;text-transform:uppercase;margin:0 0 8px 0;letter-spacing:0.1em}
+.tl-section-label{font-size:11px;font-weight:700;text-transform:uppercase;margin:0 0 14px;letter-spacing:0.13em}
 .tl-section.prep .tl-section-label{color:rgb(46,98,157)}
 .tl-section.cook .tl-section-label{color:rgb(201,162,75)}
 .tl-section.rest .tl-section-label{color:rgb(187,67,66)}
 .tl-section.serve .tl-section-label{color:rgb(168,211,81)}
-.tl{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:0;margin-bottom:8px;position:relative}
-.tl:last-child{margin-bottom:0}
+.tl{display:grid;grid-template-columns:66px 1fr;gap:0;padding:11px 0;margin-bottom:0;position:relative;align-items:start}
+.tl:not(:last-child){border-bottom:1px solid rgba(255,255,255,0.06)}
 .tl::before{display:none}
-.tl .t{font-family:var(--mono);font-size:11px;color:var(--text-secondary);font-weight:500}
-.tl .b{position:relative;padding-left:0}
-.tl .b::before{content:"";position:absolute;left:-28px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--tl-dot-bg,rgba(201,162,75,0.2));border:2px solid var(--tl-dot,rgb(201,162,75));transition:.3s ease}
-.tl.passive .b::before{opacity:.4;border-color:rgba(201,162,75,0.5)}
-.tl .ttl{font-size:14px;font-weight:600;color:var(--text);margin:0}
-.tl .d{font-size:12px;color:var(--text-secondary);margin:4px 0 0 0}
+.tl .t{font-family:var(--mono);font-size:10.5px;color:var(--muted);font-weight:600;padding:3px 12px 0 0;text-align:right;line-height:1.4}
+.tl .b{position:relative;padding-left:18px;border-left:1px solid rgba(255,255,255,0.09)}
+.tl .b::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--tl-dot-bg,rgba(201,162,75,0.2));border:2px solid var(--tl-dot,rgb(201,162,75));transition:.3s ease}
+.tl.passive .b::before{opacity:.35;border-style:dashed}
+.tl .ttl{font-size:15px;font-weight:700;color:var(--text);margin:0;line-height:1.25;letter-spacing:.01em}
+.tl .d{font-size:13px;color:var(--text-secondary);margin:5px 0 0;line-height:1.5}
 .tl .tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-text);margin-left:7px;font-weight:600}
 .tl.passive{opacity:1}
-.tl.passive .ttl{color:var(--muted)}
+.tl.passive .ttl{color:var(--muted);font-weight:600}
 .tl-mile{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:2px 0;position:relative;align-items:center}
 .tl-mile .line{height:1px;background:linear-gradient(90deg,rgba(201,162,75,.6),rgba(224,122,112,.5));position:relative}
 .tl-mile .pill{position:absolute;left:22px;top:50%;transform:translateY(-50%);background:var(--ink);border:1px solid rgba(224,122,112,.4);color:var(--accent-text);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap}
@@ -2204,12 +2227,17 @@ function plateHTML(r,pair,foodPairs){var out='';
   if(!hasSides&&!hasFP&&!r.storage&&!(window.RECIPE_STORAGE && window.RECIPE_STORAGE[r.slug])&&!pair)out+='<div class="dsection"><div class="wrap"><p class="plate-p" style="color:var(--faint)">Pairing and storage notes coming soon.</p></div></div>';
   return out;}
 function knowHTML(r){var out='';
-  if(r.chef_upgrade)out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Take it further</span><h2>Chef\u2019s upgrade</h2><span class="rule"></span></div><div class="mc-card"><p class="mc-why"><b>Elevate it \u2014</b> '+r.chef_upgrade+'</p></div></div></div>';
-  if(r.health_forward)out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Lighter, same dish</span><h2>Health-forward</h2><span class="rule"></span></div><div class="mc-card"><p class="mc-why"><b>Make it lighter \u2014</b> '+r.health_forward+'</p></div></div></div>';
-  if(r.diets&&r.diets.length){var DM={med:'Mediterranean',highprotein:'High protein',lowcarb:'Low-carb',plant:'Plant-forward'};out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Good for</span><h2>Dietary fit</h2><span class="rule"></span></div><div class="tags" style="margin:0">'+r.diets.map(function(d){return '<span>'+(DM[d]||d)+'</span>';}).join('')+'</div></div></div>';}
-  else if(r.diet_notes){out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Good for</span><h2>Dietary fit</h2><span class="rule"></span></div><p class="plate-p">Not a core-profile dish \u2014 best enjoyed as an occasional treat. See the adaptation notes below for lighter options.</p></div></div>';}
-  if(r.diet_notes)out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Adapt it</span><h2>Dietary adaptations</h2><span class="rule"></span></div><p class="plate-p">'+r.diet_notes+'</p></div></div>';
-  if(r.mistakes&&r.mistakes.length)out+='<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Watch out</span><h2>Common mistakes</h2><span class="rule"></span></div><div class="mc-card"><ul class="amc-ul">'+r.mistakes.map(function(m){return '<li>'+m+'</li>';}).join('')+'</ul></div></div></div>';
+  if(r.chef_upgrade)out+='<div class="dsection dsection--upgrade"><div class="wrap"><div class="dhead"><span class="label">Take it further</span><h2>Chef\u2019s upgrade</h2><span class="rule"></span></div><div class="mc-card"><p class="mc-why"><b>Elevate it \u2014</b> '+r.chef_upgrade+'</p></div></div></div>';
+  if(r.health_forward)out+='<div class="dsection dsection--health"><div class="wrap"><div class="dhead"><span class="label">Lighter, same dish</span><h2>Health-forward</h2><span class="rule"></span></div><div class="mc-card"><p class="mc-why"><b>Make it lighter \u2014</b> '+r.health_forward+'</p></div></div></div>';
+  if(r.diets&&r.diets.length){
+    var DM={med:'Mediterranean',highprotein:'High protein',lowcarb:'Low-carb',plant:'Plant-forward'};
+    var DI={med:'ti ti-plant-2',highprotein:'ti ti-barbell',lowcarb:'ti ti-leaf',plant:'ti ti-trees'};
+    var DD={med:'Olive oil, vegetables, whole grains and lean protein \u2014 the Mediterranean blueprint for eating well.',highprotein:'Protein-dense and macro-efficient \u2014 ideal for muscle recovery and sustained energy.',lowcarb:'Minimal refined carbs built for metabolic efficiency without sacrificing satisfaction.',plant:'Plant-dominant and far from bland \u2014 natural flavour and complete nutrition without the meat.'};
+    out+='<div class="dsection dsection--diet"><div class="wrap"><div class="dhead"><span class="label">Good for</span><h2>Dietary fit</h2><span class="rule"></span></div>'+r.diets.map(function(d){return '<div class="diet-pill"><span class="diet-pill-name"><i class="ti '+(DI[d]||'ti ti-check')+'"></i>'+(DM[d]||d)+'</span><span class="diet-pill-desc">'+(DD[d]||'')+'</span></div>';}).join('')+'</div></div>';
+  }
+  else if(r.diet_notes){out+='<div class="dsection dsection--diet"><div class="wrap"><div class="dhead"><span class="label">Good for</span><h2>Dietary fit</h2><span class="rule"></span></div><p class="plate-p">Best enjoyed as an occasional treat. See the adaptation notes below for lighter options.</p></div></div>';}
+  if(r.diet_notes)out+='<div class="dsection dsection--adapt"><div class="wrap"><div class="dhead"><span class="label">Adapt it</span><h2>Dietary adaptations</h2><span class="rule"></span></div><p class="plate-p">'+r.diet_notes+'</p></div></div>';
+  if(r.mistakes&&r.mistakes.length)out+='<div class="dsection dsection--mistakes"><div class="wrap"><div class="dhead"><span class="label">Watch out</span><h2>Common mistakes</h2><span class="rule"></span></div><div class="mc-card"><ul class="amc-ul">'+r.mistakes.map(function(m){return '<li>'+m+'</li>';}).join('')+'</ul></div></div></div>';
   if(!r.chef_upgrade&&!r.health_forward&&!r.diets&&!r.mistakes)out+='<div class="dsection"><div class="wrap"><p class="plate-p" style="color:var(--faint)">Upgrade and dietary notes coming soon.</p></div></div>';
   return out;}
 
