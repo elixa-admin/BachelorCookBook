@@ -17,6 +17,19 @@ A single-pane health indicator for the build, deploy, and site state.
 | Local preview (`localhost:3000`) | 🟢 up | `/` → redirect → `/tub/tub-app.html` (354 KB) |
 | Vercel production deploy | 🟢 (updated at deploy time) | see deploy section below |
 | Storage bug fix | 🟢 verified | 182 storage keys resolve (Heritage + Signature) |
+| **Health sweep** | 🟢 pass | 0 critical / 0 voice violations / 0 spelling issues |
+| **SA unit compliance** | 🟢 pass | 0 US-unit (cups/oz/°F) references in active recipes |
+| **Storage merge precedence** | 🟢 pass | Rich storage.js data preserved; terse defaults gap-fill only |
+| **Story depth (Tier 1)** | 🟢 pass | 25 thinnest recipes enriched 47→143-199 words |
+
+## Health sweep findings (2026-07-06)
+Comprehensive automated audit across 142 active recipes. Before → after:
+- **Critical issues:** 15 → 0 (US units fixed, false-positives confirmed safe)
+- **Voice violations:** 0 (no consolation/pity framing anywhere)
+- **SA-English compliance:** 0 (chilli spelling sweep complete)
+- **Storage quality:** 31 entries restored (rich data no longer overridden by terse defaults)
+- **Story depth:** 25 thinnest recipes (<60 words) enriched to 143-199 words
+- **Remaining warnings (deferred):** 30 missing images (sprint 68), ~60 stories in adequate 60-130 range, dessert reheat false-positives
 
 ## Architecture in production
 - **Live app:** `public/tub/tub-app.html` — single-file PWA, no build step.
