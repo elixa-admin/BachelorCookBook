@@ -10,7 +10,7 @@
 window.SKILL_LEVELS={
   novice:{label:'Novice',icon:'',blurb:'First cook, hard to mess up — clear wins, gentle techniques'},
   capable:{label:'Capable',icon:'',blurb:'Comfortable in the kitchen — some timing, heat control, a sauce or emulsion'},
-  chef:{label:'Chef',icon:'',blurb:'Restaurant-level — precision, multi-component, real technique'}
+  chef:{label:'Bachelor',icon:'',blurb:'Real technique — doughs, stocks, sauces, timing several things at once'}
 };
 window.SKILL_TIERS={
   'pizza-margherita':{level:'capable',why:'Authored to the SA-palate standard',skills:['technique','timing','seasoning']},
