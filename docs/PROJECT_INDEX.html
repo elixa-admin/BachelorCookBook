@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Ultimate Bachelor Cookbook — Project Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0a0a; --gold:rgba(212,175,55); --wine:rgba(110,30,36);
+    --text:#e8e8e8; --muted:#9a9a9a; --line:rgba(255,255,255,.08);
+    --r:12px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--text);font-family:'Inter Tight',system-ui,sans-serif;
+    line-height:1.65;background:radial-gradient(120% 70% at 50% -10%, #1a1410 0%, var(--ink) 55%) fixed, var(--ink);}
+  .wrap{max-width:820px;margin:0 auto;padding:56px 24px 88px;}
+  .eyebrow{color:var(--gold);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin:0 0 10px;}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    font-size:clamp(2.25rem,6vw,3.25rem);line-height:1.05;margin:0 0 12px;letter-spacing:.01em;}
+  .tagline{font-family:'Inter Tight',sans-serif;font-style:italic;color:var(--gold);font-size:1.35rem;margin:0 0 16px;}
+  .lede{font-size:1.08rem;color:var(--muted);margin:0;max-width:58ch;}
+  .status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;
+    background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:9999px;
+    padding:6px 14px;font-size:.8rem;color:var(--muted);}
+  .dot{width:7px;height:7px;border-radius:50%;background:#A8D651;box-shadow:0 0 8px #A8D651;}
+  h2{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.04em;
+    font-size:1.3rem;margin:44px 0 16px;color:var(--text);}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:560px){.grid{grid-template-columns:1fr 1fr;}}
+  a.card{display:block;background:rgba(255,255,255,.025);border:1px solid var(--line);
+    border-left:3px solid var(--gold);border-radius:var(--r);padding:20px;text-decoration:none;color:var(--text);
+    transition:transform .15s ease,border-color .15s ease,background .15s;}
+  a.card:hover{transform:translateY(-2px);border-left-color:var(--wine);background:rgba(255,255,255,.05);}
+  .card .t{font-weight:600;margin:0 0 4px;}
+  .card .d{color:var(--muted);font-size:.92rem;margin:0;}
+  .tree{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:var(--r);
+    padding:20px;font-family:ui-monospace,Menlo,monospace;font-size:.82rem;
+    white-space:pre;overflow:auto;color:var(--muted);line-height:1.5;}
+  .tree b{color:var(--text);font-weight:600;}
+  footer{margin-top:48px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:20px;}
+  footer a{color:var(--gold);text-decoration:none;font-weight:500;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">The Eligible Man's Cookbook</p>
+    <h1>The Ultimate Bachelor Cookbook</h1>
+    <p class="tagline">"Dinner is on you."</p>
+    <p class="lede">A single-file progressive web app — 58 curated recipes, guided cooks, pantry-driven discovery, and drink pairings. Dark-moody, wine-red and gold, built to impress.</p>
+    <span class="status"><span class="dot"></span> Live app: TUB · 58 recipes · production-ready</span>
+  </header>
+
+  <h2>Canonical planning docs</h2>
+  <div class="grid">
+    <a class="card" href="./CURRENT_SPRINT.md">
+      <p class="t">Current Sprint</p>
+      <p class="d">Baseline standardization — what shipped and the next action.</p>
+    </a>
+    <a class="card" href="./NEXT_3_SPRINTS_PLAN.md">
+      <p class="t">Next 3 Sprints Plan</p>
+      <p class="d">Content-depth roadmap: audit, Signature timed cooks, tier standardization.</p>
+    </a>
+    <a class="card" href="./BUILD_PHASE_BEACON.md">
+      <p class="t">Build Phase Beacon</p>
+      <p class="d">Build/deploy health indicator and verification steps.</p>
+    </a>
+    <a class="card" href="./CROSS_PLATFORM_HANDOFF_CONTRACT.md">
+      <p class="t">Handoff Contract</p>
+      <p class="d">Authority hierarchy, handoff format, verification rules.</p>
+    </a>
+  </div>
+
+  <h2>Live app &amp; project rules</h2>
+  <div class="grid">
+    <a class="card" href="../public/tub/tub-app.html">
+      <p class="t">TUB — open the app</p>
+      <p class="d">The working copy. Also served at site root (/) via a redirect.</p>
+    </a>
+    <a class="card" href="../CLAUDE.md">
+      <p class="t">Project Rules (CLAUDE.md)</p>
+      <p class="d">How AI agents work in this repo — TUB banner up top. Read first.</p>
+    </a>
+    <a class="card" href="../knowledge/ROADMAP.md">
+      <p class="t">Roadmap</p>
+      <p class="d">Strategic direction; what TUB supersedes; full provenance.</p>
+    </a>
+    <a class="card" href="../knowledge/PROJECT_BRIEF.md">
+      <p class="t">Project Brief (locked)</p>
+      <p class="d">Positioning, voice, look &amp; goals — immutable voice/design rules.</p>
+    </a>
+  </div>
+
+  <h2>Content &amp; craft standards</h2>
+  <div class="grid">
+    <a class="card" href="../RECIPE_STANDARDIZATION_SPEC.md">
+      <p class="t">Recipe Standardization Spec</p>
+      <p class="d">10-section blueprint for recipe depth &amp; structure.</p>
+    </a>
+    <a class="card" href="../RECIPE_AUDIT_FRAMEWORK.md">
+      <p class="t">Recipe Audit Framework</p>
+      <p class="d">How recipes are audited against the standard.</p>
+    </a>
+    <a class="card" href="../NUTRITION_STANDARD.md">
+      <p class="t">Nutrition Standard</p>
+      <p class="d">Nutrition data rules and constraints.</p>
+    </a>
+    <a class="card" href="../NUTRITION_AUDIT_FRAMEWORK.md">
+      <p class="t">Nutrition Audit Framework</p>
+      <p class="d">Nutrition audit methodology.</p>
+    </a>
+    <a class="card" href="../IMAGE_SOURCING_GUIDE.md">
+      <p class="t">Image Sourcing Guide</p>
+      <p class="d">Dark-moody image sourcing rules &amp; sources.</p>
+    </a>
+    <a class="card" href="../DESIGN.md">
+      <p class="t">Design Language</p>
+      <p class="d">Legacy Next.js design doc — TUB design lives in its own CSS vars.</p>
+    </a>
+  </div>
+
+  <h2>Project structure</h2>
+  <div class="tree"><b>BachelorCookBook/</b>
+├── CLAUDE.md              project rules (read first)
+├── README.md              project guide
+├── DESIGN.md              design language (legacy Next.js build)
+├── AI_AGENT_OS.md         the OS (symlink)
+├── *_STANDARD|FRAMEWORK   content &amp; nutrition standards (6 files)
+├── <b>docs/</b>               canonical planning artifacts
+│   ├── PROJECT_INDEX.html       this portal
+│   ├── CURRENT_SPRINT.md
+│   ├── NEXT_3_SPRINTS_PLAN.md
+│   ├── BUILD_PHASE_BEACON.md
+│   └── CROSS_PLATFORM_HANDOFF_CONTRACT.md
+├── <b>public/tub/</b>          the live app (no build step)
+│   ├── tub-app.html             THE app (~3,300 lines, single file)
+│   ├── recipes/*.js             recipe &amp; reference data (52 files)
+│   └── data/*.js                SA ingredient metadata (6 files)
+├── <b>knowledge/</b>           canonical source of truth (briefs, roadmap, specs)
+├── <b>tools/</b>               dev utilities (ingredient-extract.js)
+└── <b>src/</b>                 Next.js shell (root redirect → TUB app)</div>
+
+  <footer>
+    Runs under the <a href="../AI_AGENT_OS.md">AI Agent OS</a>. Knowledge is canonical; this portal is generated. Live product is <a href="../public/tub/tub-app.html">TUB</a>.
+  </footer>
+</div>
+</body>
+</html>
