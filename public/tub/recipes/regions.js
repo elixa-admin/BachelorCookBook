@@ -3,7 +3,7 @@
    recipe's cuisine string to its region via keyword matching in priority order. */
 window.REGIONS=[
   {id:'south-asian',label:'South Asian',short:'S.Asian',emoji:'',blurb:'India, Pakistan, Sri Lanka — spice, ghee, rice and lentils.'},
-  {id:'east-asian',label:'East & SE Asian',short:'E/SE Asian',emoji:'',blurb:'China, Japan, Korea, Thailand, Vietnam, Indonesia, Malaysia.'},
+  {id:'east-asian',label:'East & Southeast Asian',short:'E/SE Asian',emoji:'',blurb:'China, Japan, Korea, Thailand, Vietnam, Indonesia, Malaysia.'},
   {id:'african',label:'African',short:'African',emoji:'',blurb:'Sub-Saharan & South Africa, Ethiopia, West Africa.'},
   {id:'americas',label:'The Americas',short:'Americas',emoji:'',blurb:'USA, Mexico, Peru, Brazil, the Caribbean — smoke, maize, fire.'},
   {id:'middle-eastern',label:'Middle Eastern',short:'Mid-East',emoji:'',blurb:'Persia, the Gulf, Egypt — saffron, sumac, charcoal.'},
@@ -28,4 +28,4 @@ window.regionOf=function(cui){
   }
   return 'mediterranean';
 };
-window.regionLabel=function(id){var r=(window.REGIONS||[]).find(function(x){return x.id===id;});return r?(r.emoji+' '+r.short):'';};
+window.regionLabel=function(id){var r=(window.REGIONS||[]).find(function(x){return x.id===id;});return r?(r.emoji+' '+r.label):'';};
