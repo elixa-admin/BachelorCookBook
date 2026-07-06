@@ -19,3 +19,7 @@ out/
 *.log
 npm-debug.log*
 .vercel
+
+# agent worktrees (local git-worktree metadata, not project content)
+.claude/worktrees/
+

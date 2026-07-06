@@ -63,6 +63,7 @@ window.SA_HERITAGE_BATCH=[
     time:'180 min',
     method:'Braai · cast-iron pot',
     diff:'Medium',
+    prov:{      popular_in:'South African homes and farm kitchens — the slow Sunday pot, wherever a three-legged cast-iron pot lives over coals',      famous_for:'The patient braise that turns a tough cut into jelly-soft luxury — bones that give up their collagen into a dark, glossy gravy',      consists_of:'Oxtail segments browned hard, then layered with onions, garlic, carrots, potatoes and whole spices, cooked untouched for hours in a lidded potjie over modest coals',      name_origin:'Potjie — \'little pot\' in Afrikaans — names the cast-iron vessel; the dish takes its title from the pot that makes it',      why_loved:'Tender enough to fall from the bone, rich enough to need nothing but crusty bread — the flavour of patience itself',      method_detail:'Coals — sear, then slow braise, never stirred, only watched'    },
     blurb:'Slow-braised fall-off-bone tenderness in a spiced tomato broth — Afrikaans farmhouse tradition, elevated for the table.',
     brief:{
       lead:'The potjie — a cast-iron three-legged pot set over coals — is the engine of South African outdoor cooking. Into it goes oxtail: tough, gelatinous, transformed by hours over gentle heat into something transcendent. Tender enough to eat with a spoon, rich enough to be the meal itself. This is heritage cooking.',
@@ -240,6 +241,7 @@ window.SA_HERITAGE_BATCH=[
     time:'60 min',
     method:'Braai · cast-iron',
     diff:'Easy',
+    prov:{      popular_in:'Every braai in South Africa — the dish that needs no menu, from township stalls to farm stoeps',      famous_for:'The coiled farmer\'s sausage grilled over flame beside a mound of stiff maize porridge and a sharp tomato-and-onion sous',      consists_of:'Boerewors — beef and pork mince with coriander seed, nutmeg and cloave, packed into a continuous coil — grilled whole, served with krummelpap and sous',      name_origin:'Boerewors — \'farmer\'s sausage\' in Afrikaans; the spiral must never be cut, only turned, a rule older than the recipe',      why_loved:'The sausage snaps, the pap soaks up the sous, and the whole plate tastes of fire and afternoon — South Africa in one bite',      method_detail:'Open flame — grill the coil whole; stovetop — pour boiling water over mealie meal for krummelpap'    },
     blurb:'Artisanal pork-and-beef sausage, maize porridge base — street food elevated, showstopper entertaining.',
     brief:{
       lead:'Boerewors — a coiled sausage of pork, beef, and spices — is the soul of the South African braai. Slow-grilled until the casing crackles and the filling stays juicy, it\'s comfort incarnate. Serve it over soft maize pap (the traditional polenta-like base) with a sharp tomato relish. Guests will fight over the last sausage.',
@@ -304,6 +306,7 @@ window.SA_HERITAGE_BATCH=[
     time:'45 min',
     method:'Braai · skewered',
     diff:'Easy',
+    prov:{      popular_in:'Cape Malay kitchens and the braai — skewers carried from marinade to flame across the Western Cape',      famous_for:'The sweet-sour marinade of apricot, onion and curry that soaks into lamb overnight, then caramelises hard over the coals',      consists_of:'Cubed lamb marinated in fried onion, apricot jam, curry powder and vinegar, threaded with dried apricots and onions, braaied until charred at the edges',      name_origin:'Sosatie — from Dutch \'sesate\' (skewer) and \'saus\' (sauce); a Cape Malay word for a Cape Malay thing',      why_loved:'The marinade does the work — tender, sweet, sharp, smoky all at once, with the dried fruit catching fire in the best way',      method_detail:'Open flame — grill skewers hot and fast after a long overnight marinade'    },
     blurb:'Marinated lamb and fruit skewers, Cape Malay street food, interactive entertaining.',
     brief:{
       lead:'Sosaties — skewered lamb and dried fruit braised in spiced Cape Malay sauce — are Capetonians\' answer to kebabs. The beauty: marinated lamb, apricot, and onion threaded onto sticks, then braised in a sweet-savoury sauce spiked with ginger and turmeric. They\'re finger food, shareable, and unmistakably Cape Malay.',
@@ -369,6 +372,7 @@ window.SA_HERITAGE_BATCH=[
     time:'120 min',
     method:'Braai · cast-iron pot',
     diff:'Medium',
+    prov:{      popular_in:'South African gatherings — the communal pot that feeds a crowd from a single bed of coals',      famous_for:'The layered one-pot braise where each ingredient keeps its place — meat at the bottom, vegetables stacked above, never stirred',      consists_of:'Boerewors and meat browned in the pot, then onions, garlic, potatoes, carrots and cabbage layered on top, steamed under a tight lid with a splash of stock',      name_origin:'Potjiekos — \'small-pot food\' in Afrikaans; the name is the method, the method is the name',      why_loved:'Every layer tastes of itself and of the whole — a pot that turns a handful of ingredients into a feast without a recipe',      method_detail:'Coals — layer, lid, leave; the only sin is stirring'    },
     blurb:'One-pot communal cooking over coals, boerewors and vegetables — entertaining spectacle and soul food.',
     brief:{
       lead:'The potjie is more than a pot — it\'s the centrepiece of South African entertaining. Three-legged, cast-iron, suspended over coals, it\'s a focal point for gathering. Into it go boerewors, chicken, vegetables, and stock, all braising together in an alchemy of smoke and heat. Cooking over an open fire, tending the pot, sharing the meal straight from it — this is how South Africans celebrate.',
@@ -434,6 +438,7 @@ window.SA_HERITAGE_BATCH=[
     time:'45 min',
     method:'Stovetop · braised',
     diff:'Easy',
+    prov:{      popular_in:'Cape Malay homes — the festive table where vine leaves meet spice, served at Eid and weddings',      famous_for:'Spiced mince folded into blanched vine leaves and slow-braised until the leaves turn silky and the filling turns aromatic',      consists_of:'Beef or lamb mince cooked with onion, garlic, ginger and Cape Malay curry spices, wrapped in vine leaves, simmered gently in a tangy tamarind-laced broth',      name_origin:'Denningvleis — a Cape corruption; the dish echoes the stuffed-leaf traditions of the Ottoman table, carried to the Cape by Malay cooks',      why_loved:'The leaf becomes tender as silk around a sweet, spiced centre — finger food that tastes like ceremony',      method_detail:'Stovetop — fold, stack, weight down, simmer low and long'    },
     blurb:'Spiced mince wrapped in grape leaves, Cape Malay delicacy — refined, architectural plating.',
     brief:{
       lead:'Denningvleis is Cape Malay heritage: spiced mince (beef or lamb) rolled in grape leaves and braised in a turmeric-tinted tomato sauce. Each bundle is tender, aromatic, and when plated with the golden sauce spooned over, looks like something from a fine-dining kitchen. This is how Cape Malays cook — with precision, respect, and unmistakable flavour.',
@@ -497,6 +502,7 @@ window.SA_HERITAGE_BATCH=[
     time:'40 min',
     method:'Stovetop · rice cooking',
     diff:'Easy',
+    prov:{      popular_in:'Every Cape Malay table and South African Sunday lunch — the golden companion to bobotie and curry',      famous_for:'The fragrant turmeric-gold rice, sweetened with raisins and cinnamon, that turns a simple side into part of the feast',      consists_of:'Long-grain rice cooked with turmeric, cinnamon, sugar, butter and plumped raisins — sweet, warm, gently spiced',      name_origin:'Geelrys — \'yellow rice\' in Afrikaans; the colour names the dish, the spice names the colour',      why_loved:'Sweet without being dessert, golden without being plain — the side that makes a curry plate feel complete',      method_detail:'Stovetop — steam the rice with the spices; the raisins plump as they cook'    },
     blurb:'Fragrant saffron alternative, ceremonial Cape Malay dish — elegant pairing.',
     brief:{
       lead:'This is the rice of celebration, not every day. Golden turmeric replaces saffron (which was never Cape Malay tradition), scenting the rice with warmth. Raisins add sweetness and texture. Mint adds freshness. The result is fragrant, elegant, and utterly Cape Malay — a dish that says: this meal matters.',
@@ -553,6 +559,7 @@ window.SA_HERITAGE_BATCH=[
     time:'60 min',
     method:'Stovetop · simmered',
     diff:'Medium',
+    prov:{      popular_in:'Cape Malay kitchens along the Cape coast — the home curry where line fish meets the spice pantry',      famous_for:'The gentle, golden coconut broth — turmeric and fragrant spice rather than fierce heat — folded through firm white fish',      consists_of:'White fish simmered in a sauce of onion, garlic, ginger, turmeric, coriander and coconut milk, finished with fresh coriander and a squeeze of lemon',      name_origin:'Cape Malay — the cuisine of the enslaved and free people brought to the Cape from the East; their spice knowledge became South Africa\'s own',      why_loved:'Soft, fragrant, soothing — the kind of curry that comforts rather than challenges, with fish that stays tender in the broth',      method_detail:'Stovetop — build the spice base, lay in the fish, simmer just until opaque'    },
     blurb:'Coconut turmeric broth, seasonal white fish, aromatic spices — premium seafood entertaining.',
     brief:{
       lead:'Cape Malay fish curry is turmeric-yellow, coconut-fragrant, and uncompromising in its spice. White fish — firm but delicate — poaches in the broth without breaking apart. The sauce is silky, the aromatics persistent. This is restaurant-quality food, made at home, that tastes of place and tradition.',
@@ -614,6 +621,7 @@ window.SA_HERITAGE_BATCH=[
     time:'180 min',
     method:'Stovetop · layered and braised',
     diff:'Hard',
+    prov:{      popular_in:'Cape Malay celebrations — weddings, Eid, the gatherings where a single pot must feed a room',      famous_for:'The layered pot of marinated meat and par-cooked rice steamed together until every grain is separate and the meat melts — the dum that seals the lid',      consists_of:'Meat marinated in yogurt and spice, rice half-cooked and layered over, fried onions, boiled eggs, saffron or turmeric, sealed and steamed until unified',      name_origin:'Breyani — the Cape spelling of biryani, rooted in the Hyderabadi Persian-influenced tradition, carried south and made Cape Malay',      why_loved:'Theatre at the table when the lid lifts and the steam escapes — fragrant, layered, festive, the dish that makes an occasion',      method_detail:'Stovetop — marinate, layer, seal the lid with dough, and never lift it'    },
     blurb:'Slow-cooked meat and rice, layered spices, aromatic layers — showstopper entertaining.',
     brief:{
       lead:'Breyani is Cape Malay biryani: meat marinated in yogurt and spices, rice half-cooked, then layered and steamed together until the pot becomes a unified, fragrant whole. Every grain of rice is separate but flavoured; the meat is tender and aromatic. Breaking open the pot at the table is theatre. This is the showstopper — the dish for when entertaining matters most.',
@@ -685,6 +693,7 @@ window.SA_HERITAGE_BATCH=[
     time:'20 min',
     method:'Stovetop · pickled',
     diff:'Easy',
+    prov:{      popular_in:'Cape Malay pantries and South African township tables — the jar that sits beside the plate, ready for anything',      famous_for:'The sharp, spiced, sun-yellow pickle of green mango and lemon that cuts through rich curries and brightens a braai plate',      consists_of:'Green mango and lemon salted and dried, then pickled in warm oil fried with mustard seed, chilli, turmeric and garlic — sharp, oily, alive',      name_origin:'Atchar — from the Persian and Hindi for pickle; the preserve that travelled the spice route to the Cape',      why_loved:'A spoonful wakes a flat plate — sour, hot, salty, the condiment that lasts months and tastes better with time',      method_detail:'Preserve — salt and sun-dry the fruit, fry the spices into the oil, jar and wait'    },
     blurb:'Preserved condiment, Cape Malay technique, tangy-sweet relish — pairing essential.',
     brief:{
       lead:'Atchar is the condiment of celebration. Unripe mango and lemon, pickled in a turmeric-tinted oil with spices, it\'s tangy, spiced, and absolutely indispensable alongside curry or rice. Made at the table-side in minutes, it shows off the cook\'s command. A dollop on the side elevates every spoonful.',
@@ -740,6 +749,7 @@ window.SA_HERITAGE_BATCH=[
     time:'45 min',
     method:'Stovetop · deep-fried',
     diff:'Medium',
+    prov:{      popular_in:'Cape Malay mornings — the Sunday treat, dusted with coconut, served with tea across the Bo-Kaap',      famous_for:'The spiced, braided dough, fried golden then soaked in warm ginger syrup and rolled in coconut — sweeter and softer than its plaited cousin',      consists_of:'Yeast dough flavoured with cardamom, cinnamon, aniseed and ginger, plaited, fried, plunged into syrup while hot, finished in desiccated coconut',      name_origin:'Koesister — Cape Malay, distinct from the Afrikaans koeksister; the spice and the coconut tell you which is which',      why_loved:'Soft where the other is crisp, spiced where the other is plain — a Sunday-morning indulgence that tastes of cardamom and company',      method_detail:'Stovetop — proof, plait, fry; then soak hot into syrup and roll in coconut'    },
     blurb:'Fried pastry dessert, ginger syrup glaze, Cape Malay sweet tradition — entertaining finale.',
     brief:{
       lead:'Koesisters are Cape Malay theatre: ribbons of spiced dough fried until golden, then immediately dunked into hot ginger syrup so they absorb the sweet liquid while still warm. They\'re crispy outside, syrupy inside, utterly indulgent. Serve warm, still glistening with syrup. Your guests will never forget them.',

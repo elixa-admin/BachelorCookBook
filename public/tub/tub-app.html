@@ -715,12 +715,20 @@ footer .frow b{color:var(--muted);font-weight:600}
 .ck-snote b{color:var(--ink)}
 .sp-intro{max-width:680px;margin:0 0 8px}
 .sp-intro h2{font-family:var(--display);font-size:26px;margin:6px 0 8px}
-.sp-intro p{color:var(--ink-2);font-size:14.5px;line-height:1.55}
+.sp-intro p{color:var(--muted);font-size:14.5px;line-height:1.55}
 .sp-tier{margin:34px 0}
-.sp-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
-.sp-ic{font-size:30px;line-height:1}
+.sp-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.sp-ic{font-size:26px;line-height:1;color:var(--accent-text);flex-shrink:0;padding-top:2px}
 .sp-head h3{font-family:var(--display);font-size:20px;margin:0 0 2px;text-transform:uppercase;letter-spacing:.04em}
-.sp-head p{color:var(--ink-2);font-size:13px;margin:0;max-width:560px;line-height:1.45}
+.sp-head p{color:var(--muted);font-size:13px;margin:0;max-width:560px;line-height:1.45}
+.sp-skills{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:12px 0 20px}
+.sp-skills-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);margin-right:2px}
+.sp-skills span{font-size:11.5px;color:var(--muted);border:1px solid var(--line);padding:4px 10px;border-radius:var(--r-pill)}
+.sp-transition{display:flex;align-items:center;gap:12px;margin:6px 0 30px;color:var(--faint);font-size:12.5px;font-style:italic}
+.sp-transition i{color:var(--accent-text);font-size:14px}
+.sp-capstone{margin:46px 0 20px;padding:28px 24px;border-radius:var(--r-md);background:linear-gradient(150deg,rgba(201,162,75,.08),rgba(155,44,51,.06));border:1px solid rgba(201,162,75,.25)}
+.sp-capstone .sp-head p{max-width:640px}
+.sp-capstone-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:rgb(201,162,75);border:1px solid rgba(201,162,75,.4);padding:4px 10px;border-radius:var(--r-pill);margin-bottom:14px}
 mark{background:var(--accent);color:var(--on-accent);padding:0 .14em;border-radius:3px}
 .fav-btn{position:absolute;z-index:3;bottom:10px;right:10px;width:30px;height:30px;display:grid;place-items:center;border:none;background:rgba(8,9,11,.5);color:#fff;font-size:15px;line-height:1;border-radius:50%;cursor:pointer;backdrop-filter:blur(4px);transition:transform .15s,background .15s}
 .fav-btn:hover{background:rgba(8,9,11,.72);transform:scale(1.12)}
@@ -1649,7 +1657,7 @@ let R=[
  {t:'Crème Brûlée',tier:'others',cui:'French',occ:['date'],time:'45 min + chill',method:'Oven · bain-marie',blurb:'Cold custard, crackling burnt-sugar lid — the restaurant dessert mastered with a blowtorch.'},
  {t:'Malva Pudding',tier:'others',cui:'South African',occ:['host'],time:'60 min',method:'Oven · bake',blurb:'Warm, sponge-soft, drowning in cream sauce — the South African pudding that ends a braai.'}
 ];
-const TIERS2={heritage:{n:'Heritage',c:'#c9a24b'},adopted:{n:'Adopted',c:'#b8b0a4'},aspirational:{n:'Aspirational',c:'#9B2C33'},component:{n:'Component',c:'#857c70'}};
+const TIERS2={heritage:{n:'Heritage',c:'#c9a24b'},adopted:{n:'Classic',c:'#b8b0a4'},aspirational:{n:'Signature',c:'#9B2C33'},component:{n:'Foundations',c:'#857c70'}};
 /* merge authored research recipes, then rebuild the roster around them */
 if(window.FULLCOOK_BATCH){FULLCOOK_BATCH.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
 if(window.GLOBAL_EXOTIC_BATCH){GLOBAL_EXOTIC_BATCH.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL[r.slug]=r;});}
@@ -1672,11 +1680,11 @@ if(window.RECIPES){RECIPES.forEach(r=>{if(r&&r.slug&&r.prov&&r.ing&&r.steps)FULL
 
 /* ── state ── */
 let activeOcc='solo',activeFilter='all',activeRegion='all',activeSkill='all-skills',activeCat='all',query='',savedScroll=0;
-const FILTERS=[{k:'all',l:'All'},{k:'heritage',l:'Heritage'},{k:'adopted',l:'Adopted'},{k:'aspirational',l:'Aspirational'},{k:'component',l:'Component'}];
+const FILTERS=[{k:'all',l:'All'},{k:'heritage',l:'Heritage'},{k:'adopted',l:'Classic'},{k:'aspirational',l:'Signature'},{k:'component',l:'Foundations'}];
 const CATS=[{k:'all',l:'All'},{k:'main',l:'Mains'},{k:'special',l:'Special evening'},{k:'sweet',l:'Baked & sweet'}];
-const SKILL_FILTERS=[{k:'all-skills',l:'All skills'},{k:'novice',l:'Novice'},{k:'capable',l:'Capable'},{k:'chef',l:'Chef'}];
+const SKILL_FILTERS=[{k:'all-skills',l:'All skills'},{k:'novice',l:'Novice'},{k:'capable',l:'Capable'},{k:'chef',l:'Bachelor'}];
 function skillOf(r){if(!r)return null;if(window.SKILL_TIERS&&SKILL_TIERS[r.slug])return SKILL_TIERS[r.slug];if(typeof deriveSkill==='function'){var d=deriveSkill(r);if(d)return d;}return null;}
-function _skIcon(lv){return '';}
+function _skIcon(lv){var M={novice:'ti-seedling',capable:'ti-flame',chef:'ti-chef-hat'};return M[lv]?'<i class="ti '+M[lv]+'"></i>':'';}
 function _skLabel(lv){var L=window.SKILL_LEVELS||{};return (L[lv]&&L[lv].label)||lv;}
 function skillBadgeHTML(r){var s=skillOf(r);if(!s)return '';var why=(s.why||'').replace(/"/g,'&quot;');return '<span class="skill-badge sk-'+s.level+'" title="'+_skLabel(s.level)+(why?' — '+why:'')+'"></span>';}
 function skillChipHTML(r){var s=skillOf(r);return s?('Skill · <b>'+_skIcon(s.level)+' '+_skLabel(s.level)+'</b>'):'';}
@@ -1747,6 +1755,20 @@ function renderFavsView(){
   html+='<section class="sp-tier"><div class="sp-head"><div><h3>Saved</h3><p>Dishes you’ve kept for later. Tap the save heart on any recipe to add it here.</p></div></div><div class="grid">'+(favCards||'<div class="empty">No saved dishes yet — tap the heart on any recipe to build your cookbook.</div>')+'</div></section>';
   var g=document.getElementById('grid');if(g)g.innerHTML=html;
 }
+var SP_TRANSITIONS={
+  novice:'Once searing and heat control feel automatic —',
+  capable:'Once you can time three things to land together —'
+};
+var SP_TIER_INTROS={
+  novice:'Where every bachelor starts. Clear wins and forgiving techniques — dishes built so the plate looks like you knew exactly what you were doing.',
+  capable:'The recipe stops needing to stay open on your phone. This tier is about timing — seasoning by instinct, marinating ahead, getting several things to finish at once.',
+  chef:'The real technique tier. Doughs you laminate by hand, stocks built from bones, sauces that split if you look away. This is the difference between cooking dinner and hosting one.'
+};
+function _spSkillsFor(lv){
+  var freq={};
+  R.forEach(function(r){var s=skillOf(r);if(s&&s.level===lv)(s.skills||[]).forEach(function(k){freq[k]=(freq[k]||0)+1;});});
+  return Object.keys(freq).sort(function(a,b){return freq[b]-freq[a];}).slice(0,6);
+}
 function renderSkillPathView(){
   var P0=(typeof skillPath==='function')?skillPath():{};
   var P={novice:[],capable:[],chef:[]},_spSeen={};
@@ -1758,12 +1780,26 @@ function renderSkillPathView(){
   });
   var L=window.SKILL_LEVELS||{};
   var order=['novice','capable','chef'];
-  var html='<div class="sp-intro"><span class="label">Learn the craft</span><h2>The skill path</h2><p>Cooking is a ladder, not a list. Start where you are, build one technique at a time — each milestone hands you the skill the next one needs.</p></div>';
-  html+=order.map(function(lv){
+  var html='<div class="sp-intro"><span class="label">Learn the craft</span><h2>The skill path</h2><p>Cooking is a ladder, not a list. Start where you are, build one technique at a time — each milestone hands you the skill the next one needs. Four stages, ending somewhere tongue-in-cheek.</p></div>';
+  html+=order.map(function(lv,i){
     var slugs=P[lv]||[];var info=L[lv]||{icon:'',label:lv,blurb:''};
     var cards=slugs.map(function(s){var r=R.find(function(x){return x.slug===s;});return r?cardHTML(r):'';}).join('');
-    return '<section class="sp-tier"><div class="sp-head"><span class="sp-ic">'+info.icon+'</span><div><h3>'+info.label+'</h3><p>'+info.blurb+'</p></div></div><div class="grid">'+cards+'</div></section>';
+    var skillTags=_spSkillsFor(lv).map(function(s){return '<span>'+s+'</span>';}).join('');
+    var transition=i>0?'<div class="sp-transition"><i class="ti ti-arrow-down"></i> '+(SP_TRANSITIONS[order[i-1]]||'')+'</div>':'';
+    return transition+'<section class="sp-tier"><div class="sp-head"><span class="sp-ic">'+_skIcon(lv)+'</span><div><h3>'+info.label+'</h3><p>'+(SP_TIER_INTROS[lv]||info.blurb)+'</p></div></div>'
+      +(skillTags?'<div class="sp-skills"><span class="sp-skills-lbl">You\'ll build</span>'+skillTags+'</div>':'')
+      +'<div class="grid">'+cards+'</div></section>';
   }).join('');
+  var capSlugs=R.filter(function(r){var s=skillOf(r);return s&&s.level==='chef'&&s.why&&s.why!=='(auto)';})
+    .sort(function(a,b){var sa=skillOf(a),sb=skillOf(b);return (sb.skills||[]).length-(sa.skills||[]).length;})
+    .slice(0,6);
+  if(capSlugs.length){
+    var capCards=capSlugs.map(function(r){return cardHTML(r);}).join('');
+    html+='<div class="sp-transition"><i class="ti ti-arrow-down"></i> '+(SP_TRANSITIONS.capable? '':'')+'And once Bachelor-tier technique is second nature —</div>'
+      +'<section class="sp-capstone"><span class="sp-capstone-tag">Bonus round</span><div class="sp-head"><span class="sp-ic"><i class="ti ti-crown"></i></span><div><h3>Michelin Star Host</h3>'
+      +'<p>Tongue firmly in cheek — no inspector is coming. But land one of these and dinner stops being a meal. It becomes the thing your guests still bring up a year later.</p></div></div>'
+      +'<div class="grid">'+capCards+'</div></section>';
+  }
   var g=document.getElementById('grid');if(g)g.innerHTML=html;
 }
 function filterCards(){query=document.getElementById('q').value.trim();document.getElementById('qx').classList.toggle('on',query.length>0);viewHead();renderFilters();renderGrid();}
@@ -1897,7 +1933,7 @@ function addPlanToList(){var filled=planFilled();if(!filled){toast('Plan some di
 function calculatePlanNutrition() {
   var totals = { kcal: 0, protein: 0, carbs: 0, fat: 0, count: 0 };
   var diets = {};
-  
+
   plan.forEach(function(s) {
     if (s && s.slug) {
       var n = window.NUTRITION && window.NUTRITION[s.slug];
@@ -1905,13 +1941,13 @@ function calculatePlanNutrition() {
         var servings = s.serv || 2;
         var recipeBaseServings = n.srv || 2;
         var ratio = servings / recipeBaseServings;
-        
+
         totals.kcal += (n.kcal || 0) * ratio;
         totals.protein += (n.protein || 0) * ratio;
         totals.carbs += (n.carbs || 0) * ratio;
         totals.fat += (n.fat || 0) * ratio;
         totals.count += servings;
-        
+
         if (n.diet) {
           n.diet.forEach(function(d) {
             diets[d] = (diets[d] || 0) + 1;
@@ -1920,7 +1956,7 @@ function calculatePlanNutrition() {
       }
     }
   });
-  
+
   return {
     totals: totals,
     diets: diets
@@ -1931,22 +1967,22 @@ function planNutritionHTML() {
   var data = calculatePlanNutrition();
   var t = data.totals;
   if (t.count === 0) return '';
-  
+
   var avgKcal = Math.round(t.kcal / t.count);
   var avgProt = Math.round(t.protein / t.count);
   var avgCarbs = Math.round(t.carbs / t.count);
   var avgFat = Math.round(t.fat / t.count);
-  
+
   var pKcal = avgProt * 4;
   var cKcal = avgCarbs * 4;
   var fKcal = avgFat * 9;
   var sumKcal = pKcal + cKcal + fKcal;
-  
+
   var pPct = sumKcal > 0 ? Math.round(pKcal / sumKcal * 100) : 0;
   var cPct = sumKcal > 0 ? Math.round(cKcal / sumKcal * 100) : 0;
   var fPct = sumKcal > 0 ? (100 - pPct - cPct) : 0;
   if (fPct < 0) fPct = 0;
-  
+
   var dietsHtml = '';
   var dietKeys = Object.keys(data.diets);
   if (dietKeys.length > 0) {
@@ -1954,7 +1990,7 @@ function planNutritionHTML() {
       return '<span class="pn-diet-badge">' + k + ' (' + data.diets[k] + ')</span>';
     }).join(' ') + '</div>';
   }
-  
+
   return '<div class="plan-nutrition-card">' +
     '<div class="pn-head">Weekly Nutrition Averages <span class="pn-sub">per serving</span></div>' +
     '<div class="pn-grid">' +
@@ -2320,12 +2356,12 @@ function switchRecipeTab(tab){
 function switchStorageTab(btn, paneId) {
   var parent = btn.parentElement;
   var container = parent.parentElement;
-  
+
   var tabs = parent.querySelectorAll('.stab');
   tabs.forEach(function(t) {
     t.classList.toggle('active', t === btn);
   });
-  
+
   var panes = container.querySelectorAll('.storage-pane');
   panes.forEach(function(p) {
     p.style.display = (p.id === paneId) ? 'block' : 'none';
@@ -2633,11 +2669,11 @@ function scaleCocktailIngredients(key, serv) {
   currentCocktailServings = serv;
   var c = window.COCKTAIL_RECIPES && window.COCKTAIL_RECIPES[key];
   if (!c) return;
-  
+
   document.querySelectorAll('.cocktail-scaler-btns button').forEach(function(b) {
     b.classList.toggle('active', parseInt(b.dataset.cserv) === serv);
   });
-  
+
   var mult = serv / 2; // base recipes are scaled for 2
   var ingsHtml = c.ing.map(function(i) {
     var qtyStr = i[1];
@@ -2650,7 +2686,7 @@ function scaleCocktailIngredients(key, serv) {
     }
     return '<li><span><b>' + i[0] + '</b> &middot; <span style="font-size:12px;color:var(--faint)">' + i[2] + '</span></span><span class="qty">' + newQty + '</span></li>';
   }).join('');
-  
+
   document.getElementById('cocktail-ings-list').innerHTML = ingsHtml;
 }
 
@@ -2659,7 +2695,7 @@ function openCocktailModal(key) {
   currentCocktailServings = 2;
   var c = window.COCKTAIL_RECIPES && window.COCKTAIL_RECIPES[key];
   if (!c) return;
-  
+
   var html = '<div class="cocktail-header">' +
     '<h2>' + c.name + '</h2>' +
     '<div class="cocktail-meta">' +
@@ -2690,7 +2726,7 @@ function openCocktailModal(key) {
   '<div class="cocktail-section-title">Plating &amp; Science</div>' +
   '<div class="cocktail-note-card"><b>The Chemistry: </b>' + c.science + '</div>' +
   '<div class="cocktail-note-card"><b>Hosting Tip: </b>' + c.hosting + '</div>';
-  
+
   document.getElementById('cocktail-modal-body').innerHTML = html;
   scaleCocktailIngredients(key, 2);
   document.getElementById('cocktail-modal').classList.add('open');
@@ -2877,23 +2913,23 @@ function playChime() {
     var osc1 = ctx.createOscillator();
     var osc2 = ctx.createOscillator();
     var gain = ctx.createGain();
-    
+
     osc1.type = 'sine';
     osc2.type = 'triangle';
-    
+
     osc1.frequency.setValueAtTime(523.25, ctx.currentTime); // C5
     osc1.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.15); // A5
-    
+
     osc2.frequency.setValueAtTime(659.25, ctx.currentTime); // E5
     osc2.frequency.exponentialRampToValueAtTime(1046.5, ctx.currentTime + 0.15); // C6
-    
+
     gain.gain.setValueAtTime(0.3, ctx.currentTime);
     gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
-    
+
     osc1.connect(gain);
     osc2.connect(gain);
     gain.connect(ctx.destination);
-    
+
     osc1.start();
     osc2.start();
     osc1.stop(ctx.currentTime + 1.2);
@@ -2907,21 +2943,21 @@ function startStepTimer(idx, seconds, title) {
   if (activeTimer.intervalId) {
     clearInterval(activeTimer.intervalId);
   }
-  
+
   // Unlock audio context safely under user interaction
   if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
     var dummyCtx = new (window.AudioContext || window.webkitAudioContext)();
     if (dummyCtx.state === 'suspended') dummyCtx.resume();
   }
-  
+
   activeTimer.stepIndex = idx;
   activeTimer.timeLeft = seconds;
   activeTimer.total = seconds;
   activeTimer.title = title;
   activeTimer.paused = false;
-  
+
   activeTimer.intervalId = setInterval(tickActiveTimer, 1000);
-  
+
   // Re-render timeline to update inline elements
   var curD = document.getElementById('detail-body');
   if (curD && window.currentRecipeSlug) {
@@ -2931,26 +2967,26 @@ function startStepTimer(idx, seconds, title) {
       if (tlBox) tlBox.outerHTML = timelineHTML(r);
     }
   }
-  
+
   updateTimerUI();
 }
 
 function toggleActiveTimer() {
   if (activeTimer.stepIndex < 0) return;
-  
+
   activeTimer.paused = !activeTimer.paused;
-  
+
   var btn = document.getElementById('gt-toggle-btn');
   if (btn) {
     btn.innerHTML = activeTimer.paused ? '<i class="ti ti-player-play"></i>' : '<i class="ti ti-player-pause"></i>';
   }
-  
+
   // also update inline btn if displayed
   var inlineCtrls = document.querySelectorAll('.tl-timer-ctrl-toggle');
   inlineCtrls.forEach(function(el) {
     el.innerHTML = activeTimer.paused ? '<i class="ti ti-player-play"></i>' : '<i class="ti ti-player-pause"></i>';
   });
-  
+
   updateTimerUI();
 }
 
@@ -2962,11 +2998,11 @@ function cancelActiveTimer() {
   activeTimer.timeLeft = 0;
   activeTimer.intervalId = null;
   activeTimer.paused = false;
-  
+
   // Hide global bar
   var bar = document.getElementById('global-timer-bar');
   if (bar) bar.style.display = 'none';
-  
+
   // Re-render timeline to restore button
   var curD = document.getElementById('detail-body');
   if (curD && window.currentRecipeSlug) {
@@ -2980,14 +3016,14 @@ function cancelActiveTimer() {
 
 function tickActiveTimer() {
   if (activeTimer.paused) return;
-  
+
   activeTimer.timeLeft--;
-  
+
   if (activeTimer.timeLeft <= 0) {
     clearInterval(activeTimer.intervalId);
     activeTimer.intervalId = null;
     playChime();
-    
+
     // Flash screen alert
     var flash = document.createElement('div');
     flash.style.position = 'fixed';
@@ -2997,7 +3033,7 @@ function tickActiveTimer() {
     flash.style.pointerEvents = 'none';
     flash.style.transition = 'opacity 0.2s';
     document.body.appendChild(flash);
-    
+
     var flashCount = 0;
     var flashInterval = setInterval(function() {
       flash.style.opacity = flash.style.opacity === '0' ? '1' : '0';
@@ -3007,9 +3043,9 @@ function tickActiveTimer() {
         flash.remove();
       }
     }, 150);
-    
+
     alert('Timer finished: ' + activeTimer.title + '!');
-    
+
     cancelActiveTimer();
   } else {
     updateTimerUI();
@@ -3018,20 +3054,20 @@ function tickActiveTimer() {
 
 function updateTimerUI() {
   var timeStr = fmtTime(activeTimer.timeLeft);
-  
+
   // Update global bar
   var bar = document.getElementById('global-timer-bar');
   var gtTime = document.getElementById('gt-time-el');
   var gtTitle = document.getElementById('gt-title-el');
   var gtLbl = document.getElementById('gt-lbl-el');
-  
+
   if (bar && gtTime && gtTitle) {
     gtTime.textContent = timeStr;
     gtTitle.textContent = activeTimer.title;
     gtLbl.textContent = activeTimer.paused ? 'Timer Paused' : 'Timer Active';
     bar.style.display = 'flex';
   }
-  
+
   // Update inline containers
   var inlineVal = document.getElementById('tl-timer-val-' + activeTimer.stepIndex);
   if (inlineVal) {
@@ -3063,7 +3099,7 @@ function parseIngredientQty(str) {
              .replace(/⅝/g, '0.625')
              .replace(/¾/g, '0.75')
              .replace(/⅞/g, '0.875');
-  
+
   if (s.indexOf('/') > -1) {
     var f = s.split('/');
     if (f.length === 2) {
@@ -3079,7 +3115,7 @@ function sumShopQuantities(parts) {
   if (!parts || !parts.length) return '';
   var unitSums = {};
   var nonNumeric = [];
-  
+
   parts.forEach(function(p) {
     if (!p || !p.disp) return;
     var disp = p.disp.trim();
@@ -3095,7 +3131,7 @@ function sumShopQuantities(parts) {
     }
     nonNumeric.push(disp);
   });
-  
+
   var results = [];
   for (var u in unitSums) {
     var val = unitSums[u];
@@ -3109,10 +3145,10 @@ function getDrinkTasteProfile(name, category, desc) {
   var n = (name || '').toLowerCase();
   var c = (category || '').toLowerCase();
   var d = (desc || '').toLowerCase();
-  
+
   var tags = [];
   var harmony = '';
-  
+
   if (n.indexOf('sauvignon') > -1 || n.indexOf('chenin') > -1 || n.indexOf('riesling') > -1 || n.indexOf('chablis') > -1) {
     tags = ['Crisp', 'Acidity', 'Citrusy'];
   } else if (n.indexOf('chardonnay') > -1 || n.indexOf('viognier') > -1 || n.indexOf('semillon') > -1) {
@@ -3159,7 +3195,7 @@ function getDrinkTasteProfile(name, category, desc) {
     if (d.indexOf('rich') > -1 || d.indexOf('creamy') > -1) tags.push('Rich');
     if (tags.length === 0) tags = ['Balanced', 'Harmonious'];
   }
-  
+
   if (d.indexOf('cut through') > -1 || d.indexOf('cuts through') > -1 || d.indexOf('slice through') > -1) {
     harmony = 'High acidity or bitterness actively slices through the rich fats, cleansing the palate.';
   } else if (d.indexOf('contrast') > -1) {
@@ -3185,7 +3221,7 @@ function getDrinkTasteProfile(name, category, desc) {
       harmony = 'Enhances character elements of the dish while keeping the palate refreshed.';
     }
   }
-  
+
   return { tags: tags, harmony: harmony };
 }
 

@@ -1,8 +1,8 @@
-// Storage & Reheating Guidelines
-// Standard instructions by recipe category
-// Applied to all 72 recipes
-
-window.RECIPE_STORAGE = {
+/* Storage & Reheating Guidelines — Signature/Aspirational recipe storage.
+   Merge semantics: AUGMENTS window.RECIPE_STORAGE (seeded by storage.js with
+   Heritage/SA entries) instead of overwriting it. storage.js loads first
+   (HTML <script> order); this file loads second and must not clobber it. */
+window.RECIPE_STORAGE = Object.assign(window.RECIPE_STORAGE || {}, {
   // RISOTTO
   "risotto-milanese-saffron": {
     fridge: "<b>Up to 3 days</b> in an airtight container. Risotto degrades quickly — the rice grains will firm up and separate.",
@@ -147,7 +147,7 @@ window.RECIPE_STORAGE = {
     freezer: "[Specify duration or 'Not recommended']",
     reheat: "[Specify method, temperature/time, and critical warnings]"
   }
-};
+});
 
 // Category-based defaults (when recipe-specific not available)
 // Used by the rendering function as fallback

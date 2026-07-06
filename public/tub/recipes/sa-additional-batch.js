@@ -76,6 +76,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'45 min',
     method:'Stovetop · simmer',
     diff:'Easy',
+    prov:{      popular_in:'Cape Malay kitchens and coastal South African tables — where prawns meet the spice pantry',      famous_for:'The silky, fragrant coconut sauce clinging to sweet prawns — gentle warmth, not fire, so the prawn stays the point',      consists_of:'Prawns folded through a sauce of onion, garlic, ginger, tomato, Cape Malay curry spice and coconut milk, finished with coriander and lemon',      name_origin:'Cape Malay — the spice tradition of the Cape, applied to the ocean\'s quickest protein',      why_loved:'Fast to cook, fragrant to serve — the curry that feels luxurious and takes twenty minutes, with bread to mop the sauce',      method_detail:'Stovetop — build the sauce, simmer the prawns just until they curl and turn pink'    },
     blurb:'Sweet coconut broth, plump prawns, turmeric and coriander — coastal elegance done simply.',
     brief:{
       lead:'This is Cape Malay seafood cooking at its finest: prawns poached gently in a turmeric-yellow coconut broth fragrant with coriander and fenugreek. The prawns stay tender and sweet; the sauce is silky and aromatic. It\'s the kind of dish that says you understand your ingredients and respect their subtlety.',
@@ -139,6 +140,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'60 min',
     method:'Stovetop · deep-fry',
     diff:'Medium',
+    prov:{      popular_in:'Cape Malay tea tables and South African street corners — the triangular parcel handed round at every gathering',      famous_for:'The crisp golden pastry triangle, folded by hand, holding a spiced mince or vegetable centre that eats hot from the oil',      consists_of:'A thin pastry wrapper folded into a triangle around spiced mince of beef or lamb with onion, coriander and cumin, sealed and deep-fried until shatter-crisp',      name_origin:'Samoosa — from the Indian samosa, carried to the Cape by Malay and Indian cooks and folded into a local habit',      why_loved:'The crunch gives way to a soft, spiced, savoury middle — finger food that disappears faster than it is made',      method_detail:'Stovetop — cook the filling, fold the cones, fry hot until gold'    },
     blurb:'Crispy golden pastry, spiced mince centre, street food perfection — Cape Malay street vendor staple.',
     brief:{
       lead:'Samoosas are Cape Malay street food at its finest: crispy pastry triangles with a spiced mince filling that\'s warm and fragrant. They\'re fried until golden, served hot with tamarind chutney or atchar. Making them by hand is meditative; eating them is pure joy.',
@@ -203,6 +205,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'90 min',
     method:'Oven · bake + custard',
     diff:'Medium',
+    prov:{      popular_in:'Every South African bakery, kitchen and tea table — the national dessert, dusted with cinnamon',      famous_for:'The delicate milk custard in a buttery shell, dusted with a snow of cinnamon — lighter than cheesecake, gentler than flan',      consists_of:'A sweet shortcrust or pastry shell filled with a soft milk-and-egg custard thickened with flour and cornflour, set cold and dusted with cinnamon',      name_origin:'Melktert — \'milk tart\' in Afrikaans; the name is the recipe, and the recipe is the nation\'s',      why_loved:'Soft, faintly sweet, fragrant with cinnamon and nutmeg — the tart that tastes like someone\'s grandmother made it',      method_detail:'Oven — bake the custard in the shell; chill, then dust with cinnamon before serving'    },
     blurb:'Custard tart with cinnamon dust — the Cape\'s favourite dessert, creamy and spiced.',
     brief:{
       lead:'Melktert is Cape tradition: a pastry shell filled with creamy milk custard, baked until set but still trembling slightly in the centre, then dusted with cinnamon. It\'s served at room temperature or chilled, cut into wedges. The first bite is custard-soft; the pastry crumbles. This is comfort elevated.',
@@ -266,6 +269,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'50 min',
     method:'Braai · skewered and braised',
     diff:'Easy',
+    prov:{      popular_in:'South African braais and Cape Malay kitchens — the skewer that travels from marinade to flame',      famous_for:'The overnight marinade of apricot, curry and vinegar that tenderises lamb and caramelises to a sticky glaze over the coals',      consists_of:'Cubed lamb leg marinated in fried onion, apricot jam, curry powder and vinegar, threaded with dried apricots and bay, braaied until charred at the edges',      name_origin:'Sosatie — Cape Malay, from skewer-and-sauce; a variant on the classic, with lamb as the lead',      why_loved:'Sweet, sour, smoky and tender — the dried apricot catches the flame and the marinade does every favour to the meat',      method_detail:'Open flame — grill the skewers hot, basting with the marinade as it reduces'    },
     blurb:'Marinated lamb and apricot skewers braised in spiced Cape Malay sauce — variant with lamb instead of mixed proteins.',
     brief:{
       lead:'These sosaties are a study in contrast: tender lamb, dried apricot sweetness, savoury onion, all woven together on a skewer and braised in a sauce of ginger, turmeric, and tamarind. The sauce clings to every surface, glossy and deep. This is how Cape Malay entertaining should taste.',
@@ -329,6 +333,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'90 min',
     method:'Oven · slow roast',
     diff:'Medium',
+    prov:{      popular_in:'Karoo farm tables and South African restaurants — the dish that names a region and its lamb',      famous_for:'The dark, glossy braise of lamb neck in a rosemary and red-wine jus, slow-cooked until the meat falls from the bone',      consists_of:'Lamb neck fillets browned hard, then braised with rosemary, garlic, onion and red wine until the connective tissue melts into a natural jus',      name_origin:'Karoo — the vast semi-arid interior of South Africa; its lamb, grazing on karoo bushes, carries a herb-flecked flavour recognised the world over',      why_loved:'Deep, earthy, unctuous — the lamb tastes of the veld it walked, and the rosemary stands in for the wild herbs of the karoo',      method_detail:'Oven or stovetop — sear, then braise low for hours until the neck is spoon-tender'    },
     blurb:'Tender Karoo lamb, kissed with salt and rosemary, rested until the meat trembles — showstopper plating.',
     brief:{
       lead:'Karoo lamb is prized across South Africa for its delicate, grassy flavour. The neck fillet — a humble cut transformed by slow roasting — becomes fall-apart tender. A whisper of fresh rosemary, a pour of pan jus, and you have a dish that whispers understated elegance. This is what entertaining should taste like: ingredient-forward, simply executed, utterly confident.',
@@ -387,6 +392,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'45 min',
     method:'Stovetop · boil & grill',
     diff:'Easy',
+    prov:{      popular_in:'South African townships and street corners — the plate that feeds the working day, known everywhere as a kota or a half-and-half',      famous_for:'Grilled or fried sausage laid over a mound of soft maize pap with a ladle of tomato-and-onion sous — comfort that costs little and fills completely',      consists_of:'Boerewors or wors-style sausage grilled or fried, served over stiff or soft maize meal porridge with a spicy tomato, onion and chilli sous',      name_origin:'Township style — the everyday South African combination of pap (maize porridge) and wors, named for where it is eaten most',      why_loved:'Plain, filling, honest — the sous brings the fire, the pap brings the calm, the sausage brings the joy',      method_detail:'Open flame or stovetop — grill the sausage; boil and beat the mealie meal to a soft pap'    },
     blurb:'Boiled maize porridge, grilled sausage, simple pleasure — township favourite elevated.',
     brief:{
       lead:'This is South African soul food: soft, creamy pap (maize porridge) topped with grilled sausage, the contrast of textures and temperatures pure comfort. It\'s everyday eating for millions, but when made with intention — good sausage, creamy pap, a golden char on the meat — it becomes something to celebrate. This is cooking without pretension.',
@@ -443,6 +449,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'90 min',
     method:'Stovetop · deep-fry',
     diff:'Easy',
+    prov:{      popular_in:'South African street stalls, school fêtes and home kitchens — the golden fried dough split and filled',      famous_for:'The crisp-shelled, airy-centred yeast dough ball, fried golden and split open for savoury mince or sweet jam',      consists_of:'A simple yeast dough of flour, sugar, salt and water, proved, portioned and deep-fried until puffed and gold, filled hot with curried mince or apricot jam',      name_origin:'Vetkoek — \'fat cake\' in Afrikaans; the name is blunt and the food is honest',      why_loved:'Crisp outside, soft and steaming within — the vessel and the meal in one, cheap to make and impossible to stop eating',      method_detail:'Stovetop — proof the dough, deep-fry until gold; split and fill while hot'    },
     blurb:'Fried dough bread, fluffy inside, golden outside — serve sweet or savoury.',
     brief:{
       lead:'Vetkoek is the ultimate SA comfort food: simple dough fried until puffed and golden, served warm with your choice of topping. Sweet with jam and cream, savoury with mince and spiced tomato — it\'s versatility wrapped in crispy exterior and fluffy interior. Street vendors fry it by the dozens; home cooks make it for family. It\'s fried dough at its finest.',
@@ -502,6 +509,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'35 min',
     method:'Stovetop · simmer',
     diff:'Easy',
+    prov:{      popular_in:'Every South African kitchen — the everyday plate of maize porridge and tomato sauce, eaten from childhood onward',      famous_for:'The soft, creamy maize porridge beneath a rich, sweet-sharp tomato and onion sous — the simplest comfort in the cuisine',      consists_of:'Maize meal boiled to a soft, smooth porridge, served with a sous of tomatoes, onions, sugar and vinegar, often with a kick of chilli',      name_origin:'Pap — maize porridge in Afrikaans; sous — sauce. The name is the plate and the plate is the name.',      why_loved:'Soft, soothing, gently sweet and sharp — the food that tastes like home no matter where home is',      method_detail:'Stovetop — boil and beat the mealie meal; simmer the sous until thick and glossy'    },
     blurb:'Creamy maize porridge, rich tomato sauce — weeknight staple made special.',
     brief:{
       lead:'Pap with sous is the weeknight answer to "what\'s for dinner?" Soft maize porridge topped with a rich onion and tomato sauce spiked with spice. It\'s humble, filling, deeply satisfying. Made with intention — good oil, real tomatoes, fresh onion — it becomes something worth looking forward to.',
@@ -559,6 +567,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'75 min',
     method:'Oven · bake + sauce',
     diff:'Medium',
+    prov:{      popular_in:'Every South African restaurant and Sunday table — the warm dessert that ends a braai',      famous_for:'The sponge of apricot jam baked golden, then soaked in a hot cream sauce that sinks in and turns it to pudding',      consists_of:'A sponge batter enriched with apricot jam and vinegar, baked, then drenched in a boiling cream-and-sugar-and-butter sauce that soaks through while still hot',      name_origin:'Malva — likely from the Afrikaans for marshmallow (malvalekker), for the soft, spongy texture; a South African classic of Cape Dutch root',      why_loved:'Warm, sweet, sticky and soaked — the sponge drinks the sauce and becomes a pudding that demands custard or cream',      method_detail:'Oven — bake the sponge; then pour the hot cream sauce over the hot pudding and let it soak'    },
     blurb:'Warm sponge cake, apricot jam, custard cream sauce — the ultimate cosy South African dessert.',
     brief:{
       lead:'Malva pudding is not a pudding (it\'s a sponge cake), and it\'s not really about apricot (though apricot jam is the heart). It\'s about the contrast: warm, spiced cake sitting in a hot custard cream sauce that soaks into every crumb. Served warm with vanilla ice cream or whipped cream, it\'s the dessert that makes South Africans nostalgic for childhood.',
@@ -679,6 +688,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'90 min',
     method:'Oven · bake + chill',
     diff:'Medium',
+    prov:{      popular_in:'South African restaurants and dinner parties — the dessert that pours the national liqueur into a cream cheese filling',      famous_for:'The creamy, liqueur-laced cheesecake on a buttery biscuit base, set soft and dusted or drizzled with more Amarula',      consists_of:'A crushed-biscuit and butter base, a cream cheese filling enriched with Amarula — the cream liqueur distilled from the marula fruit — chilled until set',      name_origin:'Amarula — the South African cream liqueur made from the marula fruit, fermented and blended with cream; a taste of the African veld',      why_loved:'Smooth, sweet, gently boozy — the marula\'s caramel-and-fruit note runs through the cream, and a slice turns a meal into an occasion',      method_detail:'No bake — press the base, whip the filling with Amarula, chill until set'    },
     blurb:'Creamy cheesecake infused with Amarula (SA marula fruit liqueur) — elegant, distinctly South African.',
     brief:{
       lead:'Amarula cheesecake combines SA sophistication with comfort food indulgence. Amarula liqueur — made from marula fruit, creamy and complex — threads through a rich, New York-style cheesecake. The result is elegant, seasonal, and unmistakably South African. Make it for celebration; it will become tradition.',
@@ -740,6 +750,7 @@ window.SA_ADDITIONAL_BATCH=[
     time:'30 min',
     method:'Stovetop · simmer',
     diff:'Easy',
+    prov:{      popular_in:'Every South African braai, township kitchen and shebeen — the relish that sits beside the meat as a right, not an option',      famous_for:'The sharp, spicy relish of baked beans, tomato, onion, pepper and chilli — hot, sweet, tangy, made to cut through rich grilled meat',      consists_of:'Onion, garlic, ginger, grated carrot, green pepper, chilli and curry powder fried together with tomato and baked beans, finished hot or warm',      name_origin:'Chakalaka — likely rooted in the Tsonga and Zulu kitchens of the townships; a relish born of necessity and made into a national habit',      why_loved:'Cheap, fast, fiery and endlessly forgiving — the relish that turns pap and wors into a meal, and keeps for days in the fridge',      method_detail:'Stovetop — fry the aromatics, add the vegetables and beans, simmer until thick'    },
     blurb:'Spiced vegetable relish, vibrant and sharp — the essential SA side dish.',
     brief:{
       lead:'Chakalaka is South African soul food: fresh vegetables sautéed with spices, creating a relish that\'s simultaneously crisp and cooked, spicy but balanced, fresh and preserved all at once. It\'s served alongside braai, curry, rice — anything that benefits from a sharp, vegetable-forward wake-up call. Make it fresh; make it often.',

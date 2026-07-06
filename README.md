@@ -2,7 +2,7 @@
 
 > "Dinner is on you." — Tagline
 
-A sophisticated, interactive cookbook for the eligible man who cooks to impress. The site guides users through 72 carefully curated recipes across Signature, Aspirational, Heritage, and Adopted collections. Each recipe includes step-by-step guidance, scaled servings, shopping lists, pantry-driven discovery, and drink pairings.
+A sophisticated, interactive cookbook for the eligible man who cooks to impress. The site guides users through **58 carefully curated recipes** across Signature, Aspirational, Heritage, and Adopted collections. Each recipe includes step-by-step guidance, scaled servings, shopping lists, pantry-driven discovery, and drink pairings.
 
 ---
 
@@ -10,9 +10,10 @@ A sophisticated, interactive cookbook for the eligible man who cooks to impress.
 
 ### Local Development
 ```bash
+npm install        # first time only
 npm run dev
 # Opens dev server on http://localhost:3000
-# Live app: public/tub/tub-app.html (no build step required)
+# Site root redirects to the live app: public/tub/tub-app.html (no build step required)
 ```
 
 ### Project Structure
@@ -20,22 +21,21 @@ npm run dev
 .
 ├── public/tub/
 │   ├── tub-app.html                    [PRIMARY APP — single HTML file, no framework]
-│   └── recipes/
-│       ├── recipes-data.js             [32 Signature + Aspirational recipes]
-│       ├── fullcook-conversions.js     [27 Heritage recipes]
-│       ├── sa-additions-2.js           [13 SA Heritage recipes]
-│       ├── storage-reheating.js        [Storage/reheating guidance for 58 recipes]
-│       ├── recipes-images.js           [Image URL mapping]
-│       ├── substitutes.js              [Ingredient alternatives]
-│       ├── cocktails.js                [Cocktail recipes for pairings]
-│       └── retailers.js                [SA retail sources]
-├── knowledge/
-│   ├── ROADMAP.md                      [Strategic direction + major updates]
-│   ├── PROJECT_BRIEF.md                [Voice, positioning, design rules (LOCKED)]
-│   └── recipes/                        [Legacy recipe markdown — reference only]
+│   ├── recipes/                        [52 recipe & reference data files]
+│   │   ├── recipes-data.js             [authored recipe collection — window.RECIPES]
+│   │   ├── fullcook-conversions.js     [full-cook conversion batch]
+│   │   ├── storage.js + storage-reheating.js  [window.RECIPE_STORAGE, merged]
+│   │   ├── recipes-images.js           [image URL mapping]
+│   │   ├── pantry-lore.js              [Pantry Secrets facts]
+│   │   └── ...                         [stories, substitutes, masterclass, etc.]
+│   └── data/                           [6 SA ingredient metadata files]
+├── knowledge/                          [canonical source of truth — briefs, roadmap, specs]
+├── docs/                               [canonical planning artifacts — see PROJECT_INDEX.html]
+├── tools/                              [dev utilities]
+├── src/                                [Next.js shell — root redirect → TUB app]
+├── CLAUDE.md                           [project rules — read first]
 ├── RECIPE_STANDARDIZATION_SPEC.md      [10-section spec for recipe standardization]
-├── HANDOVER_SPRINT_65.md               [Latest sprint handover + continuation guide]
-└── DESIGN.md                           [Legacy design doc for Next.js build — dormant]
+└── DESIGN.md                           [legacy design doc for Next.js build]
 ```
 
 ---
@@ -50,7 +50,7 @@ npm run dev
 ### Recipe Data
 **Format:** JavaScript objects exported to window.RECIPES  
 **Files:** 4 recipe files (recipes-data.js + 3 batches)  
-**Coverage:** 72 recipes total across 4 tiers  
+**Coverage:** 58 recipes total across 4 tiers (locked collection)  
 **Data flow:** HTML imports .js files → renders dynamically
 
 ### Styling System
@@ -196,12 +196,12 @@ Sensory, unhurried, assured. Atmosphere over punch.
 
 **Status:** Queued (task_d3082ab3, ready for autonomous execution)
 
-**Scope:** Audit and standardize all 72 recipes across story depth, pantry secrets, storage, images, and function format.
+**Scope:** Audit and standardize all 58 recipes across story depth, pantry secrets, storage, images, and function format.
 
 **Execution plan:** 5 phases (50-80k tokens, 3-5 sessions)
 1. **Phase A:** Comprehensive audit (8-10k tokens)
 2. **Phase B:** Tier-based standardization by depth (30-50k tokens)
-3. **Phase C:** Pantry Secrets expansion to all 72 recipes (5-8k tokens)
+3. **Phase C:** Pantry Secrets expansion to all 58 recipes (5-8k tokens)
 4. **Phase D:** Image standardization for theme consistency (6-10k tokens)
 5. **Phase E:** Polish & final verification (3-5k tokens)
 
@@ -249,9 +249,9 @@ git commit -m "feat|fix|docs: [SCOPE] [description]"
 | Gap | Coverage | Next Steps |
 |-----|----------|-----------|
 | Timed cooks | 1/8 Signature | Add 7 more timed recipes (Phase B) |
-| Storage | 58/72 recipes | Add remaining 14 (Phase B) |
+| Storage | 58/58 recipes | Complete (merging fix applied) |
 | Images | ~56% | Source 40+ missing images (Phase D) |
-| Pantry Secrets | Partial | Expand to all 72 recipes (Phase C) |
+| Pantry Secrets | Most recipes | Verify full coverage in Phase A audit |
 | Drinks pairing | All recipes | SA constraint enforcement (background task) |
 
 ---
@@ -259,37 +259,41 @@ git commit -m "feat|fix|docs: [SCOPE] [description]"
 ## Key Files for Continuation
 
 **Must read first:**
-- `RECIPE_STANDARDIZATION_SPEC.md` — The execution blueprint
-- `HANDOVER_SPRINT_65.md` — Latest sprint handover + autonomous instructions
+- `CLAUDE.md` — Project rules (read first; TUB banner up top)
+- `docs/CURRENT_SPRINT.md` — What just shipped + next action
+- `docs/BUILD_PHASE_BEACON.md` — Build/deploy health
 - `knowledge/PROJECT_BRIEF.md` — Immutable voice/design rules
 
 **Reference during work:**
-- `public/tub/recipes/storage-reheating.js` — Storage template
+- `RECIPE_STANDARDIZATION_SPEC.md` — The execution blueprint
+- `docs/NEXT_3_SPRINTS_PLAN.md` — Forward content-depth roadmap
 - `public/tub/recipes/recipes-data.js` — Recipe data structure
 - `public/tub/tub-app.html` — Live app (read sections as needed)
 
 **Test against:**
-- Browser preview (npm run dev)
-- All 72 recipe pages
+- Browser preview (`npm run dev`)
+- The 58 active recipe pages
 
 ---
 
 ## Handoff & Continuation
 
 **For the next agent/session:**
-1. Read `HANDOVER_SPRINT_65.md` (autonomous continuation guide)
-2. Follow `RECIPE_STANDARDIZATION_SPEC.md` (execution blueprint)
-3. Start with Phase A (audit) or jump to Phase B (tier-based work)
-4. Test in preview server after every 2-3 recipe updates
-5. Commit frequently with clear messages
-6. Reference voice/design rules in `knowledge/PROJECT_BRIEF.md` (locked)
+1. Read `docs/CURRENT_SPRINT.md` (latest state + next action)
+2. Read `docs/CROSS_PLATFORM_HANDOFF_CONTRACT.md` (authority + handoff format)
+3. Follow `RECIPE_STANDARDIZATION_SPEC.md` (execution blueprint)
+4. Start with Phase A (audit) or jump to tier-based work per `docs/NEXT_3_SPRINTS_PLAN.md`
+5. Test in preview server after every 2-3 recipe updates
+6. Commit frequently with clear messages
+7. Reference voice/design rules in `knowledge/PROJECT_BRIEF.md` (locked)
 
-**All specifications, file locations, and success criteria documented.** Ready for autonomous continuation.
+**All specifications, file locations, and success criteria documented.** Ready for continuation.
 
 ---
 
 ## Support
 
+- **Project index:** `docs/PROJECT_INDEX.html` (generated portal)
 - **Git history:** `git log --oneline` for prior decisions
 - **Design reference:** `DESIGN.md` (legacy, for reference)
 - **Voice reference:** `knowledge/PROJECT_BRIEF.md` (LOCKED)
@@ -297,6 +301,6 @@ git commit -m "feat|fix|docs: [SCOPE] [description]"
 
 ---
 
-**Last updated:** 2026-07-05 (Sprint 65 complete)  
-**Status:** Production-ready, tested, committed to main  
-**Ready for:** Autonomous recipe standardization continuation
+**Last updated:** 2026-07-06 (Sprint 66 — baseline standardization complete)  
+**Status:** Production-ready, verified, deploying to main  
+**Ready for:** Content-depth roadmap (see `docs/NEXT_3_SPRINTS_PLAN.md`)
