@@ -1808,7 +1808,7 @@ function saveShop(){try{localStorage.setItem('tub_list',JSON.stringify(shop));}c
 function loadShop(){try{var s=localStorage.getItem('tub_list');if(s)shop=JSON.parse(s);if(!Array.isArray(shop))shop=[];}catch(e){shop=[];}}
 function shopInPantry(key){key=(key||'').toLowerCase();var vals=Array.isArray(pantry)?pantry:[...pantry];for(var i=0;i<vals.length;i++){var v=(vals[i]||'').toLowerCase();if(v&&v.length>2&&(key.indexOf(v)>-1||v.indexOf(key)>-1))return true;}return false;}
 function renderShopBadge(){var b=document.getElementById('shop-badge');var bb=document.getElementById('shop-badge-btn');var c=shopCount();if(b){b.textContent=c>9?'9+':c;b.style.display=c>0?'inline-flex':'none';}if(bb){bb.textContent=c>9?'9+':c;bb.style.display=c>0?'flex':'none';}}
-function openShop(){if(document.getElementById('cook').classList.contains('open'))return;shopOpen=true;document.getElementById('browse').style.display='none';document.getElementById('detail').classList.remove('open');document.getElementById('methods').classList.remove('open');document.getElementById('shop').classList.add('open');window.scrollTo(0,0);renderShop();}
+function openShop(){if(document.getElementById('cook').classList.contains('open'))return;shopOpen=true;document.getElementById('browse').style.display='none';document.getElementById('detail').classList.remove('open');document.getElementById('methods').classList.remove('open');document.getElementById('plan').classList.remove('open');document.getElementById('shop').classList.add('open');window.scrollTo(0,0);renderShop();}
 function closeShop(){shopOpen=false;document.getElementById('shop').classList.remove('open');goBrowse();}
 function renderShop(){
   var box=document.getElementById('shop-body');if(!box)return;
@@ -2305,6 +2305,9 @@ function goBrowse(){
   releaseWakeLock();
   document.getElementById('detail').classList.remove('open');
   document.getElementById('detail-body').innerHTML='';
+  document.getElementById('shop').classList.remove('open');
+  document.getElementById('plan').classList.remove('open');
+  document.getElementById('methods').classList.remove('open');
   document.getElementById('browse').style.display='block';
   window.scrollTo(0,savedScroll);
 }
@@ -2739,35 +2742,13 @@ function swapInSitu(btn, altIdx) {
 /* PANTRY LORE / TRIVIA LOGIC */
 function pantryLoreHTML(r) {
   if (!window.PANTRY_LORE) return '';
-  
-  var ings = [];
-  if (r.ing) {
-    r.ing.forEach(function(g) {
-      g[1].forEach(function(it) {
-        if (it[3]) ings.push(it[3].toLowerCase());
-      });
-    });
-  }
-  
-  var keys = Object.keys(window.PANTRY_LORE);
-  var matchedKeys = keys.filter(function(k) {
-    return ings.some(function(ingName) { return ingName.indexOf(k) > -1; });
-  });
-  
-  if (matchedKeys.length === 0) return '';
-  
-  var seed = 0;
-  for (var i = 0; i < r.slug.length; i++) seed += r.slug.charCodeAt(i);
-  var keyIdx = seed % matchedKeys.length;
-  var key = matchedKeys[keyIdx];
-  var facts = window.PANTRY_LORE[key];
-  var factIdx = seed % facts.length;
-  var fact = facts[factIdx];
-  
+  var fact = window.PANTRY_LORE[r.slug];
+  if (!fact) return '';
+  var html = fact.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
   return '<div class="dsection dsection--lore"><div class="wrap">' +
     '<div class="lore-card">' +
-      '<div class="lore-header"><i class="ti ti-bulb"></i> Pantry Secrets &middot; ' + key.toUpperCase() + '</div>' +
-      '<p class="lore-text"><b>Did you know?</b> ' + fact + '</p>' +
+      '<div class="lore-header"><i class="ti ti-bulb"></i> Pantry Secrets</div>' +
+      '<p class="lore-text">' + html + '</p>' +
     '</div>' +
   '</div></div>';
 }
