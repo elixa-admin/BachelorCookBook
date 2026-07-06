@@ -404,6 +404,11 @@ button{font-family:var(--font)}
 .ndiet{display:flex;flex-wrap:wrap;gap:6px;padding-top:12px;border-top:1px solid var(--line-soft);margin-top:4px}
 .dtag{font-size:11px;color:var(--accent-text);border:1px solid var(--accent-line);background:var(--accent-soft);padding:4px 10px;border-radius:var(--r-pill);text-transform:capitalize}
 @media(max-width:480px){.nbig{min-width:76px;padding:18px 14px}.nbig-n{font-size:36px}.nmacros{padding:14px}}
+.nutri-mini{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:14px 0 0;border-top:1px solid var(--line-soft);margin-top:14px}
+.nutri-mini-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--faint);margin-right:4px;flex-shrink:0}
+.nutri-mini-div{color:var(--line-soft);font-size:16px;line-height:1;flex-shrink:0}
+.nutri-mini-stat{font-size:13px;color:var(--muted);white-space:nowrap}
+.nutri-mini-stat b{color:var(--text);font-weight:600}
 @media(max-width:680px){.pair{grid-template-columns:1fr}}
 .coming{border:1px dashed var(--line);border-radius:var(--r-md);padding:38px;text-align:center;color:var(--muted)}
 .coming b{color:var(--text)}
@@ -588,25 +593,35 @@ h1,h2,.dhead h2,.ck-title{text-wrap:balance}
 .nom-v{font-size:14.5px;color:var(--text);line-height:1.55}
 @media(max-width:600px){.nom-row{grid-template-columns:1fr;gap:4px}}
 .plate-p{font-size:16px;line-height:1.7;color:var(--text);max-width:62ch;margin:0}
-.plating-principles{display:flex;flex-direction:column;gap:12px;margin:0}
-.plating-principle{border-left:2px solid rgba(212,175,55,0.7);padding:0 0 0 16px}
-.plating-principle:nth-child(2n){border-left-color:rgba(110,30,36,0.7)}
-.plating-principle:nth-child(3n){border-left-color:rgba(85,183,221,0.7)}
-.plating-principle h3{font-family:var(--display);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent-text);margin:0 0 4px}
-.plating-principle p{font-size:15px;color:var(--text);line-height:1.6;margin:0}
+.plating-principles{display:flex;flex-direction:column;gap:0;margin:0 0 24px;counter-reset:plating-step}
+.plating-principle{counter-increment:plating-step;display:grid;grid-template-columns:28px 1fr;gap:0 14px;padding:14px 0;border-bottom:1px solid var(--line-soft);align-items:start}
+.plating-principle:last-child{border-bottom:none;padding-bottom:0}
+.plating-principle::before{content:"0" counter(plating-step);font-family:var(--mono);font-size:10px;font-weight:700;color:rgba(212,175,55,0.65);padding-top:3px;letter-spacing:0.1em}
+.plating-principle h3{grid-column:2;font-family:var(--display);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text);margin:0 0 5px}
+.plating-principle p{grid-column:2;font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
+.plate-guide{font-size:14px;color:var(--text);line-height:1.7;border-left:2px solid rgba(212,175,55,.35);padding-left:16px;font-style:italic;margin:0}
 .mc-card{border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);padding:24px}
 .mc-card .mc-nat{font-size:13.5px;color:var(--steel);font-style:italic;margin-bottom:14px}
 .mc-card .mc-why,.mc-card .mc-wis{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 12px}
 .mc-card .mc-mast{margin-top:14px}
 .mc-card .mc-ol{margin:6px 0 0;padding-left:20px}.mc-card .mc-ol li{font-size:14px;color:var(--muted);line-height:1.6}
 .mc-card .btn{margin-top:18px}
-.subs2{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden}
-.sub-row{display:grid;grid-template-columns:160px 1fr;background:var(--surface);padding:13px 18px;gap:14px}
-.sub-i{font-size:13.5px;font-weight:600;color:var(--text);text-transform:capitalize}
-.sub-alts{font-size:13px;color:var(--muted);line-height:1.5}
-.sub-a{display:block}.sub-a b{color:var(--accent-text)}
-.sub-sa{display:block;margin-top:5px;color:var(--faint);font-size:12px}
-@media(max-width:600px){.sub-row{grid-template-columns:1fr;gap:5px}}
+.subs2{display:flex;flex-direction:column;gap:4px}
+.sub-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.sub-summary{display:flex;align-items:center;gap:10px;padding:14px 18px;cursor:pointer;list-style:none;user-select:none}
+.sub-summary::-webkit-details-marker,.sub-summary::marker{display:none}
+.sub-i{font-size:14px;font-weight:700;color:var(--text);text-transform:capitalize;flex:1}
+.sub-best{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}
+.sub-best b{color:rgba(212,175,55,.85)}
+.sub-chevron{font-size:13px;color:var(--muted);transition:transform .2s;flex-shrink:0}
+details.sub-item[open] .sub-chevron{transform:rotate(180deg)}
+.sub-body{padding:0 18px 14px;border-top:1px solid var(--line-soft)}
+.sub-alts{display:flex;flex-direction:column;gap:8px;padding-top:12px}
+.sub-a-row{display:grid;grid-template-columns:140px 1fr;gap:8px;align-items:baseline}
+.sub-a-name{font-size:13.5px;font-weight:600;color:rgba(212,175,55,.85)}
+.sub-a-note{font-size:13px;color:var(--muted);line-height:1.4}
+.sub-sa{font-size:12px;color:var(--faint);padding-top:10px;margin-top:4px;border-top:1px solid var(--line-soft)}
+@media(max-width:600px){.sub-a-row{grid-template-columns:1fr;gap:2px}.sub-best{max-width:120px}}
 footer{border-top:1px solid var(--line-soft);padding:52px 0 68px}
 footer .frow{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;color:var(--faint);font-size:13px}
 footer .frow b{color:var(--muted);font-weight:600}
@@ -2135,6 +2150,19 @@ function dheroHTML(r,eb){return `<header class="dhero"><div class="stage"></div>
   ${(r.cat||'main')==='byo'?'<div class="accomp-banner"><span class="ab-ic">◆</span><div><b>Accompaniment — not a standalone meal.</b> Build it into a plate: pair with a main, or assemble several of these into one dinner.</div></div>':''}
   ${heroShapeHTML(r)}
 </div></header>`;}
+function nutritionMiniHTML(slug){
+  var n=window.NUTRITION&&NUTRITION[slug];if(!n)return'';
+  return '<div class="nutri-mini">'
+    +'<span class="nutri-mini-lbl">Per serving</span>'
+    +'<span class="nutri-mini-stat"><b>'+n.kcal+'</b> kcal</span>'
+    +'<span class="nutri-mini-div">·</span>'
+    +'<span class="nutri-mini-stat"><b>'+n.protein+'g</b> protein</span>'
+    +'<span class="nutri-mini-div">·</span>'
+    +'<span class="nutri-mini-stat"><b>'+n.carbs+'g</b> carbs</span>'
+    +'<span class="nutri-mini-div">·</span>'
+    +'<span class="nutri-mini-stat"><b>'+n.fat+'g</b> fat</span>'
+  +'</div>';
+}
 function nutritionHTML(slug){
   const n=window.NUTRITION&&NUTRITION[slug];if(!n)return'';
   const kJ=n.kJ||Math.round(n.kcal*4.184);
@@ -2249,7 +2277,7 @@ function renderFull(r){
       ${r.prov&&r.prov.consists_of?'<p class="brief-core"><b>At its core</b> · '+gloss(r.prov.consists_of)+'</p>':''}
       <ul class="expect">${r.brief.expect.map(e=>`<li><span class="ic">◆</span><span><b>${e[0]}</b> ${e[1]}</span></li>`).join('')}</ul></div>
       <div class="statcard"><div class="g">${r.brief.stats.map(s=>`<div class="cell"><div class="n num">${s[0]}${s[1]?'<small>'+s[1]+'</small>':''}</div><div class="l">${s[2]}</div></div>`).join('')}${r.prep?`<div class="cell"><div class="n num">${r.prep}</div><div class="l">Prep</div></div>`:''}${r.cook?`<div class="cell"><div class="n num">${r.cook}</div><div class="l">Cook</div></div>`:''}</div>
-      ${(window.EQUIPMENT&&EQUIPMENT[r.slug])?'':('<div class="kit"><span class="label">Your kit</span><div class="kit-chips">'+r.brief.kit.map(function(k){return '<span class="kit-chip-item">'+k+'</span>';}).join('')+'</div></div>')}</div></div></div></div>`;
+      ${(window.EQUIPMENT&&EQUIPMENT[r.slug])?'':('<div class="kit"><span class="label">Your kit</span><div class="kit-chips">'+r.brief.kit.map(function(k){return '<span class="kit-chip-item">'+k+'</span>';}).join('')+'</div></div>')}${nutritionMiniHTML(r.slug)}</div></div></div></div>`;
   var mise=`<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Get ready</span><h2>Ingredients &amp; preparations</h2><span class="rule"></span></div><p class="dsub">Everything you need, already scaled to your servings — read it through, tick items off as you set them out, then follow the cook itself, timed step by step from start to serve.</p>
     <div class="cookgrid"><div><div class="scaler" role="group" aria-label="Servings"><span class="lbl">Serves</span>
       <button data-serv="1">1</button><button data-serv="2" aria-pressed="true">2</button><button data-serv="4">4</button><button data-serv="6">6</button></div><div id="ings"></div><button class="btn ghost addlist" onclick="addAndToast('${r.slug}',currentServ())">＋ Add to shopping list</button></div>
@@ -2305,10 +2333,10 @@ function switchStorageTab(btn, paneId) {
 }
 function switchCookTab(ct){['make','plate','know'].forEach(function(t){var el=document.getElementById('ctab-'+t);if(el)el.style.display=(t===ct?'block':'none');});document.querySelectorAll('.ctab').forEach(function(b){b.classList.toggle('active',b.dataset.ct===ct);});var d=document.getElementById('detail');if(d)d.scrollTop=0;}
 function nomenHTML(slug){var n=window.NOMEN&&NOMEN[slug];if(!n)return'';var row=function(k,v){return v?'<div class="nom-row"><span class="nom-k">'+k+'</span><span class="nom-v">'+v+'</span></div>':'';};return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Name &amp; meaning</span><h2>'+(n.english||'Translation')+'</h2><span class="rule"></span></div><div class="nomen">'+row('Literally',n.direct)+row('Found in',n.predominant_in)+row('The language',n.linguistic)+row('Why it matters',n.cultural)+row('Recognise it',n.recognise)+'</div></div></div>';}
-function platingHTML(r){var principles=[{h:'Odd numbers',p:'3 sauce dots, 3 herb sprigs. Asymmetry feels intentional.'},{h:'Contrast',p:'Temperature, texture, color. Hot protein next to cool sauce. Smooth next to crisp.'},{h:'Line and flow',p:'Sauce drag guides the eye. Protein leans toward garnish, creating visual direction.'},{h:'Rest before serve',p:'2–3 min after plating. Flavors settle. Components stay where you put them.'}];var list=principles.map(function(pr){return '<div class="plating-principle"><h3>'+pr.h+'</h3><p>'+pr.p+'</p></div>';}).join('');var recipeSpecific=r.plating||(r.steps&&r.steps.length?r.steps[r.steps.length-1][1]:'');var extra=recipeSpecific?(Array.isArray(recipeSpecific)?'<ol class="plate-steps">'+recipeSpecific.map(function(s){return '<li><b>'+s[0]+'</b> '+gloss(s[1])+'</li>';}).join('')+'</ol>':'<p class="plate-p" style="margin-top:18px">'+gloss(recipeSpecific)+'</p>'):'';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">To serve</span><h2>Plating</h2><span class="rule"></span></div><div class="plating-principles">'+list+'</div>'+extra+'</div></div>';}
+function platingHTML(r){var principles=[{h:'Odd numbers',p:'3 sauce dots, 3 herb sprigs. Asymmetry feels intentional.'},{h:'Contrast',p:'Temperature, texture, color. Hot protein next to cool sauce. Smooth next to crisp.'},{h:'Line and flow',p:'Sauce drag guides the eye. Protein leans toward garnish, creating visual direction.'},{h:'Rest before serve',p:'2–3 min after plating. Flavors settle. Components stay where you put them.'}];var list=principles.map(function(pr){return '<div class="plating-principle"><h3>'+pr.h+'</h3><p>'+pr.p+'</p></div>';}).join('');var recipeSpecific=r.plating||(r.steps&&r.steps.length?r.steps[r.steps.length-1][1]:'');var extra=recipeSpecific?(Array.isArray(recipeSpecific)?'<ol class="plate-steps">'+recipeSpecific.map(function(s){return '<li><b>'+s[0]+'</b> '+gloss(s[1])+'</li>';}).join('')+'</ol>':'<p class="plate-guide">'+gloss(recipeSpecific)+'</p>'):'';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">To serve</span><h2>Plating</h2><span class="rule"></span></div><div class="plating-principles">'+list+'</div>'+extra+'</div></div>';}
 function masterclassHTML(r){var M=window.MASTERCLASS||[];var m=M.find(function(x){return x.dishes&&x.dishes.indexOf(r.slug)>-1;});if(!m){var c=(''+(r.method||'')).toLowerCase();m=M.find(function(x){return c.indexOf((x.id||'').split('-')[0])>-1;});}if(!m)return'';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Technique</span><h2>'+(m.term||'')+' — masterclass</h2><span class="rule"></span></div><div class="mc-card">'+(m.native?'<div class="mc-nat">'+m.native+'</div>':'')+(m.why?'<p class="mc-why"><b>The science —</b> '+m.why+'</p>':'')+(m.wisdom?'<p class="mc-wis"><b>Wisdom —</b> '+m.wisdom+'</p>':'')+(m.mastery&&m.mastery.length?'<div class="mc-mast"><span class="tips-sub-h">Mastery</span><ol class="mc-ol">'+m.mastery.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ol></div>':'')+(m.mistakes&&m.mistakes.length?'<div class="mc-mast"><span class="tips-sub-h">Common mistakes</span><ul class="amc-ul">'+m.mistakes.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul></div>':'')+'<button class="btn ghost" onclick="openMethods();setTimeout(function(){renderLearnTab(\'master\');},30)">Open full masterclass →</button></div></div></div>';}
 function findSubs(raw){var S=window.SUBS||{};var nm=normIngr(raw);if(!nm)return null;if(S[nm])return {k:nm,s:S[nm]};for(var k in S){if(nm.indexOf(k)>-1)return {k:k,s:S[k]};}return null;}
-function subsHTML(r){if(!window.SUBS||!r.ing)return'';var seen={},rows=[];r.ing.forEach(function(g){g[1].forEach(function(it){var raw=it[3]||it[2]||'';var f=findSubs(raw);if(f&&!seen[f.k]){seen[f.k]=1;var s=f.s;var alts=(s.alts||[]).map(function(a){return '<span class="sub-a"><b>'+a[0]+'</b> — '+a[1]+'</span>';}).join('');var sa=(s.sa||[]).map(function(a){return a[0]+' &rarr; '+a[1];}).join('; ');rows.push('<div class="sub-row"><span class="sub-i">'+f.k+'</span><div class="sub-alts">'+alts+(sa?'<span class="sub-sa">SA: '+sa+'</span>':'')+'</div></div>');}});});if(!rows.length)return'';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Can\'t find it?</span><h2>Ingredient alternatives</h2><span class="rule"></span></div><div class="subs2">'+rows.join('')+'</div></div></div>';}
+function subsHTML(r){if(!window.SUBS||!r.ing)return'';var seen={},rows=[];r.ing.forEach(function(g){g[1].forEach(function(it){var raw=it[3]||it[2]||'';var f=findSubs(raw);if(f&&!seen[f.k]){seen[f.k]=1;var s=f.s;var alts=s.alts||[];var sa=(s.sa||[]).map(function(a){return a[0]+' &rarr; '+a[1];}).join('; ');var firstAlt=alts[0];var bestHTML=firstAlt?'<span class="sub-best">try <b>'+firstAlt[0]+'</b></span>':'';var allRows=alts.map(function(a){return '<div class="sub-a-row"><span class="sub-a-name">'+a[0]+'</span><span class="sub-a-note">'+a[1]+'</span></div>';}).join('');rows.push('<details class="sub-item"><summary class="sub-summary"><span class="sub-i">'+f.k+'</span>'+bestHTML+'<i class="ti ti-chevron-down sub-chevron"></i></summary><div class="sub-body"><div class="sub-alts">'+allRows+(sa?'<div class="sub-sa">SA market: '+sa+'</div>':'')+'</div></div></details>');}});});if(!rows.length)return'';return '<div class="dsection"><div class="wrap"><div class="dhead"><span class="label">Can\'t find it?</span><h2>Ingredient alternatives</h2><span class="rule"></span></div><div class="subs2">'+rows.join('')+'</div></div></div>';}
 function renderCompendium(r){
   document.getElementById('d-tier').textContent=r.tierName+' · '+r.cui;
   var ings=(r.key_ings||[]).map(function(i){return '<li>'+i+'</li>';}).join('');
