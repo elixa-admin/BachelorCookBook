@@ -558,14 +558,7 @@ window.GLOBAL_EXOTIC_BATCH = [
     method:'Oven · roast',
     diff:'Medium',
     blurb:"Cantonese barbecued pork — succulent glazed pork shoulder with sweet-savoury charred edges.",
-    prov:{
-      popular_in:"Canton Province; Chinese restaurants worldwide",
-      famous_for:"Being the most iconic Cantonese roasted meat; siu lau staple",
-      consists_of:"Pork shoulder marinated in honey-soy glaze and roasted until charred at edges",
-      name_origin:"Cantonese 'char' (fork) + 'siu' (roast); traditionally skewered on forks",
-      why_loved:"Sweet-savoury glaze with tender, juicy meat and charred crispy edges",
-      method_detail:"Oven — pork shoulder marinated, roasted at high heat, glazed repeatedly"
-    },
+    prov:{popular_in:'Cantonese kitchens and Chinatown windows everywhere — the glistening red-edged barbecued pork hanging on hooks',famous_for:'The long strips of pork shoulder, marinated in honey, hoisin, five-spice and fermented red bean curd (the source of the red), roasted until lacquered, caramelised at the edges and melting within',consists_of:'Pork shoulder or belly in long strips, marinated overnight in hoisin, honey, soy, five-spice, fermented red bean curd, garlic and Shaoxing; roasted on a hook or rack over a drip-tray, glazed three times, rested and sliced',name_origin:'Char siu — Cantonese for \'fork roast\'; traditionally skewered on long forks over a fire. The red tint comes from the bean curd, not dye — though commercial versions fudge it',why_loved:'Sweet, savoury, smoke-tinged and yielding — the glaze is everything. Eaten over rice, folded into a bun, or chopped into a noodle bowl, it carries the whole plate',method_detail:'Oven — marinate 12-24 hours, roast at 200°C on a rack over a tray, glaze three times with the reserved marinade in the last 15 minutes, rest 10 minutes, slice thin across the grain'},
     brief:{
       lead:"Char siu is Cantonese cuisine's greatest gift to the world of roasted meats — succulent pork shoulder with a sweet-savoury glaze and beautiful charred edges. The pork is marinated in a mixture of honey, soy sauce, hoisin, five-spice, and aromatics, then roasted at high heat until the edges caramelize and char. The key is the glaze: applied during roasting, it creates a shiny, sticky coating that's simultaneously sweet, savoury, and aromatic. Sliced thin and served with rice or in bao buns, this is siu lau (Chinese barbecue) at its finest.",
       expect:[

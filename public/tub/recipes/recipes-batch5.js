@@ -44,14 +44,7 @@ window.BATCH5=[
     "method": "Braai · grill",
     "diff": "Medium",
     "blurb": "Lamb chops grilled over coals, served with vibrant Argentine chimichurri sauce.",
-    "prov": {
-      "popular_in": "South African braais; Argentine asados",
-      "famous_for": "The perfect pairing - grilled lamb and herbaceous chimichurri",
-      "consists_of": "Lamb chops grilled over coals, served with parsley-garlic chimichurri sauce",
-      "name_origin": "South African braai tradition with Argentine chimichurri influence",
-      "why_loved": "Smoky char from coals, vibrant herb sauce, meltingly tender lamb",
-      "method_detail": "Braai - lamb chops marinated, grilled over hot coals, served with chimichurri"
-    },
+    "prov": {popular_in:'South African braais and Argentine asados — the chop that straddles two grill cultures',famous_for:'Lamb rib chops grilled hard over the coals until the fat crisps, then sauced with chimichurri — the bright green parsley, garlic, oregano and vinegar salsa that cuts the richness clean',consists_of:'Lamb rib or loin chops, flaky salt and black pepper, grilled over hot coals to medium-rare; served with chimichurri of fresh parsley, oregano, garlic, chilli, olive oil and red wine vinegar',name_origin:'Chimichurri — likely Basque or Argentine in origin, the green sauce of the pampas; paired here with South African lamb, the cut the country does better than almost anywhere',why_loved:'The acid of the vinegar and the bite of the garlic balance the richness of the charred lamb fat. Two countries, one plate, a perfect match',method_detail:'Open flame — very hot coals; salt the chops, grill 3-4 minutes a side for medium-rare; rest briefly; spoon the chimichurri over just before serving so the herbs stay bright'},
     "key_ings": [
       "lamb chops",
       "fresh parsley",
@@ -75,14 +68,7 @@ window.BATCH5=[
     "method": "Oven · roast",
     "diff": "Medium",
     "blurb": "Easter Sunday classic - leg of lamb roasted with rosemary, garlic, and lemon.",
-    "prov": {
-      "popular_in": "Greek Easter; Mediterranean Sunday roasts",
-      "famous_for": "The festive centrepiece - crusty herb exterior, pink juicy interior",
-      "consists_of": "Whole leg of lamb studded with garlic and rosemary, roasted with lemon",
-      "name_origin": "Greek Pascha tradition; Mediterranean Easter staple",
-      "why_loved": "Crispy herb crust, pink aromatic meat, natural jus for dipping",
-      "method_detail": "Oven - lamb studded with garlic-rosemary, roasted at 200C until medium-rare"
-    },
+    "prov": {popular_in:'Greek and Mediterranean Sunday tables — the roast that smells like a celebration from the moment it goes in the oven',famous_for:'The leg of lamb studded with garlic and rosemary, roasted pink and rest-finished, with a pan juice that carries the whole herb garden',consists_of:'A bone-in leg of lamb, pierced and filled with garlic slivers and rosemary sprigs, rubbed with olive oil, lemon and salt, roasted to blushing pink and rested before carving',name_origin:'Arni psito — the Greek Easter and Sunday roast; garlic and rosemary are the Mediterranean herb pairing older than the recipe. The technique is as old as the oven itself',why_loved:'Feeds a crowd from one pan, smells divine while it cooks, and the leftovers are better than the first slicing. The studding of garlic from within perfumes every bite',method_detail:'Oven — high heat to sear, then low to roast to 55°C internal; rest for 20 minutes under loose foil before carving across the grain'},
     "key_ings": [
       "leg of lamb",
       "fresh rosemary",
@@ -297,14 +283,7 @@ window.BATCH5=[
     "method": "Oven · bake",
     "diff": "Medium",
     "blurb": "Indian flatbread classic - soft, pillowy naan baked in a hot tandoor or oven.",
-    "prov": {
-      "popular_in": "Throughout India; Indian restaurants worldwide",
-      "famous_for": "The essential Indian bread - soft, slightly charred, perfect for curries",
-      "consists_of": "Yogurt-leavened dough baked at high heat until puffed and lightly charred",
-      "name_origin": "Persian nān (bread); Mughal-era introduction to India",
-      "why_loved": "Soft pillowy texture, slight char flavour, perfect for scooping curries",
-      "method_detail": "Oven - dough proved, divided, baked at 260C until puffed and charred"
-    },
+    "prov": {popular_in:'Across North India, Pakistan and Afghanistan — the flatbread of the tandoor, the staple that lifts every curry',famous_for:'The tear-soft pillow leavened with yogurt, blistered in a screaming-hot tandoor until it puffs and chars in patches — the smoky chew no domestic oven quite matches',consists_of:'A dough of white flour, yogurt, milk, yeast, salt and a little oil; rested, stretched into a teardrop, slapped against the wall of a tandoor (or baked on a screaming hot pan), brushed with butter and nigella or garlic',name_origin:'Naan — Persian for \'bread\'; the word arrived in India with the Mughals and stuck. The tandoor is older still — the original clay oven of Central Asia, used for bread and meat alike',why_loved:'Soft where it should be soft, charred where it should be charred, and the perfect mop for gravy. Stuffed with garlic and coriander, it becomes a dish in its own right',method_detail:'Stovetop or oven — prove the dough twice, shape into teardrops, cook against the hottest surface you have (a tandoor is ideal; an inverted grill or cast-iron pan works); brush with butter and serve hot'},
     "key_ings": [
       "plain flour",
       "yoghurt",
@@ -393,14 +372,7 @@ window.BATCH5=[
     "method": "Oven · laminate",
     "diff": "Hard",
     "blurb": "The French bakery classic - flaky, buttery crescents of laminated dough.",
-    "prov": {
-      "popular_in": "France; bakeries worldwide; brunch staple",
-      "famous_for": "The ultimate French pastry - 27 layers of buttery flaky dough",
-      "consists_of": "Laminated yeast dough with butter, shaped into crescents, baked until golden",
-      "name_origin": "Austrian kipferl adapted in France; crescent shape celebrates victory",
-      "why_loved": "Buttery flavour, shatteringly crisp layers, tender interior, French breakfast perfection",
-      "method_detail": "Oven - dough laminated with butter, proved, baked at 200C until golden"
-    },
+    "prov": {popular_in:'France — specifically Paris and Vienna-by-way-of-Paris — the breakfast that earns the bakery queue',famous_for:'The shatter-crisp laminated layers, so thin you can see through them, that fragment into a hundred flakes at first bite and give way to a soft, butter-perfumed interior',consists_of:'A yeast dough laminated (folded and rolled) with a layer of cold butter three times to create 27 distinct layers; shaped into a crescent from a triangle, proved, egg-washed and baked until deep gold and hollow-feeling',name_origin:'Croissant — French for \'crescent\'. The pastry is Viennese (the kipferl) in origin — a 1683 Vienna celebration bread brought to Paris in the 19th century and re-invented with laminated butter dough. The French made it their own',why_loved:'Nothing else in the bakery delivers that architecture of crisp-and-soft — the butter must be the best you can buy, the folds must stay cold, and the result is worth every early morning',method_detail:'Oven — make a détrempe (dough) and a beurrage (butter block), laminate with three folds (or three days), shape, prove slowly, egg-wash twice, bake at 200°C for 18-20 minutes until deep gold and resonant when tapped'},
     "key_ings": [
       "plain flour",
       "butter",
@@ -425,14 +397,7 @@ window.BATCH5=[
     "method": "Stovetop · griddle",
     "diff": "Easy",
     "blurb": "American breakfast classic - fluffy buttermilk pancakes with maple syrup.",
-    "prov": {
-      "popular_in": "United States; breakfast diners; brunch menus worldwide",
-      "famous_for": "The American breakfast pancake - fluffy, stacked, syrup-drenched",
-      "consists_of": "Buttermilk pancakes cooked on griddle, served with butter and maple syrup",
-      "name_origin": "American flapjack; evolved from johnnycakes and hoe cakes",
-      "why_loved": "Fluffy interior, golden edges, stacked presentation, maple syrup sweetness",
-      "method_detail": "Stovetop - batter cooked on griddle until bubbly, flipped, served with butter and syrup"
-    },
+    "prov": {popular_in:'American breakfasts and weekend brunches everywhere — the small, thick, stacked disc that taught the world what \'pancake\' means in the New World sense',famous_for:'The fluffy, buttermilk-rich discs, stackable, pourable, the ones that drink maple syrup like a sponge and crisp at the edge while staying cloud-soft in the middle',consists_of:'A batter of flour, buttermilk (or milk soured with lemon), eggs, melted butter, baking powder and bicarb; rested, then ladled onto a hot pan and flipped once when bubbles set on top',name_origin:'Flapjack — an old English word that meant a flat baked thing, re-purposed in America for the thick pour-and-flip pancake. Distinct from the British oat-bar of the same name',why_loved:'Comfort in carbohydrate form — the smell of them cooking is the smell of a slow morning. The baking powder and bicarb together (with acidic buttermilk) give the lift that makes them thick',method_detail:'Stovetop — rest the batter 10 minutes, heat a flat pan to medium-low, ladle small pools, wait for bubbles to set on top, flip once, cook 30 seconds more; serve in a stack with butter and syrup'},
     "key_ings": [
       "plain flour",
       "buttermilk",
@@ -487,14 +452,7 @@ window.BATCH5=[
     "method": "Stovetop · poach",
     "diff": "Medium",
     "blurb": "Brunch classic - poached eggs on ham-topped English muffins with hollandaise.",
-    "prov": {
-      "popular_in": "American brunch spots; hotel restaurants worldwide",
-      "famous_for": "The definitive brunch dish - poached eggs, ham, and hollandaise",
-      "consists_of": "English muffins topped with ham, poached eggs, and hollandaise sauce",
-      "name_origin": "American invention; possibly named after Mr. Benedict or Benedictus",
-      "why_loved": "Perfect runny yolk, rich hollandaise, toasted muffin, brunch perfection",
-      "method_detail": "Stovetop - hollandaise made, muffins toasted, eggs poached, assembled"
-    },
+    "prov": {popular_in:'American brunch tables and French bistros — the breakfast that earns the effort',famous_for:'The stack that makes a morning an occasion: toasted muffin, Canadian bacon or smoked salmon, a soft poached egg, and a pour of warm hollandaise that runs gold down the sides',consists_of:'A split English muffin, a slice of ham or salmon, a poached egg with a liquid yolk, and hollandaise — egg yolks emulsified into melted butter with lemon and a pinch of cayenne',name_origin:'Reputedly invented at Delmonico\'s (NYC, 1860s) or the Waldorf for a hungover Mr Benedict. Hollandaise — \'of Holland\' — names the sauce, which is older than the dish',why_loved:'Three techniques in one plate — poaching, emulsifying, toasting — and when the yolk breaks into the butter sauce, it justifies every minute. The dish that makes leisure feel earned',method_detail:'Stovetop — poach the eggs in acidulated water; whisk the hollandaise over a bain-marie; toast the muffin; stack and serve immediately, before the sauce splits'},
     "key_ings": [
       "eggs",
       "egg yolks",
@@ -518,14 +476,7 @@ window.BATCH5=[
     "method": "Stovetop · griddle",
     "diff": "Easy",
     "blurb": "Mexican street classic - flour tortillas filled with cheese and folded until melty.",
-    "prov": {
-      "popular_in": "Mexico; worldwide as quick meal or snack",
-      "famous_for": "The ultimate quick Mexican comfort - melty cheese in toasted tortilla",
-      "consists_of": "Flour tortillas filled with cheese, folded, cooked until golden and melted",
-      "name_origin": "Mexican quesadilla (little cheesy thing); from queso (cheese)",
-      "why_loved": "Crispy toasted tortilla, melty cheese, endless filling variations",
-      "method_detail": "Stovetop - tortillas filled with cheese, folded, cooked until golden and melted"
-    },
+    "prov": {popular_in:'Northern and Central Mexico — the folded tortilla that is the quickest meal in the cuisine',famous_for:'The tortilla folded over melting cheese (Oaxaca, Chihuahua or mozzarella), toasted in a dry pan or on a comal until crisp-spotted and oozing — the fillings are negotiable, the cheese is not',consists_of:'A flour or corn tortilla, filled with melting cheese and (optionally) shredded chicken, hongos, squash blossom, chorizo or rajas; folded and toasted dry until the cheese pulls in strings when you open it',name_origin:'Quesadilla — \'little cheesy thing\'; from queso. The dish predates the Spanish (who brought dairy) in concept — early Mesoamerican versions used squash and corn tortillas folded over filling',why_loved:'Three minutes, one pan, infinite variations — the cheese holds everything together and makes the filling feel lavish. The char on the tortilla is the difference between good and unforgettable',method_detail:'Stovetop — dry hot pan, lay the filled tortilla flat, toast one side, flip, press gently, cook until the cheese has fully melted and runs when cut; slice into wedges and serve at once'},
     "key_ings": [
       "flour tortillas",
       "Oaxaca or mozzarella cheese",
@@ -549,14 +500,7 @@ window.BATCH5=[
     "method": "Oven · bake",
     "diff": "Medium",
     "blurb": "Greek summer classic - vegetables stuffed with rice, herbs, and tomatoes, baked until tender.",
-    "prov": {
-      "popular_in": "Greek households; summer vegetable dishes",
-      "famous_for": "The Greek summer vegetable casserole - stuffed, baked, served cold or warm",
-      "consists_of": "Hollowed vegetables stuffed with rice-herb filling, baked in tomato sauce",
-      "name_origin": "Greek gemista (filled); traditional summer preparation",
-      "why_loved": "Tender vegetables, flavourful rice filling, fresh herbs, versatile temperature",
-      "method_detail": "Oven - vegetables hollowed, stuffed with rice-herb mixture, baked in tomato sauce"
-    },
+    "prov": {popular_in:'Greek home kitchens and village tavernas — the summer dish that fills a table with colour',famous_for:'The peppers and aubergines hollowed and filled with herbed rice, baked until the vegetables collapse into sweetness and the rice drinks the tomato-and-olive-oil broth beneath',consists_of:'Bell peppers and aubergines, their flesh scooped, filled with rice, onion, tomato, fresh herbs (mint, dill, parsley) and olive oil, baked slowly in a tomato broth until soft',name_origin:'Gemista — Greek for \'stuffed\'; a Lenten and summer dish of the Greek countryside. Variants stretch across the Levant and Anatolia — dolma in spirit, baked not rolled',why_loved:'Light, fragrant, vegetarian by tradition — the dish that makes summer vegetables feel like the main event. The olive oil must be generous; that is not optional',method_detail:'Oven — hollow the vegetables, fill loosely (the rice swells), pack upright in a tray, pour in the broth, cover and bake until the rice is cooked and the peppers are slump-soft'},
     "key_ings": [
       "capsicums",
       "aubergine",
@@ -709,14 +653,7 @@ window.BATCH5=[
     "method": "Grill · grill",
     "diff": "Easy",
     "blurb": "Japanese home classic - beef grilled with sweet-savoury soy glaze.",
-    "prov": {
-      "popular_in": "Japanese households; izakayas; worldwide teriyaki popularity",
-      "famous_for": "The Japanese sweet-savoury glaze that became a global favourite",
-      "consists_of": "Beef grilled with teriyaki sauce (soy, mirin, sugar, ginger)",
-      "name_origin": "Japanese teriyaki (teri=gloss, yaki=grill); cooking technique name",
-      "why_loved": "Sweet-savoury glaze, caramelised edges, tender beef, quick cooking",
-      "method_detail": "Grill - beef marinated, grilled, brushed with teriyaki glaze until caramelised"
-    },
+    "prov": {popular_in:'Japanese home cooking — and the dish that taught the West that \'glaze\' is a verb worth learning',famous_for:'The mirror-shine lacquer of reduced soy, mirin and sake that coats each strip of beef, sweet and savoury and sticky in equal measure',consists_of:'Thin strips of sirloin or rump, seared hot, then glossed with a teriyaki sauce of soy, mirin, sake, sugar and ginger — reduced until it clings to the meat',name_origin:'Teri — \'lustre\', yaki — \'grill\'. The name describes the technique: the glaze is reduced until it lacquers the protein. A Japanese home staple, not the sweet Western sauce-marinade',why_loved:'Five minutes, one pan, restaurant sheen. The sugar in the mirin caramelises with the soy into something deep and dark — the kind of flavour that tastes slow but cooks fast',method_detail:'Stovetop — sear the beef hot and rare, set aside, reduce the sauce in the same pan until syrupy, then return the beef to glaze'},
     "key_ings": [
       "beef steak",
       "soy sauce",
@@ -741,14 +678,7 @@ window.BATCH5=[
     "method": "Stovetop · layered cook",
     "diff": "Hard",
     "blurb": "Indian celebration rice - layered chicken and rice with saffron, spices, and fried onions.",
-    "prov": {
-      "popular_in": "India; Muslim celebrations; wedding feast centrepiece",
-      "famous_for": "The ultimate Indian rice dish - layered aromatic rice and spiced meat",
-      "consists_of": "Layered basmati rice and spiced chicken, topped with fried onions and saffron",
-      "name_origin": "Persian biryan (fried); Mughal-era introduction to India",
-      "why_loved": "Complex aromatic depth, tender meat, fragrant rice, festive presentation",
-      "method_detail": "Stovetop - rice and chicken cooked separately, layered, dum-steamed together"
-    },
+    "prov": {popular_in:'Across the Indian subcontinent and the Mughlai courts — the layered rice-and-meat dish of weddings and Eid',famous_for:'The dum — the steam sealed under a tight lid (or dough) that cooks the rice and meat together, each grain separate, scented with saffron, fried onion and whole spice',consists_of:'Chicken marinated in yogurt, ginger, garlic and spice; basmati rice par-cooked and layered with the meat; fried onions, saffron, mint and ghee; sealed and steamed until the rice is done and the meat is falling',name_origin:'Biryani — from Persian \'birian\' (fried before cooking) and \'birinj\' (rice); brought to India by Persian traders and perfected in the Mughlai kitchens of Lucknow and Hyderabad',why_loved:'Theatre when the lid lifts and the steam escapes — fragrant, golden, layered, festive. Every grain tells of the spice it was cooked with, and the meat is the buried treasure',method_detail:'Stovetop — marinate, par-boil the rice, fry the onions, layer everything in a heavy pot, seal the lid (traditionally with dough), and steam on the lowest heat until done — never lift the lid'},
     "key_ings": [
       "basmati rice",
       "chicken pieces",
