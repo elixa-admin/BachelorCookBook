@@ -64,38 +64,48 @@ window.ROSTER_CLASSES={
     },
   "coq-au-vin": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "rogan-josh": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "lamb-shank-red-wine": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "french-onion-soup": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "steak-frites-cafe-de-paris": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "bouillabaisse": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "duck-a-l-orange": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "beef-wellington": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "chicken-tikka-masala": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "bibimbap": {
     "cat": "main", "tier": "adopted", "cut": false
     "cut": true
     },
   "macaroni-cheese": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "chicken-satay": {
     "cat": "main", "tier": "adopted", "cut": false
     "cut": true
@@ -122,22 +132,28 @@ window.ROSTER_CLASSES={
     },
   "bunny-chow": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "durban-mutton-curry": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "boerewors": {
     "cat": "byo", "tier": "component", "cut": false
-  },
+    "cut": true
+    },
   "shisa-nyama": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "mozambican-peri-peri-chicken": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "waterblommetjie-bredie": {
     "cat": "main", "tier": "heritage"
-  },
+    "cut": true
+    },
   "denningvleis": {
     "cat": "main", "tier": "heritage", "cut": false
   },
@@ -155,7 +171,8 @@ window.ROSTER_CLASSES={
     },
   "breyani": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "pickled-fish": {
     "cat": "main", "tier": "heritage", "cut": false
     "cut": true
@@ -252,7 +269,8 @@ window.ROSTER_CLASSES={
   },
   "tamales": {
     "cat": "main", "tier": "adopted"
-  },
+    "cut": true
+    },
   "harira-lamb-chickpea-soup": {
     "cat": "main", "tier": "adopted", "cut": true
   },
@@ -322,10 +340,12 @@ window.ROSTER_CLASSES={
     },
   "frikkadels": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "tamatiebredie": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "geelrys": {
     "cat": "byo", "tier": "component", "cut": false
     "cut": true
@@ -384,7 +404,8 @@ window.ROSTER_CLASSES={
     },
   "oxtail-potjie": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "vetkoek-curry-mince": {
     "cat": "main", "tier": "heritage", "cut": true
   },
@@ -396,31 +417,40 @@ window.ROSTER_CLASSES={
   },
   "potato-bredie": {
     "cat": "main", "tier": "heritage", "cut": false
-  },
+    "cut": true
+    },
   "cape-malay-apricot-chicken": {
     "cat": "main", "tier": "aspirational"
-  },
+    "cut": true
+    },
   "mozambican-prawns": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "fish-and-chips": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "shepherds-pie": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "cottage-pie": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "chicken-pot-pie": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "chicken-noodle-soup": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "cream-of-tomato-soup": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "garlic-bread": {
     "cat": "main", "tier": "adopted", "cut": false
     "cut": true
@@ -454,7 +484,8 @@ window.ROSTER_CLASSES={
   },
   "roast-beef": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "sausage-rolls": {
     "cat": "special", "tier": "adopted", "cut": false
     "cut": true
@@ -570,7 +601,8 @@ window.ROSTER_CLASSES={
     },
   "pad-thai": {
     "cat": "main", "tier": "adopted", "cut": false
-  },
+    "cut": true
+    },
   "tonkotsu-ramen": {
     "cat": "main", "tier": "adopted", "cut": false
     "cut": true
@@ -613,7 +645,8 @@ window.ROSTER_CLASSES={
     },
   "beef-bourguignon": {
     "cat": "main", "tier": "aspirational", "cut": false
-  },
+    "cut": true
+    },
   "peking-duck": {
     "cat": "main", "tier": "aspirational", "cut": false
     "cut": true
@@ -640,7 +673,8 @@ window.ROSTER_CLASSES={
     },
   "cacio-e-pepe": {
     "cut": false, "cat": "main", "tier": "adopted"
-  },
+    "cut": true
+    },
   "risotto-milanese-saffron": {
     "cut": false, "cat": "main", "tier": "adopted"
     "cut": true
@@ -690,10 +724,12 @@ window.ROSTER_CLASSES={
   },
   "oxtail-potjie": {
     "cat": "main", "tier": "heritage"
-  },
+    "cut": true
+    },
   "waterblommetjie-bredie": {
     "cat": "main", "tier": "heritage"
-  },
+    "cut": true
+    },
   "snoek-braai-apricot-jam": {
     "cat": "main", "tier": "heritage"
     "cut": true
@@ -736,7 +772,8 @@ window.ROSTER_CLASSES={
     },
   "durban-mutton-curry": {
     "cat": "main", "tier": "heritage"
-  },
+    "cut": true
+    },
   "prawn-curry-cape-malay": {
     "cat": "main", "tier": "heritage"
     "cut": true
