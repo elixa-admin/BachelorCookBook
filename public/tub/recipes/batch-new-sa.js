@@ -107,10 +107,10 @@ window.NEW_BATCH_SA=[
       ['countN',1,'','Large carrot, roughly chopped'],
       ['countN',3,'','Garlic cloves, crushed'],
       ['linear',30,'ml','Tomato paste (2 tbsp)'],
-      ['linear',60,'ml','Brandy — KWV or Van Ryn\'s (¼ cup)'],
-      ['linear',250,'ml','Dry white wine (1 cup) — Sauvignon Blanc or Chenin Blanc'],
-      ['linear',750,'ml','Fish stock or light vegetable stock (3 cups)'],
-      ['linear',250,'ml','Fresh cream (1 cup)'],
+      ['linear',60,'ml','Brandy — KWV or Van Ryn\'s'],
+      ['linear',250,'ml','Dry white wine — Sauvignon Blanc or Chenin Blanc'],
+      ['linear',750,'ml','Fish stock or light vegetable stock'],
+      ['linear',250,'ml','Fresh cream'],
       ['countN',2,'','Bay leaves'],
       ['countN',4,'','Fresh thyme sprigs'],
       ['linear',5,'ml','Sweet paprika (1 tsp)'],
@@ -202,7 +202,7 @@ window.NEW_BATCH_SA=[
       ['linear',30,'ml','Tomato paste (2 tbsp)'],
       ['linear',30,'ml','Tamarind paste (2 tbsp) — available at Indian stores and Woolworths'],
       ['linear',60,'ml','Apricot jam (4 tbsp)'],
-      ['linear',500,'ml','Lamb or beef stock (2 cups)'],
+      ['linear',500,'ml','Lamb or beef stock'],
       ['linear',100,'g','Dried apricots, halved'],
       ['linear',15,'ml','Brown sugar (1 tbsp) — adjust to taste']
     ]],
@@ -277,11 +277,11 @@ window.NEW_BATCH_SA=[
       ['linear',5,'ml','Dijon mustard (1 tsp)'],
       ['linear',5,'ml','Ground coriander (1 tsp)'],
       ['static','','','Flaky sea salt and cracked black pepper'],
-      ['linear',100,'g','Dried breadcrumbs (1 cup) for coating'],
+      ['linear',100,'g','Dried breadcrumbs for coating'],
       ['linear',60,'ml','Sunflower oil for frying (4 tbsp)']
     ]],
     ['Tartare sauce',[
-      ['linear',125,'ml','Good mayonnaise (½ cup)'],
+      ['linear',125,'ml','Good mayonnaise'],
       ['linear',30,'ml','Capers, roughly chopped (2 tbsp)'],
       ['countN',2,'','Gherkins, finely diced'],
       ['linear',15,'ml','Fresh lemon juice (1 tbsp)'],
@@ -350,21 +350,21 @@ window.NEW_BATCH_SA=[
   },
   ing:[
     ['Biscuit base',[
-      ['linear',200,'g','Tennis biscuits (or digestive biscuits), crushed to fine crumbs (about 2 cups)'],
+      ['linear',200,'g','Tennis biscuits (or digestive biscuits), crushed to fine crumbs'],
       ['linear',80,'g','Unsalted butter, melted (6 tbsp)'],
       ['linear',10,'ml','Ground cinnamon (2 tsp)']
     ]],
     ['Cream cheese layer',[
       ['linear',500,'g','Full-fat cream cheese, room temperature'],
-      ['linear',100,'g','Caster sugar (½ cup)'],
+      ['linear',100,'g','Caster sugar'],
       ['countX',2,'','Large eggs'],
       ['linear',5,'ml','Vanilla extract (1 tsp)'],
-      ['linear',125,'ml','Sour cream (½ cup)']
+      ['linear',125,'ml','Sour cream']
     ]],
     ['Melktert custard layer',[
-      ['linear',500,'ml','Full-cream milk (2 cups)'],
+      ['linear',500,'ml','Full-cream milk'],
       ['countX',2,'','Large eggs, separated'],
-      ['linear',80,'g','Caster sugar (⅓ cup)'],
+      ['linear',80,'g','Caster sugar'],
       ['linear',30,'g','Maizena / cornflour (3 tbsp)'],
       ['linear',15,'g','Cake wheat flour (1 tbsp)'],
       ['linear',30,'g','Unsalted butter (2 tbsp)'],
@@ -577,8 +577,8 @@ window.NEW_BATCH_SA=[
       ['linear',30,'ml','Sunflower or canola oil (2 tbsp) — for searing']
     ]],
     ['Red wine pan jus',[
-      ['linear',200,'ml','Good red wine — Cabernet Sauvignon or Shiraz (¾ cup)'],
-      ['linear',400,'ml','Good quality beef stock (1⅔ cups)'],
+      ['linear',200,'ml','Good red wine — Cabernet Sauvignon or Shiraz'],
+      ['linear',400,'ml','Good quality beef stock'],
       ['countN',1,'','Shallot or small onion, finely diced'],
       ['linear',15,'g','Unsalted butter (1 tbsp)'],
       ['static','','','Salt and pepper to taste']

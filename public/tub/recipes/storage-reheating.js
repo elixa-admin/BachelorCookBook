@@ -1,8 +1,10 @@
 /* Storage & Reheating Guidelines — Signature/Aspirational recipe storage.
-   Merge semantics: AUGMENTS window.RECIPE_STORAGE (seeded by storage.js with
-   Heritage/SA entries) instead of overwriting it. storage.js loads first
-   (HTML <script> order); this file loads second and must not clobber it. */
-window.RECIPE_STORAGE = Object.assign(window.RECIPE_STORAGE || {}, {
+   GAP-FILL merge: only adds entries that storage.js has NOT already defined.
+   storage.js loads first (HTML <script> order) with rich, food-safety-correct
+   entries; this file fills the gaps for recipes storage.js misses. This
+   preserves the high-quality data and prevents terse defaults overwriting it. */
+window.RECIPE_STORAGE = (function(existing){
+  var gaps = {
   // RISOTTO
   "risotto-milanese-saffron": {
     fridge: "<b>Up to 3 days</b> in an airtight container. Risotto degrades quickly — the rice grains will firm up and separate.",
@@ -147,7 +149,11 @@ window.RECIPE_STORAGE = Object.assign(window.RECIPE_STORAGE || {}, {
     freezer: "[Specify duration or 'Not recommended']",
     reheat: "[Specify method, temperature/time, and critical warnings]"
   }
-});
+  };
+  // Gap-fill: preserve existing rich entries from storage.js, add only missing keys.
+  for (var k in gaps) { if (!existing[k]) existing[k] = gaps[k]; }
+  return existing;
+})(window.RECIPE_STORAGE || {});
 
 // Category-based defaults (when recipe-specific not available)
 // Used by the rendering function as fallback
