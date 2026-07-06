@@ -129,5 +129,6 @@ window.IMAGES={
   "bibimbap": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1280px-Dolsot-bibimbap.jpg",
   "dan-dan-noodles": "https://images.unsplash.com/photo-1619143778882-a7e0b0cd35e5?auto=format&fit=crop&w=1200&q=80",
   "tteokbokki": "https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=1200&q=80",
-  "char-siu-pork": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/1280px-Charsiu.jpg"
+  "char-siu-pork": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/1280px-Charsiu.jpg",
+  "kibbeh": "https://images.pexels.com/photos/35437865/pexels-photo-35437865.jpeg?auto=compress&cs=tinysrgb&w=1200"
 };
