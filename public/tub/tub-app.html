@@ -299,9 +299,13 @@ button{font-family:var(--font)}
 .tl-section{padding:12px 16px;margin-bottom:12px;border-radius:8px;border-left:3px solid}
 .tl-section.prep{background:rgba(46,98,157,0.06);border-left-color:rgb(46,98,157)}
 .tl-section.cook{background:rgba(201,162,75,0.08);border-left-color:rgb(201,162,75)}
+.tl-section.rest{background:rgba(187,67,66,0.06);border-left-color:rgb(187,67,66)}
+.tl-section.serve{background:rgba(168,211,81,0.06);border-left-color:rgb(168,211,81)}
 .tl-section-label{font-size:10px;font-weight:700;text-transform:uppercase;margin:0 0 8px 0;letter-spacing:0.1em}
 .tl-section.prep .tl-section-label{color:rgb(46,98,157)}
 .tl-section.cook .tl-section-label{color:rgb(201,162,75)}
+.tl-section.rest .tl-section-label{color:rgb(187,67,66)}
+.tl-section.serve .tl-section-label{color:rgb(168,211,81)}
 .tl{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:0;margin-bottom:8px;position:relative}
 .tl:last-child{margin-bottom:0}
 .tl::before{display:none}
@@ -2027,27 +2031,33 @@ function timelineHTML(r){
   if(heatIdx>=0&&(idx<0||heatIdx<idx))idx=heatIdx;
   var cookCount=idx<0?0:(tl.length-idx);
 
-  var prepRows=[], cookRows=[];
+  var prepRows=[], cookRows=[], restRows=[], serveRows=[];
   tl.forEach(function(t,i){
     var col=(idx<0||i<idx)?('rgb('+__TL_PREP_C.join(',')+')'):__tlCookColor(i-idx,cookCount);
     var disp=__tlDispTS(i,idx,parsed,hasSgn);
     var duration=t[3];
     var isPassive=(typeof duration==='number'&&duration>0)||duration===true;
     var ttl=(isPassive?'⏱ ':'')+t[1];
+    var isRest=t[1].toLowerCase().includes('rest');
+    var isServe=t[1].toLowerCase().includes('serve')||i===tl.length-1;
+
+    // Adjust color for rest and serve sections
+    if(isRest) col='rgb(187,67,66)';
+    if(isServe) col='rgb(168,211,81)';
 
     var timerHtml='';
-    if (typeof duration==='number'&&duration>0) {
-      if (activeTimer.stepIndex===i&&activeTimer.timeLeft>0) {
-        timerHtml='<div class="tl-timer-active"><span class="tl-timer-val" id="tl-timer-val-'+i+'">'+fmtTime(activeTimer.timeLeft)+'</span><button class="tl-timer-ctrl tl-timer-ctrl-toggle" onclick="toggleActiveTimer()"><i class="ti ti-player-pause"></i></button><button class="tl-timer-ctrl cancel" onclick="cancelActiveTimer()"><i class="ti ti-trash"></i></button></div>';
-      } else {
-        var minLabel=Math.round(duration/60);
-        timerHtml='<button class="tl-timer-btn" onclick="startStepTimer('+i+','+duration+',\''+t[1].replace(/'/g,"\\'")+'\')"><i class="ti ti-alarm"></i> Start Timer ('+minLabel+'m)</button>';
-      }
+    if (activeTimer.stepIndex===i&&activeTimer.timeLeft>0) {
+      timerHtml='<div class="tl-timer-active"><span class="tl-timer-val" id="tl-timer-val-'+i+'">'+fmtTime(activeTimer.timeLeft)+'</span><button class="tl-timer-ctrl tl-timer-ctrl-toggle" onclick="toggleActiveTimer()"><i class="ti ti-player-pause"></i></button><button class="tl-timer-ctrl cancel" onclick="cancelActiveTimer()"><i class="ti ti-trash"></i></button></div>';
+    } else {
+      var minLabel=Math.round(duration/60)||'';
+      timerHtml='<button class="tl-timer-btn" onclick="startStepTimer('+i+','+duration+',\''+t[1].replace(/'/g,"\\'")+'\')"><i class="ti ti-alarm"></i> Start Timer '+(minLabel?'('+minLabel+'m)':'')+'</button>';
     }
 
     var itemHtml='<div class="tl '+(isPassive?'passive':'')+'" style="--tl-dot:'+col+';--tl-dot-bg:'+col.replace('rgb','rgba').replace(')',',.2)')+'"><div class="t">'+disp+'</div><div class="b"><div class="ttl">'+ttl+'</div><div class="d">'+t[2]+'</div>'+timerHtml+'</div></div>';
 
-    if(idx<0||i<idx) prepRows.push(itemHtml);
+    if(isServe) serveRows.push(itemHtml);
+    else if(isRest) restRows.push(itemHtml);
+    else if(idx<0||i<idx) prepRows.push(itemHtml);
     else cookRows.push(itemHtml);
   });
 
@@ -2057,6 +2067,12 @@ function timelineHTML(r){
   }
   if(cookRows.length){
     html+='<div class="tl-section cook"><p class="tl-section-label">Cook</p>'+cookRows.join('')+'</div>';
+  }
+  if(restRows.length){
+    html+='<div class="tl-section rest"><p class="tl-section-label">Rest</p>'+restRows.join('')+'</div>';
+  }
+  if(serveRows.length){
+    html+='<div class="tl-section serve"><p class="tl-section-label">Serve</p>'+serveRows.join('')+'</div>';
   }
   html+='</div>';
   return html;
