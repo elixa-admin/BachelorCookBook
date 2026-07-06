@@ -294,6 +294,12 @@ button{font-family:var(--font)}
 .ings li.static .igcheck{display:none}
 .ings li.static{gap:0;padding:6px 0;color:var(--muted);font-size:13.5px}
 .ings li.static .nm{color:inherit}
+.ingroup.serving-grp{background:rgba(168,211,81,0.04);border-left-color:rgb(168,211,81);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:12px 14px 12px 0}
+.ingroup.serving-grp h4{border-left-color:rgb(168,211,81);color:rgb(168,211,81)}
+.serving-subtitle{font-size:11px;color:var(--muted);margin:-4px 0 10px;padding-left:11px;font-style:italic}
+.ings li.serving-item{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(168,211,81,0.12);font-size:13.5px;color:var(--muted)}
+.ings li.serving-item:last-child{border-bottom:none}
+.ings li.serving-item::before{content:'·';color:rgb(168,211,81);font-size:20px;line-height:0.8;flex-shrink:0;margin-top:1px}
 .igcheck{flex:0 0 auto;width:18px;height:18px;border-radius:5px;border:1.5px solid var(--steel);margin-right:6px;cursor:pointer;transition:.18s var(--ease);align-self:center;position:relative}
 .igcheck:hover{border-color:var(--accent-text)}
 .ings li.have{opacity:.42}
@@ -2432,10 +2438,17 @@ function renderIgs(ing){
     const swapBtn=isServing?'':'<button class="ingroup-swap-btn" onclick="openGroupSwapModal(this, event)"><i class="ti ti-arrows-exchange"></i> Swap</button>';
 
     const listHTML=g[1].map(it=>{
-      if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
       if(isServing){
-        return `<li class="static"><span class="nm">${it[2]}</span></li>`;
+        let name;
+        if(it[0]==='static'){
+          name = it.length>=5 ? it[4] : it.length>=4 ? it[3] : it[2];
+        } else {
+          name = it[3]||it[2];
+        }
+        const cleanName = String(name).replace(/<[^>]*>/g,'');
+        return `<li class="serving-item">${cleanName}</li>`;
       }
+      if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
       var sub = findSubs(it[3]);
       var subTrigger = '';
       if (sub) {
@@ -2450,7 +2463,10 @@ function renderIgs(ing){
       `</li>`;
     }).join('');
 
-    return `<div class="ingroup"><h4>${groupName}${swapBtn}</h4><ul class="ings">${listHTML}</ul></div>`;
+    const displayName = isServing ? 'Serve with' : groupName;
+    const groupClass = isServing ? 'ingroup serving-grp' : 'ingroup';
+    const subtitle = isServing ? '<p class="serving-subtitle">Suggested accompaniments</p>' : '';
+    return `<div class="${groupClass}"><h4>${displayName}${swapBtn}</h4>${subtitle}<ul class="ings">${listHTML}</ul></div>`;
   }).join('');
   scaleIgs(2);
 }
