@@ -35,7 +35,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Stable year-round; winter slightly cheaper",
-    risk: "low"
+    risk: "low",
   },
 
   "protein.beef.chuck.cubed": {
@@ -46,7 +46,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Winter beef better marbled; summer grass-fed leaner",
-    risk: "low"
+    risk: "low",
   },
 
   "protein.beef.fillet.steak": {
@@ -57,7 +57,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Winter better quality; buy for entertaining then",
-    risk: "low"
+    risk: "low",
   },
 
   "protein.lamb.leg.whole": {
@@ -68,7 +68,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Spring lamb (Sep-Nov) is premium; winter is older mutton",
-    risk: "medium"
+    risk: "medium",
   },
 
   "protein.fish.snoek.smoked": {
@@ -79,7 +79,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "none",
     notes: "Iconic SA fish; coldest winter months only; buy and freeze",
-    risk: "high"
+    risk: "high",
   },
 
   "protein.crustacean.crayfish.tail": {
@@ -90,7 +90,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local + imported",
     notes: "Rock lobster season; summer peak; winter scarcer",
-    risk: "high"
+    risk: "high",
   },
 
   "protein.fish.hake.fillet": {
@@ -101,7 +101,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Winter best quality; summer imported stock",
-    risk: "low"
+    risk: "low",
   },
 
   // ===== DAIRY =====
@@ -114,7 +114,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Slight seasonal variance; winter cheapest",
-    risk: "low"
+    risk: "low",
   },
 
   "dairy.milk.fullcream": {
@@ -125,7 +125,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Minimal seasonal change; stable staple",
-    risk: "low"
+    risk: "low",
   },
 
   "dairy.cheese.feta": {
@@ -136,7 +136,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local + imported",
     notes: "SA artisanal feta growing; winter imports more",
-    risk: "medium"
+    risk: "medium",
   },
 
   // ===== PRODUCE =====
@@ -149,7 +149,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local (stored)",
     notes: "Storage crops; cheap after harvest; expensive pre-new harvest",
-    risk: "low"
+    risk: "low",
   },
 
   "produce.garlic.fresh": {
@@ -160,7 +160,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "imported",
     notes: "SA garlic peak Aug-Dec; imported very expensive Jan-Jul",
-    risk: "medium"
+    risk: "medium",
   },
 
   "produce.tomato.fresh": {
@@ -171,7 +171,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "imported",
     notes: "Major seasonal swing; summer abundant; winter imports expensive",
-    risk: "high"
+    risk: "high",
   },
 
   "produce.bell-pepper.red": {
@@ -182,7 +182,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "imported",
     notes: "Summer abundant; winter very expensive; consider frozen",
-    risk: "high"
+    risk: "high",
   },
 
   "produce.spinach.fresh": {
@@ -193,7 +193,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local (greenhouse)",
     notes: "Seasonal growing; winter greenhouse expensive; consider frozen",
-    risk: "high"
+    risk: "high",
   },
 
   "produce.asparagus": {
@@ -203,8 +203,9 @@ window.SA_INGREDIENT_SEASONALITY = {
     price_offseason: { season: "Dec-Aug (imported/none)", r_per_kg: 55 },
     source_peak: "local",
     source_offseason: "imported",
-    notes: "Cape asparagus iconic Sept-Nov; plan menus around this; pricey off-season",
-    risk: "high"
+    notes:
+      "Cape asparagus iconic Sept-Nov; plan menus around this; pricey off-season",
+    risk: "high",
   },
 
   "produce.lemon.fresh": {
@@ -215,7 +216,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local + imported",
     notes: "SA lemons peak Mar-Jun; reasonably stable year-round",
-    risk: "low"
+    risk: "low",
   },
 
   "produce.lime.fresh": {
@@ -226,7 +227,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "imported",
     notes: "Tropical; mostly imported; use lemons or lemon juice off-season",
-    risk: "high"
+    risk: "high",
   },
 
   "produce.cucumber": {
@@ -237,7 +238,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "imported",
     notes: "Summer staple; winter expensive; consider salad alternatives",
-    risk: "medium"
+    risk: "medium",
   },
 
   // ===== PANTRY STAPLES (Year-round, minimal seasonality) =====
@@ -250,7 +251,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Minimal seasonality; slight cost variance",
-    risk: "low"
+    risk: "low",
   },
 
   "pantry.rice.white.basmati": {
@@ -261,7 +262,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported; minimal seasonal swing; global prices apply",
-    risk: "low"
+    risk: "low",
   },
 
   "pantry.pasta.spaghetti": {
@@ -272,7 +273,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local + imported",
     source_offseason: "local + imported",
     notes: "Staple; no seasonal swing; consistent pricing",
-    risk: "low"
+    risk: "low",
   },
 
   "pantry.salt.kosher": {
@@ -283,7 +284,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Indefinite shelf life; no seasonality",
-    risk: "low"
+    risk: "low",
   },
 
   "pantry.sugar.white.granulated": {
@@ -294,7 +295,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Minimal seasonality; slight variance with harvest",
-    risk: "low"
+    risk: "low",
   },
 
   "pantry.olive-oil.extra-virgin": {
@@ -305,7 +306,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported; Mediterranean harvest Nov-Jan may affect price slightly",
-    risk: "low"
+    risk: "low",
   },
 
   // ===== SPICES (Year-round; imported; minimal seasonality) =====
@@ -318,7 +319,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported spice; stable year-round pricing",
-    risk: "low"
+    risk: "low",
   },
 
   "spice.cumin.ground": {
@@ -329,7 +330,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported; no seasonality",
-    risk: "low"
+    risk: "low",
   },
 
   "spice.turmeric.ground": {
@@ -340,7 +341,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported from India; stable pricing",
-    risk: "low"
+    risk: "low",
   },
 
   "spice.cinnamon.ground": {
@@ -351,7 +352,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Imported; year-round stable",
-    risk: "low"
+    risk: "low",
   },
 
   "spice.paprika.ground": {
@@ -362,7 +363,7 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "imported",
     source_offseason: "imported",
     notes: "Spanish/Hungarian import; stable year-round",
-    risk: "low"
+    risk: "low",
   },
 
   // ===== EGGS & DAIRY (Mostly year-round) =====
@@ -375,8 +376,8 @@ window.SA_INGREDIENT_SEASONALITY = {
     source_peak: "local",
     source_offseason: "local",
     notes: "Winter cheaper (peak laying); summer expensive (heat stress)",
-    risk: "low"
-  }
+    risk: "low",
+  },
 
   // NOTE: Continued mapping of remaining ~50 ingredients
   // TODO: Additional produce (potatoes, broccoli, cauliflower, peas, beans)
@@ -384,7 +385,10 @@ window.SA_INGREDIENT_SEASONALITY = {
   // TODO: Additional spices (thyme, rosemary, oregano, bay leaves, chilli flakes)
   // TODO: Additional dairy (mozzarella, parmesan, ricotta, sour cream)
   // TODO: Wine & beverages (red wine, white wine, stock varieties)
-
 };
 
-console.log('✅ SA Ingredient Seasonality loaded. ' + Object.keys(window.SA_INGREDIENT_SEASONALITY).length + ' ingredients with seasonal data.');
+console.log(
+  "✅ SA Ingredient Seasonality loaded. " +
+    Object.keys(window.SA_INGREDIENT_SEASONALITY).length +
+    " ingredients with seasonal data."
+);

@@ -26,7 +26,12 @@
   }
   body {
     background:
-      radial-gradient(120% 70% at 50% -10%, #2a1f15 0%, var(--color-espresso) 55%) fixed,
+      radial-gradient(
+          120% 70% at 50% -10%,
+          #2a1f15 0%,
+          var(--color-espresso) 55%
+        )
+        fixed,
       var(--color-espresso);
     color: var(--color-parchment);
     font-family: var(--font-sans);

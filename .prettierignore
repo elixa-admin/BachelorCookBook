@@ -1,0 +1,30 @@
+# Build / dependency output
+.next/
+out/
+build/
+node_modules/
+
+# Vercel
+.vercel/
+
+# Version control / OS
+.git/
+.DS_Store
+
+# Hand-maintained app file (3279 lines, author-controlled formatting).
+# Format drift here is fixed by hand, not by the formatter.
+public/tub/tub-app.html
+
+# Large recipe data files authored as compact one-line records.
+# Normalized to readable formatting separately during baseline standardization,
+# not by every prettier run.
+public/tub/recipes/recipes-data.js
+public/tub/recipes/fullcook-conversions.js
+
+# Generated / binary
+package-lock.json
+*.min.js
+*.min.css
+
+# Legacy archive (removed during baseline standardization, ignored as a safety net)
+tub-import/

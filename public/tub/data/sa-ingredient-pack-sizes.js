@@ -33,7 +33,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Freezes well; versatile across dishes"
+    waste_notes: "Freezes well; versatile across dishes",
   },
 
   "protein.chicken.breast.boneless": {
@@ -41,7 +41,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 800,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Dries out if not used within 2-3 days"
+    waste_notes: "Dries out if not used within 2-3 days",
   },
 
   "protein.beef.chuck.cubed": {
@@ -49,7 +49,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Freezes excellently; good for batch cooking"
+    waste_notes: "Freezes excellently; good for batch cooking",
   },
 
   "protein.beef.fillet.steak": {
@@ -57,7 +57,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 400,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Premium; usually single use or freezes"
+    waste_notes: "Premium; usually single use or freezes",
   },
 
   "protein.lamb.leg.whole": {
@@ -65,7 +65,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 2500,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Usually for Sunday lunch; freezes well as portions"
+    waste_notes: "Usually for Sunday lunch; freezes well as portions",
   },
 
   "protein.fish.snoek.smoked": {
@@ -73,7 +73,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "high",
-    waste_notes: "Specialty; seasonal June-Aug; limited recipes"
+    waste_notes: "Specialty; seasonal June-Aug; limited recipes",
   },
 
   "protein.crustacean.crayfish.tail": {
@@ -81,7 +81,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "high",
-    waste_notes: "Luxury; expensive; specific occasion use"
+    waste_notes: "Luxury; expensive; specific occasion use",
   },
 
   "protein.fish.hake.fillet": {
@@ -89,7 +89,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Best used within 1-2 days; freezes okay"
+    waste_notes: "Best used within 1-2 days; freezes okay",
   },
 
   "protein.fish.kingklip.fillet": {
@@ -97,7 +97,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Premium white fish; best fresh"
+    waste_notes: "Premium white fish; best fresh",
   },
 
   "protein.egg.large": {
@@ -105,7 +105,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 12,
     unit: "whole",
     waste_risk: "low",
-    waste_notes: "Staple; used across many dishes; stores well (2 weeks)"
+    waste_notes: "Staple; used across many dishes; stores well (2 weeks)",
   },
 
   // ===== DAIRY =====
@@ -115,7 +115,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "ml",
     waste_risk: "high",
-    waste_notes: "Frequently wasted; short shelf life (7-10 days)"
+    waste_notes: "Frequently wasted; short shelf life (7-10 days)",
   },
 
   "dairy.cream.double": {
@@ -123,7 +123,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "ml",
     waste_risk: "high",
-    waste_notes: "Premium; speciality use only; expires quickly"
+    waste_notes: "Premium; speciality use only; expires quickly",
   },
 
   "dairy.milk.fullcream": {
@@ -131,7 +131,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 2000,
     unit: "ml",
     waste_risk: "medium",
-    waste_notes: "Standard household staple; best used within 3-4 days"
+    waste_notes: "Standard household staple; best used within 3-4 days",
   },
 
   "dairy.cheese.feta": {
@@ -139,7 +139,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 200,
     unit: "g",
     waste_risk: "high",
-    waste_notes: "Crumbly; limited recipes; spoils in 10-14 days"
+    waste_notes: "Crumbly; limited recipes; spoils in 10-14 days",
   },
 
   "dairy.cheese.cheddar": {
@@ -147,7 +147,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 200,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Long shelf life; versatile but limited once opened"
+    waste_notes: "Long shelf life; versatile but limited once opened",
   },
 
   "dairy.butter": {
@@ -155,7 +155,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 250,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Pantry staple; freezes well; long shelf life"
+    waste_notes: "Pantry staple; freezes well; long shelf life",
   },
 
   "dairy.yogurt.greek": {
@@ -163,7 +163,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Best within 1 week; single-use primarily"
+    waste_notes: "Best within 1 week; single-use primarily",
   },
 
   // ===== PRODUCE =====
@@ -173,7 +173,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "low",
-    waste_notes: "Bulk purchase (5kg bags R30); stores 3-4 weeks"
+    waste_notes: "Bulk purchase (5kg bags R30); stores 3-4 weeks",
   },
 
   "produce.onion.white": {
@@ -181,7 +181,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "low",
-    waste_notes: "Similar to red; stores well; used across cuisines"
+    waste_notes: "Similar to red; stores well; used across cuisines",
   },
 
   "produce.garlic.fresh": {
@@ -189,7 +189,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "low",
-    waste_notes: "Bought loose; stores 2-3 weeks; pantry staple"
+    waste_notes: "Bought loose; stores 2-3 weeks; pantry staple",
   },
 
   "produce.carrot": {
@@ -197,7 +197,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "low",
-    waste_notes: "Bulk bags common; stores 3-4 weeks in cool place"
+    waste_notes: "Bulk bags common; stores 3-4 weeks in cool place",
   },
 
   "produce.tomato.fresh": {
@@ -205,7 +205,8 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "high",
-    waste_notes: "Seasonal waste; summer abundant (cheap R10/kg); winter imports (R18+/kg)"
+    waste_notes:
+      "Seasonal waste; summer abundant (cheap R10/kg); winter imports (R18+/kg)",
   },
 
   "produce.celery": {
@@ -213,7 +214,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1,
     unit: "bunch",
     waste_risk: "high",
-    waste_notes: "Often half-used; limited recipes; wilts in 5-7 days"
+    waste_notes: "Often half-used; limited recipes; wilts in 5-7 days",
   },
 
   "produce.bell-pepper.red": {
@@ -221,7 +222,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "high",
-    waste_notes: "Seasonal; expensive in winter; few recipes use whole pepper"
+    waste_notes: "Seasonal; expensive in winter; few recipes use whole pepper",
   },
 
   "produce.spinach.fresh": {
@@ -229,7 +230,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g (bundle)",
     waste_risk: "high",
-    waste_notes: "Wilts quickly (3-4 days); limited shelf life"
+    waste_notes: "Wilts quickly (3-4 days); limited shelf life",
   },
 
   "produce.asparagus": {
@@ -237,7 +238,8 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "high",
-    waste_notes: "Seasonal; expensive; specific dish use; best eaten within 2-3 days"
+    waste_notes:
+      "Seasonal; expensive; specific dish use; best eaten within 2-3 days",
   },
 
   "produce.lemon.fresh": {
@@ -245,7 +247,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "medium",
-    waste_notes: "Bought loose; stores well (3-4 weeks); multi-purpose"
+    waste_notes: "Bought loose; stores well (3-4 weeks); multi-purpose",
   },
 
   "produce.lime.fresh": {
@@ -253,7 +255,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g (per kg)",
     waste_risk: "high",
-    waste_notes: "Specialty; fewer recipes; limited storage (2 weeks)"
+    waste_notes: "Specialty; fewer recipes; limited storage (2 weeks)",
   },
 
   "produce.cucumber": {
@@ -261,7 +263,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 2,
     unit: "pack (per 2)",
     waste_risk: "medium",
-    waste_notes: "Quick usage or salad prep; stores 1 week"
+    waste_notes: "Quick usage or salad prep; stores 1 week",
   },
 
   // ===== PANTRY STAPLES =====
@@ -271,7 +273,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 2500,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Pantry staple; long shelf life (6+ months); freezer-stable"
+    waste_notes: "Pantry staple; long shelf life (6+ months); freezer-stable",
   },
 
   "pantry.rice.white.basmati": {
@@ -279,7 +281,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Premium rice; lasts indefinitely; commonly used"
+    waste_notes: "Premium rice; lasts indefinitely; commonly used",
   },
 
   "pantry.rice.white.short-grain": {
@@ -287,7 +289,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Versatile; long storage; everyday staple"
+    waste_notes: "Versatile; long storage; everyday staple",
   },
 
   "pantry.pasta.spaghetti": {
@@ -295,7 +297,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Long shelf life; versatile; staple item"
+    waste_notes: "Long shelf life; versatile; staple item",
   },
 
   "pantry.salt.kosher": {
@@ -303,7 +305,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Indefinite shelf life; fundamental pantry ingredient"
+    waste_notes: "Indefinite shelf life; fundamental pantry ingredient",
   },
 
   "pantry.sugar.white.granulated": {
@@ -311,7 +313,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 1000,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Indefinite shelf life; essential pantry staple"
+    waste_notes: "Indefinite shelf life; essential pantry staple",
   },
 
   "pantry.olive-oil.extra-virgin": {
@@ -319,7 +321,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "ml",
     waste_risk: "low",
-    waste_notes: "Lasts 6-12 months; used frequently; premium ingredient"
+    waste_notes: "Lasts 6-12 months; used frequently; premium ingredient",
   },
 
   "pantry.soy-sauce": {
@@ -327,7 +329,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 500,
     unit: "ml",
     waste_risk: "low",
-    waste_notes: "Long shelf life; universal; slow usage"
+    waste_notes: "Long shelf life; universal; slow usage",
   },
 
   "pantry.coconut-milk.canned": {
@@ -335,7 +337,8 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 400,
     unit: "ml",
     waste_risk: "high",
-    waste_notes: "Single-use recipe ingredient; limited storage after opening (3-4 days)"
+    waste_notes:
+      "Single-use recipe ingredient; limited storage after opening (3-4 days)",
   },
 
   // ===== SPICES =====
@@ -345,7 +348,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "low",
-    waste_notes: "Slow usage; lasts 1-2 years; pantry essential"
+    waste_notes: "Slow usage; lasts 1-2 years; pantry essential",
   },
 
   "spice.cumin.ground": {
@@ -353,7 +356,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Specific cuisine use; lasts 6-12 months"
+    waste_notes: "Specific cuisine use; lasts 6-12 months",
   },
 
   "spice.turmeric.ground": {
@@ -361,7 +364,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Indian/Asian dishes; 1-year shelf life"
+    waste_notes: "Indian/Asian dishes; 1-year shelf life",
   },
 
   "spice.cinnamon.ground": {
@@ -369,7 +372,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Baking + savory; lasts 12 months"
+    waste_notes: "Baking + savory; lasts 12 months",
   },
 
   "spice.paprika.ground": {
@@ -377,7 +380,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "European + braising dishes; 1-year shelf life"
+    waste_notes: "European + braising dishes; 1-year shelf life",
   },
 
   "spice.ginger.ground": {
@@ -385,7 +388,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Asian + baking; lasts 12 months"
+    waste_notes: "Asian + baking; lasts 12 months",
   },
 
   "spice.chilli-powder.cayenne": {
@@ -393,7 +396,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 40,
     unit: "g",
     waste_risk: "medium",
-    waste_notes: "Heat/flavor; lasts 1-2 years; slow usage"
+    waste_notes: "Heat/flavor; lasts 1-2 years; slow usage",
   },
 
   // ===== OILS & CONDIMENTS =====
@@ -403,7 +406,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 2000,
     unit: "ml",
     waste_risk: "low",
-    waste_notes: "Cooking workhorse; lasts 6-12 months; high usage"
+    waste_notes: "Cooking workhorse; lasts 6-12 months; high usage",
   },
 
   "oil.butter.ghee": {
@@ -411,7 +414,7 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 250,
     unit: "ml",
     waste_risk: "medium",
-    waste_notes: "Specialty cooking oil; lasts 6-12 months; slow usage"
+    waste_notes: "Specialty cooking oil; lasts 6-12 months; slow usage",
   },
 
   "condiment.vinegar.balsamic": {
@@ -419,8 +422,9 @@ window.SA_INGREDIENT_PACK_SIZES = {
     common_size: 250,
     unit: "ml",
     waste_risk: "high",
-    waste_notes: "Finishing ingredient; limited recipe use; indefinite shelf life"
-  }
+    waste_notes:
+      "Finishing ingredient; limited recipe use; indefinite shelf life",
+  },
 
   // NOTE: Continued mapping of remaining 60+ ingredients
   // TODO: Additional produce (potatoes, broccoli, leafy greens)
@@ -428,7 +432,10 @@ window.SA_INGREDIENT_PACK_SIZES = {
   // TODO: Additional spices (thyme, rosemary, oregano, bay leaves, etc.)
   // TODO: Additional dairy (mozzarella, parmesan, ricotta)
   // TODO: Wine & beverages (red wine, white wine, stock, soy sauce variants)
-
 };
 
-console.log('✅ SA Ingredient Pack Sizes loaded. ' + Object.keys(window.SA_INGREDIENT_PACK_SIZES).length + ' ingredients with SA pack-size data.');
+console.log(
+  "✅ SA Ingredient Pack Sizes loaded. " +
+    Object.keys(window.SA_INGREDIENT_PACK_SIZES).length +
+    " ingredients with SA pack-size data."
+);
