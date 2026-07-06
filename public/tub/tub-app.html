@@ -2078,7 +2078,7 @@ function timelineHTML(r){
     var disp=__tlDispTS(i,idx,parsed,hasSgn);
     var duration=t[3];
     var isPassive=(typeof duration==='number'&&duration>0)||duration===true;
-    var ttl=(isPassive?'⏱ ':'')+t[1];
+    var ttl=t[1];
     var isRest=t[1].toLowerCase().includes('rest');
     var isServe=t[1].toLowerCase().includes('serve')||i===tl.length-1;
 
@@ -2493,7 +2493,7 @@ function fmtCook(s){return fmtClock(s);}
 function renderIgs(ing){
   document.getElementById('ings').innerHTML=ing.map(g=>{
     const groupName=g[0];
-    const isServing=groupName.toUpperCase()==='SERVING';
+    const isServing=/^(for serving|serving|to serve)/i.test(groupName.trim());
     const swapBtn=isServing?'':'<button class="ingroup-swap-btn" onclick="openGroupSwapModal(this, event)"><i class="ti ti-arrows-exchange"></i> Swap</button>';
 
     const listHTML=g[1].map(it=>{
@@ -2507,7 +2507,13 @@ function renderIgs(ing){
         const cleanName = String(name).replace(/<[^>]*>/g,'');
         return `<li class="serving-item">${cleanName}</li>`;
       }
-      if(it[0]==='static')return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">—</span><span class="nm">${it[2]}</span></li>`;
+      if(it[0]==='static'){
+        var qtyDisp, nameDisp;
+        if(it.length>=5){qtyDisp=it[2]+' '+it[3];nameDisp=it[4];}
+        else if(it.length>=4){qtyDisp=it[2];nameDisp=it[3];}
+        else{qtyDisp='—';nameDisp=it[2];}
+        return `<li class="static"><span class="igcheck" onclick="this.closest('li').classList.toggle('have')"></span><span class="q">${qtyDisp}</span><span class="nm">${nameDisp}</span></li>`;
+      }
       var sub = findSubs(it[3]);
       var subTrigger = '';
       if (sub) {
