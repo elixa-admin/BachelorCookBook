@@ -324,7 +324,7 @@ window.TIPS={
     subs:[["garam masala","mixed curry powder + cinnamon"],["tandoori paste","curry paste + yoghurt"],["cream","evaporated milk or coconut cream"],["basmati rice","regular long-grain rice"]],
     tips:[
       "Marinate overnight. This tenderises meat and adds flavour.",
-      "Grill or broil chicken first. This adds char flavour.",
+      "Grill the chicken first. This adds char flavour.",
       "Use full-fat yoghurt. Lite versions split during cooking.",
       "Simmer gently. High heat toughens the cream.",
       "Finish with butter. This enriches and glossy the sauce."

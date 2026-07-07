@@ -424,7 +424,7 @@ window.RECIPE_STORAGE = {
   "roast-chicken": {
     "fridge": "Store leftover Sunday Roast Chicken, Lemon & Thyme in store in an airtight container for up to 3–4 days (safe poultry timeline). Keep meat on the bone if possible to retain juices.",
     "freezer": "Sunday Roast Chicken, Lemon & Thyme freezes well. Freeze wrapped tightly in foil and plastic wrap for up to 2–3 months. Thaw in the fridge overnight before reheating.",
-    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill/broil for 2 minutes to crisp skin."
+    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill for 2 minutes to crisp skin."
   },
   "tacos-al-pastor": {
     "fridge": "Store leftover Tacos Al Pastor in store the taco meat, tortillas, and toppings in separate airtight containers for up to 3 days. Assemble only when serving.",
@@ -484,7 +484,7 @@ window.RECIPE_STORAGE = {
   "duck-a-l-orange": {
     "fridge": "Store leftover Duck à l'Orange in store in an airtight container for up to 3–4 days (safe poultry timeline). Keep meat on the bone if possible to retain juices.",
     "freezer": "Duck à l'Orange freezes well. Freeze wrapped tightly in foil and plastic wrap for up to 2–3 months. Thaw in the fridge overnight before reheating.",
-    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill/broil for 2 minutes to crisp skin."
+    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill for 2 minutes to crisp skin."
   },
   "french-onion-soup": {
     "fridge": "Store leftover French Onion Soup, Gruyère Crouton in store in an airtight container for up to 3 days. Keep the croutons and cheese topping separate until ready to serve.",
@@ -519,7 +519,7 @@ window.RECIPE_STORAGE = {
   "peking-duck": {
     "fridge": "Store leftover Peking Duck in store in an airtight container for up to 3–4 days (safe poultry timeline). Keep meat on the bone if possible to retain juices.",
     "freezer": "Peking Duck freezes well. Freeze wrapped tightly in foil and plastic wrap for up to 2–3 months. Thaw in the fridge overnight before reheating.",
-    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill/broil for 2 minutes to crisp skin."
+    "reheat": "Reheat covered with foil in a 160°C (320°F) oven with a splash of broth for 12–15 minutes, then grill for 2 minutes to crisp skin."
   },
   "lamb-shank-red-wine": {
     "fridge": "Store leftover Red-Wine Braised Lamb Shank in store in an airtight container for up to 3–4 days. Stews and curries benefit from sitting overnight as flavor compounds marry and deepen.",

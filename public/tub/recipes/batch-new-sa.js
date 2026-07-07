@@ -159,6 +159,7 @@ window.NEW_BATCH_SA=[
   time:'2 hr 30 min',
   method:'Stovetop · long braise',
   diff:'Medium',
+    pair: [["Wine","Stellenbosch Syrah","South Africa","Syrah's clove-and-pepper soul was born for this — it wraps the lamb's cinnamon warmth in velvety dark fruit."],["Non-alcoholic","Spiced rooibos iced tea","South Africa","Rooibos' honeyed spice echoes the masala, cooling the heat while harmonising perfectly with every aromatic."]],
   blurb:'Lamb shoulder slow-braised in warm Cape Malay spices, tamarind and apricot — fragrant, tender, unmistakably Cape.',
   brief:{
     lead:'This is Cape Malay cooking at its most generous — lamb shoulder surrendered to a pot of warming spices, tamarind\'s sour depth and the soft sweetness of dried apricots. Two and a half hours later, the meat falls apart and the sauce tastes of centuries of spice-trade history. Serve over yellow rice.',
@@ -246,6 +247,7 @@ window.NEW_BATCH_SA=[
   time:'45 min',
   method:'Stovetop · pan-fry',
   diff:'Easy',
+    pair: [["Wine","Unwooded Chenin Blanc","South Africa","Unoaked Chenin's crisp green-apple snap and bright acidity are the perfect foil for golden, crispy fish cakes."],["Beer","Windhoek Lager","South Africa","A cold, clean lager is fish-cake perfection — light and brisk, never competing with the tartare."],["Non-alcoholic","Appletiser","South Africa","Sparkling Appletiser's gentle fizz and apple sweetness are a refreshing, fuss-free partner."]],
   blurb:'Golden hake fish cakes with a crispy crust, creamy potato and herb filling — served with homemade tartare sauce.',
   brief:{
     lead:'Fish cakes are South Africa\'s great coastal comfort food — flaked hake folded with mashed potato, spring onion and herbs, shaped and fried until they are golden and crisp on the outside, soft and yielding within. The tartare sauce is non-negotiable and takes three minutes.',
@@ -329,6 +331,7 @@ window.NEW_BATCH_SA=[
   time:'1 hr + 4 hr chill',
   method:'Oven · water bath bake',
   diff:'Medium',
+    pair: [["Wine","Méthode Cap Classique (MCC)","South Africa","A crisp Cap Classique and its elegant bead cut straight through the creamy cinnamon custard — pure indulgence made lighter."],["Non-alcoholic","Appletiser","South Africa","Sparkling apple's gentle acidity and clean sweetness echo the tart's mellow, milky charm."]],
   blurb:'A South African fusion: the creamy vanilla-cinnamon custard of a melktert poured over a cream cheese base and baked golden.',
   brief:{
     lead:'This is what happens when the melktert meets the cheesecake — two of South Africa\'s most beloved desserts fused into one: a biscuit base, a cream cheese layer, topped with a cinnamon-vanilla melktert custard that sets to a silky wobble. It is unmistakably South African and entirely its own.',
@@ -547,6 +550,7 @@ window.NEW_BATCH_SA=[
   time:'2 hr 30 min',
   method:'Oven · reverse sear',
   diff:'Medium',
+    pair: [["Wine","Elgin Sauvignon Blanc","South Africa","Elgin Sauvignon's zesty lime and sea-spray minerality is electric against oily, charred sardines and a squeeze of lemon."],["Beer","Castle Lager","South Africa","An ice-cold lager is the beachside classic — crisp and clean, it rinses the rich, oily fish clean away."],["Non-alcoholic","Ginger beer","South Africa","A zingy ginger beer echoes the lemon's brightness, its lively fizz lifting the sardines' smoky oil."]],
   blurb:'Bone-in rib roast, dry-rubbed, slow-roasted to a perfect medium-rare, then seared for a deep crust. With pan red wine jus.',
   brief:{
     lead:'The prime rib is the centrepiece dish — a bone-in rib roast that announces itself before it is even carved. The reverse sear method — low and slow first, then a screaming-hot sear — gives you a perfectly even medium-rare from edge to edge, with a dark, savoury crust. The jus built from the pan drippings is the punctuation.',

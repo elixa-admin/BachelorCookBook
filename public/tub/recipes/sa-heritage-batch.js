@@ -261,7 +261,7 @@ window.SA_HERITAGE_BATCH=[
       ['The pap',[
         ['linear',500,'ml','Whole milk'],
         ['linear',500,'ml','Chicken or vegetable stock'],
-        ['linear',150,'g','Maize meal (fine cornmeal)'],
+        ['linear',150,'g','Maize meal (fine)'],
         ['countN',1,'tsp','Salt'],
         ['linear',30,'g','Butter'],
         ['linear',60,'ml','Cream (optional, but recommended)'],

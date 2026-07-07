@@ -88,6 +88,7 @@ window.SA_ADDITIONS=[
  "time":"1 hr 15 min",
  "method":"Stovetop · covered braise",
  "diff":"Medium",
+  "pair": [["Wine","Off-dry Chenin Blanc","South Africa","A touch of residual sweetness tames the curry's fire with ripe orchard fruit, its crispness refreshing the palate between bites."],["Beer","Castle Lager","South Africa","An ice-cold Castle is curry's oldest friend — clean, crisp, and endlessly forgiving against the spice."],["Non-alcoholic","Ginger beer","South Africa","Spicy ginger beer is the classic curry companion, its gentle warmth and fizz soothing every fiery mouthful."]],
  "blurb":"The fragrant, gently sweet Western Cape curry — chicken and potato in a roasted-wet-masala gravy of coriander, cumin, fennel and turmeric, lifted with apricot and finished with coriander.",
  "prov":{
   "popular_in":"Cape Town's Bo-Kaap and Western Cape homes — the distinct, aromatic curry of the Cape Malay tradition",

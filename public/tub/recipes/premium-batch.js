@@ -9,14 +9,7 @@ window.PREMIUM_BATCH = [
     method:'Stovetop & oven · braise',
     diff:'Medium',
     blurb:"Chicken braised in red Burgundy wine with bacon, mushrooms, and pearl onions — France's rustic masterpiece.",
-    prov:{
-      popular_in:"Burgundy region, France; French bistros worldwide",
-      famous_for:"Transforming humble chicken into a luxurious wine-infused dish; Julia Child's television favourite",
-      consists_of:"Chicken pieces slowly braised in red Burgundy wine with bacon lardons, mushrooms, pearl onions, and aromatic herbs",
-      name_origin:"French for 'rooster in wine' — historically made with older rooster birds requiring long wine braise to tenderise",
-      why_loved:"Deep red wine flavour permeates tender chicken, while the silky sauce captures the essence of Burgundy",
-      method_detail:"Stovetop — sear then braise in wine until chicken is meltingly tender"
-    },
+    prov:{popular_in:'A peasant classic turned bistro icon, simmered in the wine regions of Burgundy and beyond, and served wherever a long, slow meal is the whole point of the evening.',famous_for:'An old bird transformed — the dark meat falling from the bone in a glossy wine sauce flecked with lardons, button mushrooms, and pearl onions that have soaked up every drop.',consists_of:'Chicken braised slowly in red wine with onions, garlic, mushrooms, and cured pork until the meat is silky and the sauce is deep, dark, and thick enough to coat a spoon.',name_origin:'French for ‘rooster in wine’ — the dish is said to have turned tough old farm birds tender through long, wine-fortified braising, a humble answer to a tough ingredient.',why_loved:'Humble ingredient made noble by patience, it tastes of the cook’s quiet faith in time itself and the alchemy of a low flame.',method_detail:'Stovetop — brown, flambé, then braise in wine'},
     brief:{
       lead:"Coq au vin is France's answer to the question: what if you braised chicken in a bottle of wine? The answer: deep, ruby-red flavour and impossibly tender meat. Chicken thighs brown first, then simmer slowly in full-bodied Burgundy with bacon, mushrooms, pearl onions, and herbs. The wine reduces into a velvety sauce that clings to each piece. This is bistro cooking at its finest — humble ingredients transformed by time and wine.",
       expect:[
@@ -80,14 +73,7 @@ window.PREMIUM_BATCH = [
     method:'Stovetop · slow braise',
     diff:'Medium',
     blurb:"Aromatic Kashmiri lamb curry with warming spices — the royal dish of the Wazwan feast.",
-    prov:{
-      popular_in:"Kashmir region; served at Wazwan (multi-course feasts)",
-      famous_for:"Signature dish of Kashmiri cuisine; traditionally part of the elaborate Wazwan feast",
-      consists_of:"Lamb shoulder slow-cooked with Kashmiri spices including saffron, ginger, and aromatic herbs",
-      name_origin:"From Kashmiri 'rogan' (oil/fat) and 'josh' (heat/passion) — referring to the rich, fiery-red curry",
-      why_loved:"Complex spice blend with subtle heat; meltingly tender lamb in a silky, aromatic sauce",
-      method_detail:"Stovetop — lamb slowly braised with spices and yogurt until tender"
-    },
+    prov:{popular_in:'A jewel of Kashmiri cuisine, served at celebration tables across northern India and carried by South African Indian cooks into local feasts and weekend pots alike.',famous_for:'Tender lamb bathed in a deep crimson gravy, its colour and warmth drawn from Kashmiri chillies that glow like embers, threaded with the fragrance of fennel and dried ginger.',consists_of:'Lamb braised with yogurt, garlic, ginger, and an aromatic spice blend heavy on fennel, dried ginger, and Kashmiri chillies, finished with a scatter of fresh coriander.',name_origin:'From the Persian roghan (‘oil’ or ‘clarified butter’) and josh (‘heat’ or ‘passion’) — rogan josh means ‘cooked in hot oil’, a name rooted in the Persian influence on the Kashmiri kitchen.',why_loved:'Aromatic, fiery, and deeply savoury, it is a curry of occasion — the kind made when guests are coming and the table must rise to meet them.',method_detail:'Stovetop — brown meat, simmer low in the spiced yogurt gravy'},
     brief:{
       lead:"Rogan Josh is Kashmir's most celebrated curry — tender chunks of lamb shoulder slowly braised with warming spices until the meat falls apart. Unlike many Indian curries, the authentic Kashmiri version often omits onions and garlic, relying instead on a complex blend of spices including fennel, ginger, and saffron. Yogurt provides richness and helps tenderise the lamb. The result: meltingly tender meat in a silky, bright red sauce that's fragrant, not fiery. This is royal Kashmiri cooking.",
       expect:[
@@ -149,14 +135,7 @@ window.PREMIUM_BATCH = [
     method:'Oven · slow braise',
     diff:'Medium',
     blurb:"Lamb shanks slowly braised in red wine until falling-off-the-bone tender — the ultimate make-ahead dinner party dish.",
-    prov:{
-      popular_in:"Mediterranean Europe; dinner parties worldwide",
-      famous_for:"Being the ultimate make-ahead dinner party dish — spectacular results with hands-off cooking",
-      consists_of:"Whole lamb shanks slowly braised in red wine with aromatics until meat falls from the bone",
-      name_origin:"Self-descriptive — Mediterranean tradition of braising tough cuts in wine until tender",
-      why_loved:"Almost no hands-on for extraordinary results; rich wine sauce with meltingly tender meat",
-      method_detail:"Oven — lamb shanks braised in red wine at low temperature until fork-tender"
-    },
+    prov:{popular_in:'A winter fixture of South African tables, where a glass of local red and a braised shank signal together that the cold has well and truly arrived.',famous_for:'A shank so tender the meat falls in whole, glossy sheets from the bone, basted in a wine-dark sauce that begs to be mopped up with crusty bread.',consists_of:'Lamb shanks braised in red wine with onions, carrots, garlic, rosemary, and stock until the connective tissue melts into the gravy and the meat surrenders entirely to the spoon.',name_origin:'The shank is the lower leg of the lamb; slow braising in wine is the method that turns this tough, sinewed, humble cut into a dish of quiet celebration.',why_loved:'A bowl of it feels like shelter — rich, deep, and worth every hour it asks of you, served best with mash and a second glass.',method_detail:'Oven — sear, then braise covered until the bone slides clean'},
     brief:{
       lead:"Lamb shanks are the cut that keeps on giving — collagen-rich meat that transforms into silk after hours of gentle braising. Brown the shanks first, then simmer them slowly in red wine with onions, carrots, celery, and herbs. The wine reduces into a rich, savoury sauce while the collagen breaks down into gelatin. After 2–3 hours, the meat pulls away from the bone with barely a nudge. This is dinner party perfection — most of the cooking happens unattended in the oven.",
       expect:[
@@ -284,14 +263,7 @@ window.PREMIUM_BATCH = [
     method:'Stovetop · sear & compound butter',
     diff:'Medium',
     blurb:"Pan-seared steak served with crispy frites and Café de Paris butter — the bistro classic that defined French brasserie dining.",
-    prov:{
-      popular_in:"French bistros worldwide; originated at Café de Paris in Geneva",
-      famous_for:"The iconic compound butter infused with herbs, spices, and savoury flavours",
-      consists_of:"Pan-seared steak served with crispy frites and a signature herb-spice compound butter",
-      name_origin:"Named after Café de Paris restaurant in Geneva, where the signature butter sauce was created in the 1940s",
-      why_loved:"Complex, aromatic butter transforms a simple steak into something spectacular",
-      method_detail:"Stovetop — steak seared hard, topped with flavoured compound butter"
-    },
+    prov:{popular_in:'A bistro classic beloved across France and Switzerland, now a proud fixture of South African steakhouses that prize a proper sauce over everything else on the plate.',famous_for:'A seared steak melting beneath a disc of Café de Paris butter that pools gold across the meat and drips down to enrich the crisp frites stacked alongside.',consists_of:'Grilled steak served with golden chips and Café de Paris butter — a closely guarded compound of butter, herbs, mustard, curry, and anchovy that melts into a sauce on contact.',name_origin:'Despite the name, Café de Paris butter was created in Geneva, Switzerland — by Mr Boubier around 1930 and popularised by his son-in-law Freddy Dumont at the Café de Paris restaurant, whose secret recipe remains guarded to this day.',why_loved:'The melting butter enriches every chip it touches — an unreasonably good union of steak, potato, and savoury fat that makes a simple meal feel indulgent.',method_detail:'Stovetop — sear steak hot, then crown with melting compound butter'},
     brief:{
       lead:"Steak frites is French bistro perfection — a great steak, crispy frites, and butter. Café de Paris butter is what makes it legendary: a compound butter infused with a complex blend of herbs, spices, and savoury notes. Shallots, garlic, paprika, curry powder, anchovy, capers, mustard, and Worcestershire sauce all contribute to the aromatic, golden butter that melts over a seared steak. Served alongside shoestring frites, this is the dish that defined French brasserie dining.",
       expect:[
@@ -421,12 +393,12 @@ window.PREMIUM_BATCH = [
     diff:'Hard',
     blurb:"Roast duck with a classic orange sauce — sweet, sharp, and savoury, the dish that defined French haute cuisine.",
     prov:{
-      popular_in:"Fine dining restaurants worldwide; classic French cuisine",
-      famous_for:"Being one of the most iconic dishes of French haute cuisine; Julia Child favourite",
-      consists_of:"Roast duck served with a sweet-sour orange sauce made with bitter oranges",
-      name_origin:"Self-descriptive — 'duck with orange' in French; originated in 19th-century French kitchens",
-      why_loved:"Perfect balance of sweet, sharp, and savoury; crispy skin with juicy meat",
-      method_detail:"Oven — duck roasted while fat renders, served with orange gastrique sauce"
+      popular_in:"France — the haute-cuisine classic that defined a cuisine; now the showstopper of the dinner-party table worldwide",
+      famous_for:"The contrast of crisp, fat-rendered duck skin against a glossy orange gastrique — sweet, sharp, and savoury in one cut",
+      consists_of:"A whole duck roasted slowly while its fat renders away, served with a sauce of caramelised sugar, vinegar, orange juice and zest built on a brown stock base",
+      name_origin:"Canard à l'orange — self-descriptive French; the dish as we know it was codified in 19th-century Paris and immortalised by Julia Child, though orange-and-duck pairings date to Renaissance Italy",
+      why_loved:"Three flavours in tension — rich duck, bitter caramel, sharp citrus — resolving on the palate into something greater than the sum. Theatre on a plate, carved at the table",
+      method_detail:"Oven — roast duck slowly to render fat and crisp the skin; stovetop — build the gastrique and finish the sauce"
     },
     brief:{
       lead:"Duck à l'Orange is French haute cuisine's greatest hit — roast duck with a sauce that hits every note. The duck roasts at a moderate temperature while the fat renders away, leaving skin crispy and meat juicy. The sauce balances three elements: a brown sauce base, a sweet-sour gastrique (caramelised sugar and vinegar), and fresh orange juice and zest. The result is rich, savoury, sweet, and sharp all at once. This is the dish that made French cuisine famous worldwide.",
@@ -486,14 +458,7 @@ window.PREMIUM_BATCH = [
     method:'Oven · wrapped in puff pastry',
     diff:'Hard',
     blurb:"Beef fillet wrapped in mushroom duxelles and puff pastry, baked until golden — the ultimate dinner party centerpiece.",
-    prov:{
-      popular_in:"British dinner parties; fine dining restaurants worldwide",
-      famous_for:"Being the most impressive dinner party centerpiece — crispy golden pastry encasing pink, tender beef",
-      consists_of:"Beef fillet coated with mushroom duxelles, wrapped in prosciutto and puff pastry, baked until golden",
-      name_origin:"Named after Arthur Wellesley, 1st Duke of Wellington; the dish resembles the Wellington boot",
-      why_loved:"Dramatic presentation with perfect textures — crisp pastry, earthy mushrooms, juicy beef",
-      method_detail:"Oven — beef seared, wrapped in duxelles and pastry, baked at high heat"
-    },
+    prov:{popular_in:'The proud centrepiece of British Sunday lunches and Christmas tables, carried to the dining room with quiet ceremony and sliced to a small hush of anticipation.',famous_for:'A golden, flaking pastry shell encasing a rosy, seasoned fillet — the satisfying crack of the crust giving way to meltingly tender beef beneath a layer of savoury mushroom.',consists_of:'A whole beef fillet sealed under mushroom duxelles, Parma ham, and sometimes a thin crêpe, then wrapped in puff pastry and baked until the crust is burnished and the centre is blushing pink.',name_origin:'Popularly associated with Arthur Wellesley, the Duke of Wellington, though the modern form is a 20th-century British refinement of the much older French filet de bœuf en croûte.',why_loved:'It rewards patience with theatre — the first slice reveals a perfect ring of colour, pastry, and pink, a small triumph on the carving board.',method_detail:'Oven — seal, wrap, then bake hot to set the crust'},
     brief:{
       lead:"Beef Wellington is the dinner party dish to end all dinner parties — dramatic, impressive, and utterly delicious. A whole beef fillet is seared, then coated with a rich mushroom duxelles (finely chopped mushrooms cooked until dry). The fillet is wrapped in prosciutto and chilled, then encased in puff pastry and baked until golden. The result: a beautiful golden pastry cylinder that, when sliced, reveals pink, juicy beef surrounded by earthy mushrooms and crispy, buttery pastry. This is showstopping cooking.",
       expect:[

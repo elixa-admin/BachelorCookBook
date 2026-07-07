@@ -9,14 +9,7 @@ window.GLOBAL_EXOTIC_BATCH = [
     method:'Stovetop · braise',
     diff:'Medium',
     blurb:"Tender grilled chicken in a creamy tomato sauce — Britain's adopted national dish with Indian soul.",
-    prov:{
-      popular_in:"United Kingdom; Indian restaurants worldwide",
-      famous_for:"Being Britain's national dish despite Indian roots; Glasgow invention story",
-      consists_of:"Marinated grilled chicken pieces simmered in a creamy tomato-based curry sauce",
-      name_origin:"Hindi-Urdu 'tikka' (grilled meat pieces) + 'masala' (spice mixture); British curry house invention",
-      why_loved:"Creamy, mildly spiced sauce appeals to Western palates while retaining Indian aromatic depth",
-      method_detail:"Stovetop — chicken pieces braised in creamy tomato sauce until tender"
-    },
+    prov:{popular_in:'The most-ordered curry in Britain and a beloved fixture of South African Indian restaurants from Johannesburg to Durban, where its creamy warmth never falls out of favour.',famous_for:'Char-edged chicken nuggets folded into a silky, tomato-cream sauce the colour of a SA sunset, glowing with warm spice and brightened by a final scatter of fresh coriander.',consists_of:'Tandoor-style marinated chicken, charred then simmered in a gravy of tomato, cream, ginger, garlic, and garam masala, loosened with butter and finished with coriander.',name_origin:'Widely credited to South Asian chefs in post-war Britain, who enriched a tomato gravy with cream to suit local palates — a dish born of migration, adaptation, and the meeting of two kitchens.',why_loved:'Mild, rich, and deeply moreish, it eases newcomers into spice while rewarding those who return to it again and again with flatbread in hand.',method_detail:'Stovetop — char chicken, then simmer in the tomato-cream sauce'},
     brief:{
       lead:"Chicken tikka masala is Britain's culinary success story: a dish invented in Glasgow that became a national favourite. Chicken pieces are marinated in yoghurt and spices, grilled or pan-seared until golden, then simmered in a creamy tomato sauce flavoured with ginger, garlic, and warming spices. The sauce balances richness from cream, sweetness from tomatoes, and gentle heat from spices. This is comfort food that bridges cultures — Indian technique meets British love for creamy sauces.",
       expect:[

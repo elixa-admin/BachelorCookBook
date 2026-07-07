@@ -250,14 +250,7 @@ window.COMPENDIUM=[
     "method": "No-bake · assemble",
     "diff": "Medium",
     "blurb": "Italy's coffee classic — espresso-dipped ladyfingers with mascarpone cream, dusted with cocoa.",
-    "prov": {
-      "popular_in": "Italian trattorias and dessert menus globally",
-      "famous_for": "The iconic Italian no-bake dessert with coffee-soaked ladyfingers and mascarpone",
-      "consists_of": "Savoiardi (ladyfingers) dipped in espresso, layered with mascarpone-cream mixture, cocoa-dusted",
-      "name_origin": "Tiramisu = 'pick me up' — from coffee kick and sugar energy; invented in 1960s Veneto",
-      "why_loved": "The coffee-soaked biscuits with silky mascarpone cream and bitter chocolate dust is perfection",
-      "method_detail": "No-bake — egg yolks whipped with sugar, mascarpone folded, ladyfingers dipped in espresso-rum, layered, chilled 4+ hours, cocoa-dusted"
-    },
+    "prov": {popular_in:'The most-loved Italian dessert worldwide, served at the close of family meals from Venice to Johannesburg’s Italian quarter, and almost universally ordered in pairs.',famous_for:'Layers of espresso-soaked sponge folded with cloud-soft mascarpone cream, dusted dark with bitter cocoa and lifted by a quiet warmth of spirit beneath.',consists_of:'Ladyfinger sponge dipped in strong coffee and a whisper of spirit, layered with a mascarpone, egg, and sugar cream, finished with a dusting of bitter cocoa.',name_origin:'Italian for ‘pick me up’ — created in the 1970s at Le Beccherie in Treviso by Alba Campeol and pastry chef Roberto Linguanotto, inspired by a traditional energising tonic of eggs and mascarpone.',why_loved:'Bitter coffee, sweet cream, and a spirit’s quiet warmth — it lifts the table at the very end, exactly as its name promises it will.',method_detail:'No-bake — assemble layers, then chill to set'},
     "key_ings": [
       "mascarpone cheese",
       "eggs (yolks)",
@@ -282,15 +275,9 @@ window.COMPENDIUM=[
     "time": "1 hr (plus chilling)",
     "method": "Oven · bake + torch",
     "diff": "Medium",
+        pair: [["Wine","Méthode Cap Classique (MCC)","South Africa","A refined Cap Classique lifts the mascarpone with fine bubbles and brioche, its crispness balancing the espresso-soaked layers."],["Non-alcoholic","Iced rooibos latte","South Africa","A creamy iced rooibos latte mirrors the tiramisu's coffee-and-cream layers, minus the caffeine and the heaviness."]],
     "blurb": "French restaurant classic — silky vanilla custard with caramelised sugar crust.",
-    "prov": {
-      "popular_in": "French restaurants and fine dining globally",
-      "famous_for": "The classic French vanilla custard with crackling caramelised sugar top",
-      "consists_of": "Rich egg-cream custard flavoured with vanilla, baked, topped with sugar, caramelised until crisp",
-      "name_origin": "'Burnt cream' — originated in Catalonia as crema catalana, adopted into French cuisine",
-      "why_loved": "The contrast of silky cool custard with warm crackling caramelised sugar is magical",
-      "method_detail": "Oven — cream infused with vanilla, yolks and sugar whisked, combined, baked in water bath 45-55 min, chilled, sugared, torched"
-    },
+    "prov": {popular_in:'The closing ritual of countless French and South African bistro dinners, where the spoon strikes the sugar and the whole table goes briefly, contentedly quiet.',famous_for:'A satisfying crack of torched caramel giving way to a cold, vanilla-flecked custard that pours across the tongue like cool silk beneath its warm, brittle, amber crown.',consists_of:'A baked vanilla custard base of cream, egg yolks, and sugar, sealed beneath a thin, even layer of caramelised sugar that is torched or grilled to amber just before it is carried out.',name_origin:'French for ‘burnt cream’ — first printed by François Massialot in 1691; Catalonia claims a sibling in crema catalana, and the lineage remains proudly, cheerfully disputed across borders.',why_loved:'The contrast of brittle and soft, hot and cold, is theatre in a single ramekin — a small, perfect, and deeply satisfying end to any meal.',method_detail:'Oven then torch — bake custard, then caramelise the sugar crown'},
     "key_ings": [
       "heavy cream",
       "egg yolks",
@@ -311,15 +298,9 @@ window.COMPENDIUM=[
     "time": "50 min",
     "method": "Oven · bake + sauce",
     "diff": "Easy",
+        pair: [["Wine","Cape Hanepoot (Jerepigo)","South Africa","A luscious Muscat drapes the warm sponge in orange blossom and honey, doubling the pudding's sticky, golden comfort."],["Non-alcoholic","Vanilla rooibos iced tea","South Africa","Vanilla-laced rooibos offers gentle, caramel warmth that soothes without ever competing with the sauce."]],
     "blurb": "South Africa's Sunday favourite — caramelised apricot sponge with hot cream-butter sauce.",
-    "prov": {
-      "popular_in": "South African households and Sunday roasts",
-      "famous_for": "The beloved South African sponge pudding with apricot jam and cream sauce",
-      "consists_of": "Apricot jam sponge cake baked, hot cream-butter sauce poured over, absorbs and creates sticky caramel",
-      "name_origin": "Malva possibly from 'malvaleger' — marshmallow-like soft texture; Dutch-Afrikaner heritage",
-      "why_loved": "The sticky, caramelised sponge soaked in hot buttery cream sauce is pure comfort",
-      "method_detail": "Oven — butter, sugar, eggs, apricot jam creamed, dry ingredients added, baked 35 min, hot cream sauce poured over, absorbed 10 min"
-    },
+    "prov": {popular_in:'The most beloved dessert in all of South Africa, served warm from Cape Town to the Lowveld whenever there is something — anything — worth celebrating.',famous_for:'A spongy, caramel-soaked pudding that collapses into a warm, sticky sweetness the moment a spoon breaks its surface, pooling golden sauce around the edge of the dish.',consists_of:'A baked apricot-jam sponge drenched, while still hot, in a cream-and-butter-and-sugar sauce that seeps deep into the crumb as it rests, served warm with custard or ice cream.',name_origin:'Of contested origin — the name is variously tied to Afrikaans home baking and to early Dutch settler tradition; whatever its root, the dish is firmly and unmistakably South African today.',why_loved:'Warm, sweet, and unapologetically rich, it tastes like the end of a meal worth remembering, and never quite enough of one.',method_detail:'Oven then soak — bake sponge, pour hot sauce over while warm'},
     "key_ings": [
       "apricot jam",
       "sugar",
