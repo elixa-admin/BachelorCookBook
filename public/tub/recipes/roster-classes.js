@@ -1,7 +1,7 @@
 /* ROSTER_CLASSES — per-recipe classification (cat + tier) and active/cut flag.
    Data-driven rebuild: a recipe is cut:true ONLY if it lacks ingredients AND
-   steps (uncookable stub). All complete recipes are active. Rebuilt during the
-   baseline standardization sweep — supersedes the corrupt prior version. */
+   steps (uncookable stub). All complete recipes are active. Rebuilt during the baseline standardization sweep; deduped (9 duplicate pairs
+   collapsed — kept the richer/imaged version of each). */
 window.ROSTER_CLASSES={
   "amarula-cheesecake": { "cat": "sweet", "tier": "heritage" },
   "arroz-negro-black-paella": { "cat": "main", "tier": "aspirational", "cut": true },
@@ -21,7 +21,7 @@ window.ROSTER_CLASSES={
   "borscht": { "cat": "main", "tier": "adopted" },
   "bouillabaisse": { "cat": "main", "tier": "aspirational" },
   "braai-lamb-chops-chimichurri": { "cat": "main", "tier": "heritage" },
-  "breyani": { "cat": "main", "tier": "heritage" },
+  "breyani": { "cat": "main", "tier": "heritage", "cut": true, "dedupe": true },
   "breyani-hyderabadi-cape-malay": { "cat": "main", "tier": "heritage" },
   "bun-cha": { "cat": "main", "tier": "adopted", "cut": true },
   "bunny-chow": { "cat": "main", "tier": "heritage" },
@@ -33,7 +33,7 @@ window.ROSTER_CLASSES={
   "carnitas-tacos": { "cat": "main", "tier": "adopted" },
   "causa-limena": { "cat": "main", "tier": "adopted", "cut": true },
   "chakalaka": { "cat": "byo", "tier": "component" },
-  "chakalaka-spicy-relish": { "cat": "byo", "tier": "component" },
+  "chakalaka-spicy-relish": { "cat": "byo", "tier": "component", "cut": true, "dedupe": true },
   "char-siu-pork": { "cat": "main", "tier": "adopted" },
   "chicken-biryani": { "cat": "main", "tier": "adopted" },
   "chicken-liver-parfait": { "cat": "special", "tier": "adopted", "cut": true },
@@ -48,7 +48,7 @@ window.ROSTER_CLASSES={
   "croissants": { "cat": "sweet", "tier": "adopted" },
   "dan-dan-noodles": { "cat": "main", "tier": "adopted" },
   "denningvleis": { "cat": "main", "tier": "heritage" },
-  "denningvleis-malay-mince-curry": { "cat": "main", "tier": "heritage" },
+  "denningvleis-malay-mince-curry": { "cat": "main", "tier": "heritage", "cut": true, "dedupe": true },
   "doro-wat": { "cat": "main", "tier": "heritage" },
   "droewors": { "cat": "byo", "tier": "component", "cut": true },
   "duck-a-l-orange": { "cat": "main", "tier": "aspirational" },
@@ -78,7 +78,7 @@ window.ROSTER_CLASSES={
   "kibbeh": { "cat": "main", "tier": "adopted" },
   "kingklip-en-papillote": { "cat": "main", "tier": "heritage" },
   "koeksisters": { "cat": "sweet", "tier": "heritage" },
-  "koesisters-spiced-dough-ginger-syrup": { "cat": "sweet", "tier": "heritage" },
+  "koesisters-spiced-dough-ginger-syrup": { "cat": "sweet", "tier": "heritage", "cut": true, "dedupe": true },
   "korean-fried-chicken": { "cat": "main", "tier": "adopted", "cut": true },
   "lamb-shank-red-wine": { "cat": "main", "tier": "aspirational" },
   "lamb-sosaties-variant": { "cat": "main", "tier": "heritage" },
@@ -88,13 +88,13 @@ window.ROSTER_CLASSES={
   "macaroni-cheese": { "cat": "main", "tier": "adopted" },
   "malai-kofta": { "cat": "main", "tier": "adopted" },
   "malva-pudding": { "cat": "sweet", "tier": "heritage" },
-  "malva-pudding-apricot": { "cat": "sweet", "tier": "heritage" },
+  "malva-pudding-apricot": { "cat": "sweet", "tier": "heritage", "cut": true, "dedupe": true },
   "mango-sticky-rice": { "cat": "main", "tier": "adopted", "cut": true },
   "mapo-tofu": { "cat": "main", "tier": "adopted" },
   "massaman-curry": { "cat": "main", "tier": "adopted" },
   "mealie-bread": { "cat": "byo", "tier": "component" },
   "melktert": { "cat": "sweet", "tier": "heritage" },
-  "melktert-milk-tart": { "cat": "sweet", "tier": "heritage" },
+  "melktert-milk-tart": { "cat": "sweet", "tier": "heritage", "cut": true, "dedupe": true },
   "milk-tart-cheesecake": { "cat": "sweet", "tier": "heritage" },
   "molten-chocolate-fondant": { "cat": "sweet", "tier": "adopted" },
   "moussaka": { "cat": "main", "tier": "adopted" },
@@ -121,7 +121,7 @@ window.ROSTER_CLASSES={
   "potato-gnocchi": { "cat": "main", "tier": "adopted" },
   "potbrood": { "cat": "byo", "tier": "component" },
   "potjiekos": { "cat": "main", "tier": "heritage" },
-  "potjiekos-boerie-pot": { "cat": "main", "tier": "heritage" },
+  "potjiekos-boerie-pot": { "cat": "main", "tier": "heritage", "cut": true, "dedupe": true },
   "pozole": { "cat": "main", "tier": "adopted", "cut": true },
   "prawn-curry-cape-malay": { "cat": "main", "tier": "heritage" },
   "prego-roll": { "cat": "main", "tier": "adopted" },
@@ -144,7 +144,7 @@ window.ROSTER_CLASSES={
   "snoek-pate": { "cat": "special", "tier": "heritage" },
   "som-tum": { "cat": "main", "tier": "adopted" },
   "sosaties": { "cat": "main", "tier": "aspirational" },
-  "sosaties-malay-kebabs": { "cat": "main", "tier": "heritage" },
+  "sosaties-malay-kebabs": { "cat": "main", "tier": "heritage", "cut": true, "dedupe": true },
   "southern-fried-chicken": { "cat": "main", "tier": "adopted", "cut": true },
   "spaghetti-bolognese": { "cat": "main", "tier": "adopted" },
   "spanakopita": { "cat": "special", "tier": "adopted" },
@@ -161,7 +161,7 @@ window.ROSTER_CLASSES={
   "tteokbokki": { "cat": "main", "tier": "adopted" },
   "umngqusho": { "cat": "main", "tier": "heritage" },
   "vetkoek": { "cat": "main", "tier": "heritage" },
-  "vetkoek-fried-dough": { "cat": "main", "tier": "heritage" },
+  "vetkoek-fried-dough": { "cat": "main", "tier": "heritage", "cut": true, "dedupe": true },
   "waterblommetjie-bredie": { "cat": "main", "tier": "heritage", "cut": true },
   "whole-roast-sea-bass": { "cat": "main", "tier": "aspirational", "cut": true },
   "yellow-rice-raisins-turmeric": { "cat": "main", "tier": "heritage" }
