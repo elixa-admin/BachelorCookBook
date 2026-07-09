@@ -49,13 +49,14 @@ button{font-family:var(--font)}
 .topbar{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);
   background:linear-gradient(180deg,rgba(8,9,11,.93),rgba(8,9,11,.66));border-bottom:1px solid var(--line-soft)}
 .topbar .row{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
-.brand{display:flex;align-items:center;gap:13px;cursor:pointer;background:none;border:none;padding:0;color:var(--text)}
-.brand .mark{width:52px;height:52px;border-radius:50%;display:block;flex:0 0 auto;
+.brand{display:flex;align-items:center;gap:14px;cursor:pointer;background:none;border:none;padding:0;color:var(--text)}
+.brand .mark{width:60px;height:60px;border-radius:50%;display:block;flex:0 0 auto;
   background:var(--crest) center/cover no-repeat;border:1px solid var(--accent-line);
   box-shadow:0 2px 12px rgba(0,0,0,.5),0 0 0 3px rgba(8,9,11,.5);transition:transform .35s var(--ease)}
 .brand:hover .mark{transform:rotate(-5deg) scale(1.05)}
-.brand .wm{font-size:0}
-.brand .wm small{display:block;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.12em;line-height:1;color:rgba(232,220,210,.95);margin:0;text-transform:uppercase;white-space:nowrap}
+.brand .wm{display:flex;flex-direction:column;justify-content:center;line-height:1}
+.brand .wm small{display:block;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.16em;line-height:1.05;color:var(--gold);margin:0;text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.brand .wm small::before{content:"";display:block;width:22px;height:2px;background:var(--accent);margin:0 0 5px;opacity:.7}
 .search{flex:1;min-width:0;max-width:330px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-pill);padding:10px 15px;color:var(--faint);transition:.2s var(--ease)}
 .search:focus-within{border-color:var(--accent-line);box-shadow:0 0 0 3px var(--accent-soft)}
@@ -64,9 +65,8 @@ button{font-family:var(--font)}
 .search .x{cursor:pointer;color:var(--faint);font-size:16px;line-height:1;display:none;padding:2px}
 .search .x.on{display:inline}
 .search .x:hover{color:var(--text)}
-@media(max-width:980px){.brand .wm small{font-size:12px;letter-spacing:.08em}}
-@media(max-width:680px){.brand .wm small{font-size:10px;letter-spacing:.06em}}
-@media(max-width:680px){.brand .wm{font-size:22px}.brand .mark{width:42px;height:42px;font-size:15px}}
+@media(max-width:980px){.brand .wm small{font-size:13px;letter-spacing:.1em}.brand .mark{width:50px;height:50px}}
+@media(max-width:680px){.brand .wm small{font-size:10px;letter-spacing:.06em}.brand .mark{width:42px;height:42px}.brand{gap:10px}}
 
 /* ── occasion nav (primary) ── */
 .occbar{position:sticky;top:70px;z-index:55;background:rgba(8,9,11,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
@@ -565,7 +565,7 @@ button{font-family:var(--font)}
 #detail.open,#methods.open,#cook.open{animation:overlayIn .34s var(--ease) both}
 @media(min-width:760px){.brief p.lead::first-letter{font-family:var(--display);font-weight:700;float:left;font-size:3.6em;line-height:.72;padding:4px 12px 0 0;color:var(--accent-text);text-transform:uppercase}}
 h1,h2,.dhead h2,.ck-title{text-wrap:balance}
-.brand .wm,.home-hero h1{letter-spacing:.01em}
+.home-hero h1{letter-spacing:.01em}
 .ck-thint{font-size:11px;color:var(--faint);margin-top:13px;letter-spacing:.06em}
 .ck-notimer{font-size:13px;color:var(--faint);text-align:center;padding:18px;border:1px dashed var(--line);border-radius:var(--r);margin-bottom:18px}
 .ck-nav{position:sticky;bottom:0;background:rgba(8,9,11,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line-soft);padding:14px 0}
@@ -1396,7 +1396,7 @@ main{padding-bottom:64px}
 
 <!-- TOPBAR -->
 <div class="topbar"><div class="wrap-wide"><div class="row">
-  <button class="brand" onclick="goBrowse()" aria-label="TUB home"><span class="mark" aria-hidden="true"></span><span class="wm">TUB<small>The Ultimate Bachelor Cookbook</small></span></button>
+  <button class="brand" onclick="goBrowse()" aria-label="The Ultimate Bachelor Cookbook — home"><span class="mark" aria-hidden="true"></span><span class="wm"><small>The Ultimate Bachelor Cookbook</small></span></button>
   <div class="search"><span>⌕</span><input id="q" placeholder="Search the library — rendang, steak, date night…" oninput="filterCards()" aria-label="Search recipes"><span class="x" id="qx" onclick="clearSearch()" title="Clear">✕</span></div>
 </div></div></div>
 

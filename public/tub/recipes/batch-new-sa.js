@@ -483,7 +483,7 @@ window.NEW_BATCH_SA=[
   time:'20 min',
   method:'Braai · direct heat',
   diff:'Easy',
-  blurb:'Fresh sardines marinated in garlic, lemon and olive oil, grilled over open coals until crispy-charred and deeply flavourful.',
+  pair:[["Wine","Elgin Sauvignon Blanc","Elgin · South Africa","Zesty lime and sea-spray minerality is electric against oily charred sardines and lemon."],["Beer","Castle Lager","South Africa","An ice-cold lager is the beachside classic — crisp and clean against oily fish."],["Non","Ginger beer","South Africa","Zingy ginger beer echoes the lemon brightness, its fizz lifting the smoky oil."]],blurb:'Fresh sardines marinated in garlic, lemon and olive oil, grilled over open coals until crispy-charred and deeply flavourful.',
   brief:{
     lead:'Sardines on the braai are one of the Cape coast\'s most honest pleasures — small, oily fish that love direct heat, take a marinade in minutes and cook in three. The char is the flavour. The lemon is the counterpoint. Eat them with your hands and serve crusty bread for the oil.',
     expect:[
